@@ -1,0 +1,1 @@
+Copy the samples folder structure from any existing standard then delete this file.

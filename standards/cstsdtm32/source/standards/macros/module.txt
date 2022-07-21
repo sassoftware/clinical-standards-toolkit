@@ -1,0 +1,4 @@
+This is the SDTM 3.2 runtime macro library.
+
+@name SDTM V3.2 (Runtime)
+@since V1.6

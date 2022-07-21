@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xmlns:nciodm="http://ncicb.nci.nih.gov/xml/odm/EVS/CDISC" xs:schemaLocation="http://www.nci.nih.gov/EVS/CDISC ../schema/controlledterminology1-0-0.xsd" FileType="Snapshot" FileOID="CDISC_CT.ADaM.2015-12-18" Granularity="Metadata" CreationDateTime="2015-12-15T14:26:32" AsOfDateTime="2015-12-18T00:00:00" ODMVersion="1.3.1" Originator="CDISC XML Technologies Team (Terminology2ODM converter)" SourceSystem="NCI Thesaurus" SourceSystemVersion="2015-12-18">
+    <Study OID="CDISC_CT.ADaM.2015-12-18">
+        <GlobalVariables>
+            <StudyName>CDISC ADaM Controlled Terminology</StudyName>
+            <StudyDescription>CDISC ADaM Controlled Terminology, 2015-12-18</StudyDescription>
+            <ProtocolName>CDISC ADaM Controlled Terminology</ProtocolName>
+        </GlobalVariables>
+        <MetaDataVersion OID="CDISC_CT_MetaDataVersion.ADaM.2015-12-18" Name="CDISC ADaM Controlled Terminology" Description="CDISC ADaM Controlled Terminology, 2015-12-18">
+            <CodeList OID="CL.C117745.ANLPURP" Name="Analysis Purpose" DataType="text" nciodm:ExtCodeID="C117745" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Purpose of a specific analysis result described in ADaM analysis results metadata.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="EXPLORATORY OUTCOME MEASURE" nciodm:ExtCodeID="C98724">
+                    <nciodm:CDISCSynonym>Exploratory Outcome Measure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Exploratory measures that will be used to evaluate the intervention(s) or, for observational studies, that are exploratory of the study.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Exploratory Outcome Measure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PRIMARY OUTCOME MEASURE" nciodm:ExtCodeID="C98772">
+                    <nciodm:CDISCSynonym>Primary Outcome Measure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The primary measurement(s) or observation(s) used to measure the effect of experimental variables in a study, or for observational studies, to describe patterns of diseases or traits or associations with exposures, risk factors or treatment. These are the outcome measures used to assess the primary objective(s).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Primary Outcome Measure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SECONDARY OUTCOME MEASURE" nciodm:ExtCodeID="C98781">
+                    <nciodm:CDISCSynonym>Secondary Outcome Measure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Other key measures that will be used to evaluate the intervention(s) or, for observational studies, that are a focus of the study. These are the outcome measures used to assess the secondary objective(s).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Secondary Outcome Measure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>ANLPURP</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Analysis Purpose</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Analysis Purpose Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C117744.ANLREAS" Name="Analysis Reason" DataType="text" nciodm:ExtCodeID="C117744" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Reason for reporting a specific analysis result described in ADaM analysis results metadata.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="DATA DRIVEN" nciodm:ExtCodeID="C117750">
+                    <nciodm:CDISCDefinition>The analysis was triggered by findings in the data.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Data Driven Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="REQUESTED BY REGULATORY AGENCY" nciodm:ExtCodeID="C117751">
+                    <nciodm:CDISCDefinition>The analysis has been requested by a regulatory agency.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Analysis Requested by Regulatory Agency</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SPECIFIED IN PROTOCOL" nciodm:ExtCodeID="C117752">
+                    <nciodm:CDISCDefinition>The analysis is specified in a protocol.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Analysis Specified in Protocol</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SPECIFIED IN SAP" nciodm:ExtCodeID="C117753">
+                    <nciodm:CDISCDefinition>The analysis is specified in a statistical analysis plan.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Analysis Specified in Statistical Analysis Plan</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>ANLREAS</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Analysis Reason</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Analysis Reason Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C81223.DATEFL" Name="Date Imputation Flag" DataType="text" nciodm:ExtCodeID="C81223" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Date Imputation Flag: Indicates the level of imputation reflected in a date value.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="D" nciodm:ExtCodeID="C81212">
+                    <nciodm:CDISCDefinition>Day Imputed: Day is imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Day Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="M" nciodm:ExtCodeID="C81211">
+                    <nciodm:CDISCDefinition>Month Imputed: Month and day are imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Month Day Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Y" nciodm:ExtCodeID="C81210">
+                    <nciodm:CDISCDefinition>Year Imputed: Entire date (year, month and day) is imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Year Month Day Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>DATEFL</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Date Imputation Flag</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Date Imputation Flag Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C81224.DTYPE" Name="Derivation Type" DataType="text" nciodm:ExtCodeID="C81224" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Derivation Type: Analysis value derivation method.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="AVERAGE" nciodm:ExtCodeID="C81209">
+                    <nciodm:CDISCDefinition>Average: A data derivation technique which calculates a subject's average value over a defined set of records.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Average of Value Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BC" nciodm:ExtCodeID="C92225">
+                    <nciodm:CDISCDefinition>Best Case: A data imputation technique which populates missing values with the best possible outcome.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Best Case Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BLOCF" nciodm:ExtCodeID="C81201">
+                    <nciodm:CDISCDefinition>Baseline Observation Carried Forward: A data imputation technique which populates missing values with the subject's nonmissing baseline observation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Baseline Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BOCF" nciodm:ExtCodeID="C92226">
+                    <nciodm:CDISCDefinition>Best Observation Carried Forward: A data imputation technique which populates missing values with the subject's best-case nonmissing value.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Best Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ENDPOINT" nciodm:ExtCodeID="C82866">
+                    <nciodm:CDISCDefinition>Endpoint: A data derivation technique which calculates a subject's analysis end point value.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Endpoint Value Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INTERP" nciodm:ExtCodeID="C81208">
+                    <nciodm:CDISCDefinition>Interpolation: A method of imputation involving a missing value that is between known values and is estimated by a function of those known values.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Interpolation Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LOCF" nciodm:ExtCodeID="C81198">
+                    <nciodm:CDISCDefinition>Last Observation Carried Forward: A data imputation technique which populates missing values with the subject's previous nonmissing value.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Last Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MAXIMUM" nciodm:ExtCodeID="C82868">
+                    <nciodm:CDISCDefinition>Maximum: A data derivation technique which calculates a subject's maximum value over a defined set of records.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Maximum Value Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MINIMUM" nciodm:ExtCodeID="C82867">
+                    <nciodm:CDISCDefinition>Minimum: A data derivation technique which calculates a subject's minimum value over a defined set of records.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Minimum Value Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ML" nciodm:ExtCodeID="C53331">
+                    <nciodm:CDISCDefinition>Maximum Likelihood: A data imputation technique which populates missing values with estimates that maximize the probability of observing what has in fact been observed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Maximum Likelihood Estimation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MOTH" nciodm:ExtCodeID="C81204">
+                    <nciodm:CDISCDefinition>Mean of Other Group: A data imputation technique which populates missing values with the mean value from a comparator or reference group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mean of Other Group Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MOV" nciodm:ExtCodeID="C81207">
+                    <nciodm:CDISCDefinition>Mean Observed Value in a Group: A data imputation technique which populates missing values with the mean value observed in a group of subjects.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mean Observed Value in a Group Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="POCF" nciodm:ExtCodeID="C81205">
+                    <nciodm:CDISCDefinition>Penultimate Observation Carried Forward: A data imputation technique which populates missing values with the subject's next-to-last nonmissing value.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Penultimate Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SOCF" nciodm:ExtCodeID="C81200">
+                    <nciodm:CDISCDefinition>Screening Observation Carried Forward: A data imputation technique which populates missing values with the subject's nonmissing screening observation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Screening Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WC" nciodm:ExtCodeID="C81203">
+                    <nciodm:CDISCDefinition>Worst Case: A data imputation technique which populates missing values with the worst possible outcome.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Worst Case Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WOCF" nciodm:ExtCodeID="C81199">
+                    <nciodm:CDISCDefinition>Worst Observation Carried Forward: A data imputation technique which populates missing values with the subject's worst-case nonmissing value.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Worst Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WOV" nciodm:ExtCodeID="C81206">
+                    <nciodm:CDISCDefinition>Worst Observed Value in a Group: A data imputation technique which populates missing values with the worst value observed in a group of subjects.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Worst Observed Value in a Group Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>DTYPE</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Derivation Type</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Derivation Type Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C81225.PARAMTYP" Name="Parameter Type" DataType="text" nciodm:ExtCodeID="C81225" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Parameter Type: Indicates whether the parameter is derived as a function of one or more other parameters.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="DERIVED" nciodm:ExtCodeID="C81197">
+                    <nciodm:CDISCDefinition>Derived: Indicates that a parameter is derived as a function of one or more other parameters.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Derived Flag</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>PARAMTYP</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Parameter Type</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Parameter Type Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C124296.SBJTSTAT" Name="Subject Trial Status" DataType="text" nciodm:ExtCodeID="C124296" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Indicates the status of the subject in the trial.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="COMPLETED" nciodm:ExtCodeID="C25250">
+                    <nciodm:CDISCDefinition>To possess every necessary or normal part or component or step; having come or been brought to a conclusion. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Complete</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ONGOING" nciodm:ExtCodeID="C53279">
+                    <nciodm:CDISCSynonym>Continuous</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Remain in force or carry on without letup; keep or maintain in unaltered condition; exist in time or space without stop or interruption. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Continue</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>SBJTSTAT</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Subject Trial Status</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Subject Trial Status Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C81226.TIMEFL" Name="Time Imputation Flag" DataType="text" nciodm:ExtCodeID="C81226" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Time Imputation Flag: Indicates the level of imputation reflected in a time value.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="H" nciodm:ExtCodeID="C81213">
+                    <nciodm:CDISCDefinition>Hours Imputed: Entire time (hours, minutes and seconds) is imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hours Minutes Seconds Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="M" nciodm:ExtCodeID="C81214">
+                    <nciodm:CDISCDefinition>Minutes Imputed: Minutes and seconds are imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Minutes Seconds Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="S" nciodm:ExtCodeID="C81215">
+                    <nciodm:CDISCDefinition>Seconds Imputed: Seconds are imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Seconds Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>TIMEFL</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Time Imputation Flag</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Time Imputation Flag Terminology</nciodm:PreferredTerm>
+            </CodeList>
+        </MetaDataVersion>
+    </Study>
+</ODM>

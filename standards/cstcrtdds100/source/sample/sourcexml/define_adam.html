@@ -1,0 +1,1990 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Script-Type" content="text/javascript">
+      <meta http-equiv="Content-Style-Type" content="text/css">
+      <title> Study Derived Study built by SAS Clinical Standards Toolkit, Data Definitions</title><script type="text/javascript">
+      
+      <!--  
+      /**
+       * With one argument, return the textContent or innerText of the element.
+       * With two arguments, set the textContent or innerText of element to value.
+       */
+      function textContent(element, value) {
+        var content = element.textContent;  // Check if textContent is defined
+        if (value === undefined) { // No value passed, so return current text
+            if (content !== undefined) return content;
+            else return element.innerText;
+        }
+        else {                     // A value was passed, so set text
+            if (content !== undefined) element.textContent = value;
+            else element.innerText = value;
+        }
+      }
+      
+      ITEM  = '\u00A0';
+      OPEN  = '\u25BC';
+      CLOSE = '\u25BA';
+      function toggle_submenu(e) {
+        /** e.innerHTML = (textContent(e)==OPEN) ? CLOSE : OPEN; */
+        
+        if (textContent(e)==OPEN) {
+          textContent(e, CLOSE);
+        }
+        else {
+          textContent(e, OPEN);
+        }
+        
+        for (var c, p=e.parentNode, i=0; c=p.childNodes[i]; i++)
+          if (c.tagName=='UL') c.style.display=(c.style.display=='none') ? 'block' : 'none';
+      }
+      function reset_menus() {
+        var li_tags = document.getElementsByTagName('LI');
+        for (var li, i=0; li=li_tags[i]; i++) { 
+          if ( li.className.match('hmenu-item') )
+            for (var c, j=0; c=li.childNodes[j]; j++)
+              if ( c.tagName == 'SPAN' && c.className.match('hmenu-bullet') ) {textContent(c, ITEM);}
+          if ( li.className.match('hmenu-submenu') )
+            for (var c, j=0; c=li.childNodes[j]; j++)
+              if ( c.tagName == 'SPAN' && c.className.match('hmenu-bullet') ) {textContent(c, CLOSE);}
+              else if ( c.tagName == 'UL' ) { c.style.display = 'none'; }
+        }
+      }
+      //-->
+      
+      </script><style type="text/css">
+      a{ color:blue; }
+      a:hover{ color:#F90; }
+      a.tocItem{
+        color:#004A95;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:12px;
+        font-weight:bold;
+        text-decoration:none;
+        margin-top:2px;
+      }
+      a.tocItem.level2{ margin-left:15px; }
+      
+      table{
+        width:98%;
+        border-spacing:4px;
+        border-width:1px;
+        border-style:solid;
+        border-color:black;
+        background-color:#EEEEEE;
+        margin-top:5px;
+        margin-bottom:5px;
+        margin-left:5px;
+        margin-right:0;
+        border-collapse:collapse;
+        empty-cells:show;
+      }
+      
+      
+      tr { border:1px solid black;}
+      
+      tr.header{
+        background-color:#6699CC;
+        color:#FFFFFF;
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:12px;
+        font-weight:bold;
+      }
+      
+      th{
+        font-weight:bold;
+        vertical-align:top;
+        text-align: left;
+        padding: 5px;
+        border: 1px solid black;
+        }
+
+      th.codedvalue {width: 20%;} 
+            
+      td{
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:12px;
+        vertical-align:top;
+        padding: 5px;
+        border: 1px solid black;
+      }
+      
+      td.datatype {text-align: center; }
+      td.number {text-align: right; }
+      td.label{
+        font-weight:bold; 
+        width: 20%;
+      }
+      
+      .hmenu li      { list-style:none; line-height:18px; padding-left:0; }
+      .hmenu ul      { padding-left:14px; margin-left:0; }
+      .hmenu-item    { }
+      .hmenu-submenu { font-weight:bold; }
+      .hmenu-bullet  { float:left; width:16px; color:#AAA; }
+      
+      ul { margin-left:0px; }
+      
+      legend{
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:14px;
+        font-weight:bolder;
+        text-align:left;
+        color:maroon;
+      }
+      
+      fieldset{
+        width:98%;
+      }
+      
+      fieldset.inner{
+        margin-top:20px;
+        margin-left:5px;
+        margin-right:0px;
+        border:none;
+      }
+      
+      .code{
+        font-family:monospace;
+        white-space:pre;
+        display:block;
+        vertical-align:top;
+      }
+      
+      .tablerowodd{ background-color:#FFFFFF; }
+      .tableroweven{ background-color:#E2E2E2; }
+      
+      .linktop { font-size:12px; margin-top:5px; }
+      .linksummary { font-size:12px; margin-top:5px; }
+      .docgenerationdate  { font-size:12px; margin-top:5px; }
+      .supplementaldatadefinition { font-size:12px; margin-top:5px; }
+      
+     
+       .documentinfo, .stylesheetinfo{
+       }
+
+        span.error{
+        width:95%;
+        font-weight: bold;	
+        padding:5px;
+        color:#FF0000;
+        border-spacing:4px;
+        border:2px solid #FF0000;
+        }
+        td.error{
+        color:#FF0000;
+        }
+        
+        .standard{
+        font-weight:bolder;
+        text-align:left;
+        padding:15px;
+        margin-left:20px;
+        margin-top:40px;
+        margin-right:20px;
+        margin-bottom:20px;
+        color:#800000;
+        border:0px;
+        }
+
+       #main .docinfo{
+       width:95%;
+       text-align:right;
+       font-size:10px;
+       }
+
+       #menu{
+        position:fixed;
+        left:0px;
+        width:20%;
+        height:96%;
+        bottom:0px;
+        overflow:auto;
+        background-color:white;
+        color:black;
+        border-width:0px;
+        border-style:none;
+        border-color:black;
+        font-family:Verdana, Arial, sans-serif;
+        font-size:12px;
+        font-weight:bold;
+        text-align:left;
+        white-space:nowrap;
+        margin-top:5px;
+        }
+      
+      #main{
+        position:absolute;
+        left:20%;
+        overflow:auto;
+        font-family:Verdana, Arial, sans-serif;
+        color:black;
+        background-color:white;
+        margin-top:5px;
+        }
+
+    </style></head>
+   <body onload="reset_menus();">
+      
+      
+      
+      <div id="menu"><span class="standard">CDISC ADAM 2.1</span><ul class="hmenu">
+            <li class="hmenu-submenu"><span class="hmenu-bullet" onclick="toggle_submenu(this);">+</span><a class="tocItem" href="#Analysis_Datasets_Table">Analysis Datasets</a><ul>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#IG.IG.ADAE">Adverse Event Analysis Dataset (ADAE) </a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#IG.IG.ADQS">ADaM Questionnaire Analysis Data Set (ADQS) </a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#IG.IG.ADSL">Subject-Level Analysis Data Set (ADSL) </a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#IG.IG.ADTTE">Time to Event Analysis Dataset (ADTTE) </a></li>
+               </ul>
+            </li>
+            <li class="hmenu-submenu"><span class="hmenu-bullet" onclick="toggle_submenu(this);">+</span><a class="tocItem" href="#valuemeta">Parameter Value Level Metadata</a><ul>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#VL.VL.ADQS.AVAL">ADQS [AVAL]
+                        </a></li>
+               </ul>
+            </li>
+            <li class="hmenu-submenu"><span class="hmenu-bullet" onclick="toggle_submenu(this);">+</span><a class="tocItem" href="#decodelist">Controlled Terms</a><ul>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CL.CL.ACN">ACN</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CL.CL.AESEV">AESEV</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CL.CL.AGEU">AGEU</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CL.CL.NY">NY</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CL.CL.RACE">RACE</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CL.CL.SEX">SEX</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CL.CL.TIMEFL">TIMEFL</a></li>
+               </ul>
+            </li>
+            <li class="hmenu-submenu"><span class="hmenu-bullet" onclick="toggle_submenu(this);">+</span><a class="tocItem" href="#compmethod">Analysis Derivations</a><ul>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM01">CM.ADQS.AVAL.ACITM01</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM02">CM.ADQS.AVAL.ACITM02</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM03">CM.ADQS.AVAL.ACITM03</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM04">CM.ADQS.AVAL.ACITM04</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM05">CM.ADQS.AVAL.ACITM05</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM06">CM.ADQS.AVAL.ACITM06</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM07">CM.ADQS.AVAL.ACITM07</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM08">CM.ADQS.AVAL.ACITM08</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM09">CM.ADQS.AVAL.ACITM09</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM10">CM.ADQS.AVAL.ACITM10</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM11">CM.ADQS.AVAL.ACITM11</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM12">CM.ADQS.AVAL.ACITM12</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM13">CM.ADQS.AVAL.ACITM13</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACITM14">CM.ADQS.AVAL.ACITM14</a></li>
+                  <li class="hmenu-item"><span class="hmenu-bullet">-</span><a class="tocItem" href="#CM.ADQS.AVAL.ACTOT">CM.ADQS.AVAL.ACTOT</a></li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+      <div id="main">
+         <div class="docinfo">
+            <p class="documentinfo">Date of document generation: 2022-05-31T16:47:05-04:00</p>
+            <p class="stylesheetinfo">Stylesheet version: 2014-09-03</p><br></div>
+         <fieldset id="Analysis_Datasets_Table" style="page-break-after: always;">
+            <legend>ADaM Datasets for Study Derived Study built by SAS Clinical Standards Toolkit</legend>
+            <table>
+               <tr class="header">
+                  <th scope="col">Dataset</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Class</th>
+                  <th scope="col">Structure</th>
+                  <th scope="col">Purpose</th>
+                  <th scope="col">Keys</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Documentation</th>
+               </tr>
+               <tr class="tablerowodd" id="IG.ADAE">
+                  <td>ADAE</td>
+                  <td><a href="#IG.IG.ADAE">Adverse Event Analysis Dataset</a></td>
+                  <td>ADAE</td>
+                  <td>One record per subject per each AE recorded in SDTM AE domain</td>
+                  <td>Analysis</td>
+                  <td>STUDYID, USUBJID, AETERM, AESTDTC</td>
+                  <td><a href="adae.xpt">Adverse Events SAS transport file</a></td>
+                  <td></td>
+               </tr>
+               <tr class="tableroweven" id="IG.ADQS">
+                  <td>ADQS</td>
+                  <td><a href="#IG.IG.ADQS">ADaM Questionnaire Analysis Data Set</a></td>
+                  <td>BDS</td>
+                  <td>One record per subject per parameter per analysis visit</td>
+                  <td>Analysis</td>
+                  <td>STUDYID, USUBJID, PARAMCD, ADT</td>
+                  <td><a href="adqs.xpt">ADQS SAS transport file</a></td>
+                  <td></td>
+               </tr>
+               <tr class="tablerowodd" id="IG.ADSL">
+                  <td>ADSL</td>
+                  <td><a href="#IG.IG.ADSL">Subject-Level Analysis Data Set</a></td>
+                  <td>ADSL</td>
+                  <td>One record per subject</td>
+                  <td>Analysis</td>
+                  <td>STUDYID, USUBJID</td>
+                  <td><a href="adsl.xpt">Subject-Level SAS transport file</a></td>
+                  <td></td>
+               </tr>
+               <tr class="tableroweven" id="IG.ADTTE">
+                  <td>ADTTE</td>
+                  <td><a href="#IG.IG.ADTTE">Time to Event Analysis Dataset</a></td>
+                  <td>BDS</td>
+                  <td>One record per subject per parameter per analysis visit</td>
+                  <td>Analysis</td>
+                  <td>STUDYID, USUBJID, PARAMCD, ADT</td>
+                  <td><a href="adtte.xpt">ADTTE SAS transport file</a></td>
+                  <td></td>
+               </tr>
+            </table>
+         </fieldset>
+         <p class="linktop">Go to the <a href="#main">top</a> of the define.xml
+         </p><br><fieldset style="page-break-after: always;" id="IG.IG.ADAE">
+            <legend>Adverse Event Analysis Dataset (ADAE) <a href="adae.xpt">Adverse Events SAS transport file</a></legend>
+            <table>
+               <tr class="header">
+                  <th scope="col">Variable</th>
+                  <th scope="col">Label</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Length</th>
+                  <th scope="col">Display Format</th>
+                  <th scope="col">Code List / Controlled Terms</th>
+                  <th scope="col">Source/Derivation/Comments</th>
+               </tr>
+               <tr id="IT.ADAE.STUDYID" class="tablerowodd">
+                  <td>STUDYID</td>
+                  <td>Study Identifier</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.USUBJID" class="tableroweven">
+                  <td>USUBJID</td>
+                  <td>Unique Subject Identifier</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AESEQ" class="tablerowodd">
+                  <td>AESEQ</td>
+                  <td>Sequence Number</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AETERM" class="tableroweven">
+                  <td>AETERM</td>
+                  <td>Reported Term for the Adverse Event</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEDECOD" class="tablerowodd">
+                  <td>AEDECOD</td>
+                  <td>Dictionary-Derived Term</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEBODSYS" class="tableroweven">
+                  <td>AEBODSYS</td>
+                  <td>Body System or Organ Class</td>
+                  <td class="datatype">text</td>
+                  <td class="number">80</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEBDSYCD" class="tablerowodd">
+                  <td>AEBDSYCD</td>
+                  <td>Body System or Organ Class Code</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AELLT" class="tableroweven">
+                  <td>AELLT</td>
+                  <td>Lowest Level Term</td>
+                  <td class="datatype">text</td>
+                  <td class="number">100</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AELLTCD" class="tablerowodd">
+                  <td>AELLTCD</td>
+                  <td>Lowest Level Term Code</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEPTCD" class="tableroweven">
+                  <td>AEPTCD</td>
+                  <td>Preferred Term Code</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEHLT" class="tablerowodd">
+                  <td>AEHLT</td>
+                  <td>High Level Term</td>
+                  <td class="datatype">text</td>
+                  <td class="number">100</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEHLTCD" class="tableroweven">
+                  <td>AEHLTCD</td>
+                  <td>High Level Term Code</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEHLGT" class="tablerowodd">
+                  <td>AEHLGT</td>
+                  <td>High Level Group Term</td>
+                  <td class="datatype">text</td>
+                  <td class="number">100</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEHLGTCD" class="tableroweven">
+                  <td>AEHLGTCD</td>
+                  <td>High Level Group Term Code</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AESOC" class="tablerowodd">
+                  <td>AESOC</td>
+                  <td>Primary System Organ Class</td>
+                  <td class="datatype">text</td>
+                  <td class="number">80</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AESOCCD" class="tableroweven">
+                  <td>AESOCCD</td>
+                  <td>Primary System Organ Class Code</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AESTDTC" class="tablerowodd">
+                  <td>AESTDTC</td>
+                  <td>Start Date/Time of Adverse Event</td>
+                  <td class="datatype">datetime</td>
+                  <td class="number"></td>
+                  <td class="number"></td>
+                  <td>ISO8601</td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.ASTDTM" class="tableroweven">
+                  <td>ASTDTM</td>
+                  <td>Analysis Start Date/Time</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATETIME19.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.ASTTMF" class="tablerowodd">
+                  <td>ASTTMF</td>
+                  <td>Analysis Start Time Imputation Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td><a href="#CL.CL.TIMEFL">TIMEFL</a></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEENDTC" class="tableroweven">
+                  <td>AEENDTC</td>
+                  <td>End Date/Time of Adverse Event</td>
+                  <td class="datatype">datetime</td>
+                  <td class="number"></td>
+                  <td class="number"></td>
+                  <td>ISO8601</td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AENDTM" class="tablerowodd">
+                  <td>AENDTM</td>
+                  <td>Analysis End Date/Time</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATETIME19.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AENTMF" class="tableroweven">
+                  <td>AENTMF</td>
+                  <td>Analysis End Time Imputation Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td><a href="#CL.CL.TIMEFL">TIMEFL</a></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.ASTDY" class="tablerowodd">
+                  <td>ASTDY</td>
+                  <td>Analysis Start Relative Day</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AENDY" class="tableroweven">
+                  <td>AENDY</td>
+                  <td>Analysis End Relative Day</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.ADURN" class="tablerowodd">
+                  <td>ADURN</td>
+                  <td>AE Duration (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.ADURU" class="tableroweven">
+                  <td>ADURU</td>
+                  <td>AE Duration Units</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEDUR" class="tablerowodd">
+                  <td>AEDUR</td>
+                  <td>Duration of Adverse Event</td>
+                  <td class="datatype">text</td>
+                  <td class="number">64</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.TRTEMFL" class="tableroweven">
+                  <td>TRTEMFL</td>
+                  <td>Treatment Emergent Analysis Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.FUPFL" class="tablerowodd">
+                  <td>FUPFL</td>
+                  <td>Follow-up Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AOCCFL" class="tableroweven">
+                  <td>AOCCFL</td>
+                  <td>1st Occurrence of Any AE Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AOCCIFL" class="tablerowodd">
+                  <td>AOCCIFL</td>
+                  <td>1st Max Sev./Int. Occurrence Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.DOSEAEON" class="tableroweven">
+                  <td>DOSEAEON</td>
+                  <td>Study Drug Dose at AE Onset</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">8.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.DOSAEONU" class="tablerowodd">
+                  <td>DOSAEONU</td>
+                  <td>Study Drug Dose at AE Onset Units</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.DOSECUM" class="tableroweven">
+                  <td>DOSECUM</td>
+                  <td>Cumulative Study Drug Dose</td>
+                  <td class="datatype">float</td>
+                  <td class="number">8</td>
+                  <td class="number">6.2</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.DOSECUMU" class="tablerowodd">
+                  <td>DOSECUMU</td>
+                  <td>Cumulative Study Drug Dose Units</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AESER" class="tableroweven">
+                  <td>AESER</td>
+                  <td>Serious Event</td>
+                  <td class="datatype">text</td>
+                  <td class="number">2</td>
+                  <td class="number"></td>
+                  <td><a href="#CL.CL.NY">NY</a></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AESEV" class="tablerowodd">
+                  <td>AESEV</td>
+                  <td>Severity/Intensity</td>
+                  <td class="datatype">text</td>
+                  <td class="number">20</td>
+                  <td class="number"></td>
+                  <td><a href="#CL.CL.AESEV">AESEV</a></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AESEVN" class="tableroweven">
+                  <td>AESEVN</td>
+                  <td>Severity/Intensity (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.ASEV" class="tablerowodd">
+                  <td>ASEV</td>
+                  <td>Analysis Severity/Intensity</td>
+                  <td class="datatype">text</td>
+                  <td class="number">20</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.ASEVN" class="tableroweven">
+                  <td>ASEVN</td>
+                  <td>Analysis Severity/Intensity (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.SEVGR1" class="tablerowodd">
+                  <td>SEVGR1</td>
+                  <td>Pooled Severity Group y</td>
+                  <td class="datatype">text</td>
+                  <td class="number">20</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.SEVGR1N" class="tableroweven">
+                  <td>SEVGR1N</td>
+                  <td>Pooled Severity Group y (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEREL" class="tablerowodd">
+                  <td>AEREL</td>
+                  <td>Causality</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AERELN" class="tableroweven">
+                  <td>AERELN</td>
+                  <td>Causality (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AREL" class="tablerowodd">
+                  <td>AREL</td>
+                  <td>Analysis Causality</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.ARELN" class="tableroweven">
+                  <td>ARELN</td>
+                  <td>Analysis Causality (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AETOXGR" class="tablerowodd">
+                  <td>AETOXGR</td>
+                  <td>Standard Toxicity Grade</td>
+                  <td class="datatype">text</td>
+                  <td class="number">20</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AETOXGRN" class="tableroweven">
+                  <td>AETOXGRN</td>
+                  <td>Standard Toxicity Grade (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AEACN" class="tablerowodd">
+                  <td>AEACN</td>
+                  <td>Action Taken with Study Treatment</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td><a href="#CL.CL.ACN">ACN</a></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.SMQ01NAM" class="tableroweven">
+                  <td>SMQ01NAM</td>
+                  <td>SMQ zz Name</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.SMQ01CD" class="tablerowodd">
+                  <td>SMQ01CD</td>
+                  <td>SMQ zz Code</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.SMQ01SC" class="tableroweven">
+                  <td>SMQ01SC</td>
+                  <td>SMQ zz Scope</td>
+                  <td class="datatype">text</td>
+                  <td class="number">6</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.SMQ01SCN" class="tablerowodd">
+                  <td>SMQ01SCN</td>
+                  <td>SMQ zz Scope (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.CQ01NAM" class="tableroweven">
+                  <td>CQ01NAM</td>
+                  <td>Customized Query zz Name</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.AGE" class="tablerowodd">
+                  <td>AGE</td>
+                  <td>Age</td>
+                  <td class="datatype">float</td>
+                  <td class="number">8</td>
+                  <td class="number">8.1</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.SEX" class="tableroweven">
+                  <td>SEX</td>
+                  <td>Sex</td>
+                  <td class="datatype">text</td>
+                  <td class="number">2</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.TRTP" class="tablerowodd">
+                  <td>TRTP</td>
+                  <td>Description of Planned Arm</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.TRTEDT" class="tableroweven">
+                  <td>TRTEDT</td>
+                  <td>Date of Last Exposure to Treatment</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.TRTSDT" class="tablerowodd">
+                  <td>TRTSDT</td>
+                  <td>Date of First Exposure to Treatment</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.SAFFL" class="tableroweven">
+                  <td>SAFFL</td>
+                  <td>Safety Population Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADAE.TRTPN" class="tablerowodd">
+                  <td>TRTPN</td>
+                  <td>Planned Treatment (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+            </table>
+         </fieldset>
+         <p class="linktop">Go to the <a href="#main">top</a> of the define.xml
+         </p><br><fieldset style="page-break-after: always;" id="IG.IG.ADQS">
+            <legend>ADaM Questionnaire Analysis Data Set (ADQS) <a href="adqs.xpt">ADQS SAS transport file</a></legend>
+            <table>
+               <tr class="header">
+                  <th scope="col">Variable</th>
+                  <th scope="col">Label</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Length</th>
+                  <th scope="col">Display Format</th>
+                  <th scope="col">Code List / Controlled Terms</th>
+                  <th scope="col">Source/Derivation/Comments</th>
+               </tr>
+               <tr id="IT.ADQS.STUDYID" class="tablerowodd">
+                  <td>STUDYID</td>
+                  <td>Study Identifier</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number">$40.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.USUBJID" class="tableroweven">
+                  <td>USUBJID</td>
+                  <td>Unique Subject Identifier</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number">$40.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.TRTP" class="tablerowodd">
+                  <td>TRTP</td>
+                  <td>Planned Treatment</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number">$40.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.TRTPN" class="tableroweven">
+                  <td>TRTPN</td>
+                  <td>Planned Treatment (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">8.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.ADT" class="tablerowodd">
+                  <td>ADT</td>
+                  <td>Analysis Date</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.ADY" class="tableroweven">
+                  <td>ADY</td>
+                  <td>Analysis Relative Day</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">8.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.AVISIT" class="tablerowodd">
+                  <td>AVISIT</td>
+                  <td>Analysis Visit</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number">$40.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.AVISITN" class="tableroweven">
+                  <td>AVISITN</td>
+                  <td>Analysis Visit (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">8.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.PARAM" class="tablerowodd">
+                  <td>PARAM</td>
+                  <td>Parameter</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number">$200.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.PARAMCD" class="tableroweven">
+                  <td>PARAMCD</td>
+                  <td>Parameter Code</td>
+                  <td class="datatype">text</td>
+                  <td class="number">8</td>
+                  <td class="number">$8.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.PARAMN" class="tablerowodd">
+                  <td>PARAMN</td>
+                  <td>Parameter (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">8.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.AVAL" class="tableroweven">
+                  <td><a href="#VL.VL.ADQS.AVAL">AVAL</a></td>
+                  <td>Analysis Value</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">8.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.QSSEQ" class="tablerowodd">
+                  <td>QSSEQ</td>
+                  <td>Sequence Number</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.QSCAT" class="tableroweven">
+                  <td>QSCAT</td>
+                  <td>Category of Question</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.QSSCAT" class="tablerowodd">
+                  <td>QSSCAT</td>
+                  <td>Subcategory for Question</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.QSORRES" class="tableroweven">
+                  <td>QSORRES</td>
+                  <td>Finding in Original Units</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.QSORRESU" class="tablerowodd">
+                  <td>QSORRESU</td>
+                  <td>Original Units</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.QSSTRESC" class="tableroweven">
+                  <td>QSSTRESC</td>
+                  <td>Character Result/Finding in Std Format</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.QSSTRESU" class="tablerowodd">
+                  <td>QSSTRESU</td>
+                  <td>Standard Units</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.AGE" class="tableroweven">
+                  <td>AGE</td>
+                  <td>Age</td>
+                  <td class="datatype">float</td>
+                  <td class="number">8</td>
+                  <td class="number">8.1</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.SEX" class="tablerowodd">
+                  <td>SEX</td>
+                  <td>Sex</td>
+                  <td class="datatype">text</td>
+                  <td class="number">2</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.TRTEDT" class="tableroweven">
+                  <td>TRTEDT</td>
+                  <td>Date of Last Exposure to Treatment</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.TRTSDT" class="tablerowodd">
+                  <td>TRTSDT</td>
+                  <td>Date of First Exposure to Treatment</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADQS.SAFFL" class="tableroweven">
+                  <td>SAFFL</td>
+                  <td>Safety Population Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+            </table>
+         </fieldset>
+         <p class="linktop">Go to the <a href="#main">top</a> of the define.xml
+         </p><br><fieldset style="page-break-after: always;" id="IG.IG.ADSL">
+            <legend>Subject-Level Analysis Data Set (ADSL) <a href="adsl.xpt">Subject-Level SAS transport file</a></legend>
+            <table>
+               <tr class="header">
+                  <th scope="col">Variable</th>
+                  <th scope="col">Label</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Length</th>
+                  <th scope="col">Display Format</th>
+                  <th scope="col">Code List / Controlled Terms</th>
+                  <th scope="col">Source/Derivation/Comments</th>
+               </tr>
+               <tr id="IT.ADSL.STUDYID" class="tablerowodd">
+                  <td>STUDYID</td>
+                  <td>Study Identifier</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.USUBJID" class="tableroweven">
+                  <td>USUBJID</td>
+                  <td>Unique Subject Identifier</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.SUBJID" class="tablerowodd">
+                  <td>SUBJID</td>
+                  <td>Subject Identifier for the Study</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.RFSTDTC" class="tableroweven">
+                  <td>RFSTDTC</td>
+                  <td>Subject Reference Start Date/Time</td>
+                  <td class="datatype">datetime</td>
+                  <td class="number"></td>
+                  <td class="number"></td>
+                  <td>ISO8601</td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.RFENDTC" class="tablerowodd">
+                  <td>RFENDTC</td>
+                  <td>Subject Reference End Date/Time</td>
+                  <td class="datatype">datetime</td>
+                  <td class="number"></td>
+                  <td class="number"></td>
+                  <td>ISO8601</td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.SITEID" class="tableroweven">
+                  <td>SITEID</td>
+                  <td>Study Site Identifier</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.AGE" class="tablerowodd">
+                  <td>AGE</td>
+                  <td>Age</td>
+                  <td class="datatype">float</td>
+                  <td class="number">8</td>
+                  <td class="number">8.1</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.AGEU" class="tableroweven">
+                  <td>AGEU</td>
+                  <td>Age Units</td>
+                  <td class="datatype">text</td>
+                  <td class="number">10</td>
+                  <td class="number"></td>
+                  <td><a href="#CL.CL.AGEU">AGEU</a></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.SEX" class="tablerowodd">
+                  <td>SEX</td>
+                  <td>Sex</td>
+                  <td class="datatype">text</td>
+                  <td class="number">2</td>
+                  <td class="number"></td>
+                  <td><a href="#CL.CL.SEX">SEX</a></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.RACE" class="tableroweven">
+                  <td>RACE</td>
+                  <td>Race</td>
+                  <td class="datatype">text</td>
+                  <td class="number">80</td>
+                  <td class="number"></td>
+                  <td><a href="#CL.CL.RACE">RACE</a></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.ARMCD" class="tablerowodd">
+                  <td>ARMCD</td>
+                  <td>Planned Arm Code</td>
+                  <td class="datatype">text</td>
+                  <td class="number">20</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.ARM" class="tableroweven">
+                  <td>ARM</td>
+                  <td>Description of Planned Arm</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.VISIT1DT" class="tablerowodd">
+                  <td>VISIT1DT</td>
+                  <td>Date of Visit 1</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.RANDDT" class="tableroweven">
+                  <td>RANDDT</td>
+                  <td>Date of Randomization</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.COMPLT2" class="tablerowodd">
+                  <td>COMPLT2</td>
+                  <td>Completed 2 Weeks</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.COMPLT4" class="tableroweven">
+                  <td>COMPLT4</td>
+                  <td>Completed 4 Weeks</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.COMPLT6" class="tablerowodd">
+                  <td>COMPLT6</td>
+                  <td>Completed 6 Weeks</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.TRTEDT" class="tableroweven">
+                  <td>TRTEDT</td>
+                  <td>Date of Last Exposure to Treatment</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.TRTSDT" class="tablerowodd">
+                  <td>TRTSDT</td>
+                  <td>Date of First Exposure to Treatment</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.DSDECOD" class="tableroweven">
+                  <td>DSDECOD</td>
+                  <td>Standardized Disposition Term</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.FASFL" class="tablerowodd">
+                  <td>FASFL</td>
+                  <td>Full Analysis Set Population Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.ITTFL" class="tableroweven">
+                  <td>ITTFL</td>
+                  <td>Intent-To-Treat Population Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.SAFFL" class="tablerowodd">
+                  <td>SAFFL</td>
+                  <td>Safety Population Flag</td>
+                  <td class="datatype">text</td>
+                  <td class="number">1</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.TRT01P" class="tableroweven">
+                  <td>TRT01P</td>
+                  <td>Planned Treatment for Period 1</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADSL.TRT01PN" class="tablerowodd">
+                  <td>TRT01PN</td>
+                  <td>Planned Treatment for Period 1 (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+            </table>
+         </fieldset>
+         <p class="linktop">Go to the <a href="#main">top</a> of the define.xml
+         </p><br><fieldset style="page-break-after: always;" id="IG.IG.ADTTE">
+            <legend>Time to Event Analysis Dataset (ADTTE) <a href="adtte.xpt">ADTTE SAS transport file</a></legend>
+            <table>
+               <tr class="header">
+                  <th scope="col">Variable</th>
+                  <th scope="col">Label</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Length</th>
+                  <th scope="col">Display Format</th>
+                  <th scope="col">Code List / Controlled Terms</th>
+                  <th scope="col">Source/Derivation/Comments</th>
+               </tr>
+               <tr id="IT.ADTTE.STUDYID" class="tablerowodd">
+                  <td>STUDYID</td>
+                  <td>Study Identifier</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number">$40.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.USUBJID" class="tableroweven">
+                  <td>USUBJID</td>
+                  <td>Unique Subject Identifier</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number">$40.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.TRTP" class="tablerowodd">
+                  <td>TRTP</td>
+                  <td>Planned Treatment</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number">$40.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.TRTPN" class="tableroweven">
+                  <td>TRTPN</td>
+                  <td>Planned Treatment (N)</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">8.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.ADT" class="tablerowodd">
+                  <td>ADT</td>
+                  <td>Analysis Date</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.AVISIT" class="tableroweven">
+                  <td>AVISIT</td>
+                  <td>Analysis Visit</td>
+                  <td class="datatype">text</td>
+                  <td class="number">40</td>
+                  <td class="number">$40.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.PARAM" class="tablerowodd">
+                  <td>PARAM</td>
+                  <td>Parameter</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number">$200.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.PARAMCD" class="tableroweven">
+                  <td>PARAMCD</td>
+                  <td>Parameter Code</td>
+                  <td class="datatype">text</td>
+                  <td class="number">8</td>
+                  <td class="number">$8.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.AVAL" class="tablerowodd">
+                  <td>AVAL</td>
+                  <td>Analysis Value</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">3.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.STARTDT" class="tableroweven">
+                  <td>STARTDT</td>
+                  <td>Time to Event Origin Date for Subject</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number">DATE11.</td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.CNSR" class="tablerowodd">
+                  <td>CNSR</td>
+                  <td>Censor</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.EVNTDESC" class="tableroweven">
+                  <td>EVNTDESC</td>
+                  <td>Event or Censoring Description</td>
+                  <td class="datatype">text</td>
+                  <td class="number">200</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.SRCDOM" class="tablerowodd">
+                  <td>SRCDOM</td>
+                  <td>Source Domain</td>
+                  <td class="datatype">text</td>
+                  <td class="number">2</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.SRCVAR" class="tableroweven">
+                  <td>SRCVAR</td>
+                  <td>Source Variable</td>
+                  <td class="datatype">text</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr id="IT.ADTTE.SRCSEQ" class="tablerowodd">
+                  <td>SRCSEQ</td>
+                  <td>Source Sequence Number</td>
+                  <td class="datatype">integer</td>
+                  <td class="number">8</td>
+                  <td class="number"></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+            </table>
+         </fieldset>
+         <p class="linktop">Go to the <a href="#main">top</a> of the define.xml
+         </p><br><div id="valuemeta">
+            <fieldset style="page-break-after: always;" id="VL.VL.ADQS.AVAL">
+               <legend>
+                  Parameter Value List -
+                  ADQS [AVAL]
+                  
+               </legend>
+               <table>
+                  <tr class="header">
+                     <th scope="col">Source Variable</th>
+                     <th scope="col">Where PARAMCD=</th>
+                     <th scope="col">Where PARAM=</th>
+                     <th scope="col">Type</th>
+                     <th scope="col">Length</th>
+                     <th scope="col">Display Format</th>
+                     <th scope="col">Code List / Controlled Term</th>
+                     <th scope="col">Source/Derivation/Comments</th>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>AVAL</td>
+                     <td>ACITM01</td>
+                     <td>Word Recall Task</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM01">CM.ADQS.AVAL.ACITM01</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>AVAL</td>
+                     <td>ACITM02</td>
+                     <td>Naming Objects and Fingers</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM02">CM.ADQS.AVAL.ACITM02</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>AVAL</td>
+                     <td>ACITM03</td>
+                     <td>Delayed Word Recall</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM03">CM.ADQS.AVAL.ACITM03</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>AVAL</td>
+                     <td>ACITM04</td>
+                     <td>Commands</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM04">CM.ADQS.AVAL.ACITM04</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>AVAL</td>
+                     <td>ACITM05</td>
+                     <td>Constructional Praxis</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM05">CM.ADQS.AVAL.ACITM05</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>AVAL</td>
+                     <td>ACITM06</td>
+                     <td>Ideational Praxis</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM06">CM.ADQS.AVAL.ACITM06</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>AVAL</td>
+                     <td>ACITM07</td>
+                     <td>Orientation</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM07">CM.ADQS.AVAL.ACITM07</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>AVAL</td>
+                     <td>ACITM08</td>
+                     <td>Word Recognition</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM08">CM.ADQS.AVAL.ACITM08</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>AVAL</td>
+                     <td>ACITM09</td>
+                     <td>Attention/Visual Search Task</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM09">CM.ADQS.AVAL.ACITM09</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>AVAL</td>
+                     <td>ACITM10</td>
+                     <td>Maze Solution</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM10">CM.ADQS.AVAL.ACITM10</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>AVAL</td>
+                     <td>ACITM11</td>
+                     <td>Spoken Language Ability</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM11">CM.ADQS.AVAL.ACITM11</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>AVAL</td>
+                     <td>ACITM12</td>
+                     <td>Comprehension of Spoken Language</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM12">CM.ADQS.AVAL.ACITM12</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>AVAL</td>
+                     <td>ACITM13</td>
+                     <td>Word Finding Difficulty in Spontaneous Speech</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM13">CM.ADQS.AVAL.ACITM13</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>AVAL</td>
+                     <td>ACITM14</td>
+                     <td>Recall of Test Instructions</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACITM14">CM.ADQS.AVAL.ACITM14</a>: <br>QS.QSSTRESN where QSTESTCD=PARAMCD
+                     </td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>AVAL</td>
+                     <td>ACTOT</td>
+                     <td>ADAS-COG(11) Subscore</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td>
+                        	See Method: <a href="#CM.ADQS.AVAL.ACTOT">CM.ADQS.AVAL.ACTOT</a>: <br>ACTOT = Sum of ADAS scores for items 1,2,4,5,6,7,8,11,12,13,and 14
+                     </td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>AVAL</td>
+                     <td>CIBIC</td>
+                     <td>Extent Of Change, if Any, Since Baseline Cibic</td>
+                     <td class="datatype">integer</td>
+                     <td class="number">8</td>
+                     <td class="number"></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+               </table>
+            </fieldset><br></div>
+         <p class="linktop">Go to the <a href="#main">top</a> of the define.xml
+         </p><br><div id="decodelist">
+            <fieldset id="CL.CL.ACN">
+               <legend>Code List - ACN, Reference Name (CL.ACN) </legend>
+               <table>
+                  <tr class="header">
+                     <th scope="col" class="codedvalue">Coded Value</th>
+                     <th scope="col">Decode</th>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>DOSE INCREASED</td>
+                     <td>Dose Increased</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>DOSE NOT CHANGED</td>
+                     <td>Dose Not Changed</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>DOSE REDUCED</td>
+                     <td>Dose Reduced</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>DRUG INTERRUPTED</td>
+                     <td>Drug Interrupted</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>DRUG WITHDRAWN</td>
+                     <td>Drug Withdrawn</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>NOT APPLICABLE</td>
+                     <td>Not Applicable</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>UNKNOWN</td>
+                     <td>Unknown</td>
+                  </tr>
+               </table>
+            </fieldset><br><fieldset id="CL.CL.AESEV">
+               <legend>Code List - AESEV, Reference Name (CL.AESEV) </legend>
+               <table>
+                  <tr class="header">
+                     <th scope="col" class="codedvalue">Coded Value</th>
+                     <th scope="col">Decode</th>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>MILD</td>
+                     <td>Mild Adverse Event</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>MODERATE</td>
+                     <td>Moderate Adverse Event</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>SEVERE</td>
+                     <td>Severe Adverse Event</td>
+                  </tr>
+               </table>
+            </fieldset><br><fieldset id="CL.CL.AGEU">
+               <legend>Code List - AGEU, Reference Name (CL.AGEU) </legend>
+               <table>
+                  <tr class="header">
+                     <th scope="col" class="codedvalue">Coded Value</th>
+                     <th scope="col">Decode</th>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>DAYS</td>
+                     <td>Day</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>HOURS</td>
+                     <td>Hour</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>MONTHS</td>
+                     <td>Month</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>WEEKS</td>
+                     <td>Week</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>YEARS</td>
+                     <td>Year</td>
+                  </tr>
+               </table>
+            </fieldset><br><fieldset id="CL.CL.NY">
+               <legend>Code List - NY, Reference Name (CL.NY) </legend>
+               <table>
+                  <tr class="header">
+                     <th scope="col" class="codedvalue">Coded Value</th>
+                     <th scope="col">Decode</th>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>N</td>
+                     <td>No</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>NA</td>
+                     <td>Not Applicable</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>U</td>
+                     <td>Unknown</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>Y</td>
+                     <td>Yes</td>
+                  </tr>
+               </table>
+            </fieldset><br><fieldset id="CL.CL.RACE">
+               <legend>Code List - RACE, Reference Name (CL.RACE) </legend>
+               <table>
+                  <tr class="header">
+                     <th scope="col" class="codedvalue">Coded Value</th>
+                     <th scope="col">Decode</th>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>AMERICAN INDIAN OR ALASKA NATIVE</td>
+                     <td>American Indian or Alaska Native</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>ASIAN</td>
+                     <td>Asian</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>BLACK OR AFRICAN AMERICAN</td>
+                     <td>African American</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER</td>
+                     <td>Native Hawaiian or Other Pacific Islander</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>WHITE</td>
+                     <td>White</td>
+                  </tr>
+               </table>
+            </fieldset><br><fieldset id="CL.CL.SEX">
+               <legend>Code List - SEX, Reference Name (CL.SEX) </legend>
+               <table>
+                  <tr class="header">
+                     <th scope="col" class="codedvalue">Coded Value</th>
+                     <th scope="col">Decode</th>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>F</td>
+                     <td>Female</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>M</td>
+                     <td>Male</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>U</td>
+                     <td>Unknown</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>UN</td>
+                     <td>Intersex</td>
+                  </tr>
+               </table>
+            </fieldset><br><fieldset id="CL.CL.TIMEFL">
+               <legend>Code List - TIMEFL, Reference Name (CL.TIMEFL) </legend>
+               <table>
+                  <tr class="header">
+                     <th scope="col" class="codedvalue">Coded Value</th>
+                     <th scope="col">Decode</th>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>H</td>
+                     <td>Hours Minutes Seconds Imputed</td>
+                  </tr>
+                  <tr class="tableroweven">
+                     <td>M</td>
+                     <td>Minutes Seconds Imputed</td>
+                  </tr>
+                  <tr class="tablerowodd">
+                     <td>S</td>
+                     <td>Seconds Imputed</td>
+                  </tr>
+               </table>
+            </fieldset><br></div>
+         <p class="linktop">Go to the <a href="#main">top</a> of the define.xml
+         </p><br><fieldset style="page-break-after: always;" id="compmethod">
+            <legend>
+               Analysis Derivations
+            </legend>
+            <table>
+               <tr class="header">
+                  <th scope="col">Method</th>
+                  <th scope="col">Description</th>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM01" class="tablerowodd">
+                  <td>CM.ADQS.AVAL.ACITM01</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM02" class="tableroweven">
+                  <td>CM.ADQS.AVAL.ACITM02</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM03" class="tablerowodd">
+                  <td>CM.ADQS.AVAL.ACITM03</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM04" class="tableroweven">
+                  <td>CM.ADQS.AVAL.ACITM04</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM05" class="tablerowodd">
+                  <td>CM.ADQS.AVAL.ACITM05</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM06" class="tableroweven">
+                  <td>CM.ADQS.AVAL.ACITM06</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM07" class="tablerowodd">
+                  <td>CM.ADQS.AVAL.ACITM07</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM08" class="tableroweven">
+                  <td>CM.ADQS.AVAL.ACITM08</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM09" class="tablerowodd">
+                  <td>CM.ADQS.AVAL.ACITM09</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM10" class="tableroweven">
+                  <td>CM.ADQS.AVAL.ACITM10</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM11" class="tablerowodd">
+                  <td>CM.ADQS.AVAL.ACITM11</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM12" class="tableroweven">
+                  <td>CM.ADQS.AVAL.ACITM12</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM13" class="tablerowodd">
+                  <td>CM.ADQS.AVAL.ACITM13</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACITM14" class="tableroweven">
+                  <td>CM.ADQS.AVAL.ACITM14</td>
+                  <td>QS.QSSTRESN where QSTESTCD=PARAMCD</td>
+               </tr>
+               <tr id="CM.ADQS.AVAL.ACTOT" class="tablerowodd">
+                  <td>CM.ADQS.AVAL.ACTOT</td>
+                  <td>ACTOT = Sum of ADAS scores for items 1,2,4,5,6,7,8,11,12,13,and 14</td>
+               </tr>
+            </table>
+         </fieldset>
+         <p class="linktop">Go to the <a href="#main">top</a> of the define.xml
+         </p><br></div>
+      
+      
+   </body>
+</html>

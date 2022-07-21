@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:nciodm="http://ncicb.nci.nih.gov/xml/odm/EVS/CDISC"
+     xs:schemaLocation="http://www.nci.nih.gov/EVS/CDISC ../schema/controlledterminology1-0-0.xsd"
+     FileType="Snapshot"
+     FileOID="CDISC_CT.CDASH.2012-12-21"
+     Granularity="Metadata"
+     CreationDateTime="2012-12-18T15:58:24"
+     AsOfDateTime="2012-12-21T00:00:00"
+     ODMVersion="1.3.1"
+     Originator="CDISC XML Technologies Team (SAS 9.03.01M2P08152012)"
+     SourceSystem="NCI Thesaurus"
+     SourceSystemVersion="2012-12-21">
+  <Study OID="CDISC_CT.CDASH.2012-12-21">
+    <GlobalVariables>
+      <StudyName>CDISC CDASH Controlled Terminology</StudyName>
+      <StudyDescription>CDISC CDASH Controlled Terminology, 2012-12-21</StudyDescription>
+      <ProtocolName>CDISC CDASH Controlled Terminology</ProtocolName>
+    </GlobalVariables>
+    <MetaDataVersion OID="CDISC_CT_MetaDataVersion.CDASH.2012-12-21"
+                     Name="CDISC CDASH Controlled Terminology"
+                     Description="CDISC CDASH Controlled Terminology, 2012-12-21">
+      <CodeList OID="CL.C78417.CMDOSU" Name="Concomitant Medication Dose Units" DataType="text" nciodm:ExtCodeID="C78417" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Concomitant Medication Dose Units codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="mg" nciodm:ExtCodeID="C28253">
+          <nciodm:CDISCSynonym>Milligram</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The unit of mass equal to one thousandth of a gram or 1000 micrograms. One milligram equals approximately 0.015432 grain or 35.274 x 10E-6 ounce.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Milligram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="ug" nciodm:ExtCodeID="C48152">
+          <nciodm:CDISCSynonym>Microgram</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>mcg</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit of mass equal to one millionth of a gram or one thousandth of a milligram.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Microgram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="mL" nciodm:ExtCodeID="C28254">
+          <nciodm:CDISCSynonym>cm3</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Milliliter</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The unit of volume equal to one thousandth of a liter, one cubic centimeter, 10E-6 cubic meter, or approximately to 0.061 023 7 cubic inch.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Milliliter</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="g" nciodm:ExtCodeID="C48155">
+          <nciodm:CDISCSynonym>Gram</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A metric unit of mass equal to one one thousandth of a kilogram. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Gram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="IU" nciodm:ExtCodeID="C48579">
+          <nciodm:CDISCSynonym>International Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The unitage assigned by the WHO (World Health Organization) to International Biological Standards - substances, classed as biological according to the criteria provided by WHO Expert Committee on Biological Standardization (e.g. hormones, enzymes, and vaccines), to enable the results of biological and immunological assay procedures to be expressed in the same way throughout the world. The definition of an international unit is generally arbitrary and technical, and has to be officially approved by the International Conference for Unification of Formulae.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>International Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C48542">
+          <nciodm:CDISCSynonym>Tablet Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the tablet unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Tablet Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C48480">
+          <nciodm:CDISCSynonym>Capsule Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the capsule unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Capsule Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PUFF" nciodm:ExtCodeID="C65060">
+          <nciodm:CDISCSynonym>Puff</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Puff Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>CMDOSU</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Concomitant Medication Dose Units</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Concomitant Medication Dose Units Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78418.CMDOSFRM" Name="Concomitant Medication Dose Form" DataType="text" nciodm:ExtCodeID="C78418" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Pharmaceutical Dosage Form codelist created for CDASH Concomitant Medication Dose Form codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C42998">
+          <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A solid dosage form containing medicinal substances with or without suitable diluents. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Tablet Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C25158">
+          <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A solid pharmaceutical dosage form that contains medicinal agent within either a hard or soft soluble container or shell, usually used for the oral administration of medicine. The shells are made of a suitable form of gelatin or other substance. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Capsule Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="OINTMENT" nciodm:ExtCodeID="C42966">
+          <nciodm:CDISCSynonym>oint</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A suspension or emulsion, semisolid (1) dosage form, usually containing &lt; 20% water and volatiles (2) and &gt; 50% hydrocarbons, waxes, or polyols as the vehicle. This dosage form is generally for external application to the skin or mucous membranes. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: Percent water and volatiles are measured by a loss on drying test in which the sample is heated at 105 degrees C until constant weight is achieved. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Ointment Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="SUPPOSITORY" nciodm:ExtCodeID="C42993">
+          <nciodm:CDISCSynonym>supp</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A solid body of various weights and shapes, adapted for introduction into the rectal orifice of the human body; they usually melt, soften, or dissolve at body temperature. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Suppository Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="AEROSOL" nciodm:ExtCodeID="C42887">
+          <nciodm:CDISCSynonym>aer</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A product that is packaged under pressure and contains therapeutically active ingredients that are released upon activation of an appropriate valve system; it is intended for topical application to the skin as well as local application into the nose (nasal aerosols), mouth (lingual aerosols), or lungs (inhalation aerosols). (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Aerosol Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="SPRAY" nciodm:ExtCodeID="C42989">
+          <nciodm:CDISCDefinition>A liquid minutely divided as by a jet of air or steam. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Spray Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="SUSPENSION" nciodm:ExtCodeID="C42994">
+          <nciodm:CDISCSynonym>susp</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A liquid dosage form that contains solid particles dispersed in a liquid vehicle. Note: A liquid is pourable; it flows and conforms to its container at room temperature. It displays Newtonian or pseudoplastic flow behavior. (FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Suspension Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PATCH" nciodm:ExtCodeID="C42968">
+          <nciodm:CDISCDefinition>A drug delivery system that often contains an adhesive backing that is usually applied to an external site on the body. Its ingredients either passively diffuse from, or are actively transported from, some portion of the patch. Depending upon the patch, the ingredients are either delivered to the outer surface of the body or into the body. A patch is sometimes synonymous with the terms Extended Release Film and System. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Patch Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="GAS" nciodm:ExtCodeID="C42933">
+          <nciodm:CDISCDefinition>Any elastic aeriform fluid in which the molecules are separated from one another and have free paths. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Gas Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="GEL" nciodm:ExtCodeID="C42934">
+          <nciodm:CDISCDefinition>A semisolid (1) dosage form that contains a gelling agent to provide stiffness to a solution or a colloidal dispersion (2). A gel may contain suspended particles. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: A colloidal dispersion is a system in which particles of colloidal dimension (i.e., typically between 1 nm and 1 micrometer) are distributed uniformly throughout a liquid. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Gel Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CREAM" nciodm:ExtCodeID="C28944">
+          <nciodm:CDISCDefinition>A semisolid emulsion of either the oil-in-water or the water-in-oil type, ordinarily intended for topical use. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Cream Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="POWDER" nciodm:ExtCodeID="C42972">
+          <nciodm:CDISCDefinition>An intimate mixture of dry, finely divided drugs and/or chemicals that may be intended for internal or external use. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Powder Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>CMDOSFRM</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Concomitant Medication Dose Form</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Concomitant Medication Dose Form Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78419.CMDOSFRQ" Name="Concomitant Medication Dosing Frequency per Interval" DataType="text" nciodm:ExtCodeID="C78419" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Frequency codelist created for CDASH Concomitant Medication Dosing Frequency per Interval codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="BID" nciodm:ExtCodeID="C64496">
+          <nciodm:CDISCSynonym>Twice per day</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>BD</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Two times per day, at unspecified times. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Twice Daily</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="TID" nciodm:ExtCodeID="C64527">
+          <nciodm:CDISCSynonym>3 times per day</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Three times per day. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Three Times Daily</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="QID" nciodm:ExtCodeID="C64530">
+          <nciodm:CDISCSynonym>4 times per day</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Four times per day. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Four Times Daily</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="QOD" nciodm:ExtCodeID="C64525">
+          <nciodm:CDISCSynonym>Every other day</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Every other day. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Every Other Day</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="QM" nciodm:ExtCodeID="C64498">
+          <nciodm:CDISCSynonym>Every Month</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Every month. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Monthly</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PRN" nciodm:ExtCodeID="C64499">
+          <nciodm:CDISCSynonym>As Needed</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>As needed. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>As Necessary</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="UNKNOWN" nciodm:ExtCodeID="C17998">
+          <nciodm:CDISCSynonym>U</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Unknown</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Not known, not observed, not recorded, or refused. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Unknown</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="QD" nciodm:ExtCodeID="C25473">
+          <nciodm:CDISCSynonym>Daily</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Occurring or done each day. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Daily</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>CMDOSFRQ</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Concomitant Medication Dosing Frequency per Interval</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Concomitant Medication Dosing Frequency per Interval Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78420.CMROUTE" Name="Concomitant Medication Route of Administration" DataType="text" nciodm:ExtCodeID="C78420" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Route codelist created for CDASH Concomitant Medication Route of Administration codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="ORAL" nciodm:ExtCodeID="C38288">
+          <nciodm:CDISCSynonym>PO</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Intraoral Route of Administration</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Administration to or by way of the mouth.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Oral Route of Drug administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="TOPICAL" nciodm:ExtCodeID="C38304">
+          <nciodm:CDISCSynonym>TOP</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Administration to a particular spot on the outer surface of the body. The E2B term TRANSMAMMARY is a subset of the term TOPICAL.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Topical Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="SUBCUTANEOUS" nciodm:ExtCodeID="C38299">
+          <nciodm:CDISCSynonym>SC</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Subcutaneous Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="TRANSDERMAL" nciodm:ExtCodeID="C38305">
+          <nciodm:CDISCDefinition>Administration through the dermal layer of the skin to the systemic circulation by diffusion.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Transdermal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="INTRAOCULAR" nciodm:ExtCodeID="C38255">
+          <nciodm:CDISCDefinition>Administration within the eye.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Intraocular Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="INTRAMUSCULAR" nciodm:ExtCodeID="C28161">
+          <nciodm:CDISCDefinition>Administration within a muscle.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Intramuscular Route of Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="RESPIRATORY (INHALATION)" nciodm:ExtCodeID="C38216">
+          <nciodm:CDISCDefinition>Administration within the respiratory tract by inhaling orally or nasally for local or systemic effect.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Inhalation Route of Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="INTRALESIONAL" nciodm:ExtCodeID="C38250">
+          <nciodm:CDISCDefinition>Administration within or introduced directly into a localized lesion.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Intralesional Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="INTRAPERITONEAL" nciodm:ExtCodeID="C38258">
+          <nciodm:CDISCDefinition>Administration within the peritoneal cavity.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Intraperitoneal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="NASAL" nciodm:ExtCodeID="C38284">
+          <nciodm:CDISCSynonym>Intranasal Route of Administration</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Administration to the nose; administered by way of the nose.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Nasal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="VAGINAL" nciodm:ExtCodeID="C38313">
+          <nciodm:CDISCDefinition>Administration into the vagina.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Vaginal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="RECTAL" nciodm:ExtCodeID="C38295">
+          <nciodm:CDISCDefinition>Administration to the rectum.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Rectal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>CMROUTE</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Concomitant Medication Route of Administration</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Concomitant Medication Route of Administration Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78421.DAORRESU" Name="Unit of Drug Dispensed or Returned" DataType="text" nciodm:ExtCodeID="C78421" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Unit of Drug Dispensed or Returned codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="BAG" nciodm:ExtCodeID="C48474">
+          <nciodm:CDISCSynonym>Bag Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the bag unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Bag Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="BOTTLE" nciodm:ExtCodeID="C48477">
+          <nciodm:CDISCSynonym>Bottle Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the bottle unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Bottle Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="BOX" nciodm:ExtCodeID="C48478">
+          <nciodm:CDISCSynonym>Box Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the box unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Box Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C48480">
+          <nciodm:CDISCSynonym>Capsule Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the capsule unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Capsule Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CONTAINER" nciodm:ExtCodeID="C48484">
+          <nciodm:CDISCSynonym>Container Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the container unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Container Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="DISK" nciodm:ExtCodeID="C48490">
+          <nciodm:CDISCSynonym>Disk Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the disk unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Disk Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PACKAGE" nciodm:ExtCodeID="C48520">
+          <nciodm:CDISCSynonym>Pack Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Package Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the package unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Package Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PACKET" nciodm:ExtCodeID="C48521">
+          <nciodm:CDISCSynonym>Packet Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the packet unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Packet Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PATCH" nciodm:ExtCodeID="C48524">
+          <nciodm:CDISCSynonym>Patch Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the patch unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Patch Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C48542">
+          <nciodm:CDISCSynonym>Tablet Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the tablet unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Tablet Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="TUBE" nciodm:ExtCodeID="C48549">
+          <nciodm:CDISCSynonym>Tube Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the tube unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Tube Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="VIAL" nciodm:ExtCodeID="C48551">
+          <nciodm:CDISCSynonym>Vial Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the vial unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Vial Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>DAORRESU</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Unit of Drug Dispensed or Returned</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Unit of Drug Dispensed or Returned Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78422.EGORRESU" Name="ECG Original Units" DataType="text" nciodm:ExtCodeID="C78422" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH ECG Original Units codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="msec" nciodm:ExtCodeID="C41140">
+          <nciodm:CDISCSynonym>Millisecond</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit of time, which is equal to one thousandth of a second.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Millisecond</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="sec" nciodm:ExtCodeID="C42535">
+          <nciodm:CDISCSynonym>Second</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The second is a unit of time with a duration of 919 263 177 0 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the cesium 133 atom in its ground state at 0 K. According to the convention, 60 seconds constitute one minute; 3,600 seconds constitute one hour. Abbreviation Sec. is acceptable in non-scientific usage only.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Second</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="BEATS/MIN" nciodm:ExtCodeID="C49673">
+          <nciodm:CDISCSynonym>Beats per Minute</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The number of heartbeats measured per minute time. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Beats per Minute</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>EGORRESU</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>ECG Original Units</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH ECG Original Units Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78423.EXDOSU" Name="Units for Exposure" DataType="text" nciodm:ExtCodeID="C78423" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Units for Exposure codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C48542">
+          <nciodm:CDISCSynonym>Tablet Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the tablet unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Tablet Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C48480">
+          <nciodm:CDISCSynonym>Capsule Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the capsule unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Capsule Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PUFF" nciodm:ExtCodeID="C65060">
+          <nciodm:CDISCSynonym>Puff</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Puff Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="mL" nciodm:ExtCodeID="C28254">
+          <nciodm:CDISCSynonym>cm3</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Milliliter</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The unit of volume equal to one thousandth of a liter, one cubic centimeter, 10E-6 cubic meter, or approximately to 0.061 023 7 cubic inch.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Milliliter</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="ug" nciodm:ExtCodeID="C48152">
+          <nciodm:CDISCSynonym>Microgram</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>mcg</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit of mass equal to one millionth of a gram or one thousandth of a milligram.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Microgram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="mg" nciodm:ExtCodeID="C28253">
+          <nciodm:CDISCSynonym>Milligram</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The unit of mass equal to one thousandth of a gram or 1000 micrograms. One milligram equals approximately 0.015432 grain or 35.274 x 10E-6 ounce.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Milligram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="g" nciodm:ExtCodeID="C48155">
+          <nciodm:CDISCSynonym>Gram</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A metric unit of mass equal to one one thousandth of a kilogram. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Gram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>EXDOSU</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Units for Exposure</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Units for Exposure Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78745.EXDOSFRQ" Name="Exposure Dosing Frequency per Interval" DataType="text" nciodm:ExtCodeID="C78745" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Frequency codelist created for CDASH Exposure Dosing Frequency per Interval codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="BID" nciodm:ExtCodeID="C64496">
+          <nciodm:CDISCSynonym>BD</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Twice per Day</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Two times per day, at unspecified times. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Twice Daily</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="TID" nciodm:ExtCodeID="C64527">
+          <nciodm:CDISCSynonym>3 times per day</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Three times per day. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Three Times Daily</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="QID" nciodm:ExtCodeID="C64530">
+          <nciodm:CDISCSynonym>4 times per day</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Four times per day. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Four Times Daily</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="QOD" nciodm:ExtCodeID="C64525">
+          <nciodm:CDISCSynonym>Every other day</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Every other day. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Every Other Day</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="QM" nciodm:ExtCodeID="C64498">
+          <nciodm:CDISCSynonym>Every Month</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Every month. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Monthly</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PRN" nciodm:ExtCodeID="C64499">
+          <nciodm:CDISCSynonym>As Needed</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>As needed. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>As Necessary</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="UNKNOWN" nciodm:ExtCodeID="C17998">
+          <nciodm:CDISCSynonym>U</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Unknown</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Not known, not observed, not recorded, or refused. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Unknown</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="QD" nciodm:ExtCodeID="C25473">
+          <nciodm:CDISCSynonym>Daily</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Occurring or done each day. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Daily</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>EXDOSFRQ</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Exposure Dosing Frequency per Interval</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Exposure Dosing Frequency per Interval Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78425.EXROUTE" Name="Exposure Route of Administration" DataType="text" nciodm:ExtCodeID="C78425" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Route codelist created for CDASH Exposure Route of Administration codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="ORAL" nciodm:ExtCodeID="C38288">
+          <nciodm:CDISCSynonym>PO</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Intraoral Route of Administration</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Administration to or by way of the mouth.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Oral Route of Drug administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="TOPICAL" nciodm:ExtCodeID="C38304">
+          <nciodm:CDISCSynonym>TOP</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Administration to a particular spot on the outer surface of the body. The E2B term TRANSMAMMARY is a subset of the term TOPICAL.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Topical Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="SUBCUTANEOUS" nciodm:ExtCodeID="C38299">
+          <nciodm:CDISCSynonym>SC</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Subcutaneous Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="TRANSDERMAL" nciodm:ExtCodeID="C38305">
+          <nciodm:CDISCDefinition>Administration through the dermal layer of the skin to the systemic circulation by diffusion.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Transdermal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="INTRAOCULAR" nciodm:ExtCodeID="C38255">
+          <nciodm:CDISCDefinition>Administration within the eye.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Intraocular Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="INTRAMUSCULAR" nciodm:ExtCodeID="C28161">
+          <nciodm:CDISCDefinition>Administration within a muscle.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Intramuscular Route of Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="RESPIRATORY (INHALATION)" nciodm:ExtCodeID="C38216">
+          <nciodm:CDISCDefinition>Administration within the respiratory tract by inhaling orally or nasally for local or systemic effect.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Inhalation Route of Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="INTRALESIONAL" nciodm:ExtCodeID="C38250">
+          <nciodm:CDISCDefinition>Administration within or introduced directly into a localized lesion.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Intralesional Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="INTRAPERITONEAL" nciodm:ExtCodeID="C38258">
+          <nciodm:CDISCDefinition>Administration within the peritoneal cavity.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Intraperitoneal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="NASAL" nciodm:ExtCodeID="C38284">
+          <nciodm:CDISCSynonym>Intranasal Route of Administration</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Administration to the nose; administered by way of the nose.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Nasal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="VAGINAL" nciodm:ExtCodeID="C38313">
+          <nciodm:CDISCDefinition>Administration into the vagina.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Vaginal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="RECTAL" nciodm:ExtCodeID="C38295">
+          <nciodm:CDISCDefinition>Administration to the rectum.(FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Rectal Route of Drug Administration</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>EXROUTE</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Exposure Route of Administration</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Exposure Route of Administration Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78426.EXDOSFRM" Name="Exposure Dose Form" DataType="text" nciodm:ExtCodeID="C78426" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Pharmaceutical Dosage Form codelist created for CDASH Exposure Dose Form codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C42998">
+          <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A solid dosage form containing medicinal substances with or without suitable diluents. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Tablet Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C25158">
+          <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A solid pharmaceutical dosage form that contains medicinal agent within either a hard or soft soluble container or shell, usually used for the oral administration of medicine. The shells are made of a suitable form of gelatin or other substance. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Capsule Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="OINTMENT" nciodm:ExtCodeID="C42966">
+          <nciodm:CDISCSynonym>oint</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A suspension or emulsion, semisolid (1) dosage form, usually containing &lt; 20% water and volatiles (2) and &gt; 50% hydrocarbons, waxes, or polyols as the vehicle. This dosage form is generally for external application to the skin or mucous membranes. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: Percent water and volatiles are measured by a loss on drying test in which the sample is heated at 105 degrees C until constant weight is achieved. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Ointment Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="SUPPOSITORY" nciodm:ExtCodeID="C42993">
+          <nciodm:CDISCSynonym>supp</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A solid body of various weights and shapes, adapted for introduction into the rectal orifice of the human body; they usually melt, soften, or dissolve at body temperature. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Suppository Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="AEROSOL" nciodm:ExtCodeID="C42887">
+          <nciodm:CDISCSynonym>aer</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A product that is packaged under pressure and contains therapeutically active ingredients that are released upon activation of an appropriate valve system; it is intended for topical application to the skin as well as local application into the nose (nasal aerosols), mouth (lingual aerosols), or lungs (inhalation aerosols). (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Aerosol Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="SPRAY" nciodm:ExtCodeID="C42989">
+          <nciodm:CDISCDefinition>A liquid minutely divided as by a jet of air or steam. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Spray Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="SUSPENSION" nciodm:ExtCodeID="C42994">
+          <nciodm:CDISCSynonym>susp</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A liquid dosage form that contains solid particles dispersed in a liquid vehicle. Note: A liquid is pourable; it flows and conforms to its container at room temperature. It displays Newtonian or pseudoplastic flow behavior. (FDA)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Suspension Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PATCH" nciodm:ExtCodeID="C42968">
+          <nciodm:CDISCDefinition>A drug delivery system that often contains an adhesive backing that is usually applied to an external site on the body. Its ingredients either passively diffuse from, or are actively transported from, some portion of the patch. Depending upon the patch, the ingredients are either delivered to the outer surface of the body or into the body. A patch is sometimes synonymous with the terms Extended Release Film and System. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Patch Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="GAS" nciodm:ExtCodeID="C42933">
+          <nciodm:CDISCDefinition>Any elastic aeriform fluid in which the molecules are separated from one another and have free paths. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Gas Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="GEL" nciodm:ExtCodeID="C42934">
+          <nciodm:CDISCDefinition>A semisolid (1) dosage form that contains a gelling agent to provide stiffness to a solution or a colloidal dispersion (2). A gel may contain suspended particles. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: A colloidal dispersion is a system in which particles of colloidal dimension (i.e., typically between 1 nm and 1 micrometer) are distributed uniformly throughout a liquid. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Gel Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CREAM" nciodm:ExtCodeID="C28944">
+          <nciodm:CDISCDefinition>A semisolid emulsion of either the oil-in-water or the water-in-oil type, ordinarily intended for topical use. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Cream Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="POWDER" nciodm:ExtCodeID="C42972">
+          <nciodm:CDISCDefinition>An intimate mixture of dry, finely divided drugs and/or chemicals that may be intended for internal or external use. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Powder Dosage Form</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>EXDOSFRM</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Exposure Dose Form</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Exposure Dose Form Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78427.EXINTPU" Name="Unit for the Duration of Treatment Interruption" DataType="text" nciodm:ExtCodeID="C78427" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Unit for Duration of Treatment Interruption codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="sec" nciodm:ExtCodeID="C42535">
+          <nciodm:CDISCSynonym>Second</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The second is a unit of time with a duration of 919 263 177 0 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the cesium 133 atom in its ground state at 0 K. According to the convention, 60 seconds constitute one minute; 3,600 seconds constitute one hour. Abbreviation Sec. is acceptable in non-scientific usage only.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Second</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="min" nciodm:ExtCodeID="C48154">
+          <nciodm:CDISCSynonym>Minute Unit of Time</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit measure of time equal to 60 seconds.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Minute</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="HOURS" nciodm:ExtCodeID="C25529">
+          <nciodm:CDISCSynonym>Hour</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>hr</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit measure of time equal to 3,600 seconds or 60 minutes. It is approximately 1/24 of a median day. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Hour</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>EXINTPU</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Unit for the Duration of Treatment Interruption</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Unit for Duration of Treatment Interruption Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78428.EXVOLTU" Name="Total Volume Administration Unit" DataType="text" nciodm:ExtCodeID="C78428" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Total Volume Administration Unit codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="mL" nciodm:ExtCodeID="C28254">
+          <nciodm:CDISCSynonym>cm3</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Milliliter</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The unit of volume equal to one thousandth of a liter, one cubic centimeter, 10E-6 cubic meter, or approximately to 0.061 023 7 cubic inch.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Milliliter</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="ug" nciodm:ExtCodeID="C48152">
+          <nciodm:CDISCSynonym>Microgram</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>mcg</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit of mass equal to one millionth of a gram or one thousandth of a milligram.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Microgram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="mg" nciodm:ExtCodeID="C28253">
+          <nciodm:CDISCSynonym>Milligram</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The unit of mass equal to one thousandth of a gram or 1000 micrograms. One milligram equals approximately 0.015432 grain or 35.274 x 10E-6 ounce.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Milligram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>EXVOLTU</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Total Volume Administration Unit</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Total Volume Administration Unit Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78429.EXFLRTU" Name="Unit of Measure for Flow Rate" DataType="text" nciodm:ExtCodeID="C78429" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Unit of Measure for Flow Rate codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="ug/min" nciodm:ExtCodeID="C71211">
+          <nciodm:CDISCSynonym>Micrograms per Minute</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>mcg/min</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit of mass flow rate equivalent to the rate at which one millionth of a gram of matter travels to a given object or space over a period of time equal to one minute. Microgram per minute is also a dose administration rate unit equal to the rate at which one millionth of a gram of a product is administered per unit of time equal to one minute.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Microgram per Minute</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="ug/day" nciodm:ExtCodeID="C71205">
+          <nciodm:CDISCSynonym>Microgram per Day</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>mcg/day</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit of mass flow rate equivalent to the rate at which one millionth of a gram of matter travels to a given object or space over a period of time equal to twenty four hours. Microgram per day is also a dose administration rate unit equal to the rate at which one millionth of a gram of a product is administered per unit of time equal to twenty four hours.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Microgram per Day</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="mL/min" nciodm:ExtCodeID="C64777">
+          <nciodm:CDISCSynonym>Milliliters per Minute</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A metric unit of volumetric flow rate defined as the rate at which one milliliter of matter travels during the period of time equal to one minute.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Milliliter per Minute</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="mmol/day" nciodm:ExtCodeID="C67420">
+          <nciodm:CDISCSynonym>Millimole per 24 Hours</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit of amount of substance flow rate equivalent to the rate at which one thousandth of a mole of substance travels or is delivered to a given object or space over a period of time equal to 24 hours.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Millimole per 24 Hours</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="umol/day" nciodm:ExtCodeID="C67406">
+          <nciodm:CDISCSynonym>mcmol/day</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Micromoles per Day</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit of amount of substance flow rate equivalent to the rate at which one millionth of a mole of substance travels to a given object or space over a period of time equal to 24 hours.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Micromole per 24 Hours</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>EXFLRTU</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Unit of Measure for Flow Rate</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Unit of Measure for Flow Rate Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78430.EXPDOSEU" Name="Units for Planned Exposure" DataType="text" nciodm:ExtCodeID="C78430" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Units for Planned Exposure codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C48542">
+          <nciodm:CDISCSynonym>Tablet Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the tablet unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Tablet Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C48480">
+          <nciodm:CDISCSynonym>Capsule Dosing Unit</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A dosing measurement based on the capsule unit.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Capsule Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="PUFF" nciodm:ExtCodeID="C65060">
+          <nciodm:CDISCSynonym>Puff</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Puff Dosing Unit</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="mL" nciodm:ExtCodeID="C28254">
+          <nciodm:CDISCSynonym>cm3</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>Milliliter</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The unit of volume equal to one thousandth of a liter, one cubic centimeter, 10E-6 cubic meter, or approximately to 0.061 023 7 cubic inch.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Milligram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="ug" nciodm:ExtCodeID="C48152">
+          <nciodm:CDISCSynonym>Microgram</nciodm:CDISCSynonym>
+          <nciodm:CDISCSynonym>mcg</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A unit of mass equal to one millionth of a gram or one thousandth of a milligram.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Microgram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="mg" nciodm:ExtCodeID="C28253">
+          <nciodm:CDISCSynonym>Milligram</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The unit of mass equal to one thousandth of a gram or 1000 micrograms. One milligram equals approximately 0.015432 grain or 35.274 x 10E-6 ounce.(NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Milliliter</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="g" nciodm:ExtCodeID="C48155">
+          <nciodm:CDISCSynonym>Gram</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A metric unit of mass equal to one one thousandth of a kilogram. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Gram</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>EXPDOSEU</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Units for Planned Exposure</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Units for Planned Exposure Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C78431.VSPOS" Name="Vital Signs Position of Subject" DataType="text" nciodm:ExtCodeID="C78431" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Position codelist created for CDASH Vital Signs Position of Subject codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="SITTING" nciodm:ExtCodeID="C62122">
+          <nciodm:CDISCSynonym>Sitting</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The state or act of one who sits; the posture of one who occupies a seat. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Sitting</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="STANDING" nciodm:ExtCodeID="C62166">
+          <nciodm:CDISCSynonym>Standing</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>The act of assuming or maintaining an erect upright position. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Standing</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="SUPINE" nciodm:ExtCodeID="C62167">
+          <nciodm:CDISCSynonym>Supine</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>A posterior recumbent body position whereby the person lies on its back and faces upward. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Supine Position</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>VSPOS</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Vital Signs Position of Subject</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Vital Signs Position of Subject Terminology</nciodm:PreferredTerm>
+      </CodeList>
+      <CodeList OID="CL.C83004.SUNCF" Name="Substance Use Never/Current/Former Classification" DataType="text" nciodm:ExtCodeID="C83004" nciodm:CodeListExtensible="Yes">
+        <Description>
+          <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Never/Current/Former Classification codelist created for CDASH Substance Use Never/Current/Former Classification codelist. (NCI)</TranslatedText>
+        </Description>
+        <EnumeratedItem CodedValue="NEVER" nciodm:ExtCodeID="C70543">
+          <nciodm:CDISCDefinition>Not ever; at no time in the past.</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Never</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="CURRENT" nciodm:ExtCodeID="C25471">
+          <nciodm:CDISCDefinition>Occurring in or belonging to the present time. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Current</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="FORMER" nciodm:ExtCodeID="C25627">
+          <nciodm:CDISCSynonym>Previous</nciodm:CDISCSynonym>
+          <nciodm:CDISCDefinition>Occurring prior to something else. (NCI)</nciodm:CDISCDefinition>
+          <nciodm:PreferredTerm>Previous</nciodm:PreferredTerm>
+        </EnumeratedItem>
+        <nciodm:CDISCSubmissionValue>SUNCF</nciodm:CDISCSubmissionValue>
+        <nciodm:CDISCSynonym>Substance Use Never/Current/Former Classification</nciodm:CDISCSynonym>
+        <nciodm:PreferredTerm>CDISC CDASH Substance Use Never/Current/Former Classification Terminology</nciodm:PreferredTerm>
+      </CodeList>
+    </MetaDataVersion>
+  </Study>
+</ODM>

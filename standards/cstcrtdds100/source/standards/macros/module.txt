@@ -1,0 +1,4 @@
+This is the CDISC-CRTDDS 1.0 runtime macro library.
+
+@name CRT-DDS V1.0 (Runtime)
+@since V1.2s

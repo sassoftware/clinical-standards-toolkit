@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Produced from SAS data using the SAS Clinical Standards Toolkit-->
+<ODM xmlns:nciodm="http://ncicb.nci.nih.gov/xml/odm/EVS/CDISC" xmlns="http://www.cdisc.org/ns/odm/v1.3" FileOID="CDISC_CT.CDE.2012-08-03" CreationDateTime="2013-01-09T16:31:58-05:00" AsOfDateTime="2012-08-03T00:00:00" FileType="Snapshot" Granularity="Metadata" ODMVersion="1.3.1" Originator="CDISC XML Technologies Team (SAS 9.03.01M2P05162012)" SourceSystem="NCI Thesaurus" SourceSystemVersion="2012-08-03">
+    <Study OID="CDISC_CT.CDE.2012-08-03">
+        <GlobalVariables>
+            <StudyName>CDISC Clinical Data Element Glossary</StudyName>
+            <StudyDescription>CDISC Clinical Data Element Glossary, 2012-08-03</StudyDescription>
+            <ProtocolName>CDISC Clinical Data Element Glossary</ProtocolName>
+        </GlobalVariables>
+        <MetaDataVersion OID="CDISC_CT_MetaDataVersion.CDE.2012-08-03" Name="CDISC Clinical Data Element Glossary" Description="CDISC Clinical Data Element Glossary, 2012-08-03">
+            <CodeList OID="CL.C101836.CLINDE" Name="Clinical Data Element Glossary" DataType="text" nciodm:ExtCodeID="C101836" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">The terminology relevant to the CDISC Clinical Data Element Glossary.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="Amyloidosis" nciodm:ExtCodeID="C2868">
+                    <nciodm:CDISCDefinition>A disorder characterized by the localized or diffuse accumulation of amyloid protein in various anatomic sites. It may be primary, due to clonal plasma cell proliferations; secondary, due to long standing infections, chronic inflammatory disorders, or malignancies; or familial. It may affect the nerves, skin, tongue, joints, heart, liver, spleen, kidneys and adrenal glands.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Amyloidosis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Arrhythmogenic Right Ventricular Dysplasia" nciodm:ExtCodeID="C84571">
+                    <nciodm:CDISCDefinition>A rare genetic disorder characterized by cardiomyopathy affecting the right ventricle. The heart tissue is replaced by fibrous and adipose tissues. It is characterized by ventricular arrhythmia and right ventricular dysfunction. It is a cause of sudden death.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Arrhythmogenic Right Ventricular Dysplasia</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Arterial Dissection" nciodm:ExtCodeID="C99704">
+                    <nciodm:CDISCDefinition>A tear within the wall of the artery.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Arterial Dissection</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Atrial Septal Defect" nciodm:ExtCodeID="C84473">
+                    <nciodm:CDISCDefinition>A congenital disorder characterized by the presence of a defect (opening) in the septum that separates the two atria of the heart.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Atrial Septal Defect</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Beta-Adrenergic Antagonist" nciodm:ExtCodeID="C29576">
+                    <nciodm:CDISCDefinition>Natural or synthetic beta adrenergic antagonists selectively or non-selectively blocking or diminishing physiologic beta-adrenergic agonist actions on the sympathetic system. This group of antagonists are generally used for treatment of hypertension, cardiac arrhythmias, angina pectoris, glaucoma, migraine headaches, and anxiety.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Beta-Adrenergic Antagonist</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Blinded" nciodm:ExtCodeID="C49068">
+                    <nciodm:CDISCDefinition>A characteristic of experimental design in which one or more groups involved (receiving, administering, or evaluating intervention) are unaware of which intervention any particular subject is receiving.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Blinded</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Bradycardia Arrest" nciodm:ExtCodeID="C99530">
+                    <nciodm:CDISCDefinition>Cardiac arrest that was a result of bradycardia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Bradycardia Arrest</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Arrest" nciodm:ExtCodeID="C50479">
+                    <nciodm:CDISCDefinition>Cardiac arrest is the non-fatal, sudden cessation of cardiac activity so that the victim subject/patient becomes unresponsive, with no normal breathing and no signs of circulation. Cardiac arrest should be used to signify an event as described above that is reversed, usually by CPR, and/or defibrillation or cardioversion, or cardiac pacing.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Arrest</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Pacemaker Oversensing" nciodm:ExtCodeID="C99529">
+                    <nciodm:CDISCDefinition>Inappropriate pacemaker detection of electrical signals not related to cardiac depolarization of the lead chamber.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Pacemaker Oversensing</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Pacemaker Undersensing" nciodm:ExtCodeID="C99541">
+                    <nciodm:CDISCDefinition>Failure of pacemaker to detect appropriate cardiac depolarizations.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Pacemaker Undersensing</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Perforation" nciodm:ExtCodeID="C73502">
+                    <nciodm:CDISCDefinition>The presence of an acquired hole in the heart. Cardiac perforation may or may not be symptomatic and may or may not be self sealing.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Perforation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Tamponade" nciodm:ExtCodeID="C50481">
+                    <nciodm:CDISCDefinition>Compression of the heart caused by increased intrapericardial pressure due to the collection of blood or fluid in the pericardial space. Cardiac tamponade should usually be documented by either: Echocardiogram showing pericardial fluid and signs of tamponade such as right heart compromise, or systemic hypotension due to pericardial fluid compromising cardiac function.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Tamponade</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Therapeutic Procedure" nciodm:ExtCodeID="C80430">
+                    <nciodm:CDISCDefinition>A therapeutic procedure to treat pathologic structural or functional disorders of the heart.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Therapeutic Procedure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Valve Procedure" nciodm:ExtCodeID="C99546">
+                    <nciodm:CDISCDefinition>Surgical replacement and/or repair of a cardiac valve, by any approach. This includes percutaneous valve procedures and valvuloplasty.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Valve Procedure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiogenic Shock" nciodm:ExtCodeID="C50482">
+                    <nciodm:CDISCDefinition>Cardiogenic shock is defined as a sustained (greater than30 minutes) episode of systolic blood pressure less than90 mm Hg, and/or cardiac index less than2.2 L/min/m2 determined to be secondary to cardiac dysfunction, and/or the requirement for parenteral inotropic or vasopressor agents or mechanical support (e.g., Intra aortic balloon pump (IABP), extracorporeal circulation, ventricular assist devices) to maintain blood pressure and cardiac index above those specified levels.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiogenic Shock</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cerebral Artery Disease" nciodm:ExtCodeID="C2938">
+                    <nciodm:CDISCDefinition>A disorder resulting from inadequate blood flow in the arteries that supply the brain. The diagnostic criteria may include current or previous history of the following: Ischemic stroke, TIA, Noninvasive or invasive arterial imaging test demonstrating greater than or equal to 50% stenosis of any of the major extracranial or intracranial vessels to the brain; Previous cervical or cerebral artery revascularization surgery or percutaneous intervention.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cerebrovascular Disorder</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Chronic Kidney Disease" nciodm:ExtCodeID="C80078">
+                    <nciodm:CDISCDefinition>Chronic kidney disease is defined as either kidney damage or GFR less than 60 ml/min/1.73 m2 for greater than or equal to 3 months. Kidney damage is de?ned as pathologic abnormalities or markers of damage, including abnormalities in blood or urine tests or imaging studies.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Chronic Kidney Disease</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Chronic Lung Disease" nciodm:ExtCodeID="C98541">
+                    <nciodm:CDISCDefinition>A persistent non-neoplastic disorder of the lungs. Representative examples include: chronic obstructive pulmonary disease, chronic bronchitis, emphysema, pulmonary fibrosis, pneumoconiosis, asbestosis, atelectasis, radiation induced pneumonitis, and radiation fibrosis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Chronic Lung Disorder</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Common Cardiac Ventricle" nciodm:ExtCodeID="C99542">
+                    <nciodm:CDISCDefinition>Common ventricle is an umbrella term used to describe several very different complex congenital heart defects that share the same problem: the heart has only one functional ventricle (anatomically right or left or indeterminate) supplying the systemic circulation. These defects include tricuspid atresia, hypoplastic left or right heart syndrome, double outlet right ventricle, double inlet left ventricle, and other forms of single ventricle defects.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Common Ventricle Disorder</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Contrast Agent" nciodm:ExtCodeID="C390">
+                    <nciodm:CDISCDefinition>Substances administered during diagnostic procedures that allows delineation of internal structures. Contrast agents appear opaque due to the difference in absorption of X-rays or other electromagnetic waves and surrounding tissue.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Contrast Agent</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Artery Disease" nciodm:ExtCodeID="C26732">
+                    <nciodm:CDISCDefinition>Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Artery Disease</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Lesion Treated" nciodm:ExtCodeID="C80475">
+                    <nciodm:CDISCDefinition>The coronary lesions treated during a PCI (Percutaneous Coronary Intervention) procedure.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Lesions Treated</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Deep Venous Thrombosis" nciodm:ExtCodeID="C49343">
+                    <nciodm:CDISCDefinition>A blood clot (thrombus) in a deep vein in the lower extremity.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Deep Vein Thrombosis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Depression" nciodm:ExtCodeID="C2982">
+                    <nciodm:CDISCSynonym>Depressed Mood</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A melancholy feeling of sadness and despair.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Depression</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Diabetes Mellitus" nciodm:ExtCodeID="C2985">
+                    <nciodm:CDISCDefinition>A metabolic disorder characterized by abnormally high blood sugar levels due to diminished production of insulin or insulin resistance/desensitization.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Diabetes Mellitus</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Diabetes Therapy" nciodm:ExtCodeID="C99532">
+                    <nciodm:CDISCDefinition>A therapeutic modality used to aide in the management of an individual's diabetes.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Diabetes Therapy</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Dialysis" nciodm:ExtCodeID="C15221">
+                    <nciodm:CDISCDefinition>A procedure to remove toxic substances from the blood that is used in patients with end-stage chronic kidney disease or acute kidney failure. This includes hemodialysis and peritoneal dialysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Dialysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Disease Presentation" nciodm:ExtCodeID="C99554">
+                    <nciodm:CDISCDefinition>The compilation of symptoms and/or clinical manifestation of any abnormal condition of the body or mind that causes discomfort, dysfunction, or distress to the person affected or those in contact with the person. The term is often used broadly to include injuries, disabilities, syndromes, symptoms, deviant behaviors, and atypical variations of structure and function.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Disease Presentation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Dyslipidemia" nciodm:ExtCodeID="C80385">
+                    <nciodm:CDISCDefinition>A lipoprotein metabolism disorder characterized by decreased levels of high-density lipoproteins, or elevated levels of plasma cholesterol, low-density lipoproteins and/or triglycerides.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Dyslipidemia</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Ebstein's Anomaly" nciodm:ExtCodeID="C84681">
+                    <nciodm:CDISCDefinition>A rare congenital heart malformation characterized by apical displacement of the tricuspid valve into the right ventricle. The defect involves both the right ventricle and the tricuspid valve, and can lead to cardiomyopathy and tachyarrhythmias.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ebstein Anomaly</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Family History of Coronary Artery Disease" nciodm:ExtCodeID="C80398">
+                    <nciodm:CDISCDefinition>History of a first-degree relative (less than 55 years for male relatives or less than 65 years for female relatives) having had any of the following: coronary artery disease, myocardial infarction, coronary artery bypass graft surgery, percutaneous coronary intervention, or sudden cardiac death without obvious cause.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Family History of Coronary Artery Disease</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Family History of Sudden Cardiac Death" nciodm:ExtCodeID="C80397">
+                    <nciodm:CDISCDefinition>A first-degree relative (parent, sibling, child) documented to have died suddenly of a presumed cardiac etiology without other obvious cause.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>History of Sudden Cardiac Death</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Fluoroscopy" nciodm:ExtCodeID="C16588">
+                    <nciodm:CDISCDefinition>Examination of the tissues and deep structures of the body by x-ray, using the fluoroscope, a device that produces an image when x-rays strike a fluorescent screen.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Fluoroscopy</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Fractional Flow Reserve" nciodm:ExtCodeID="C99533">
+                    <nciodm:CDISCDefinition>A lesion-specific measure of stenosis severity within a blood vessel.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Fractional Flow Reserve of Vessel</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Fractional Flow Reserve Ratio" nciodm:ExtCodeID="C99534">
+                    <nciodm:CDISCDefinition>The pressure distal to the stenosis divided by the pressure proximal to the stenosis. This ratio is equal to maximum blood flow in the vessel with stenosis divided by the maximum hypothetical blood flow without stenosis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Fractional Flow Reserve Ratio of Vessel</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Great Vessels Transposition" nciodm:ExtCodeID="C84742">
+                    <nciodm:CDISCSynonym>Transposition of Great Vessels</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Transposition of the great vessels is a congenital heart defect in which the two main arteries leaving the heart are reversed (transposed).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Transposition of Great Vessels</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Heart Failure" nciodm:ExtCodeID="C50577">
+                    <nciodm:CDISCDefinition>Inability of the heart to pump blood at an adequate rate to meet tissue metabolic requirements. Clinical symptoms of heart failure include: unusual dyspnea on light exertion, recurrent dyspnea occurring in the supine position, fluid retention; or rales, jugular venous distension, pulmonary edema on physical exam, or pulmonary edema on chest x-ray presumed to be cardiac dysfunction.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Heart Failure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Hematoma" nciodm:ExtCodeID="C50579">
+                    <nciodm:CDISCDefinition>A localized collection of blood, usually clotted, in an organ, space, or tissue, due to a break in the wall of a blood vessel.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hematoma</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Hemodynamic Instability" nciodm:ExtCodeID="C99536">
+                    <nciodm:CDISCDefinition>A state of hypoperfusion that does not support normal organ perfusion or function. It can include periods of reduced, unstable, or abnormal blood pressure with near syncope, or episodes of syncope.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hemodynamic Instability</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Hemorrhagic Cerebrovascular Accident" nciodm:ExtCodeID="C95803">
+                    <nciodm:CDISCDefinition>An acute episode of focal or global cerebral or spinal dysfunction caused by intraparenchymal, intraventricular, or subarachnoid hemorrhage.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hemorrhagic Cerebrovascular Accident</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Hemothorax" nciodm:ExtCodeID="C50582">
+                    <nciodm:CDISCDefinition>Accumulation of blood in the thorax.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hemothorax</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="HIV Infection" nciodm:ExtCodeID="C3108">
+                    <nciodm:CDISCDefinition>Any state accompanied by evidence of human immunodeficiency virus in the body (positive test for HIV genome, cDNA, proteins, antigens, or antibodies).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>HIV Infection</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Home Oxygen Therapy" nciodm:ExtCodeID="C99516">
+                    <nciodm:CDISCDefinition>Treatment in which a storage tank of oxygen or a machine called a compressor is used at home to give oxygen to people for the treatment of chronic lung disease.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Home Oxygen Therapy</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Hypertension" nciodm:ExtCodeID="C3117">
+                    <nciodm:CDISCDefinition>Pathological increase in blood pressure defined as one of the following: History of hypertension diagnosed and treated with medication, diet, and/or exercise; On at least 2 separate occasions, documented blood pressure greater than 140 mm Hg systolic and/or 90 mm Hg diastolic in patients without diabetes or chronic kidney disease, or blood pressure greater than 130 mm Hg systolic or 80 mm Hg diastolic in patients with diabetes or chronic kidney disease; Currently on pharmacological therapy for the treatment of hypertension.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hypertension</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Hypertrophic Cardiomyopathy" nciodm:ExtCodeID="C34449">
+                    <nciodm:CDISCDefinition>A condition in which the myocardium is hypertrophied without an obvious cause. The hypertrophy is generally asymmetric and may be associated with obstruction of the ventricular outflow tract.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hypertrophic Cardiomyopathy</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Intravascular Ultrasound" nciodm:ExtCodeID="C99535">
+                    <nciodm:CDISCSynonym>IVUS</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>An invasive procedure in which sound waves (called ultrasound) are bounced off of vascular tissues from within the vessel and the echoes produce a picture (sonogram).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intravascular Ultrasound</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Ischemic Cerebrovascular Accident" nciodm:ExtCodeID="C95802">
+                    <nciodm:CDISCDefinition>Ischemic stroke is defined as an acute episode of focal cerebral, spinal, or retinal dysfunction caused by infarction of central nervous system tissue.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ischemic Cerebrovascular Accident</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Left Heart Catheterization" nciodm:ExtCodeID="C80413">
+                    <nciodm:CDISCDefinition>The passage of a catheter into the left ventricle for the purposes of angiography, measurement of ventricular pressures, and/or oxygen saturation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Left Heart Catheterization</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Left Main Coronary Artery Stenosis Percentage" nciodm:ExtCodeID="C80492">
+                    <nciodm:CDISCDefinition>Percent luminal narrowing of the left main coronary artery, at the point of maximal stenosis of the left main coronary artery.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Left Main Coronary Artery Stenosis, Percentage</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Left Ventricular Non-Compaction Syndrome" nciodm:ExtCodeID="C99544">
+                    <nciodm:CDISCDefinition>This is an uncommon congenital abnormality where the left ventricular myocardium fails to compact during embryonic development, leading to cardiomyopathy with a variable degree of ventricular dysfunction. There is genetic heterogeneity and phenotypic variability. Characteristically, there are typically deep trabeculations in the non-compacted area, with varying proportions of the LV myocardium compacted. LV non-compaction is associated with rhythm abnormalities including Wolff-Parkinson-White syndrome, conduction defects, and ventricular tachyarrhythmias.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Left Ventricular Non-Compaction Syndrome</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Life Expectancy of an Individual" nciodm:ExtCodeID="C99547">
+                    <nciodm:CDISCDefinition>Estimate of future survival of subject.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Life Expectancy of an Individual</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Mechanical Circulatory Support" nciodm:ExtCodeID="C99540">
+                    <nciodm:CDISCDefinition>Use of a device to replace the function of a cardiac ventricle. This includes use of cardiopulmonary bypass, left ventricular assist device (LVAD), intra-aortic balloon pump (IABP) and/or extracorporeal membrane oxygenation (ECMO).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mechanical Circulatory Support</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Mechanical Circulatory Support Placement Timing" nciodm:ExtCodeID="C99539">
+                    <nciodm:CDISCDefinition>A description of when a mechanical circulatory support device was placed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mechanical Circulatory Support Placement Timing</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Medical Contraindication" nciodm:ExtCodeID="C50646">
+                    <nciodm:CDISCDefinition>A symptom or medical condition that makes a particular treatment or procedure inadvisable because a person is likely to have a bad reaction.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Medical Contraindication</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Non-system Delay" nciodm:ExtCodeID="C99551">
+                    <nciodm:CDISCDefinition>A patient condition that delays a procedure.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Patient Condition Delay</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Old Myocardial Infarction" nciodm:ExtCodeID="C35205">
+                    <nciodm:CDISCSynonym>History of Myocardial Infarction</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Documented history of previous myocardial infarction (MI), typically with objective evidence via positive biomarkers of myocardial necrosis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Old Myocardial Infarction</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Packed Red Blood Cell Transfusion" nciodm:ExtCodeID="C15409">
+                    <nciodm:CDISCSynonym>Red Blood Cell Transfusion</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The intravenous administration of red blood cells (whole blood without the plasma) into an individual.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Packed Red Blood Cell Transfusion</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Peripheral Arterial Disease" nciodm:ExtCodeID="C84496">
+                    <nciodm:CDISCDefinition>A disorder of the arteries supplying the upper and lower extremity and the visceral organs. This includes the mesenteric arteries, the renal arteries and the aorta. This excludes cerebrovascular arterial disease. This is defined as any one of the following: Claudication, either with exertion or at rest, amputation for arterial vascular insufficiency, vascular reconstruction, bypass surgery, or percutaneous intervention to the extremities, documented aortic aneurysm with or without repair, vascular angiography demonstrating a 50% or greater stenosis of a major peripheral arterial vessel, positive noninvasive test for peripheral arterial disease, including an ankle-brachial index less than or equal to 0.9, ultrasound, magnetic resonance or computed tomography imaging demonstrating a 50% or greater stenosis of a major peripheral arterial vessel.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Peripheral Arterial Disorder</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Permanent Cardiac Pacemaker" nciodm:ExtCodeID="C99552">
+                    <nciodm:CDISCDefinition>A pacemaker where the generator is implanted inside the body.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Permanent Cardiac Pacemaker</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Pneumothorax" nciodm:ExtCodeID="C38006">
+                    <nciodm:CDISCDefinition>Abnormal presence of air in the pleural cavity.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Pneumothorax</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Primary Cause of Death" nciodm:ExtCodeID="C99531">
+                    <nciodm:CDISCDefinition>The first significant abnormal event which ultimately led to death.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Primary Cause of Death</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Primary Valvular Disease" nciodm:ExtCodeID="C99545">
+                    <nciodm:CDISCDefinition>Primary valvular heart disease is defined by heart disease that is primarily due to a valvular defect or abnormality. Valve disease that is felt to be significant but does not fulfill the definition for primary valvular heat disease is considered contributory valvular heart disease.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Primary Valvular Disorder</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Pulmonary Embolism" nciodm:ExtCodeID="C50713">
+                    <nciodm:CDISCDefinition>The obstruction of the pulmonary artery or one of its branches by an embolus, sometimes associated with infarction of the lung.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Pulmonary Embolism</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Sarcoidosis" nciodm:ExtCodeID="C34995">
+                    <nciodm:CDISCDefinition>An idiopathic inflammatory disorder characterized by the formation of non-necrotizing epithelioid granulomas which contain giant cells. It usually affects the lungs, lymph nodes, liver, eyes, and skin. Cardiac involvement is also possible.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Sarcoidosis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Significant Arterial Dissection" nciodm:ExtCodeID="C99709">
+                    <nciodm:CDISCDefinition>A dissection that impairs flow. These include Type C (a persisting contrast medium extravasations in the presence of ischemia), Type D (a spiral filling defect with delayed but complete distal flow) , Type E (persistent filling defect with delayed antegrade flow) and Type F (filling defect with impaired flow and total occlusion).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Significant Arterial Dissection</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Sinus Node Function" nciodm:ExtCodeID="C100053">
+                    <nciodm:CDISCDefinition>Descriptions of electrical activity and conduction involving the sinoatrial node.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Sinus Node Functional Assessment</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Sleep Apnea" nciodm:ExtCodeID="C26884">
+                    <nciodm:CDISCDefinition>Cessation of breathing for short periods during sleep. It is classified as obstructive, central, or mixed obstructive-central.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Sleep Apnea</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Sleep Study" nciodm:ExtCodeID="C99553">
+                    <nciodm:CDISCDefinition>Measurement of physiologic parameters during sleep.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Sleep Study</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Structural Heart Abnormalities" nciodm:ExtCodeID="C99538">
+                    <nciodm:CDISCDefinition>An anatomic deformity of the heart, structures within the heart, ventricles or great vessels.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Structural Heart Abnormality</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Syncope" nciodm:ExtCodeID="C35053">
+                    <nciodm:CDISCDefinition>Sudden loss of consciousness with loss of postural tone, not related to anesthesia, with spontaneous recovery as reported by patient or observer. A subject may experience syncope when supine. Syncope is often caused by insufficient blood supply to the brain.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Syncope</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Tobacco Use" nciodm:ExtCodeID="C18059">
+                    <nciodm:CDISCDefinition>Use of tobacco in any form i.e. smoking, chewing or sniffing.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tobacco Use</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Venous Thromboembolism" nciodm:ExtCodeID="C99537">
+                    <nciodm:CDISCDefinition>Occlusion of the lumen of a vein by a thrombus that has migrated from a distal site via the blood stream.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Venous Thromboembolism</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Ventricular Arrhythmia" nciodm:ExtCodeID="C26924">
+                    <nciodm:CDISCDefinition>Abnormal heart beat resulting from a pathologic process in the cardiac ventricles.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ventricular Arrhythmia</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Ventricular Septal Defect" nciodm:ExtCodeID="C84506">
+                    <nciodm:CDISCDefinition>The presence of a defect (opening) in the septum that separates the two ventricles of the heart. The VSD can be congenital or acquired.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ventricular Septal Defect</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Ventricular Tachycardia/Ventricular Fibrillation Arrest" nciodm:ExtCodeID="C99522">
+                    <nciodm:CDISCDefinition>A cardiac arrest attributed to ventricular tachycardia or ventricular fibrillation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ventricular Tachycardia/Ventricular Fibrillation Arrest</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Vital Status" nciodm:ExtCodeID="C25717">
+                    <nciodm:CDISCDefinition>The state or condition of being living or deceased; also includes the case where the vital status is unknown.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vital Status</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Whole Blood Transfusion" nciodm:ExtCodeID="C62749">
+                    <nciodm:CDISCDefinition>The injection of whole blood or a blood component directly into the bloodstream.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Whole Blood Transfusion</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Abnormal Intraventricular Conduction" nciodm:ExtCodeID="C99543">
+                    <nciodm:CDISCDefinition>An atypical passage of electrical impulses through the cardiac ventricles. This includes fascicular blocks, bundle branch blocks, non-specific conduction delays and ventricular pacing.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Abnormal Intraventricular Conduction</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Antitachycardia Pacing" nciodm:ExtCodeID="C101245">
+                    <nciodm:CDISCDefinition>Delivery of electrical impulses to the heart at a faster rate than the intrinsic rate during an episode of tachycardia, in an attempt to terminate the abnormal tachycardia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Antitachycardia Pacing</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Aorta Disease" nciodm:ExtCodeID="C101253">
+                    <nciodm:CDISCDefinition>Pathology involving the thoracic, thoracoabdominal, or abdominal aorta (including aneurysms).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Aorta Disease</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Appropriate Treatment" nciodm:ExtCodeID="C101247">
+                    <nciodm:CDISCDefinition>Correct activity that produces an effect, or that is intended to alter the course of a disease in a patient or population. This is a general term that encompasses the medical, social, behavioral, and environmental acts that can have preventive, therapeutic, or palliative effects.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Appropriate Treatment</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Arterial Access Closure Method" nciodm:ExtCodeID="C100057">
+                    <nciodm:CDISCDefinition>A device or treatment used to stop bleeding and close the location of arterial entry following a percutaneous coronary intervention.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Arterial Access Closure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Arterial Access Site" nciodm:ExtCodeID="C100056">
+                    <nciodm:CDISCDefinition>Anatomical location where an artery was accessed for a diagnostic or therapeutic procedure.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Arterial Access Site</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Atrial Arrhythmia" nciodm:ExtCodeID="C80503">
+                    <nciodm:CDISCDefinition>Abnormal heart beat resulting from a pathologic process in the cardiac atria.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Atrial Arrhythmia</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Ablation" nciodm:ExtCodeID="C100068">
+                    <nciodm:CDISCDefinition>A procedure intended to eliminate or modify a focus or re-entry circuit that causes an arrhythmia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Ablation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Diagnostic Procedure" nciodm:ExtCodeID="C100084">
+                    <nciodm:CDISCDefinition>Procedure to evaluate the structure and/or function of the heart.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Diagnostic Procedure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Rehabilitation" nciodm:ExtCodeID="C101234">
+                    <nciodm:CDISCDefinition>A medically supervised program to improve the health and well-being of people who have heart problems. This may include exercise training, education on heart healthy living, and/or counseling to reduce stress.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Rehabilitation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Stent Placement" nciodm:ExtCodeID="C100080">
+                    <nciodm:CDISCDefinition>A procedure performed during a percutaneous coronary intervention in which a device is deployed into the lumen of a coronary artery to expand and support the vessel wall such that the vessel remains patent and blood flow is uninhibited.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Stent Placement</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardiac Valve Injury" nciodm:ExtCodeID="C100069">
+                    <nciodm:CDISCDefinition>An event that causes abnormal valve function. This is usually a tear in leaflet or chordae tendineae and manifests as a new regurgitant.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Valve Injury</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Cardioverter Defibrillator Shock Therapy" nciodm:ExtCodeID="C101251">
+                    <nciodm:CDISCDefinition>Delivery of strong electrical impulses by a cardioverter defibrillator to return the electrical activity of the heart to normal.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardioverter Defibrillator Shock Therapy</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Chagas Disease" nciodm:ExtCodeID="C84629">
+                    <nciodm:CDISCDefinition>A parasitic infection caused by Trypanosoma cruzi and transmitted by the reduviid bug. It is characterized by an acute and chronic phase; in the acute phase patients may have fever, malaise, and swelling at the site of the insect bite. In the chronic phase patients develop hepatosplenomegaly, lymphadenopathy, cardiomyopathy and arrhythmias.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Chagas Disease</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Chronic Total Coronary Artery Occlusion" nciodm:ExtCodeID="C100062">
+                    <nciodm:CDISCDefinition>Pro-longed complete obstruction of the coronary artery.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Chronic Total Coronary Artery Occlusion</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Comfort Measures" nciodm:ExtCodeID="C15292">
+                    <nciodm:CDISCDefinition>The patient- and family-centered active holistic care of patients with advanced, progressive disease. Essential components of palliative care are: pain and symptom control, communication regarding treatment and alternatives, prognosis, and available services, rehabilitation services, care that addresses treatment and palliative concerns, intellectual, emotional, social, and spiritual needs, terminal care, support in bereavement. The goal of palliative care is an achievement of the best quality of life for patients and their families.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Palliative Care</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Conduction Block" nciodm:ExtCodeID="C34665">
+                    <nciodm:CDISCDefinition>An injury to the specialized cardiac conduction system that results in impaired signal transmission.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Heart Block</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Artery Graft" nciodm:ExtCodeID="C100064">
+                    <nciodm:CDISCDefinition>A vessel segment attached to a coronary artery to facilitate myocardial perfusion.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Artery Graft</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Artery Perforation" nciodm:ExtCodeID="C100083">
+                    <nciodm:CDISCDefinition>A dissection that extends through the full thickness of the arterial wall.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Artery Perforation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Lesion" nciodm:ExtCodeID="C100063">
+                    <nciodm:CDISCDefinition>Pathologic material in a vessel that obstructs myocardial perfusion.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Vessel Lesion</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Lesion Complexity" nciodm:ExtCodeID="C100066">
+                    <nciodm:CDISCDefinition>Characteristics of coronary lesions that contribute to procedural risk during percutaneous coronary intervention.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Lesion Complexity</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Reperfusion" nciodm:ExtCodeID="C100067">
+                    <nciodm:CDISCDefinition>Procedures intended to re-establish normal coronary flow. Reperfusion therapy includes thrombolysis and primary PCI. Reperfusion therapy also includes pre-hospital thrombolytics.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Reperfusion Procedure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Sinus/Left Ventricular Lead" nciodm:ExtCodeID="C80463">
+                    <nciodm:CDISCDefinition>The wire which allows a pacemaker or defibrillator to stimulate the left ventricle, often positioned in the coronary sinus.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ventricular Lead</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Venous Dissection" nciodm:ExtCodeID="C100070">
+                    <nciodm:CDISCDefinition>A tear within the wall of a coronary vein.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Venous Dissection</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Coronary Vessel Bifurcation Lesion" nciodm:ExtCodeID="C101233">
+                    <nciodm:CDISCSynonym>Bifurcation Lesion</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A lesion found in the division of a vessel into at least two branches, each of which is 1.5 mm or greater in diameter.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Vessel Bifurcation Lesion</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Culprit Lesion" nciodm:ExtCodeID="C100072">
+                    <nciodm:CDISCDefinition>The lesion indicated is considered to be responsible for the acute coronary syndrome.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Culprit Lesion</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Defibrillation Threshold" nciodm:ExtCodeID="C101236">
+                    <nciodm:CDISCDefinition>The lowest energy where a defibrillator device terminates an arrhythmia in a particular subject.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Defibrillation Threshold</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Device Deployment" nciodm:ExtCodeID="C101231">
+                    <nciodm:CDISCDefinition>The act of instantiating, positioning or activating a medical device inside of the body.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Medical Device Deployment</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Diagnostic Coronary Angiography" nciodm:ExtCodeID="C100085">
+                    <nciodm:CDISCDefinition>A procedure in which the catheter is passed into the aortic root or other great vessels for the purpose of angiography of the native coronary arteries or bypass grafts supplying native coronary arteries.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Coronary Angiography</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Electrophysiology Study" nciodm:ExtCodeID="C80414">
+                    <nciodm:CDISCDefinition>A cardiac procedure performed under fluoroscopy to determine the area of the heart that is the source of aberrant electrical impulses that give rise to arrhythmias. Aberrant pathways can be terminated by ablation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Electrophysiology Study</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Exercise Stress Test" nciodm:ExtCodeID="C100073">
+                    <nciodm:CDISCDefinition>The procedure in which physical activity is used to elicit signs and symptoms of myocardial ischemia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Stress Test</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Exercise Counseling" nciodm:ExtCodeID="C101235">
+                    <nciodm:CDISCDefinition>A process by which a health professional creates a regimen of physical activity intended to maintain or improve the health of a subject.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Exercise Counseling</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Explantation" nciodm:ExtCodeID="C101248">
+                    <nciodm:CDISCDefinition>A surgical procedure that removes something that was implanted in the body.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Explantation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Giant Cell Myocarditis" nciodm:ExtCodeID="C97055">
+                    <nciodm:CDISCDefinition>An often fatal inflammatory disorder that affects the myocardium. Morphologically, it is characterized by the presence of an inflammatory infiltrate in the myocardial tissue that includes multinucleated giant cells. It is often associated with the presence of an autoimmune disorder, mediated by T lymphocytes. Patients present with arrhythmias and/or heart failure. Heart transplantation is the only treatment option available.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Giant Cell Myocarditis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Guidewire Across Lesion" nciodm:ExtCodeID="C100082">
+                    <nciodm:CDISCDefinition>A performance measure of procedural success during a percutaneous coronary intervention when a guidewire can be deployed across a coronary artery lesion.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Guidewire Across Lesion</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Implantable Cardioverter Defibrillator" nciodm:ExtCodeID="C93238">
+                    <nciodm:CDISCDefinition>A battery-powered electrical impulse generator implanted in patients at risk of sudden cardiac death to detect cardiac arrhythmia and correct it by delivering a jolt of electricity.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Implantable Cardioverter-defibrillator</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Implantation" nciodm:ExtCodeID="C51982">
+                    <nciodm:CDISCDefinition>A surgical procedure that places something in the body.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Implantation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Implantation Site" nciodm:ExtCodeID="C77678">
+                    <nciodm:CDISCDefinition>The anatomic site at which a tissue, graft, or radioactive material is inserted. This term may also refer to the site of the uterus at which the early embryo is attached.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Implantation Site</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="In Situ Existing Lead" nciodm:ExtCodeID="C101239">
+                    <nciodm:CDISCSynonym>Existing Lead</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>An insulated electrical conductor designed to connect to an electrical device for which the lead is in situ.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>In Situ Existing Lead</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="In Stent Restenosis" nciodm:ExtCodeID="C100081">
+                    <nciodm:CDISCDefinition>Luminal narrowing within the stented segment of a vessel.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>In Stent Restenosis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Intra-Aortic Balloon Pump" nciodm:ExtCodeID="C100087">
+                    <nciodm:CDISCDefinition>Medical device that increases myocardial oxygen perfusion while at the same time increasing cardiac output.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intra-Aortic Balloon Pump</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Intracoronary Device" nciodm:ExtCodeID="C101232">
+                    <nciodm:CDISCDefinition>A device placed within the coronary anatomy.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intracoronary Device</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Ischemic Risk Score" nciodm:ExtCodeID="C100074">
+                    <nciodm:CDISCDefinition>The relative risk of developing ischemia determined by a cardiac stress test.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Ischemic Risk Score</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Lead Dislodgement" nciodm:ExtCodeID="C101241">
+                    <nciodm:CDISCDefinition>Movement of a lead away from the original implantation site.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Lead Dislodgment</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Lead Function" nciodm:ExtCodeID="C101238">
+                    <nciodm:CDISCDefinition>An indicator to describe whether the electrical lead device is performing as intended.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cardiac Lead Function Indicator</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Lead Perforation" nciodm:ExtCodeID="C101246">
+                    <nciodm:CDISCDefinition>Penetration of a lead through an anatomical structure such as systemic vein, coronary vein, or the myocardium.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Perforation due to Lead</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Lead Status" nciodm:ExtCodeID="C101240">
+                    <nciodm:CDISCDefinition>The state of an insulated wire designed to conduct energy from an electrical device to an anatomic site.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>In Situ Lead Status</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Left Ventricular Aneurysm" nciodm:ExtCodeID="C102654">
+                    <nciodm:CDISCDefinition>A bulge or ballooning in the wall of the left ventricle of the heart.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Left Ventricular Aneurysm</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Luminal Carotid Thrombus" nciodm:ExtCodeID="C100077">
+                    <nciodm:CDISCDefinition>A blood clot (thrombus) in the lumen of the carotid artery.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Luminal Carotid Thrombus</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Myocardial Perfusion Imaging" nciodm:ExtCodeID="C102676">
+                    <nciodm:CDISCDefinition>A procedure that obtains pictures that reflect blood flow in the heart muscle.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Myocardial Perfusion Imaging</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Non-Invasive Stress Testing" nciodm:ExtCodeID="C100075">
+                    <nciodm:CDISCDefinition>Procedures intended to evaluate cardiac function without insertion of intravascular equipment into the central circulation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Non-Invasive Cardiac Stress Test</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Peripheral Embolus" nciodm:ExtCodeID="C101249">
+                    <nciodm:CDISCDefinition>Acute occlusion of a peripheral blood vessel resulting from intravascular migration of material. Examples of embolic material include thrombus, fat, bone marrow, air, and amniotic fluid.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Peripheral Embolus</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Peripheral Nerve Injury" nciodm:ExtCodeID="C101250">
+                    <nciodm:CDISCDefinition>Sensory or motor loss of peripheral nerve function due to a traumatic event.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Peripheral Nerve Injury</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Post-Procedure" nciodm:ExtCodeID="C100059">
+                    <nciodm:CDISCDefinition>A time period after the procedure.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Post-Procedure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Pre-Procedure" nciodm:ExtCodeID="C100058">
+                    <nciodm:CDISCDefinition>A time period prior to the procedure.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Pre-Procedure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Procedure Urgency Status" nciodm:ExtCodeID="C101230">
+                    <nciodm:CDISCDefinition>The degree of urgency in which a medical procedure must be performed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Triage Status</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Regurgitation" nciodm:ExtCodeID="C50726">
+                    <nciodm:CDISCDefinition>Flow in the opposite direction from normal, as the casting up of undigested food or gas from the stomach, or the backward flowing of blood into the heart, or between the chambers of the heart when a valve is incompetent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Regurgitation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Reimplantation" nciodm:ExtCodeID="C101242">
+                    <nciodm:CDISCDefinition>A surgical procedure that places something in the body that was previously lost or removed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Reimplantation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Renal Artery Disease" nciodm:ExtCodeID="C101254">
+                    <nciodm:CDISCDefinition>Pathology involving the main renal arteries or extrarenal arterial branches.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Renal Artery Disease</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Re-operation" nciodm:ExtCodeID="C50830">
+                    <nciodm:CDISCDefinition>Repeat performance of a surgical procedure or intervention.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Repeated Surgical Procedure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Severity" nciodm:ExtCodeID="C25676">
+                    <nciodm:CDISCDefinition>The degree of something undesirable e.g. pain or weather; also, strictness.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Severity</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Smoked Tobacco" nciodm:ExtCodeID="C100079">
+                    <nciodm:CDISCDefinition>Tobacco that is inhaled or puffed from a lit cigar, cigarette or pipe.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Smoking Tobacco</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Smokeless Tobacco" nciodm:ExtCodeID="C892">
+                    <nciodm:CDISCDefinition>Tobacco that is not smoked but used in another form such as chewing tobacco or snuff.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Smokeless Tobacco</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Stenosis" nciodm:ExtCodeID="C50754">
+                    <nciodm:CDISCDefinition>Narrowing or stricture of a vessel, duct or canal.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Stenosis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Stress Cardiac Magnetic Resonance Imaging" nciodm:ExtCodeID="C80409">
+                    <nciodm:CDISCDefinition>A study using magnetic resonance to observe cardiac activity during the administration of pharmacologic stressor.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Stress Cardiac Magnetic Resonance Imaging</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Stress Echocardiography" nciodm:ExtCodeID="C80407">
+                    <nciodm:CDISCDefinition>A procedure that uses high-frequency sound waves (ultrasound) to create an image of the heart under conditions such as exercise, pharmacologic agents or pacing intended to elicit signs and symptoms of myocardial ischemia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Stress Echocardiography</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Substance Adverse Event" nciodm:ExtCodeID="C101243">
+                    <nciodm:CDISCDefinition>An unexpected or dangerous reaction to a substance (e.g., food, environmental agent).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Substance Adverse Event</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Substance Allergy" nciodm:ExtCodeID="C3114">
+                    <nciodm:CDISCDefinition>A local or general reaction of an organism following contact with a specific allergen to which it has been previously exposed and to which it has become sensitized.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hypersensitivity</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Tobacco Counseling" nciodm:ExtCodeID="C101244">
+                    <nciodm:CDISCDefinition>A process by which a health professional provides education, recommendations, or interventions to help clients stop using tobacco products.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tobacco Cessation Counseling</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Transplant Waiting List" nciodm:ExtCodeID="C100078">
+                    <nciodm:CDISCDefinition>A registry of patients awaiting an organ transplant.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Transplant Waiting List</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Undetermined Stroke" nciodm:ExtCodeID="C3390">
+                    <nciodm:CDISCDefinition>An acute episode of focal or global neurological dysfunction caused by presumed brain, spinal cord, or retinal vascular injury as a result of hemorrhage or infarction but with insufficient information to allow categorization as ischemic or hemorrhagic.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cerebrovascular Accident</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Upper Limit of Vulnerability for Induction of Ventricular Fibrillation" nciodm:ExtCodeID="C101237">
+                    <nciodm:CDISCSynonym>Upper Limit of Vulnerability</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Stimulus strength above which electrical stimulation from a cardiac device cannot induce ventricular fibrillation even when the stimulus occurs during the vulnerable period of the cardiac cycle.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Upper Limit of Vulnerability for Induction of Ventricular Fibrillation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Venous Obstruction" nciodm:ExtCodeID="C101252">
+                    <nciodm:CDISCDefinition>Partial or total occlusion of a vein.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Venous Obstruction</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Direct Observation Therapy" nciodm:ExtCodeID="C102624">
+                    <nciodm:CDISCSynonym>DOT</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The therapy is dispensed and consumed under the direct supervision of personnel at a clinical site.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Directly Observed Therapy</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Disease Outcome" nciodm:ExtCodeID="C18226">
+                    <nciodm:CDISCDefinition>A measurable result or effect of treatment on a disease. Examples of outcomes include decreased pain, reduced tumor size, or worsening of disease.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Disease Outcome</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Microbial Identification Certainty" nciodm:ExtCodeID="C102667">
+                    <nciodm:CDISCDefinition>A qualification that describes the degree of certainty of the correctness of a microbial identification test result.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Microbial Identification Certainty</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Reason for Treatment" nciodm:ExtCodeID="C102702">
+                    <nciodm:CDISCDefinition>The reason the treatment was administered.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Reason for Treatment</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Reason for Treatment Interruption" nciodm:ExtCodeID="C102703">
+                    <nciodm:CDISCDefinition>The reason the drug or therapy was temporarily ceased.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Reason for Treatment Interruption</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Reason Treatment Not Administered" nciodm:ExtCodeID="C102704">
+                    <nciodm:CDISCDefinition>The reason the treatment was not administered.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Reason Treatment Not Administered</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Site of Directed Therapy" nciodm:ExtCodeID="C102710">
+                    <nciodm:CDISCDefinition>The physical location at which the medication or therapy was observed, by the healthcare provider, as being taken by the subject.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Site of Directly Observed Therapy</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Supporting Evidence for Retreatment" nciodm:ExtCodeID="C102717">
+                    <nciodm:CDISCDefinition>Clinical evidence to support reason for re-treatment of disease.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Supporting Evidence for Retreatment</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Susceptibility Result Category" nciodm:ExtCodeID="C88023">
+                    <nciodm:CDISCSynonym>MSRESCAT</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A classification of the finding from a susceptibility test.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Microbiology Susceptibility Result Category</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Susceptibility Test" nciodm:ExtCodeID="C85540">
+                    <nciodm:CDISCDefinition>A test done to determine whether the growth of specific bacteria is inhibited by a specific drug.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Microbial Susceptibility Test</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Treatment Episode" nciodm:ExtCodeID="C102720">
+                    <nciodm:CDISCDefinition>An indication of whether this is the individual's first time being treated for a disease or that they are receiving a subsequent treatment.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Treatment Episode Indicator</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Treatment Failure Reason" nciodm:ExtCodeID="C102721">
+                    <nciodm:CDISCDefinition>The reason the drug or therapy was unsuccessful in treating the condition.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Treatment Failure Reason</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Vaccination Evidence Source" nciodm:ExtCodeID="C102727">
+                    <nciodm:CDISCDefinition>Source of information regarding the subject's vaccination status.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vaccination Evidence Source</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>CLINDE</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Clinical Data Element Glossary</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Clinical Data Element Glossary Terminology</nciodm:PreferredTerm>
+            </CodeList>
+        </MetaDataVersion>
+    </Study>
+</ODM>

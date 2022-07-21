@@ -1,0 +1,6 @@
+*.log
+*.class
+dist/
+.vscode/
+.history/
+bin/

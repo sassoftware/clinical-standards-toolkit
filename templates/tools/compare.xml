@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<project basedir="." name="standard_module">
+    <property file="${user.home}/cstbuild.properties"/>
+    <property file="../../build.properties" />
+    <property file="module.properties" />
+
+    <taskdef resource="net/sf/antcontrib/antlib.xml">
+        <classpath>
+            <pathelement location="../../ant-contrib-1.0b3.jar"/>
+        </classpath>
+    </taskdef>
+	
+	<scriptdef language="javascript" name="upper">
+	    <attribute name="from" /> 
+	    <attribute name="to" />
+
+	    project.setProperty( attributes.get( "to" ),
+	                         attributes.get( "from" ).toUpperCase() );
+	</scriptdef>
+	
+	<if>
+		<isset property="standard.version"/>
+		<then>
+	<property name="local.standard.version_" value="${standard.version}"/>
+	<loadresource property="local.standard.version">
+	  <propertyresource name="local.standard.version_" />
+	  <filterchain>
+	    <tokenfilter>
+	      <replaceregex pattern="\." replace="" flags="g"/>
+	    </tokenfilter>
+	  </filterchain>
+	</loadresource>
+			</then>
+	</if>
+	
+	<target name="info" description="Display descriptive properties for standard module source" depends="init">
+        <echo message="Standard Module Deployment Properties" />
+        <echo message=" Standard source = ${standard.source}" />
+        <echo message=" Standard type = ${standard.type}" />
+		<if>
+			<isset property="standard.version"/>
+			<then>
+        		<echo message=" Standard version = ${standard.version}" />
+			</then>
+		</if>
+        <echo message="" />
+		<echo message=" Required source distribution root folder name = ${local.dist.dir.module}"/>
+        <echo message="" />
+	    <if>
+	    	<isset property="flag.hasSampleFiles"/>
+	    	<then>
+	    		<echo message=" Contains sample = true"/>
+	    	</then>
+		<else>
+    		<echo message=" Contains sample = false"/>
+	   	</else>
+	    </if>
+	    <if>
+	    	<or>
+	    		<isset property="flag.hasXslFiles"/>
+		    	<isset property="flag.hasSchemaFiles"/>
+	    	</or>
+	    	<then>
+	    		<echo message=" Is XML standard = true"/>
+	    	    <if>
+	    	    	<isset property="flag.hasXslFiles"/>
+	    	    	<then>
+	    	    		<echo message=" Contains xsl = true"/>
+	    	    	</then>
+	    		<else>
+	        		<echo message=" Contains xsl = false"/>
+	    	   	</else>
+	    	    </if>
+	    	    <if>
+	    	    	<isset property="flag.hasSchemaFiles"/>
+	    	    	<then>
+	    	    		<echo message=" Contains schema = true"/>
+	    	    	</then>
+	    		<else>
+	        		<echo message=" Contains schema = false"/>
+	    	   	</else>
+	    	    </if>
+	    	</then>
+			<else>
+	    		<echo message=" Is XML standard = false"/>
+	   		</else>
+	  	</if>
+		<echo message=""/>
+        <echo message="Build property files used:" />
+		<dirname property="local.root.file" file=".." />
+		<echo message=" ${local.root.file}/build.properties" />
+        <echo message=" ${basedir}/project.properties" />
+		<echo message=" ${basedir}/module.properties" />
+		<if>
+			<available file="${user.home}/cstbuild.properties"/>
+			<then>
+	        	<echo message=" ${user.home}/cstbuild.properties" />
+			</then>
+		</if>        
+        <echo message="" />
+        <echo message="Deployment Directories:" />
+        <echo message=" ${standards.deploy.path}/${build.dir.standards}/${deploy.standard.name}-${deploy.module.version}" />
+	    <if>
+	    	<isset property="flag.hasSampleFiles"/>
+	    	<then>
+	            <echo message=" ${samples.deploy.path}/${deploy.standard.name}-${deploy.module.version}" />
+	    	</then>
+	    </if>
+	    <if>
+	    	<isset property="flag.hasSchemaFiles"/>
+	    	<then>
+	            <echo message=" ${standards.deploy.path}/${build.dir.schemarepos}" />
+	    	</then>
+	    </if>
+	    <if>
+			<isset property="flag.hasXslFiles"/>
+	    	<then>
+	            <echo message=" ${standards.deploy.path}/${build.dir.xslrepos}" />
+	    	</then>
+	    </if>
+
+	</target>
+	
+    <target name="init">
+        <tstamp>
+            <format pattern="yyyyMMdd.HHmmss" property="build.time" />
+        </tstamp>
+
+        <available file="${standards.deploy.path}/${build.dir.standards}/${deploy.standard.name}-${deploy.module.version}" type="dir" property="flag.cstStandardExists" />
+        <available file="${samples.deploy.path}/${deploy.standard.name}-${deploy.module.version}" type="dir" property="flag.cstSampleExists" />
+        <available file="./source/sample" type="dir" property="flag.hasSampleFiles" />
+    	<available file="./source/xsl-repository" type="dir" property="flag.hasXslFiles" />
+    	<available file="./source/schema-repository" type="dir" property="flag.hasSchemaFiles" />
+        <available file="${standards.deploy.path}/metadata/standards.sas7bdat" type="file" property="flag.cstMetadataExists" />
+
+    	<if>
+    	<isset property="local.standard.version"/>
+    		<then>
+    			<property name="local.dist.dir.module" value="cst${standard.type}${local.standard.version}"/>
+    		</then>
+    		<else>
+       			<property name="local.dist.dir.module" value="cst${standard.type}"/>
+        	</else>
+    	</if>
+
+    </target>
+
+	<target name="analyze-production-changes" depends="init" description="Analyze production libraries to source and document differences">
+		<property name="local.diff.files.only" value="true" />
+		<antcall target="pull-changes-from-production" />
+	</target>
+
+	<target name="pull-changes-from-production" depends="init">
+		<echo>${local.diff.files.only}</echo>
+		<echo file="./diff.log" append="false" message="Results For Production File Pull for ${deploy.standard.name} on ${build.time}${line.separator}" />
+		<if>
+			<equals arg1="${local.diff.files.only}" arg2="true" />
+			<then>
+				<echo file="./diff.log" append="true" message="ANALYSIS ONLY: no files will be updated in source repository${line.separator}${line.separator}" />
+			</then>
+		</if>
+		<if>
+			<equals arg1="${flag.cstStandardExists}" arg2="true" />
+			<then>
+				<echo file="./diff.log" append="true" message="Processing ${standards.deploy.path}/${build.dir.standards}/${deploy.standard.name}-${deploy.module.version}${line.separator}" />
+				<foreach target="diff-standard-file" param="theFile" inheritall="true">
+					<path>
+						<fileset dir="${standards.deploy.path}/${build.dir.standards}/${deploy.standard.name}-${deploy.module.version}">
+							<exclude name="**/*.sas7bdat" />
+							<exclude name="**/*.sas7bcat" />
+							<exclude name="**/*.log"/>
+						</fileset>
+					</path>
+				</foreach>
+			</then>
+		</if>
+		<if>
+			<equals arg1="${flag.cstSampleExists}" arg2="true" />
+			<then>
+				<echo file="./diff.log" append="true" message="${line.separator}Processing ${samples.deploy.path}/${deploy.standard.name}-${deploy.module.version}${line.separator}" />
+				<foreach target="diff-sample-file" param="theFile" inheritall="true">
+					<path>
+						<fileset dir="${samples.deploy.path}/${deploy.standard.name}-${deploy.module.version}">
+							<include name="**/*.sas" />
+						</fileset>
+					</path>
+				</foreach>
+			</then>
+		</if>
+        <available file="./source/xsl-repository" type="dir" property="flag.cstXslExists" />
+		<if>
+			<equals arg1="${flag.cstXslExists}" arg2="true" />
+			<then>
+				<echo file="./diff.log" append="true" message="${line.separator}Processing ${standards.deploy.path}/${build.dir.xslrepos}${line.separator}" />
+				<upper from="${standard.type}" to="local.standard.type.upper"/>
+				<foreach target="diff-xsl-file" param="theFile" inheritall="true">
+					<path>
+						<fileset dir="${standards.deploy.path}/${build.dir.xslrepos}/${local.standard.type.upper}/${standard.version}">
+							<include name="**/*.xsl" />
+						</fileset>
+					</path>
+				</foreach>
+			</then>
+		</if>
+        <available file="./source/schema-repository" type="dir" property="flag.cstSchemaExists" />
+		<if>
+			<equals arg1="${flag.cstSchemaExists}" arg2="true" />
+			<then>
+				<echo file="./diff.log" append="true" message="${line.separator}Processing ${standards.deploy.path}/${build.dir.schemarepos}${line.separator}" />
+				<foreach target="diff-schema-file" param="theFile" inheritall="true">
+					<path>
+						<fileset dir="${standards.deploy.path}/${build.dir.schemarepos}/${deploy.standard.name}">
+							<include name="**/*.xsd" />
+						</fileset>
+					</path>
+				</foreach>
+			</then>
+		</if>
+
+	</target>
+
+	<target name="diff-standard-file">
+		<echo>Processing ${theFile}</echo>
+		<basename property="local.file.name" file="${theFile}" />
+
+		<pathconvert targetos='unix' property="temp.source.file.path">
+			<path>
+				<pathelement path='${theFile}' />
+			</path>
+			<map from="${standards.deploy.path}/${build.dir.standards}/${deploy.standard.name}-${deploy.module.version}" to="./source/standards" />
+		</pathconvert>
+
+		<antcall target="perform-diff" inheritall="true" />
+	</target>
+
+	<target name="diff-sample-file">
+		<echo>Processing ${theFile}</echo>
+		<basename property="local.file.name" file="${theFile}" />
+
+		<pathconvert targetos='unix' property="temp.source.file.path">
+			<path>
+				<pathelement path='${theFile}' />
+			</path>
+			<map from="${samples.deploy.path}/${deploy.standard.name}-${deploy.module.version}" to="./source/sample" />
+		</pathconvert>
+
+		<antcall target="perform-diff" inheritall="true" />
+	</target>
+
+	<target name="diff-xsl-file">
+		<echo>Processing ${theFile}</echo>
+		<basename property="local.file.name" file="${theFile}" />
+
+		<pathconvert targetos='unix' property="temp.source.file.path">
+			<path>
+				<pathelement path='${theFile}' />
+			</path>
+			<map from="${standards.deploy.path}/${build.dir.xslrepos}/${local.standard.type.upper}/${standard.version}" to="./source/xsl-repository" />
+		</pathconvert>
+
+		<antcall target="perform-diff" inheritall="true" />
+	</target>	
+	
+	<target name="diff-schema-file">
+			<echo>Processing ${theFile}</echo>
+			<basename property="local.file.name" file="${theFile}" />
+
+			<pathconvert targetos='unix' property="temp.source.file.path">
+				<path>
+					<pathelement path='${theFile}' />
+				</path>
+				<map from="${standards.deploy.path}/${build.dir.schemarepos}/${deploy.standard.name}" to="./source/schema-repository" />
+			</pathconvert>
+
+			<antcall target="perform-diff" inheritall="true" />
+		</target>
+			
+		<target name="perform-diff">
+		<if>
+			<available file="${temp.source.file.path}" />
+			<then>
+				<if>
+					<not>
+						<filesmatch file1="${theFile}" file2="${temp.source.file.path}" textfile="true" />
+					</not>
+					<then>
+						<echo>result: modified</echo>
+						<echo file="./diff.log" append="true" message="modified:${theFile}${line.separator}" />
+						<antcall target="copyToSource" inheritall="yes" />
+					</then>
+					<else>
+						<echo>result: identical</echo>
+						<echo file="./diff.log" append="true" message="no change:${theFile}${line.separator}" />
+					</else>
+				</if>
+			</then>
+			<else>
+				<echo>result: new</echo>
+				<echo file="./diff.log" append="true" message="add:${theFile}${line.separator}" />
+				<antcall target="copyToSource" inheritall="yes" />
+			</else>
+		</if>
+	</target>
+
+	<target name="copyToSource" unless="local.diff.files.only">
+		<copy file="${theFile}" tofile="${temp.source.file.path}" overwrite="true" />
+	</target>
+
+	<target name="create-cport-files" description="creates cport files for SAS datasets and catalogs copied to the source tree">
+		<delete file="${user.home}/cport.sas" failonerror="false" />
+
+		<!-- flag folders containing SAS data files for later cporting -->
+		<foreach target="flag-folders-for-cport" param="param1" inheritall='true'>
+		<path>
+			<fileset dir="./source">
+				<include name="**/*.sas7bdat" />
+				<include name="**/*.sas7bcat" />
+			</fileset>
+		</path>
+		</foreach>
+		<!-- write the cport program in the user home folder to process the found data files -->
+		<foreach target="write-cport-file" param="param1" inheritall='true'>
+		<path>
+			<fileset dir="./source">
+				<include name="**/cportMe.txt" />
+			</fileset>
+		</path>
+	</foreach>
+
+		<if>
+			<available file="${user.home}/cport.sas"/>
+			<then>
+				<echo>Execute the SAS program just created</echo>
+				<exec dir='${user.home}' executable="${sas.fulldirpath.executable}/sas" resultproperty="cport.state">
+					<arg line='-SYSIN cport.sas' />
+				</exec>
+				<echo>CPORT processing SAS result code: ${cport.state}</echo>
+
+				<echo>Delete the sas data sets and catalogs just ported, plus any flag files</echo>
+				<delete>
+					<fileset dir="./source">
+						<include name="**/*.sas7bdat" />
+						<include name="**/*.sas7bcat" />
+						<include name="**/cportMe.txt" />
+					</fileset>
+				</delete>
+				</then>
+			<else>
+				<echo>No SAS data files found for porting</echo>
+			</else>
+		</if>
+	</target>
+
+	<target name="flag-folders-for-cport">
+		<dirname property='temp.dirpath.cport.file' file='${param1}' />
+		<echo file="${temp.dirpath.cport.file}/cportMe.txt" append="false">
+This will be used to pick up directories that need to be cported.
+    </echo>
+	</target>
+
+
+
+	<target name="write-cport-file">
+		<dirname property='temp.dirpath.cport.file' file='${param1}' />
+		<echo file="${user.home}/cport.sas" append="true">
+/*
+ * CPORTING ${temp.dirpath.cport.file}
+ */
+libname  lib1 "${temp.dirpath.cport.file}";
+filename xptFile "${temp.dirpath.cport.file}/cported.xpt";
+proc cport lib=lib1
+file=xptFile;
+run;
+libname lib1;
+filename xptFile;
+    </echo>
+	</target>
+
+</project>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SXLEMAP name="metamap" version="1.9">
+  <TABLE name="DefineDocument">
+    <TABLE-PATH syntax="XPath">/ODM</TABLE-PATH>
+    <COLUMN name="FileOID">
+      <PATH syntax="XPath">/ODM/@FileOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="CreationDateTime">
+      <PATH syntax="XPath">/ODM/@CreationDateTime</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>32</LENGTH>
+    </COLUMN>
+  </TABLE>
+  <TABLE name="Study">
+    <TABLE-PATH syntax="XPath">/ODM/Study</TABLE-PATH>
+    <COLUMN name="OID">
+      <PATH syntax="XPath">/ODM/Study/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="StudyName">
+      <PATH syntax="XPath">/ODM/Study/GlobalVariables/StudyName</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="StudyDescription">
+      <PATH syntax="XPath">/ODM/Study/GlobalVariables/StudyDescription</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="ProtocolName">
+      <PATH syntax="XPath">/ODM/Study/GlobalVariables/ProtocolName</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="FK_DefineDocument" retain="YES">
+      <PATH syntax="XPath">/ODM/@FileOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+  </TABLE>
+  <TABLE name="MetaDataVersion">
+    <TABLE-PATH syntax="XPath">/ODM/Study/MetaDataVersion</TABLE-PATH>
+    <COLUMN name="OID">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="DefineVersion">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/@def:DefineVersion</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="StandardName">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/@def:StandardName</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="StandardVersion">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/@def:StandardVersion</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="FK_Study" retain="YES">
+      <PATH syntax="XPath">/ODM/Study/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+  </TABLE>
+  <TABLE name="ItemGroupDefs">
+    <TABLE-PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef</TABLE-PATH>
+    <TABLE-END-PATH beginend="BEGIN" syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef</TABLE-END-PATH>
+    <COLUMN name="OID">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="Name">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/@Name</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="Label">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/@def:Label</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="SASDatasetName">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/@SASDatasetName</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>32</LENGTH>
+    </COLUMN>
+    <COLUMN name="IsReferenceData">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/@IsReferenceData</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>3</LENGTH>
+    </COLUMN>
+    <COLUMN name="FK_MetadataVersion" retain="YES">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+  </TABLE>
+  <TABLE name="itemgroupitemrefs">
+    <TABLE-PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/ItemRef</TABLE-PATH>
+    <TABLE-END-PATH beginend="BEGIN" syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef</TABLE-END-PATH>
+    <COLUMN name="ItemOID">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/ItemRef/@ItemOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="OrderNumber">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/ItemRef/@OrderNumber</PATH>
+      <TYPE>numeric</TYPE>
+      <DATATYPE>integer</DATATYPE>
+    </COLUMN>
+    <COLUMN name="FK_ItemGroupDefs" retain="YES">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+  </TABLE>
+  <TABLE name="ItemDefs">
+    <TABLE-PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef</TABLE-PATH>
+    <TABLE-END-PATH beginend="BEGIN" syntax="XPath">/ODM/Study/MetaDataVersion/CodeList</TABLE-END-PATH>
+    <COLUMN name="OID">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="Name">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/@Name</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="Label">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/@def:Label</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="SASFieldName">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/@SASFieldName</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>32</LENGTH>
+    </COLUMN>
+    <COLUMN name="Length">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/@Length</PATH>
+      <TYPE>numeric</TYPE>
+      <DATATYPE>integer</DATATYPE>
+    </COLUMN>
+    <COLUMN name="DataType">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/@DataType</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>18</LENGTH>
+    </COLUMN>
+    <COLUMN name="DisplayFormat">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/@def:DisplayFormat</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>32</LENGTH>
+    </COLUMN>
+    <COLUMN name="SignificantDigits">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/@SignificantDigits</PATH>
+      <TYPE>numeric</TYPE>
+      <DATATYPE>integer</DATATYPE>
+    </COLUMN>
+    <COLUMN name="FK_MetadataVersion" retain="YES">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+  </TABLE>
+  <TABLE name="ItemGroupDefTranslatedText">
+    <TABLE-PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/Description/TranslatedText</TABLE-PATH>
+    <TABLE-END-PATH beginend="BEGIN" syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef</TABLE-END-PATH>
+    <COLUMN name="TranslatedText">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/Description/TranslatedText</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="Lang">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/Description/TranslatedText/@xml:lang</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>17</LENGTH>
+    </COLUMN>
+    <COLUMN name="FK_ItemGroupDef" retain="YES">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemGroupDef/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+  </TABLE>
+  <TABLE name="ItemDefTranslatedText">
+    <TABLE-PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/Description/TranslatedText</TABLE-PATH>
+    <COLUMN name="TranslatedText">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/Description/TranslatedText</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="Lang">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/Description/TranslatedText/@xml:lang</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>17</LENGTH>
+    </COLUMN>
+    <COLUMN name="FK_ItemDef" retain="YES">
+      <PATH syntax="XPath">/ODM/Study/MetaDataVersion/ItemDef/@OID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+  </TABLE>
+</SXLEMAP>

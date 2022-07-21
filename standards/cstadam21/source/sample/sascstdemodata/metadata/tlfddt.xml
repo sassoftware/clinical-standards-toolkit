@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TLFDDT Originator="SAS Institute" SourceSystem="Clinical Standards Toolkit" SourceSystemVersion="1.4">
+    <Study OID="sascstdemodata">
+        <Display DispID="Table_14.2.01" Type="Table" PageOrientation="Landscape" DefaultLS="132" just="C"
+               CodePath="&amp;studyRootPath/analysis/code/Table_14.2.01.sas">
+            <Notes>
+                <Titles>
+                    <Title Linenum="1" Text="&amp;_cstDisplayID" just="C"  fontSize="10" />
+                    <Title Linenum="2" Text="Summary of Demographic and Baseline Characteristics" just="C"  fontSize="10" />
+                    <Title Linenum="3" Text="Intent to Treat"  just="C"  fontSize="10" />
+                </Titles>
+                <Footnotes>
+                    <Footnote Linenum="1" Text="Produced by SAS Clinical Standards Toolkit at &amp;_cstrundt"  just="L"  fontSize="8" />
+                    <Footnote Linenum="2" Text="&amp;_cstDisplayCode"  just="L"  fontSize="8" />
+                </Footnotes>
+            </Notes>
+            <DisplayRow ID="1" RowType="Column" RowLabel="Age (Years)" RowSpace="Single" ByRowSpace="Double"  colJust="L">
+                <Column Name="AGE" DataType="Numeric">
+                </Column>
+                <Statistics StatType="Descriptive">
+                    <StatRow Seqnum="1" StatLabel="n" Format="xxx" />
+                    <StatRow Seqnum="2" StatLabel="Mean" Format="xx.x" />
+                    <StatRow Seqnum="3" StatLabel="STD" Format="x.xx" />
+                    <StatRow Seqnum="4" StatLabel="Median" Format="xx" />
+                    <StatRow Seqnum="5" StatLabel="Min" Format="xx" />
+                    <StatRow Seqnum="6" StatLabel="Max" Format="xx" />
+                </Statistics>
+            </DisplayRow>
+            <DisplayRow ID="2" RowType="Column" RowLabel="Age" RowSpace="Single" ByRowSpace="Double"  colJust="L">
+                <Column Name="AGEGR1" DataType="Character"  ColFmt="Agegrp.">
+                </Column>
+                <Statistics StatType="Categorical">
+                    <StatRow Seqnum="&amp;_cstValueCounter" StatLabel="" Format="xxx  (yy.y%)" />
+                </Statistics>
+            </DisplayRow>
+            <DisplayRow ID="3" RowType="Column" RowLabel="Sex" RowSpace="Single" ByRowSpace="Double"  colJust="L">
+                <Column Name="SEX" DataType="Character"  ColFmt="$Sex.">
+                </Column>
+                <Statistics StatType="Categorical">
+                    <StatRow Seqnum="&amp;_cstValueCounter" StatLabel="" Format="xxx  (yy.y%)" />
+                </Statistics>
+            </DisplayRow>
+            <DisplayRow ID="4" RowType="Column" RowLabel="Race" RowSpace="Single" ByRowSpace="Double"  colJust="L">
+                <Column Name="RACE" DataType="Character"  ColFmt="$Race.">
+                </Column>
+                <Statistics StatType="Categorical">
+                    <StatRow Seqnum="&amp;_cstValueCounter" StatLabel="" Format="xxx  (yy.y%)" />
+                </Statistics>
+            </DisplayRow>
+            <DisplayColumn ID="1" SpanHeader="Actual Treatment" DisplayType="Categorical" CategoryType="Data"
+                 IncludeTotal="Y">
+                <Column Name="TRT01A" DataType="text" ColumnLabelType="Data">
+                </Column>
+                <Statistics>
+                    <StatRow Seqnum="1" StatLabel="N" Format="(N=xxx)" />
+                </Statistics>
+            </DisplayColumn>
+        </Display>
+        <Display DispID="Table_14.3.1.1" Type="Table" PageOrientation="Landscape" DefaultLS="132" just="C"
+               CodePath="&amp;studyRootPath/analysis/code/Table_14.3.1.1.sas">
+            <Notes>
+                <Titles>
+                    <Title Linenum="1" Text="&amp;_cstDisplayID" just="C"  fontSize="10" />
+                    <Title Linenum="2" Text="Incidence of Treatment-Emergent Adverse Events by System Organ Class and Preferred Term" just="C"  fontSize="10" />
+                    <Title Linenum="3" Text="Safety Population"  just="C"  fontSize="10" />
+                </Titles>
+                <Footnotes>
+                    <Footnote Linenum="1" Text="Note 1: A subject who reported two or more different preferred terms in the same system organ class is counted only once in the system organ class."  just="L"  fontSize="9"/>
+                    <Footnote Linenum="2" Text="Note 2: Subjects with adverse events in different systems organ class are counted only once in the overall total."  just="L"  fontSize="9"/>
+                    <Footnote Linenum="3" Text="Note 3: N is the number of subjects within the treatment group in the population, n is the number of subjects who reported the adverse event and % is calculated by n/N*100. [AEs] is the number of AE reports."  just="L"  fontSize="9"/>
+                    <Footnote Linenum="9" Text="Produced by SAS Clinical Standards Toolkit at &amp;_cstrundt"  just="L"  fontSize="8" />
+                    <Footnote Linenum="10" Text="&amp;_cstDisplayCode"  just="L"  fontSize="8" />
+                </Footnotes>
+            </Notes>
+            <DisplayRow ID="1" RowType="Column" RowLabel="Any Adverse Events" RowSpace="Single" ByRowSpace="Double"  colJust="L">
+                <Column Name="ANYAE" DataType="Numeric">
+                </Column>
+                <Statistics StatType="Categorical">
+                    <StatRow Seqnum="&amp;_cstValueCounter" StatLabel="" Format="xxx   xxx (yyy.y%)" />
+                </Statistics>
+              </DisplayRow>
+            <DisplayRow ID="2" RowType="Column" RowLabel="SystemOrganClass" RowSpace="Single" ByRowSpace="Double"  colJust="L"  repeating="Y" ParentRow=""> 
+                <Column Name="AEBODSYS" DataType="Character"  ColFmt="">
+                </Column>
+                <Statistics StatType="Categorical">
+                    <StatRow Seqnum="&amp;_cstValueCounter" StatLabel="" Format="xxx   xxx (yyy.y%" />
+                </Statistics>
+            </DisplayRow>
+            <DisplayRow ID="3" RowType="Column" RowLabel="Preferred Term" RowSpace="Single" ByRowSpace="Single"  colJust="L"  repeating="Y"  ParentRow="2">
+                <Column Name="AEDECOD" DataType="Character"  ColFmt="">
+                </Column>
+                <Statistics StatType="Categorical">
+                    <StatRow Seqnum="&amp;_cstValueCounter" StatLabel="" Format="xxx   xxx (yyy.y%" />
+                </Statistics>
+            </DisplayRow>
+            <DisplayColumn ID="1" DisplayType="Categorical" CategoryType="Data">
+                <Column Name="TRT01P" DataType="text" ColumnLabelType="Data">
+                </Column>
+                <Statistics>
+                    <StatRow Seqnum="1" StatLabel="N" Format="(N=xxx)" />
+                </Statistics>
+            </DisplayColumn>
+            <DisplayColumn ID="2" SpanHeader="Study Drug" DisplayType="Categorical" CategoryType="Data"
+                 IncludeTotal="Y">
+                <Column Name="TRT01P" DataType="text" ColumnLabelType="Data">
+                </Column>
+                <Statistics>
+                    <StatRow Seqnum="1" StatLabel="N" Format="(N=xxx)" />
+                </Statistics>
+            </DisplayColumn>
+        </Display>
+    </Study>
+</TLFDDT>

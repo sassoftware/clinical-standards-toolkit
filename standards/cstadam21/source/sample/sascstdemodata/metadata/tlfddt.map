@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<SXLEMAP version="1.2">
+
+<TABLE name="TLF_master">
+   <TABLE-PATH syntax="XPath">/TLFDDT/Study/Display</TABLE-PATH>
+   <TABLE-DESCRIPTION>TLFDDT Master Display List</TABLE-DESCRIPTION>
+
+   <COLUMN name="DISPID" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@DispID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Unique identifier for analysis display</DESCRIPTION>
+     <LENGTH>40</LENGTH>
+   </COLUMN>
+   <COLUMN name="TYPE">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@Type</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Display type (Table | Listing | Figure)</DESCRIPTION>
+     <LENGTH>7</LENGTH>
+   </COLUMN>
+   <COLUMN name="PAGEORIENTATION">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@PageOrientation</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Page Orientation (Landscape | Portrait)</DESCRIPTION>
+     <LENGTH>10</LENGTH>
+   </COLUMN>
+   <COLUMN name="DEFAULTLS">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@DefaultLS</PATH>
+     <TYPE>integer</TYPE>
+     <DATATYPE>integer</DATATYPE>
+     <DESCRIPTION>Default display line size</DESCRIPTION>
+     <LENGTH>8</LENGTH>
+   </COLUMN>
+   <COLUMN name="CODEPATH">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@CodePath</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Display Code Path</DESCRIPTION>
+     <LENGTH>200</LENGTH>
+   </COLUMN>
+   <COLUMN name="JUST">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@just</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Display justification (L | C | R)</DESCRIPTION>
+     <LENGTH>1</LENGTH>
+   </COLUMN>
+</TABLE>
+
+<TABLE name="TLF_titles">
+   <TABLE-PATH syntax="XPath">/TLFDDT/Study/Display/Notes/Titles/Title</TABLE-PATH>
+   <TABLE-DESCRIPTION>TLFDDT Display Titles</TABLE-DESCRIPTION>
+
+   <COLUMN name="DISPID" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@DispID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Unique identifier for analysis display</DESCRIPTION>
+     <LENGTH>40</LENGTH>
+   </COLUMN>
+   <COLUMN name="LINENUM">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/Notes/Titles/Title/@Linenum</PATH>
+     <TYPE>integer</TYPE>
+     <DATATYPE>integer</DATATYPE>
+     <DESCRIPTION>Title line number</DESCRIPTION>
+     <LENGTH>8</LENGTH>
+   </COLUMN>
+   <COLUMN name="TEXT">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/Notes/Titles/Title/@Text</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Title line text</DESCRIPTION>
+     <LENGTH>500</LENGTH>
+   </COLUMN>
+   <COLUMN name="JUST">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/Notes/Titles/Title/@just</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Title line justification (L | C | R)</DESCRIPTION>
+     <LENGTH>1</LENGTH>
+   </COLUMN>
+   <COLUMN name="FONTSIZE">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/Notes/Titles/Title/@fontSize</PATH>
+     <TYPE>integer</TYPE>
+     <DATATYPE>integer</DATATYPE>
+     <DESCRIPTION>Title line font size</DESCRIPTION>
+     <LENGTH>8</LENGTH>
+   </COLUMN>
+</TABLE>
+
+<TABLE name="TLF_footnotes">
+   <TABLE-PATH syntax="XPath">/TLFDDT/Study/Display/Notes/Footnotes/Footnote</TABLE-PATH>
+   <TABLE-DESCRIPTION>TLFDDT Display Footnotes</TABLE-DESCRIPTION>
+
+   <COLUMN name="DISPID" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@DispID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Unique identifier for analysis display</DESCRIPTION>
+     <LENGTH>40</LENGTH>
+   </COLUMN>
+   <COLUMN name="LINENUM">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/Notes/Footnotes/Footnote/@Linenum</PATH>
+     <TYPE>integer</TYPE>
+     <DATATYPE>integer</DATATYPE>
+     <DESCRIPTION>Footnote line number</DESCRIPTION>
+     <LENGTH>8</LENGTH>
+   </COLUMN>
+   <COLUMN name="TEXT">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/Notes/Footnotes/Footnote/@Text</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Footnote line text</DESCRIPTION>
+     <LENGTH>500</LENGTH>
+   </COLUMN>
+   <COLUMN name="JUST">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/Notes/Footnotes/Footnote/@just</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Footnote line justification (L | C | R)</DESCRIPTION>
+     <LENGTH>1</LENGTH>
+   </COLUMN>
+   <COLUMN name="FONTSIZE">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/Notes/Footnotes/Footnote/@fontSize</PATH>
+     <TYPE>integer</TYPE>
+     <DATATYPE>integer</DATATYPE>
+     <DESCRIPTION>Footnote line font size</DESCRIPTION>
+     <LENGTH>8</LENGTH>
+   </COLUMN>
+</TABLE>
+
+<TABLE name="TLF_rows">
+   <TABLE-PATH syntax="XPath">/TLFDDT/Study/Display/DisplayRow</TABLE-PATH>
+   <TABLE-DESCRIPTION>TLFDDT Row Metadata</TABLE-DESCRIPTION>
+
+   <COLUMN name="DISPID" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@DispID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Unique identifier for analysis display</DESCRIPTION>
+     <LENGTH>40</LENGTH>
+   </COLUMN>
+   <COLUMN name="ID">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@ID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Row ID</DESCRIPTION>
+     <LENGTH>64</LENGTH>
+   </COLUMN>
+   <COLUMN name="ROWTYPE">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@RowType</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Row Type (Column | Stat | Derived | Summary)</DESCRIPTION>
+     <LENGTH>8</LENGTH>
+   </COLUMN>
+   <COLUMN name="ROWLABEL">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@RowLabel</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Row Label</DESCRIPTION>
+     <LENGTH>132</LENGTH>
+   </COLUMN>
+   <COLUMN name="ROWSPACE">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@RowSpace</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Row Line Spacing (Single | 1.5 | Double)</DESCRIPTION>
+     <LENGTH>6</LENGTH>
+   </COLUMN>
+   <COLUMN name="BYROWSPACE">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@ByRowSpace</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Line Spacing between Rows (Single | 1.5 | Double)</DESCRIPTION>
+     <LENGTH>6</LENGTH>
+   </COLUMN>
+   <COLUMN name="COLJUST">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@colJust</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Column Justification (L | C | R)</DESCRIPTION>
+     <LENGTH>1</LENGTH>
+   </COLUMN>
+   <COLUMN name="REPEATING">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@repeating</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Can row repeat? (Y | N)</DESCRIPTION>
+     <LENGTH>1</LENGTH>
+   </COLUMN>
+   <COLUMN name="PARENTROW">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@ParentRow</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Row can repeat within this row ID</DESCRIPTION>
+     <LENGTH>64</LENGTH>
+   </COLUMN>
+   <COLUMN name="COLUMN">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/Column/@Name</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Column referenced in row</DESCRIPTION>
+     <LENGTH>8</LENGTH>
+   </COLUMN>
+   <COLUMN name="COLUMNTYPE">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/Column/@DataType</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Display Column as this Datatype (Character | Numeric)</DESCRIPTION>
+     <LENGTH>10</LENGTH>
+   </COLUMN>
+   <COLUMN name="COLUMNFMT">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/Column/@ColFmt</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Column Format</DESCRIPTION>
+     <LENGTH>8</LENGTH>
+   </COLUMN>
+</TABLE>
+
+<TABLE name="TLF_rowstat">
+   <TABLE-PATH syntax="XPath">/TLFDDT/Study/Display/DisplayRow/Statistics/StatRow</TABLE-PATH>
+   <TABLE-DESCRIPTION>TLFDDT Row Statistics</TABLE-DESCRIPTION>
+
+   <COLUMN name="DISPID" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@DispID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Unique identifier for analysis display</DESCRIPTION>
+     <LENGTH>40</LENGTH>
+   </COLUMN>
+   <COLUMN name="PARENT">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@Parent</PATH>
+     <TYPE>character</TYPE>
+     <DEFAULT>Row</DEFAULT>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Statistic parent</DESCRIPTION>
+     <LENGTH>16</LENGTH>
+   </COLUMN>
+   <COLUMN name="PARENTID" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@ID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>ID of parent</DESCRIPTION>
+     <LENGTH>64</LENGTH>
+   </COLUMN>
+   <COLUMN name="STATTYPE" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/Statistics/@StatType</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Statistic type (Descriptive | Categorical)</DESCRIPTION>
+     <LENGTH>12</LENGTH>
+   </COLUMN>
+   <COLUMN name="SEQNUM">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/Statistics/StatRow/@Seqnum</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Statistic row number</DESCRIPTION>
+     <LENGTH>20</LENGTH>
+   </COLUMN>
+   <COLUMN name="STATLABEL">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/Statistics/StatRow/@StatLabel</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Statistic Label</DESCRIPTION>
+     <LENGTH>40</LENGTH>
+   </COLUMN>
+   <COLUMN name="STATFORMAT">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/Statistics/StatRow/@Format</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Statistic formatting</DESCRIPTION>
+     <LENGTH>20</LENGTH>
+   </COLUMN>
+</TABLE>
+
+<TABLE name="TLF_columns">
+   <TABLE-PATH syntax="XPath">/TLFDDT/Study/Display/DisplayColumn</TABLE-PATH>
+   <TABLE-DESCRIPTION>TLFDDT Column Metadata</TABLE-DESCRIPTION>
+
+   <COLUMN name="DISPID" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@DispID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Unique identifier for analysis display</DESCRIPTION>
+     <LENGTH>40</LENGTH>
+   </COLUMN>
+   <COLUMN name="ID">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayColumn/@ID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Row ID</DESCRIPTION>
+     <LENGTH>64</LENGTH>
+   </COLUMN>
+   <COLUMN name="ROWTYPE">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/@RowType</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Row Type (Column | Stat | Derived | Summary)</DESCRIPTION>
+     <LENGTH>8</LENGTH>
+   </COLUMN>
+</TABLE>
+
+<TABLE name="TLF_columnstat">
+   <TABLE-PATH syntax="XPath">/TLFDDT/Study/Display/DisplayColumn/Statistics/StatRow</TABLE-PATH>
+   <TABLE-DESCRIPTION>TLFDDT Column Statistics</TABLE-DESCRIPTION>
+
+   <COLUMN name="DISPID" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/@DispID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Unique identifier for analysis display</DESCRIPTION>
+     <LENGTH>40</LENGTH>
+   </COLUMN>
+   <COLUMN name="PARENT">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayColumn/@Parent</PATH>
+     <TYPE>character</TYPE>
+     <DEFAULT>Column</DEFAULT>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Statistic parent</DESCRIPTION>
+     <LENGTH>16</LENGTH>
+   </COLUMN>
+   <COLUMN name="PARENTID" retain="YES">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayColumn/@ID</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>ID of parent</DESCRIPTION>
+     <LENGTH>64</LENGTH>
+   </COLUMN>
+   <COLUMN name="SEQNUM">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayRow/Statistics/StatRow/@Seqnum</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Statistic row number</DESCRIPTION>
+     <LENGTH>20</LENGTH>
+   </COLUMN>
+   <COLUMN name="STATLABEL">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayColumn/Statistics/StatRow/@StatLabel</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Statistic Label</DESCRIPTION>
+     <LENGTH>40</LENGTH>
+   </COLUMN>
+   <COLUMN name="STATFORMAT">
+     <PATH syntax="Xpath">/TLFDDT/Study/Display/DisplayColumn/Statistics/StatRow/@Format</PATH>
+     <TYPE>character</TYPE>
+     <DATATYPE>string</DATATYPE>
+     <DESCRIPTION>Statistic formatting</DESCRIPTION>
+     <LENGTH>20</LENGTH>
+   </COLUMN>
+</TABLE>
+
+</SXLEMAP>

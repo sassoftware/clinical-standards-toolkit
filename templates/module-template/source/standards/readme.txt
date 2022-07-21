@@ -1,0 +1,1 @@
+Copy the standards folder structure from any existing standard then delete this file.

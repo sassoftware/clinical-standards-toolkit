@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<!-- =================================================================== -->
+<!-- NOTE: all directories are relative to root Git Project folder       -->
+<!-- =================================================================== -->
+<project basedir="." default="install" name="openCST">
+    <!-- ================================================================= -->
+    <!-- Initialize all parameters and classpaths -->
+    <!-- ================================================================= -->
+
+    <property file="${user.home}/cstbuild.properties"/>
+    <property file="project.properties" />
+    <property file="build.properties" />
+
+    <taskdef resource="net/sf/antcontrib/antlib.xml">
+        <classpath>
+            <pathelement location="./ant-contrib-1.0b3.jar"/>
+        </classpath>
+    </taskdef>
+
+    <target name="log-deploy">
+        <record name="deploy.log" loglevel="info" action="start" append="false"/>
+        <echo>Deploying ${project.name} ${project.version}</echo>
+    </target>
+
+    <target name="init">
+        <tstamp>
+            <format pattern="yyyyMMdd.HHmmss" property="build.time" />
+        </tstamp>
+
+        <condition property="isWindows">
+            <os family="windows" />
+        </condition>
+
+        <available file="${framework.deploy.path}/${build.dir.macros}" type="dir" property="flag.cstFrameworkExists" />
+
+        <available file="${standards.deploy.path}/${build.dir.standards}" type="dir" property="flag.cstStandardsExists" />
+
+        <available file="${samples.deploy.path}" type="dir" property="flag.cstSamplesExists" />
+
+    </target>
+
+    <!-- ================================================================= -->
+    <!-- List project paths and dependencies -->
+    <!-- ================================================================= -->
+    <target name="info" description="List configuration parameters in use" depends="init">
+        <echo message="Java Version = ${java.version}"/>
+        <echo message="" />
+        <echo message="Ant Version = ${ant.version}"/>
+        <echo message="" />
+        <echo message="Build Time = ${build.time}" />
+        <echo message="" />
+        <echo message="Home Directories:" />
+        <echo message=" User home = ${user.home}" />
+        <echo message=" Java home = ${java.home}" />
+        <echo message="" />
+        <echo message="Project Properties:" />
+        <echo message=" Project name = ${project.name}" />
+        <echo message=" Project version = ${project.version}" />
+        <echo message="" />
+        <echo message="Build property files:" />
+        <echo message=" ${basedir}/project.properties" />
+        <echo message=" ${user.home}/cstbuild.properties" />
+        <echo message=" ${basedir}/build.properties" />
+        <echo message="" />
+        <echo message="Deployment Directories:" />
+        <echo message=" ${framework.deploy.path}" />
+        <echo message=" ${standards.deploy.path}" />
+        <echo message=" ${samples.deploy.path}" />
+        <echo message="" />
+	<echo message="SAS Configuration:" />
+	<echo message=" SASHome: ${sas.fulldirpath.sasrootdir.default}"/>
+	<echo message=" Executable: ${sas.dirpath.sasFoundation.94}/sas"/>
+        <echo message="" />
+        <echo message="Standards to deploy:" />
+        <for list="${build.modules}" param="std">
+            <sequential>
+                <echo message =" @{std}" />
+            </sequential>
+        </for>
+
+    </target>
+
+    <!-- ================================================================= -->
+    <!-- Remove build generated directories -->
+    <!-- ================================================================= -->
+
+    <target name="clean-dist">
+        <echo>Deleting the distribution</echo>
+        <delete dir="${build.dir.dist}" />
+    </target>
+
+    <target name="clean-dist-framework">
+        <echo>Deleting the framework module</echo>
+        <delete dir="${build.dir.dist}/${build.dir.framework}" />
+    </target>
+
+    <target name="clean-dist-jar">
+        <echo>Deleting the jar</echo>
+        <delete dir="${build.dir.dist}/${build.dir.framework}/${build.dir.java}" />
+    </target>
+
+    <target name="clean-dist-standard">
+        <echo>Deleting the standard module</echo>
+        <delete dir="${build.dir.dist}/${build.dir.standards}" />
+    </target>
+
+    <!-- development utililty target (don't ever call these unless you intend to fully delete)-->
+    <target name="clean-deploy" depends="clean-deploy-framework">
+        <!-- delete any backup folders -->
+        <property name="parent.path" location="${framework.deploy.path}/.."/>
+        <basename property="framework.folder" file="${framework.deploy.path}"/>
+        <delete includeEmptyDirs="true">
+            <fileset dir="${parent.path}">
+                <include name="${framework.folder}-copy-**/" />
+            </fileset> 
+        </delete>
+    </target>
+
+    <!-- development utililty target (don't ever call these unless you intend to fully delete)-->
+    <target name="clean-deploy-framework">
+        <echo>Deleting the framework deployment</echo>
+        <delete dir="${framework.deploy.path}"/>
+    </target>
+
+    <!-- development utililty target (don't ever call these unless you intend to fully delete)-->
+    <target name="uninstall" description="Completely removes the framework, standards Library, samples library (including backups)">
+        <input message="Are you sure that you want to completely uninstall the framework, standards library, and sample library (yes/no)?"
+       validargs="yes,no"
+       addproperty="do.delete"/>
+    <if>
+        <equals arg1="yes" arg2="${do.delete}" />
+        <then>
+            <echo>Deleting the deployment and backups</echo>
+            <antcall target="clean-deploy"/>
+            <delete dir="${standards.deploy.path}" />
+            <delete dir="${samples.deploy.path}"/>
+        </then>
+        <else>
+          <echo>Deployment will not be deleted</echo>
+        </else>
+    </if>
+    </target>
+
+    <!-- ================================================================= -->
+    <!-- Create the distribution -->
+    <!-- ================================================================= -->
+    <target name="dist">
+        <antcall target="dist-framework"/>
+        <antcall target="dist-standards"/>
+    </target>
+
+    <target name="dist-framework"  depends="clean-dist-framework, dist-jar">
+        <mkdir dir="${build.dir.dist}/${build.dir.framework}" />
+        <mkdir dir="${build.dir.dist}/${build.dir.framework}/${build.dir.macros}" />
+        <copy toDir="${build.dir.dist}/${build.dir.framework}/${build.dir.macros}">
+            <fileset dir="${build.dir.framework}/${build.dir.macros}">
+                <include name="*.sas"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="dist-jar" depends="clean-dist-jar">
+        <mkdir dir="${build.dir.dist}/${build.dir.framework}/${build.dir.java}" />
+        <copy toDir="${build.dir.dist}/${build.dir.framework}/${build.dir.java}">
+            <fileset dir="${build.dir.framework}/java/${build.dir.dist}">
+                <include name="*.jar"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="dist-standards" depends="clean-dist-standard">
+        <mkdir dir="${build.dir.dist}/${build.dir.standards}" />
+        <!-- delegate to the individual module dist scripts -->
+        <for list="${build.modules}" param="std">
+            <sequential>
+                <ant target="dist" dir="./${build.dir.standards}/@{std}"/>
+            </sequential>
+        </for>
+    </target>
+
+    <target name="install" description="Builds and installs the framework, standards library, and samples library" depends="init, log-deploy, info">
+        <antcall target="dist" />
+        <antcall target="deploy-framework" />
+        <antcall target="deploy-standards" />
+        <antcall target="document-sas-configuration" />
+    </target>
+
+    <target name="deploy-framework" depends="init,dist-framework">
+        <if>
+            <and>
+                <equals arg1="${flag.cstFrameworkExists}" arg2="true"/>
+                <equals arg1="${deploy.overwrite.framework}" arg2="false"/>
+            </and>
+            <then>
+                <echo>Backing up the existing framework macros</echo>
+                <copy todir="${framework.deploy.path}-copy-${build.time}">
+                    <fileset dir="${framework.deploy.path}" includes="**"/>
+                </copy>
+                <antcall target="clean-deploy-framework"/>
+                <antcall target="createFrameworkLibraryFolders"/>
+            </then>
+        </if>
+
+        <echo>Deploying the Framework</echo>
+
+        <copy todir="${framework.deploy.path}/${build.dir.macros}" overwrite="true">
+            <fileset dir="${build.dir.dist}/${build.dir.framework}/${build.dir.macros}"/>
+        </copy>
+        <echo>Copying jar to the framework Library.</echo>
+        <copy todir="${framework.deploy.path}/${build.dir.java}" overwrite="true">
+            <fileset dir="${build.dir.dist}/${build.dir.framework}/${build.dir.java}"/>
+        </copy>
+    </target>
+
+    <target name="deploy-standards" depends="init">
+        <antcall target="createGlobalLibraryFolders"/>
+        <antcall target="createSampleLibraryFolders"/>
+
+        <!-- delegate to the individual module dist scripts -->
+        <for list="${build.modules}" param="std">
+            <sequential>
+                <ant target="deploy" dir="./${build.dir.standards}/@{std}" />
+            </sequential>
+        </for>
+
+    </target>
+
+    <target name="document-sas-configuration">
+        <echo message="Creating SAS configuration reference file"/>
+        <echo message="-SET CSTHOME ${framework.deploy.path}${line.separator}" file="${framework.deploy.path}/sasconfiguration.txt"/>
+        <echo message="-CSTGLOBALLIB ${standards.deploy.path}${line.separator}" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
+        <echo message="-CSTSAMPLELIB ${samples.deploy.path}${line.separator}" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
+        <echo message="-insert sasautos &apos;!CSTHOME/${build.dir.macros}&apos;${line.separator}" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
+        <echo message="-JREOPTIONS (-Dsas.app.class.dirs=!CSTHOME/${build.dir.java})${line.separator}" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
+        <echo message="-SET CLASSPATH !CSTHOME/jar  (note: this can alternatively be defined as an environment variable on the server)" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
+    </target>
+
+    <target name="createFrameworkLibraryFolders" unless="flag.cstFrameworkExists">
+        <echo>Creating the contents of openCST Framework Library</echo>
+        <mkdir dir="${framework.deploy.path}"/>
+        <mkdir dir="${framework.deploy.path}/${build.dir.macros}"/>
+        <mkdir dir="${framework.deploy.path}/${build.dir.java}"/>
+    </target>
+
+    <target name="createGlobalLibraryFolders" unless="flag.cstStandardsExists">
+        <echo>Creating directories for CST Global Library</echo>
+        <mkdir dir="${standards.deploy.path}" />
+        <mkdir dir="${standards.deploy.path}/${build.dir.logs}" />
+        <mkdir dir="${standards.deploy.path}/${build.dir.metadata}" />
+        <mkdir dir="${standards.deploy.path}/${build.dir.schemarepos}" />
+        <mkdir dir="${standards.deploy.path}/${build.dir.standards}" />
+        <mkdir dir="${standards.deploy.path}/${build.dir.xslrepos}" />
+    </target>
+
+    <target name="createSampleLibraryFolders" unless="flag.cstSamplesExists">
+        <echo>Creating directory for CST Sample Library</echo>
+        <mkdir dir="${samples.deploy.path}" />
+    </target>
+
+    <target name="create-cport-files" depends="init">
+      <!-- delegate to the individual module dist scripts -->
+        <for list="${build.modules}" param="std">
+            <sequential>
+                <ant target="create-cport-files" dir="./${build.dir.standards}/@{std}" />
+            </sequential>
+        </for>
+    </target>
+</project>

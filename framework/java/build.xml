@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<project name="Build CDI Toolkit Java Transforms" default="dist" basedir=".">
+    
+    <property file="../../build.properties" />
+    <property file="build.properties" />
+       
+    <!-- Setup the copyright notice - used in manifests and javadoc -->
+    <tstamp>
+        <format property="copyright.year" pattern="yyyy" locale="en" />
+    </tstamp>
+    <property name="sas.copyright" value="Copyright (c) ${copyright.year}, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved." />
+   
+    <!-- Setup all the classpaths -->
+    <path id="project.classpath">
+        <fileset dir="${java.dir.lib}"/>
+    </path>
+
+    <target name="clean-build">
+        <delete dir="${java.dir.bin}"/>
+    </target>
+
+    <target name="clean-dist">
+        <delete dir="${build.dir.dist}"/>
+    </target>
+
+
+    <target name="compile" depends="clean-build">
+        <mkdir dir="${java.dir.bin}" />
+ 
+        <javac  includeantruntime="false" deprecation="${javac.deprecation}" debug="${javac.debug}" encoding="UTF-8" srcdir="${java.dir.src}" 
+        	destdir="${java.dir.bin}" source="${javac.source}" target="${javac.target}" includes="**/*.*">
+            <classpath refid="project.classpath" />
+            <compilerarg value="-Xlint:unchecked" />
+            <compilerarg value="-Xlint:deprecation" />
+        </javac>
+    	
+    	<copy flatten="false" todir="${java.dir.bin}">
+    	<fileset dir="${java.dir.src}" includes="**/*.xsl"/>
+    	</copy>
+
+    </target>
+
+    <target name="dist" depends="compile, clean-dist">
+        
+        <jar jarfile="${build.dir.dist}/${java.jarname.root}.jar">
+            <manifest>
+              <attribute name="Specification-Title" value="${jar.name}" />
+              <attribute name="Specification-Vendor" value="SAS Institute Inc." />
+              <attribute name="Specification-Version" value="${jar.version}" />
+              <attribute name="Implementation-Title" value="${jar.name}" />
+              <attribute name="Implementation-Vendor" value="SAS Institute Inc." />
+              <attribute name="Implementation-Vendor-Id" value="com.sas" />
+              <attribute name="Implementation-Version" value="${jar.version}" />
+              <attribute name="Copyright" value="${sas.copyright}" />
+              <attribute name="SPDX-License-Identifier" value="Apache-2.0" />
+            </manifest>
+
+            <fileset dir="${java.dir.bin}"/>
+        </jar>
+      
+    </target>
+	
+	<target name="deploy" description="deploys jar to the production framework location" depends="dist">
+		<copy file="${build.dir.dist}/${jar.name}.jar" toDir="${framework.deploy.path}/${build.dir.java}" />
+	</target>
+    
+</project>

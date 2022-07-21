@@ -1,0 +1,4 @@
+This is the ADaM 2.1 runtime macro library.
+
+@name ADaM V2.1 (Runtime)
+@since V1.2

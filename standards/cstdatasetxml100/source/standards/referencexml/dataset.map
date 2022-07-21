@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SXLEMAP name="datamap" version="1.9">
+  <TABLE name="ODM">
+    <TABLE-PATH syntax="XPath">/ODM</TABLE-PATH>
+    <COLUMN name="FileOID">
+      <PATH syntax="XPath">/ODM/@FileOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="CreationDateTime">
+      <PATH syntax="XPath">/ODM/@CreationDateTime</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>32</LENGTH>
+    </COLUMN>
+    <COLUMN name="FileType">
+      <PATH syntax="XPath">/ODM/@FileType</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>13</LENGTH>
+    </COLUMN>
+    <COLUMN name="ODMVersion">
+      <PATH syntax="XPath">/ODM/@ODMVersion</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>32</LENGTH>
+    </COLUMN>
+    <COLUMN name="PriorFileOID">
+      <PATH syntax="XPath">/ODM/@PriorFileOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="DatasetXMLVersion">
+      <PATH syntax="XPath">/ODM/@data:DatasetXMLVersion</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>32</LENGTH>
+    </COLUMN>
+  </TABLE>
+  <TABLE name="ClinicalItemData">
+    <TABLE-PATH syntax="XPath">/ODM/ClinicalData/ItemGroupData/ItemData</TABLE-PATH>
+    <COLUMN name="StudyOID" retain="YES">
+      <PATH syntax="XPath">/ODM/ClinicalData/@StudyOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="MetaDataVersionOID" retain="YES">
+      <PATH syntax="XPath">/ODM/ClinicalData/@MetaDataVersionOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="ItemGroupOID" retain="YES">
+      <PATH syntax="XPath">/ODM/ClinicalData/ItemGroupData/@ItemGroupOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="ItemGroupDataSeq" retain="YES">
+      <PATH syntax="XPath">/ODM/ClinicalData/ItemGroupData/@data:ItemGroupDataSeq</PATH>
+      <TYPE>numeric</TYPE>
+      <DATATYPE>integer</DATATYPE>
+    </COLUMN>
+    <COLUMN name="CalculatedSeq" class="ORDINAL" retain="YES">
+      <INCREMENT-PATH beginend="BEGIN" syntax="XPath">/ODM/ClinicalData/ItemGroupData</INCREMENT-PATH>
+      <TYPE>numeric</TYPE>
+      <DATATYPE>integer</DATATYPE>
+    </COLUMN>
+    <COLUMN name="ItemOID">
+      <PATH syntax="XPath">/ODM/ClinicalData/ItemGroupData/ItemData/@ItemOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="Value">
+      <PATH syntax="XPath">/ODM/ClinicalData/ItemGroupData/ItemData/@Value</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="FK_ODM" retain="YES">
+      <PATH syntax="XPath">/ODM/@FileOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+  </TABLE>
+  <TABLE name="ReferenceItemData">
+    <TABLE-PATH syntax="XPath">/ODM/ReferenceData/ItemGroupData/ItemData</TABLE-PATH>
+    <TABLE-END-PATH beginend="BEGIN" syntax="XPath">/ODM/ClinicalData</TABLE-END-PATH>
+    <COLUMN name="StudyOID" retain="YES">
+      <PATH syntax="XPath">/ODM/ReferenceData/@StudyOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="MetaDataVersionOID" retain="YES">
+      <PATH syntax="XPath">/ODM/ReferenceData/@MetaDataVersionOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="ItemGroupOID" retain="YES">
+      <PATH syntax="XPath">/ODM/ReferenceData/ItemGroupData/@ItemGroupOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="ItemGroupDataSeq" retain="YES">
+      <PATH syntax="XPath">/ODM/ReferenceData/ItemGroupData/@data:ItemGroupDataSeq</PATH>
+      <TYPE>numeric</TYPE>
+      <DATATYPE>integer</DATATYPE>
+    </COLUMN>
+    <COLUMN name="CalculatedSeq" class="ORDINAL" retain="YES">
+      <INCREMENT-PATH beginend="BEGIN" syntax="XPath">/ODM/ReferenceData/ItemGroupData</INCREMENT-PATH>
+      <TYPE>numeric</TYPE>
+      <DATATYPE>integer</DATATYPE>
+    </COLUMN>
+    <COLUMN name="ItemOID">
+      <PATH syntax="XPath">/ODM/ReferenceData/ItemGroupData/ItemData/@ItemOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+    <COLUMN name="Value">
+      <PATH syntax="XPath">/ODM/ReferenceData/ItemGroupData/ItemData/@Value</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>2000</LENGTH>
+    </COLUMN>
+    <COLUMN name="FK_ODM" retain="YES">
+      <PATH syntax="XPath">/ODM/@FileOID</PATH>
+      <TYPE>character</TYPE>
+      <DATATYPE>string</DATATYPE>
+      <LENGTH>128</LENGTH>
+    </COLUMN>
+  </TABLE>
+</SXLEMAP>
