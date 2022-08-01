@@ -1,6 +1,6 @@
 *.log
 *.class
-dist/
+/dist/
 .vscode/
 .history/
 bin/
