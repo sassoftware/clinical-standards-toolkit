@@ -120,9 +120,7 @@
   %if %upcase(&_cstScope) eq _ALL_ %then %let _cstScope=USER SYSTEM;
 
   %* Determine XML engine;
-  %let _cstXMLEngine=xml;
-  %if %eval(&SYSVER EQ 9.2) %then %let _cstXMLEngine=xml92;
-  %if %eval(&SYSVER GE 9.3) %then %let _cstXMLEngine=xmlv2;
+  %let _cstXMLEngine=xmlv2;
   
   %*******************************************************;
   %*  Set _cstLclReturn and _cstLclReturnMsg parameters  *;

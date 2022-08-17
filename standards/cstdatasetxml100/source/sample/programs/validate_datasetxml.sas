@@ -151,10 +151,7 @@ run;
 *******************************************************************************;
 
 data _null_;
-  %* Determine XML engine;
-  call symputx ("_cstXMLEngine", "xml");
-  if "&SYSVER" eq "9.2" then call symputx ("_cstXMLEngine", "xml92");
-  if input("&SYSVER", best.) ge 9.3   then call symputx ("_cstXMLEngine", "xmlv2");
+  call symputx ("_cstXMLEngine", "xmlv2");
 run;
 
 libname srcmeta &_cstXMLEngine xmlmap=metamap access=readonly;

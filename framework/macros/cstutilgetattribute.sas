@@ -56,14 +56,13 @@
 
   %let DatasetCharAttr=|CHARSET|ENCRYPT|ENGINE|LABEL|LIB|MEM|MODE%str
               ()|MTYPE|SORTEDBY|SORTLVL|SORTSEQ|TYPE|;
-  %if %sysevalf(&sysver) GE 9.3 %then %let DatasetCharAttr=&DatasetCharAttr.COMPRESS|;
-  %if %sysevalf(&sysver) GE 9.4 %then %let DatasetCharAttr=&DatasetCharAttr.DATAREP|;
+  %let DatasetCharAttr=&DatasetCharAttr.DATAREP|;
 
   %let DatasetNumAttr=|ALTERPW|ANOBS|ANY|ARAND|ARWU|AUDIT_DATA|AUDIT_BEFORE%str
              ()|AUDIT_ERROR|CRDTE|ICONST|INDEX|ISINDEX|ISSUBSET|LRECL|LRID|MAXGEN%str
              ()|MAXRC|MODTE|NDEL|NEXTGEN|NLOBS|NLOBSF|NOBS|NVARS|PW|RADIX|READPW%str
              ()|TAPE|WHSTMT|WRITEPW|;
-  %if %sysevalf(&sysver) GE 9.4 %then %let DatasetNumAttr=&DatasetNumAttr.REUSE|;
+  %let DatasetNumAttr=&DatasetNumAttr.REUSE|;
 
   %* Try to open the data set;
   %let _cstdsid=%sysfunc(open(&_cstDataSetName,is));

@@ -19,7 +19,6 @@
     ) / des='CST: Set _cstSRoot macro variable';
 
    %global _cstSRoot;
-   %if %eval(&SYSVER GE 9.4) %then 
-     %let _cstSRoot=%sysfunc(kcompress(%sysfunc(getoption(CSTSAMPLELIB)),%str(%")));
+   %let _cstSRoot=%sysfunc(kcompress(%sysfunc(getoption(CSTSAMPLELIB)),%str(%")));
 
 %mend cstutil_setcstsroot;
