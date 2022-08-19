@@ -176,15 +176,10 @@
         %let _cstRDir=work;
         %let _cstRMem=&_cstMember;
       %end;
-      %if %eval(&SYSVER GE 9.4) %then %do;
-        proc delete lib=&_cstRDir data=&_cstRMem (memtype=&_cstMemtype);
-        run;
-      %end;
-      %else %do;
-        proc datasets nolist lib=&_cstRDir;
-          delete &_cstRMem / mt=&_cstMemtype;
-        run;
-      %end;
+ 
+      proc delete lib=&_cstRDir data=&_cstRMem (memtype=&_cstMemtype);
+      run;
+      
     %end;
     %else %put NOTE: [CSTLOG%str(MESSAGE).&sysmacroname] &_cstMember (&_cstMemtype) does not exist;
   %end;
@@ -277,10 +272,7 @@
     %then %let _cstPathDelim=/;
     %else %let _cstPathDelim=\;
 
-  %* Determine XML engine;
-  %let _cstXMLEngine=xml;
-  %if %eval(&SYSVER EQ 9.2) %then %let _cstXMLEngine=xml92;
-  %if %eval(&SYSVER GE 9.3) %then %let _cstXMLEngine=xmlv2;
+  %let _cstXMLEngine=xmlv2;
 
   %***************************************************;
   %*  Check _cstReturn and _cstReturnMsg parameters  *;

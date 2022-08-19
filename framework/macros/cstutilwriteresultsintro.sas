@@ -50,11 +50,8 @@
 
     %if %nrbquote(%sysfunc(getoption(SYSIN))) EQ and &sysscp eq WIN
       %then %do;
-         %if %sysevalf(&sysver) ge 9.3 %then %do;
            %if %sysfunc(sysexist(SAS_EXECFILENAME)) %then %let _cstProgram = %sysget(SAS_EXECFILENAME);
-     %end;
       %end;
-      %else %let _cstProgram = %sysfunc(scan(%nrbquote(%sysfunc(getoption(SYSIN))),-1,\));
 
     %* For CDI;
     %if %sysevalf(%superq(_cstProgram)=,boolean) %then %do;

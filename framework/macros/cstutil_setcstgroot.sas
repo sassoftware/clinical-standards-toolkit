@@ -19,7 +19,6 @@
     ) / des='CST: Set _cstGRoot macro variable';
 
    %global _cstGRoot;
-   %if %eval(&SYSVER GE 9.4) %then 
-     %let _cstGRoot=%sysfunc(kcompress(%sysfunc(getoption(CSTGLOBALLIB)),%str(%")));
+   %let _cstGRoot=%sysfunc(kcompress(%sysfunc(getoption(CSTGLOBALLIB)),%str(%")));
 
 %mend cstutil_setcstgroot;

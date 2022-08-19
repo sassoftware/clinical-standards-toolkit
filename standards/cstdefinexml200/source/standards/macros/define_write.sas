@@ -175,10 +175,7 @@
   %let _cstNextCode=_cod&_cstRandom;
   %let _cstTempDirLib1=_tl&_cstRandom;
 
-  %* Determine XML engine;
-  %let _cstXMLEngine=xml;
-  %if %eval(&SYSVER EQ 9.2) %then %let _cstXMLEngine=xml92;
-  %if %eval(&SYSVER GE 9.3) %then %let _cstXMLEngine=xmlv2;
+  %let _cstXMLEngine=xmlv2;
 
   %* Determine XML Log Scope;
   %if &_cstDebug %then %let _cstLogXMLScope=_ALL_;
