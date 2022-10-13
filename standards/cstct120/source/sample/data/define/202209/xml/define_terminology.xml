@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Produced from SAS data using the SAS Clinical Standards Toolkit-->
+<ODM xmlns:nciodm="http://ncicb.nci.nih.gov/xml/odm/EVS/CDISC" xmlns="http://www.cdisc.org/ns/odm/v1.3" FileOID="CDISC_CT.Define-XML.2022-09-30" CreationDateTime="2022-10-12T14:16:15-04:00" AsOfDateTime="2022-09-30T00:00:00" FileType="Snapshot" Granularity="Metadata" ODMVersion="1.3.2" Originator="CDISC XML Technologies Team (Terminology2ODM converter)" SourceSystem="NCI Thesaurus" SourceSystemVersion="2022-09-30" nciodm:Context="Submission" nciodm:ControlledTerminologyVersion="1.2.0">
+    <Study OID="CDISC_CT.Define-XML.2022-09-30">
+        <GlobalVariables>
+            <StudyName>CDISC Define-XML Controlled Terminology</StudyName>
+            <StudyDescription>CDISC Define-XML Controlled Terminology, 2022-09-30</StudyDescription>
+            <ProtocolName>CDISC Define-XML Controlled Terminology</ProtocolName>
+        </GlobalVariables>
+        <MetaDataVersion OID="CDISC_CT_MetaDataVersion.Define-XML.2022-09-30" Name="CDISC Define-XML Controlled Terminology" Description="CDISC Define-XML Controlled Terminology, 2022-09-30">
+            <CodeList OID="CL.C165635.BDSSC" Name="ADaM Basic Data Structure Subclass" DataType="text" nciodm:ExtCodeID="C165635" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the subclasses of the ADaM basic data structure.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="NON-COMPARTMENTAL ANALYSIS" nciodm:ExtCodeID="C172452">
+                    <nciodm:CDISCSynonym>NCA</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dataset containing data that is used for non-compartmental analyses.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Non-Compartmental Analysis Dataset</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="POPULATION PHARMACOKINETIC ANALYSIS" nciodm:ExtCodeID="C189348">
+                    <nciodm:CDISCSynonym>PPK</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dataset containing data that is used for population pharmacokinetic analyses.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Population Pharmacokinetic Analysis Dataset</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TIME-TO-EVENT" nciodm:ExtCodeID="C165637">
+                    <nciodm:CDISCSynonym>TTE</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dataset containing data that is used for Time-to-Event analyses.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Time-to-Event Dataset</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>BDSSC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>ADaM Basic Data Structure Subclass</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML ADaM Basic Data Structure Subclass Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C177903.MDBDSSC" Name="ADaM Medical Device Basic Data Structure Subclass" DataType="text" nciodm:ExtCodeID="C177903" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the subclasses of the ADaM device level basic data structure.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="MEDICAL DEVICE TIME-TO-EVENT" nciodm:ExtCodeID="C177920">
+                    <nciodm:CDISCSynonym>MDTTE</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dataset containing data that is used for medical device Time-to-Event analyses.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Medical Device Time-to-Event Dataset</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>MDBDSSC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>ADaM Medical Device Basic Data Structure Subclass</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML ADaM Medical Device Basic Data Structure Subclass Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C176227.OCCSC" Name="ADaM Occurrence Data Structure Subclass" DataType="text" nciodm:ExtCodeID="C176227" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the subclasses of the ADaM occurrence data structure.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="ADVERSE EVENT" nciodm:ExtCodeID="C176265">
+                    <nciodm:CDISCSynonym>AE</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dataset containing data that is used for adverse event analyses.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Adverse Event Dataset</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>OCCSC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>ADaM Occurrence Data Structure Subclass</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML ADaM Occurrence Data Structure Subclass Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C117745.ANLPURP" Name="Analysis Purpose" DataType="text" nciodm:ExtCodeID="C117745" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Purpose of a specific analysis result described in Define-XML analysis results metadata.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="EXPLORATORY OUTCOME MEASURE" nciodm:ExtCodeID="C98724">
+                    <nciodm:CDISCSynonym>Exploratory Outcome Measure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The outcome measure(s) that is part of a pre-specified analysis plan used to evaluate the exploratory endpoint(s) associated with exploratory study objective(s) and/or any other measures, excluding post-hoc measures, that are a focus of the study. (After clinicaltrials.gov)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Exploratory Outcome Measure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PRIMARY OUTCOME MEASURE" nciodm:ExtCodeID="C98772">
+                    <nciodm:CDISCSynonym>Primary Outcome Measure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The outcome measure(s) of greatest importance specified in the protocol, usually the one(s) used in the power calculation, to evaluate the primary endpoint(s) associated with the primary study objective(s). (After Clinicaltrials.gov)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Primary Outcome Measure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SECONDARY OUTCOME MEASURE" nciodm:ExtCodeID="C98781">
+                    <nciodm:CDISCSynonym>Secondary Outcome Measure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The outcome measure(s) that is part of a pre-specified analysis plan used to evaluate the secondary endpoint(s) associated with secondary study objective(s) and/or used to evaluate any measure(s) ancillary to the primary or secondary endpoint(s). (After Clinicaltrials.gov).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Secondary Outcome Measure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>ANLPURP</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Analysis Purpose</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML Analysis Purpose Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C117744.ANLREAS" Name="Analysis Reason" DataType="text" nciodm:ExtCodeID="C117744" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Reason for reporting a specific analysis result described in Define-XML analysis results metadata.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="DATA DRIVEN" nciodm:ExtCodeID="C117750">
+                    <nciodm:CDISCDefinition>The analysis was triggered by findings in the data.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Data Driven Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="REQUESTED BY REGULATORY AGENCY" nciodm:ExtCodeID="C117751">
+                    <nciodm:CDISCDefinition>The analysis has been requested by a regulatory agency.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Analysis Requested by Regulatory Agency</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SPECIFIED IN PROTOCOL" nciodm:ExtCodeID="C117752">
+                    <nciodm:CDISCDefinition>The analysis is specified in a protocol.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Analysis Specified in Protocol</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SPECIFIED IN SAP" nciodm:ExtCodeID="C117753">
+                    <nciodm:CDISCDefinition>The analysis is specified in a statistical analysis plan.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Analysis Specified in Statistical Analysis Plan</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>ANLREAS</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Analysis Reason</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML Analysis Reason Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C172331.CTSTDTYP" Name="CDISC Controlled Terminology Standard Type" DataType="text" nciodm:ExtCodeID="C172331" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the classification of the CDISC controlled terminology standard described in the Define-XML document.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="ADaM" nciodm:ExtCodeID="C180548">
+                    <nciodm:CDISCDefinition>The controlled terminology standard subset that includes terms pertaining to the Clinical Data Interchange Standards Consortium (CDISC) Analysis Data Model (ADaM).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC ADaM Standard Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CDASH" nciodm:ExtCodeID="C180549">
+                    <nciodm:CDISCDefinition>The controlled terminology standard subset that includes terms relevant to the Clinical Data Interchange Standards Consortium (CDISC) Clinical Data Acquisition Standards Harmonization (CDASH) group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC CDASH Standard Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DEFINE-XML" nciodm:ExtCodeID="C180550">
+                    <nciodm:CDISCDefinition>The controlled terminology standard subset that includes terms relevant to the Clinical Data Interchange Standards Consortium (CDISC) Define-XML standard.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Define-XML Standard Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SDTM" nciodm:ExtCodeID="C180551">
+                    <nciodm:CDISCDefinition>The controlled terminology standard subset that includes terms pertaining to the Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model (SDTM).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC SDTM Standard Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SEND" nciodm:ExtCodeID="C180552">
+                    <nciodm:CDISCDefinition>The controlled terminology standard subset that includes terms relevant to the Clinical Data Interchange Standards Consortium (CDISC) Standard for Exchange of Non-clinical Data (SEND) group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC SEND Standard Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>CTSTDTYP</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>CDISC Controlled Terminology Standard Type</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML CDISC Controlled Terminology Standard Type Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C66788.DICTNAM" Name="Dictionary Name" DataType="text" nciodm:ExtCodeID="C66788" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A name given to a reference source that lists words and gives their meaning. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="CDISC CT" nciodm:ExtCodeID="C163415">
+                    <nciodm:CDISCSynonym>CDISC Controlled Terminology</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Clinical Data Interchange Standards Consortium Controlled Terminology</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A standard terminology developed and maintained by Clinical Data Interchange Standards Consortium (CDISC) and the National Cancer Institute Enterprise Vocabulary Services (NCI-EVS) to support CDISC models, domains and specifications for data representation in regulated research.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Clinical Data Interchange Standards Consortium Controlled Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="COSTART" nciodm:ExtCodeID="C49471">
+                    <nciodm:CDISCSynonym>Coding Symbols for a Thesaurus of Adverse Reaction Terms</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A terminology developed and used by the Food and Drug Administration (FDA) for the coding, filing and retrieving of post marketing adverse reaction reports. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Thesaurus of Adverse Reaction Term Coding Symbols</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CTCAE" nciodm:ExtCodeID="C49704">
+                    <nciodm:CDISCSynonym>Common Terminology Criteria for Adverse Events</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A standard terminology developed and maintained by the National Cancer Institute to report adverse events occurring in clinical trials. The CTCAE contains a grading scale for each adverse event term representing the severity of the event.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Common Terminology Criteria for Adverse Events</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="D-U-N-S NUMBER" nciodm:ExtCodeID="C134003">
+                    <nciodm:CDISCSynonym>Data Universal Number System</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>DUNS Numbers</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A proprietary system developed and regulated by Dun &amp; Bradstreet that assigns a unique nine digit numeric identifier to a single business entity location.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Data Universal Numbering System</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ICD" nciodm:ExtCodeID="C49474">
+                    <nciodm:CDISCSynonym>International Classification of Diseases</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A system of categories to which morbid entries are assigned according to established criteria. Included is the entire range of conditions in a manageable number of categories, grouped to facilitate mortality reporting. It is produced by the World Health Organization (from ICD-10, p1). The Clinical Modifications, produced by the United States Dept. of Health and Human Services, are larger extensions used for morbidity and general epidemiological purposes, primarily in the U.S. (MSH2005_2004_10_12)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>International Classification of Diseases</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ICD-O" nciodm:ExtCodeID="C37978">
+                    <nciodm:CDISCSynonym>International Classification of Diseases for Oncology</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A World Health Organization (WHO) multi-axial classification of the site, morphology, behaviour, and grading of neoplasms.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>International Classification of Diseases for Oncology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LOINC" nciodm:ExtCodeID="C49476">
+                    <nciodm:CDISCSynonym>Logical Observation Identifiers Names and Codes</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Published by The Regenstrief Institute, the Logical Observation Identifiers Names and Codes covers clinical and clinical laboratory terminology. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Logical Observation Identifiers Names and Codes</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MED-RT" nciodm:ExtCodeID="C163416">
+                    <nciodm:CDISCSynonym>Medication Reference Terminology</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>NDF-RT</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A standard terminology developed and maintained by the Veterans Health Administration (VHA) that includes terminology to support the mechanism of action, physiologic effect, and asserted pharmacologic classification relationships of medications. MED-RT incorporates terminology from RxNORM, MeSH, and SNOMED CT.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Medication Reference Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MedDRA" nciodm:ExtCodeID="C43820">
+                    <nciodm:CDISCSynonym>Medical Dictionary for Regulatory Activities</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>MedDRA is an international medical terminology designed to support the classification, retrieval, presentation, and communication of medical information throughout the medical product regulatory cycle. MedDRA was developed under the auspices of the International Conference on Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH). The MedDRA Maintenance and Support Services Organization (MSSO) holds a contract with the International Federation of Pharmaceutical Manufacturers Associations (IFPMA) to maintain and support the implementation of the terminology. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>MedDRA</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SNOMED" nciodm:ExtCodeID="C53489">
+                    <nciodm:CDISCSynonym>Systematized Nomenclature of Medicine</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A multiaxial, hierarchical classification system for diseases in man developed by the College of American Pathologists. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Systematized Nomenclature of Medicine</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="UNII" nciodm:ExtCodeID="C163417">
+                    <nciodm:CDISCSynonym>SRS-UNII</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Substance Registration System-Unique Ingredient Identifier</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A standard terminology developed and maintained by the Department of Veterans Affairs/Veterans Health Administration designated federal collaborative Structured Product Labeling Interagency Expert Panel (SPLIEP). It contains terminology to support the mechanism of action, physiologic effect, and asserted pharmacologic classification relationships of drug ingredients and food allergens.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Substance Registration System-Unique Ingredient Identifier</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WHO ATC CLASSIFICATION SYSTEM" nciodm:ExtCodeID="C154331">
+                    <nciodm:CDISCSynonym>Anatomical Therapeutic Chemical Classification System</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A World Health Organization (WHO) classification system, developed and maintained by the WHO Collaborating Centre for Drug Statistics Methodology, for medicinal substances where active substances are divided into different groups according to the organ or system on which they act and their therapeutic, pharmacological, and chemical properties.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Anatomical Therapeutic Chemical Classification System</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WHOART" nciodm:ExtCodeID="C49468">
+                    <nciodm:CDISCSynonym>World Health Organization Adverse Reaction Terms</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A terminology implemented by the World Health Organization to describe adverse reactions to a prescribed medication or treatment regimen. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>World Health Organization Adverse Reaction Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WHODD" nciodm:ExtCodeID="C49475">
+                    <nciodm:CDISCSynonym>WHODrug Global</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>World Health Organization Drug Dictionary</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A reference source of drugs and drug associated information maintained by the World Health Organization. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>World Health Organization Drug Dictionary</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>DICTNAM</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Dictionary Name</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Dictionary Name Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C103329.GNRLOBSC" Name="General Observation Class" DataType="text" nciodm:ExtCodeID="C103329" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology related to the classification of a CDISC domain.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="ADAM OTHER" nciodm:ExtCodeID="C103375">
+                    <nciodm:CDISCSynonym>ADaM Other</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>An analysis dataset that doesn't conform to a pre-defined ADaM dataset structure (e.g. ADSL, BDS or OCCDS).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Other ADaM Dataset</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BASIC DATA STRUCTURE" nciodm:ExtCodeID="C103371">
+                    <nciodm:CDISCSynonym>Basic Data Structure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>BDS</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>An ADaM BDS dataset contains one or more records per subject, per analysis parameter, per analysis time point. Variables include the value being analyzed (e.g., AVAL) and the description of the value being analyzed (e.g., PARAM). Other variables in the dataset provide more information about the value being analyzed (e.g., the subject identification) or describe and trace the derivation of it (e.g., DTYPE) or support the analysis of it (e.g., treatment variables, covariates).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Basic Data Structure Dataset</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DEVICE LEVEL ANALYSIS DATASET" nciodm:ExtCodeID="C177921">
+                    <nciodm:CDISCSynonym>ADDL</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Device Level Analysis Dataset</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The Device-Level Analysis Dataset (ADDL) is a one-record-per-device or one-record-per-subject-per-device dataset which contains variables that describe device characteristics and timing, and group the devices for analysis. ADDL is the primary source for device-level variables included in other analysis datasets.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Device Level Analysis Dataset</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="EVENTS" nciodm:ExtCodeID="C103372">
+                    <nciodm:CDISCSynonym>Events</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>This SDTM class captures planned protocol milestones such as randomization and study completion, and occurrences, conditions, or incidents independent of planned study evaluations occurring during the trial (e.g., adverse events) or prior to the trial (e.g., medical history).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Events Class</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="FINDINGS ABOUT" nciodm:ExtCodeID="C135396">
+                    <nciodm:CDISCSynonym>Findings About</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>This SDTM class is a specialization of the findings general observation class. It is intended, as its name implies, to be used when collected data represent findings about an event or intervention that cannot be represented within an event or intervention record or as a supplemental qualifier to such a record.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Findings About Class</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="FINDINGS" nciodm:ExtCodeID="C103373">
+                    <nciodm:CDISCSynonym>Findings</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>This SDTM class captures the observations resulting from planned evaluations to address specific tests or questions such as laboratory tests, ECG testing, and questions listed on questionnaires.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Findings Class</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INTERVENTIONS" nciodm:ExtCodeID="C103374">
+                    <nciodm:CDISCSynonym>Interventions</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>This SDTM class captures investigational, therapeutic and other treatments that are administered to the subject (with some actual or expected physiological effect) either as specified by the study protocol (e.g., exposure to study drug), coincident with the study assessment period (e.g., concomitant medications), or self-administered by the subject (such as use of alcohol, tobacco, or caffeine).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Interventions Class</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MEDICAL DEVICE BASIC DATA STRUCTURE" nciodm:ExtCodeID="C177922">
+                    <nciodm:CDISCSynonym>MDBDS</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Medical Device Basic Data Structure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The Medical Device Basic Data Structure (MDBDS) supports the analysis needs by adding SPDEVID as a required key variable and USUBJID a conditionally required variable. See the BDS class for further details.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Medical Device Basic Data Structure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MEDICAL DEVICE OCCURRENCE DATA STRUCTURE" nciodm:ExtCodeID="C177923">
+                    <nciodm:CDISCSynonym>MDOCCDS</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Medical Device Occurrence Data Structure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The Medical Device Occurrence Data Structure (MDOCCDS) supports the analysis needs by adding SPDEVID as a required identifier and allowing USUBJID be a conditionally required variable. See the OCCDS class for further details.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Medical Device Occurrence Data Structure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="OCCURRENCE DATA STRUCTURE" nciodm:ExtCodeID="C123454">
+                    <nciodm:CDISCSynonym>OCCDS</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Occurrence Data Structure</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The Occurrence Data Structure (OCCDS) is the ADaM data structure for occurrence analysis. Occurrence analysis is the counting of subjects with a record or term, and often includes a structured hierarchy of dictionary coding categories.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Occurrence Data Structure</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="RELATIONSHIP" nciodm:ExtCodeID="C103376">
+                    <nciodm:CDISCSynonym>Relationships</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>This SDTM class provides a means to link related records between datasets. It includes the RELREC and SUPPQUAL datasets.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Relationship Class</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SPECIAL PURPOSE" nciodm:ExtCodeID="C103377">
+                    <nciodm:CDISCSynonym>Special Purpose</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>SPECIAL-PURPOSE</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>This SDTM class contains a set of domains which do not conform to the Findings, Events or Interventions observation classes. The domains included are DM, CO, SE and SV.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Special Purpose Class</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="STUDY REFERENCE" nciodm:ExtCodeID="C147271">
+                    <nciodm:CDISCSynonym>Study Reference</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>This special purpose SDTM class contains further descriptions of study-specific identifiers that will be used in subject based domains.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Study Reference Class</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SUBJECT LEVEL ANALYSIS DATASET" nciodm:ExtCodeID="C103378">
+                    <nciodm:CDISCSynonym>ADSL</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Subject Level Analysis Dataset</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The Subject-Level Analysis Dataset (ADSL) is a one-record-per-subject dataset which contains variables that describe subject demographic characteristics and group the subjects for analysis. ADSL is the primary source for subject-level variables included in other analysis datasets such as population flags and treatment variables.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Subject Level Analysis Dataset</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TRIAL DESIGN" nciodm:ExtCodeID="C103379">
+                    <nciodm:CDISCSynonym>Trial Design</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>This SDTM class describes the plan for the procedures to be followed in a clinical trial, including planned and actual timing of events, control group, method of allocating treatments, blinding methods, assignment of epochs that subjects pass through in the course of a trial.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Trial Design Class</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>GNRLOBSC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>General Observation Class</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML General Observation Class Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C170448.ODMCNTX" Name="ODM Context" DataType="text" nciodm:ExtCodeID="C170448" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the context in which the Define-XML document is used.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="Other" nciodm:ExtCodeID="C17649">
+                    <nciodm:CDISCSynonym>Other</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Different than the one(s) previously specified or mentioned. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Other</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Submission" nciodm:ExtCodeID="C70885">
+                    <nciodm:CDISCDefinition>An assembly of one or more regulatory submission units supporting a specific regulatory purpose or decision. In most cases, the compilation of the submission units is utilized in the assessment of a regulated medical product quality, safety and/or effectiveness.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Regulatory Submission</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>ODMCNTX</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>ODM Context</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML ODM Context Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C170450.ORIGINS" Name="Origin Source" DataType="text" nciodm:ExtCodeID="C170450" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the origin source for datasets in the Define-XML document.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="Investigator" nciodm:ExtCodeID="C25936">
+                    <nciodm:CDISCDefinition>A person responsible for the conduct of the clinical trial at a trial site. If a trial is conducted by a team of individuals at the trial site, the investigator is the responsible leader of the team and may be called the principal investigator.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Investigator</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Sponsor" nciodm:ExtCodeID="C70793">
+                    <nciodm:CDISCSynonym>Clinical Study Sponsor</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Sponsor</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Study Sponsor</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>An entity that is responsible for the initiation, management, and/or financing of a clinical study.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Clinical Study Sponsor</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Subject" nciodm:ExtCodeID="C41189">
+                    <nciodm:CDISCDefinition>An individual who is observed, analyzed, examined, investigated, experimented upon, or/and treated in the course of a particular study.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Study Subject</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Vendor" nciodm:ExtCodeID="C68608">
+                    <nciodm:CDISCDefinition>A person or agency that promotes or exchanges goods or services for money. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vendor</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>ORIGINS</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Origin Source</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML Origin Source Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C170449.ORIGINT" Name="Origin Type" DataType="text" nciodm:ExtCodeID="C170449" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the origin type for datasets in the Define-XML document.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="Assigned" nciodm:ExtCodeID="C170547">
+                    <nciodm:CDISCDefinition>A value that is derived through designation, such as values from a look up table or a label on a CRF.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Assigned Value</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Collected" nciodm:ExtCodeID="C170548">
+                    <nciodm:CDISCDefinition>A value that is actually observed and recorded by a person or obtained by an instrument.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Collected Value</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Derived" nciodm:ExtCodeID="C170549">
+                    <nciodm:CDISCDefinition>A value that is calculated by an algorithm or reproducible rule, and which is dependent upon other data values.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Derived Value</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Not Available" nciodm:ExtCodeID="C126101">
+                    <nciodm:CDISCDefinition>A value that is not discoverable or accessible.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Not Available</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Other" nciodm:ExtCodeID="C17649">
+                    <nciodm:CDISCSynonym>Other</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Different than the one(s) previously specified or mentioned. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Other</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Predecessor" nciodm:ExtCodeID="C170550">
+                    <nciodm:CDISCDefinition>A value that is copied from a variable in another dataset.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Copied Value</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Protocol" nciodm:ExtCodeID="C170551">
+                    <nciodm:CDISCDefinition>A value that is included as part of the study protocol.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Protocol Value</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>ORIGINT</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Origin Type</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML Origin Type Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C170452.STDNAM" Name="Standard Name" DataType="text" nciodm:ExtCodeID="C170452" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the name of the standard described in the Define-XML document.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="ADaMIG" nciodm:ExtCodeID="C170552">
+                    <nciodm:CDISCDefinition>The implementation guide for the Clinical Data Interchange Standards Consortium (CDISC) Analysis Data Model standard.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>ADaM Implementation Guide</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CDISC/NCI" nciodm:ExtCodeID="C163415">
+                    <nciodm:CDISCSynonym>CDISC Controlled Terminology</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Clinical Data Interchange Standards Consortium Controlled Terminology</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A standard terminology developed and maintained by Clinical Data Interchange Standards Consortium (CDISC) and the National Cancer Institute Enterprise Vocabulary Services (NCI-EVS) to support CDISC models, domains and specifications for data representation in regulated research.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Clinical Data Interchange Standards Consortium Controlled Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SDTMIG" nciodm:ExtCodeID="C170455">
+                    <nciodm:CDISCDefinition>The implementation guide for the Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model standard.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>SDTM Implementation Guide</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SDTMIG-AP" nciodm:ExtCodeID="C170553">
+                    <nciodm:CDISCDefinition>The implementation guide for the Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model Associated Persons standard.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>SDTM Implementation Guide-Associated Persons</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SDTMIG-MD" nciodm:ExtCodeID="C170554">
+                    <nciodm:CDISCDefinition>The implementation guide for the Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model Medical Devices standard.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>SDTM Implementation Guide-Medical Devices</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SENDIG" nciodm:ExtCodeID="C170456">
+                    <nciodm:CDISCDefinition>The implementation guide for the Clinical Data Interchange Standards Consortium (CDISC) Standard for the Exchange of Nonclinical Data standard.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>SEND Implementation Guide</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SENDIG-AR" nciodm:ExtCodeID="C181230">
+                    <nciodm:CDISCDefinition>The implementation guide for the Clinical Data Interchange Standards Consortium (CDISC) Standard for the Exchange of Nonclinical Data Animal Rule standard.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>SEND Implementation Guide-Animal Rule</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SENDIG-DART" nciodm:ExtCodeID="C170556">
+                    <nciodm:CDISCDefinition>The implementation guide for the Clinical Data Interchange Standards Consortium (CDISC) Standard for the Exchange of Nonclinical Data Developmental and Reproductive Toxicology standard.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>SEND Implementation Guide-Developmental and Reproductive Toxicology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>STDNAM</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Standard Name</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML Standard Name Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C172332.STDSTAT" Name="Standard Status" DataType="text" nciodm:ExtCodeID="C172332" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the development or publication status of the standard.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="DRAFT" nciodm:ExtCodeID="C172453">
+                    <nciodm:CDISCDefinition>A preliminary version of a CDISC standard that has not yet completed the CDISC standards development process. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Draft Standard</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="FINAL" nciodm:ExtCodeID="C172455">
+                    <nciodm:CDISCDefinition>A final version of a CDISC standard that has completed the CDISC standards development process. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Final Standard</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PROVISIONAL" nciodm:ExtCodeID="C172454">
+                    <nciodm:CDISCDefinition>A version of a CDISC standard whose conclusiveness is dependent upon the fulfillment of some contingency or final alteration. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Provisional Standard</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>STDSTAT</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Standard Status</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML Standard Status Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C170451.STDTYP" Name="Standard Type" DataType="text" nciodm:ExtCodeID="C170451" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the classification of the standard described in the Define-XML document.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="CT" nciodm:ExtCodeID="C163415">
+                    <nciodm:CDISCSynonym>CDISC Controlled Terminology</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Clinical Data Interchange Standards Consortium Controlled Terminology</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A standard terminology developed and maintained by Clinical Data Interchange Standards Consortium (CDISC) and the National Cancer Institute Enterprise Vocabulary Services (NCI-EVS) to support CDISC models, domains and specifications for data representation in regulated research.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Clinical Data Interchange Standards Consortium Controlled Terminology</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="IG" nciodm:ExtCodeID="C170454">
+                    <nciodm:CDISCSynonym>CDISC Implementation Guide</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A standard document developed and maintained by Clinical Data Interchange Standards Consortium (CDISC) that contains instructions and requirements for the organization, structure, and format of standard clinical and non-clinical trial tabulation and analysis datasets.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>CDISC Implementation Guide</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>STDTYP</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Standard Type</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC Define-XML Standard Type Terminology</nciodm:PreferredTerm>
+            </CodeList>
+        </MetaDataVersion>
+    </Study>
+</ODM>

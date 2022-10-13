@@ -1,0 +1,4 @@
+This is the CDISC-CT 1.2.0 runtime macro library.
+
+@name CT V1.2.0 (Runtime)
+@since V1.7
