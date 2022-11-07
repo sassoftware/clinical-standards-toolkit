@@ -47,7 +47,7 @@ Each release of openCST contains compressed files for the distribution source or
 2.  Expand the zip to the desired location.  The zip file contains the three deployed folders (cstGlobalLibrary, cstSampleLibrary, and cstFramework).
 3. Add properties to the SAS installation configuration.  You will find a text file in the cstFrameworkLibrary that contains the information that needs to be added based on a default deployment.  You will likely need to change the paths for each property to reflect the location of the expanded files.
 
-### Building from Source###
+### Building from Source ###
 
 The default locations for openCST are as follows:
 ```
