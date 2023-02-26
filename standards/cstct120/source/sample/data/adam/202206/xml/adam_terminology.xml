@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Produced from SAS data using the SAS Clinical Standards Toolkit-->
+<ODM xmlns:nciodm="http://ncicb.nci.nih.gov/xml/odm/EVS/CDISC" xmlns="http://www.cdisc.org/ns/odm/v1.3" FileOID="CDISC_CT.ADaM.2022-06-24" CreationDateTime="2022-10-12T13:43:10-04:00" AsOfDateTime="2022-06-24T00:00:00" FileType="Snapshot" Granularity="Metadata" ODMVersion="1.3.2" Originator="CDISC XML Technologies Team (Terminology2ODM converter)" SourceSystem="NCI Thesaurus" SourceSystemVersion="2022-06-24" nciodm:Context="Submission" nciodm:ControlledTerminologyVersion="1.2.0">
+    <Study OID="CDISC_CT.ADaM.2022-06-24">
+        <GlobalVariables>
+            <StudyName>CDISC ADaM Controlled Terminology</StudyName>
+            <StudyDescription>CDISC ADaM Controlled Terminology, 2022-06-24</StudyDescription>
+            <ProtocolName>CDISC ADaM Controlled Terminology</ProtocolName>
+        </GlobalVariables>
+        <MetaDataVersion OID="CDISC_CT_MetaDataVersion.ADaM.2022-06-24" Name="CDISC ADaM Controlled Terminology" Description="CDISC ADaM Controlled Terminology, 2022-06-24">
+            <CodeList OID="CL.C187458.CHSFPC" Name="Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires Parameter Code" DataType="text" nciodm:ExtCodeID="C187458" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">A parameter code codelist for the Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires (CHART-SF) to support the calculation of subscores and total score for the Interview and Paper Versions in ADaM.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="CHSF01A" nciodm:ExtCodeID="C187467">
+                    <nciodm:CDISCSynonym>CHSF-Paid Personal Care per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours in a typical 24-hour day do you have someone with you to provide physical assistance for personal care activities such as eating, bathing, dressing, toileting and mobility? (hours paid assistance).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Paid Personal Care per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF01B" nciodm:ExtCodeID="C187468">
+                    <nciodm:CDISCSynonym>CHSF-Unpaid Personal Care per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours in a typical 24-hour day do you have someone with you to provide physical assistance for personal care activities such as eating, bathing, dressing, toileting and mobility? hours unpaid (family, others).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Unpaid Personal Care per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF02" nciodm:ExtCodeID="C187469">
+                    <nciodm:CDISCSynonym>CHSF-Home Cognitive Assistance per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How much time is someone with you in your home to assist you with activities that require remembering, decision making, or judgment?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Home Cognitive Assistance per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF03" nciodm:ExtCodeID="C187470">
+                    <nciodm:CDISCSynonym>CHSF-Away Cognitive Assistance per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How much of the time is someone with you to help you with remembering, decision making, or judgment when you go away from your home?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Away Cognitive Assistance per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF04" nciodm:ExtCodeID="C187471">
+                    <nciodm:CDISCSynonym>CHSF-Hours Out of Bed per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - On a typical day, how many hours are you out of bed?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours Out of Bed per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF05" nciodm:ExtCodeID="C187472">
+                    <nciodm:CDISCSynonym>CHSF-Days Out of the House per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - In a typical week, how many days do you get out of your house and go somewhere?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Days Out of the House per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF06" nciodm:ExtCodeID="C187473">
+                    <nciodm:CDISCSynonym>CHSF-Nights Away From Home Last Year</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - In the last year, how many nights have you spent away from your home?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Nights Away From Home Last Year</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF07A" nciodm:ExtCodeID="C187474">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Paid Work per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend working in a job for which you get paid?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Paid Work per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF07B" nciodm:ExtCodeID="C187475">
+                    <nciodm:CDISCSynonym>CHSF-Occupation of Paid Work</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend working in a job for which you get paid? (occupation).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Occupation of Paid Work</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF08" nciodm:ExtCodeID="C187476">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Schoolwork per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend in school working toward a degree or in an accredited technical training program?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Schoolwork per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF09" nciodm:ExtCodeID="C187477">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Homemaking per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend in active homemaking including parenting, housekeeping, and food preparation?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Homemaking per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF10" nciodm:ExtCodeID="C187478">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Home Maintenance per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend in home maintenance activities such as gardening, house repairs or home improvement?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Home Maintenance per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF11" nciodm:ExtCodeID="C187479">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Recreation per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend in recreational activities such as sports, exercise, playing cards, or going to movies?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Recreation per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF12" nciodm:ExtCodeID="C187480">
+                    <nciodm:CDISCSynonym>CHSF-Number of People You Live With</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many people do you live with?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Number of People You Live With</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF13" nciodm:ExtCodeID="C187481">
+                    <nciodm:CDISCSynonym>CHSF-Live With Spouse or Signif Other</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Is one of them your spouse or significant other?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Live With Spouse or Significant Other</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF14" nciodm:ExtCodeID="C187482">
+                    <nciodm:CDISCSynonym>CHSF-Number of Relatives You Live With</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Of the people you live with how many are relatives?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Number of Relatives You Live With</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF15" nciodm:ExtCodeID="C187483">
+                    <nciodm:CDISCSynonym>CHSF-Associates Contacted per Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many business or organizational associates do you visit, phone, or write to at least once a month?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Associates Contacted per Month</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF16" nciodm:ExtCodeID="C187484">
+                    <nciodm:CDISCSynonym>CHSF-Friends Contacted per Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many friends do you visit, phone, or write to at least once a month?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Friends Contacted per Month</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF17" nciodm:ExtCodeID="C187485">
+                    <nciodm:CDISCSynonym>CHSF-Strangers Spoke with Last Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - With how many strangers have you initiated a conversation in the last month?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Strangers Spoke with Last Month</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF18" nciodm:ExtCodeID="C187486">
+                    <nciodm:CDISCSynonym>CHSF-Combined Household Income Last Yr</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Approximately what was the combined annual income, in the last year, of all family members in your household?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Combined Household Income Last Year</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF19" nciodm:ExtCodeID="C187487">
+                    <nciodm:CDISCSynonym>CHSF-Medical Care Expenses Last Year</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Approximately how much did you pay last year for medical care expenses?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Medical Care Expenses Last Year</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSFCS" nciodm:ExtCodeID="C187489">
+                    <nciodm:CDISCSynonym>CHSF-Cognitive Independence Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Cognitive independence subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Cognitive Independence Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSFES" nciodm:ExtCodeID="C187493">
+                    <nciodm:CDISCSynonym>CHSF-Economic Self-Sufficiency Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Economic self-sufficiency subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Economic Self-Sufficiency Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSFMS" nciodm:ExtCodeID="C187490">
+                    <nciodm:CDISCSynonym>CHSF-Mobility Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Mobility subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Mobility Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSFOS" nciodm:ExtCodeID="C187491">
+                    <nciodm:CDISCSynonym>CHSF-Occupation Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Occupation subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Occupation Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSFPS" nciodm:ExtCodeID="C187488">
+                    <nciodm:CDISCSynonym>CHSF-Physical Independence Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Physical independence subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Physical Independence Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSFSS" nciodm:ExtCodeID="C187492">
+                    <nciodm:CDISCSynonym>CHSF-Social Integration Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Social integration subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Social Integration Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSFTS" nciodm:ExtCodeID="C187494">
+                    <nciodm:CDISCSynonym>CHSF-Total Score-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Total score used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Total Score for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>CHSFPC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires Parameter Code</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires Parameter Code Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C187457.CHSFPN" Name="Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires Parameter Name" DataType="text" nciodm:ExtCodeID="C187457" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">A parameter name codelist for the Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires (CHART-SF) to support the calculation of subscores and total score for the Interview and Paper Versions in ADaM.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="CHSF-Associates Contacted per Month" nciodm:ExtCodeID="C187483">
+                    <nciodm:CDISCSynonym>CHSF-Associates Contacted per Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many business or organizational associates do you visit, phone, or write to at least once a month?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Associates Contacted per Month</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Away Cognitive Assistance per Day" nciodm:ExtCodeID="C187470">
+                    <nciodm:CDISCSynonym>CHSF-Away Cognitive Assistance per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How much of the time is someone with you to help you with remembering, decision making, or judgment when you go away from your home?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Away Cognitive Assistance per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Cognitive Independence Subscore-Analysis" nciodm:ExtCodeID="C187489">
+                    <nciodm:CDISCSynonym>CHSF-Cognitive Independence Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Cognitive independence subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Cognitive Independence Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Combined Household Income Last Yr" nciodm:ExtCodeID="C187486">
+                    <nciodm:CDISCSynonym>CHSF-Combined Household Income Last Yr</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Approximately what was the combined annual income, in the last year, of all family members in your household?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Combined Household Income Last Year</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Days Out of the House per Week" nciodm:ExtCodeID="C187472">
+                    <nciodm:CDISCSynonym>CHSF-Days Out of the House per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - In a typical week, how many days do you get out of your house and go somewhere?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Days Out of the House per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Economic Self-Sufficiency Subscore-Analysis" nciodm:ExtCodeID="C187493">
+                    <nciodm:CDISCSynonym>CHSF-Economic Self-Sufficiency Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Economic self-sufficiency subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Economic Self-Sufficiency Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Friends Contacted per Month" nciodm:ExtCodeID="C187484">
+                    <nciodm:CDISCSynonym>CHSF-Friends Contacted per Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many friends do you visit, phone, or write to at least once a month?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Friends Contacted per Month</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Home Cognitive Assistance per Day" nciodm:ExtCodeID="C187469">
+                    <nciodm:CDISCSynonym>CHSF-Home Cognitive Assistance per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How much time is someone with you in your home to assist you with activities that require remembering, decision making, or judgment?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Home Cognitive Assistance per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Hours of Home Maintenance per Week" nciodm:ExtCodeID="C187478">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Home Maintenance per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend in home maintenance activities such as gardening, house repairs or home improvement?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Home Maintenance per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Hours of Homemaking per Week" nciodm:ExtCodeID="C187477">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Homemaking per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend in active homemaking including parenting, housekeeping, and food preparation?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Homemaking per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Hours of Paid Work per Week" nciodm:ExtCodeID="C187474">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Paid Work per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend working in a job for which you get paid?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Paid Work per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Hours of Recreation per Week" nciodm:ExtCodeID="C187479">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Recreation per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend in recreational activities such as sports, exercise, playing cards, or going to movies?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Recreation per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Hours of Schoolwork per Week" nciodm:ExtCodeID="C187476">
+                    <nciodm:CDISCSynonym>CHSF-Hours of Schoolwork per Week</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend in school working toward a degree or in an accredited technical training program?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours of Schoolwork per Week</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Hours Out of Bed per Day" nciodm:ExtCodeID="C187471">
+                    <nciodm:CDISCSynonym>CHSF-Hours Out of Bed per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - On a typical day, how many hours are you out of bed?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Hours Out of Bed per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Live With Spouse or Signif Other" nciodm:ExtCodeID="C187481">
+                    <nciodm:CDISCSynonym>CHSF-Live With Spouse or Signif Other</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Is one of them your spouse or significant other?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Live With Spouse or Significant Other</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Medical Care Expenses Last Year" nciodm:ExtCodeID="C187487">
+                    <nciodm:CDISCSynonym>CHSF-Medical Care Expenses Last Year</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Approximately how much did you pay last year for medical care expenses?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Medical Care Expenses Last Year</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Mobility Subscore-Analysis" nciodm:ExtCodeID="C187490">
+                    <nciodm:CDISCSynonym>CHSF-Mobility Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Mobility subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Mobility Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Nights Away From Home Last Year" nciodm:ExtCodeID="C187473">
+                    <nciodm:CDISCSynonym>CHSF-Nights Away From Home Last Year</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - In the last year, how many nights have you spent away from your home?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Nights Away From Home Last Year</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Number of People You Live With" nciodm:ExtCodeID="C187480">
+                    <nciodm:CDISCSynonym>CHSF-Number of People You Live With</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many people do you live with?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Number of People You Live With</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Number of Relatives You Live With" nciodm:ExtCodeID="C187482">
+                    <nciodm:CDISCSynonym>CHSF-Number of Relatives You Live With</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Of the people you live with how many are relatives?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Number of Relatives You Live With</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Occupation of Paid Work" nciodm:ExtCodeID="C187475">
+                    <nciodm:CDISCSynonym>CHSF-Occupation of Paid Work</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours per week do you spend working in a job for which you get paid? (occupation).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Occupation of Paid Work</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Occupation Subscore-Analysis" nciodm:ExtCodeID="C187491">
+                    <nciodm:CDISCSynonym>CHSF-Occupation Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Occupation subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Occupation Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Paid Personal Care per Day" nciodm:ExtCodeID="C187467">
+                    <nciodm:CDISCSynonym>CHSF-Paid Personal Care per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours in a typical 24-hour day do you have someone with you to provide physical assistance for personal care activities such as eating, bathing, dressing, toileting and mobility? (hours paid assistance).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Paid Personal Care per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Physical Independence Subscore-Analysis" nciodm:ExtCodeID="C187488">
+                    <nciodm:CDISCSynonym>CHSF-Physical Independence Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Physical independence subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Physical Independence Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Social Integration Subscore-Analysis" nciodm:ExtCodeID="C187492">
+                    <nciodm:CDISCSynonym>CHSF-Social Integration Subscore-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Social integration subscore used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Social Integration Subscore for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Strangers Spoke with Last Month" nciodm:ExtCodeID="C187485">
+                    <nciodm:CDISCSynonym>CHSF-Strangers Spoke with Last Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - With how many strangers have you initiated a conversation in the last month?</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Strangers Spoke with Last Month</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Total Score-Analysis" nciodm:ExtCodeID="C187494">
+                    <nciodm:CDISCSynonym>CHSF-Total Score-Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - Total score used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Total Score for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHSF-Unpaid Personal Care per Day" nciodm:ExtCodeID="C187468">
+                    <nciodm:CDISCSynonym>CHSF-Unpaid Personal Care per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Craig Handicap Assessment and Reporting Technique-Short Form - How many hours in a typical 24-hour day do you have someone with you to provide physical assistance for personal care activities such as eating, bathing, dressing, toileting and mobility? hours unpaid (family, others).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Craig Handicap Assessment and Reporting Technique-Short Form - Unpaid Personal Care per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>CHSFPN</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires Parameter Name</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Craig Handicap Assessment and Reporting Technique-Short Form Questionnaires Parameter Name Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C81223.DATEFL" Name="Date Imputation Flag" DataType="text" nciodm:ExtCodeID="C81223" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Date Imputation Flag: Indicates the level of imputation reflected in a date value.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="D" nciodm:ExtCodeID="C81212">
+                    <nciodm:CDISCDefinition>Day Imputed: Day is imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Day Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="M" nciodm:ExtCodeID="C81211">
+                    <nciodm:CDISCDefinition>Month Imputed: Month and day are imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Month Day Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="Y" nciodm:ExtCodeID="C81210">
+                    <nciodm:CDISCDefinition>Year Imputed: Entire date (year, month and day) is imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Year Month Day Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>DATEFL</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Date Imputation Flag</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Date Imputation Flag Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C81224.DTYPE" Name="Derivation Type" DataType="text" nciodm:ExtCodeID="C81224" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Derivation Type: Analysis value derivation method.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="AVERAGE" nciodm:ExtCodeID="C81209">
+                    <nciodm:CDISCSynonym>Average</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's average value over a defined set of records.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Average of Value Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BC" nciodm:ExtCodeID="C92225">
+                    <nciodm:CDISCSynonym>Best Case</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the best possible outcome.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Best Case Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BLOCF" nciodm:ExtCodeID="C81201">
+                    <nciodm:CDISCSynonym>Baseline Observation Carried Forward</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's non-missing baseline observation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Baseline Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BOC" nciodm:ExtCodeID="C132340">
+                    <nciodm:CDISCSynonym>Best Observed Case</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the best outcome recorded within a subject.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Best Observed Case Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BOCF" nciodm:ExtCodeID="C92226">
+                    <nciodm:CDISCSynonym>Best Observation Carried Forward</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's previous best-case non-missing value.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Best Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="COPY" nciodm:ExtCodeID="C184383">
+                    <nciodm:CDISCDefinition>A technique that uses assignment logic to duplicate an analysis value to be used in additional evaluations.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Copy Duplication Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="EXTRAP" nciodm:ExtCodeID="C139176">
+                    <nciodm:CDISCSynonym>Extrapolation</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to an estimation of a value based on extending a known sequence of values.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Extrapolation Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="HALFLLOQ" nciodm:ExtCodeID="C170546">
+                    <nciodm:CDISCSynonym>One Half of Lower Limit of Quantification</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to one half of the lower limit of quantification of a test.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>One Half of Lower Limit of Quantification Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INTERP" nciodm:ExtCodeID="C81208">
+                    <nciodm:CDISCSynonym>Interpolation</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to a function of known values to estimate a value within the range.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Interpolation Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LLOD" nciodm:ExtCodeID="C105701">
+                    <nciodm:CDISCSynonym>Lower Limit of Detection</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the lower limit of detection of a test.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Detection Limit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LLOQ" nciodm:ExtCodeID="C170543">
+                    <nciodm:CDISCSynonym>Lower Limit of Quantification</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the lower limit of quantification of a test.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Lower Limit of Quantification Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LOCF" nciodm:ExtCodeID="C81198">
+                    <nciodm:CDISCSynonym>Last Observation Carried Forward</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's previous non-missing value.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Last Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LOV" nciodm:ExtCodeID="C132341">
+                    <nciodm:CDISCSynonym>Last Observed Value</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's last recorded non-missing observation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Last Observed Value Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LVPD" nciodm:ExtCodeID="C132342">
+                    <nciodm:CDISCSynonym>Last Value Prior to Dosing</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's last observed value prior to the start of study treatment.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Last Value Prior to Dosing Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MAXIMUM" nciodm:ExtCodeID="C82868">
+                    <nciodm:CDISCSynonym>Maximum</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's maximum value over a defined set of records.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Maximum Value Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MINIMUM" nciodm:ExtCodeID="C82867">
+                    <nciodm:CDISCSynonym>Minimum</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's minimum value over a defined set of records.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Minimum Value Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ML" nciodm:ExtCodeID="C53331">
+                    <nciodm:CDISCSynonym>Maximum Likelihood</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the estimate that maximizes the probability of observing what has in fact been observed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Maximum Likelihood Estimation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MOTH" nciodm:ExtCodeID="C81204">
+                    <nciodm:CDISCSynonym>Mean of Other Group</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the mean value from a comparator or reference group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mean of Other Group Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MOV" nciodm:ExtCodeID="C81207">
+                    <nciodm:CDISCSynonym>Mean Observed Value in a Group</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the mean value observed in a group of subjects.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mean Observed Value in a Group Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PHANTOM" nciodm:ExtCodeID="C170545">
+                    <nciodm:CDISCSynonym>Phantom Record</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A technique that creates a record with a missing analysis value when there is no observed record for a given analysis visit or analysis timepoint.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Phantom Record Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="POCF" nciodm:ExtCodeID="C81205">
+                    <nciodm:CDISCSynonym>Penultimate Observation Carried Forward</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's next-to-last non-missing value.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Penultimate Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SOCF" nciodm:ExtCodeID="C81200">
+                    <nciodm:CDISCSynonym>Screening Observation Carried Forward</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's non-missing screening observation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Screening Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ULOD" nciodm:ExtCodeID="C174264">
+                    <nciodm:CDISCSynonym>Upper Limit of Detection</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the upper limit of detection of a test.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Upper Limit of Detection Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ULOQ" nciodm:ExtCodeID="C170544">
+                    <nciodm:CDISCSynonym>Upper Limit of Quantification</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the upper limit of quantification of a test.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Upper Limit of Quantification Derivation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WC" nciodm:ExtCodeID="C81203">
+                    <nciodm:CDISCSynonym>Worst Case</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the worst possible outcome.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Worst Case Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WOC" nciodm:ExtCodeID="C132343">
+                    <nciodm:CDISCSynonym>Worst Observed Case</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the worst recorded outcome within a subject.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Worst Observed Case Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WOCF" nciodm:ExtCodeID="C81199">
+                    <nciodm:CDISCSynonym>Worst Observed Value Carried Forward</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the subject's worst-case non-missing observation.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Worst Observation Carried Forward Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WOV" nciodm:ExtCodeID="C81206">
+                    <nciodm:CDISCSynonym>Worst Observed Value in a Group</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A data derivation or imputation technique which sets the analysis value on the record to the worst value observed in a group of subjects.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Worst Observed Value in a Group Imputation Technique</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>DTYPE</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Derivation Type</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Derivation Type Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C172334.GAD02PC" Name="Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter Code" DataType="text" nciodm:ExtCodeID="C172334" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">A parameter code codelist for the Generalized Anxiety Disorder - 7 Version 2 Questionnaire (GAD-7 V2) to support the calculation of total score in ADaM.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="GAD02TS" nciodm:ExtCodeID="C172451">
+                    <nciodm:CDISCSynonym>GAD02-Total Score - Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Generalized Anxiety Disorder - 7 Version 2 - Total score used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Generalized Anxiety Disorder - 7 Version 2 - Total Score for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>GAD02PC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter Code</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Generalized Anxiety Disorder-7 Version 2 Questionnaire Parameter Code Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C172335.GAD02PN" Name="Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter Name" DataType="text" nciodm:ExtCodeID="C172335" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">A parameter name codelist for the Generalized Anxiety Disorder - 7 Version 2 Questionnaire (GAD-7 V2) to support the calculation of total score in ADaM.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="GAD02-Total Score - Analysis" nciodm:ExtCodeID="C172451">
+                    <nciodm:CDISCSynonym>GAD02-Total Score - Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Generalized Anxiety Disorder - 7 Version 2 - Total score used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Generalized Anxiety Disorder - 7 Version 2 - Total Score for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>GAD02PN</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Generalized Anxiety Disorder - 7 Version 2 Questionnaire Parameter Name</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Generalized Anxiety Disorder-7 Version 2 Questionnaire Parameter Name Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C158114.GDS02PC" Name="Geriatric Depression Scale Short Form Questionnaire Parameter Code" DataType="text" nciodm:ExtCodeID="C158114" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">A parameter code codelist for the Geriatric Depression Scale Short Form questionnaire (GDS02) to support the calculation of total score in ADaM.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="GDS02TS" nciodm:ExtCodeID="C158155">
+                    <nciodm:CDISCSynonym>GDS02-Total Score - Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Geriatric Depression Scale Short Form - Total score used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Geriatric Depression Scale Short Form - Total Score for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>GDS02PC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Geriatric Depression Scale Short Form Questionnaire Parameter Code</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Geriatric Depression Scale Short Form Questionnaire Parameter Code Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C158115.GDS02PN" Name="Geriatric Depression Scale Short Form Questionnaire Parameter Name" DataType="text" nciodm:ExtCodeID="C158115" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">A parameter name codelist for the Geriatric Depression Scale Short Form questionnaire (GDS02) to support the calculation of total score in ADaM.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="GDS02-Total Score - Analysis" nciodm:ExtCodeID="C158155">
+                    <nciodm:CDISCSynonym>GDS02-Total Score - Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Geriatric Depression Scale Short Form - Total score used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Geriatric Depression Scale Short Form - Total Score for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>GDS02PN</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Geriatric Depression Scale Short Form Questionnaire Parameter Name</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Geriatric Depression Scale Short Form Questionnaire Parameter Name Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C187456.HAMD1PC" Name="Hamilton Depression Rating Scale - 17 Item Clinical Classification Parameter Code" DataType="text" nciodm:ExtCodeID="C187456" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">A parameter code codelist for the Hamilton Depression Rating Scale - 17 Item Clinical Classification (HAMD 17) to support the calculation of total score in ADaM.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="HAMD1TS" nciodm:ExtCodeID="C187466">
+                    <nciodm:CDISCSynonym>HAMD1-Total Score - Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Hamilton Depression Rating Scale - 17 Item - Total score used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hamilton Depression Rating Scale - 17 Item - Total Score for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>HAMD1PC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Hamilton Depression Rating Scale - 17 Item Clinical Classification Parameter Code</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Hamilton Depression Rating Scale - 17 Item Clinical Classification Parameter Code Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C187455.HAMD1PN" Name="Hamilton Depression Rating Scale - 17 Item Clinical Classification Parameter Name" DataType="text" nciodm:ExtCodeID="C187455" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">A parameter name codelist for the Hamilton Depression Rating Scale - 17 Item Clinical Classification (HAMD 17) to support the calculation of total score in ADaM.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="HAMD1-Total Score - Analysis" nciodm:ExtCodeID="C187466">
+                    <nciodm:CDISCSynonym>HAMD1-Total Score - Analysis</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Hamilton Depression Rating Scale - 17 Item - Total score used for analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hamilton Depression Rating Scale - 17 Item - Total Score for Analysis</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>HAMD1PN</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Hamilton Depression Rating Scale - 17 Item Clinical Classification Parameter Name</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Hamilton Depression Rating Scale - 17 Item Clinical Classification Parameter Name Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C81225.PARAMTYP" Name="Parameter Type" DataType="text" nciodm:ExtCodeID="C81225" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Parameter Type: Indicates whether the parameter is derived as a function of one or more other parameters.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="DERIVED" nciodm:ExtCodeID="C81197">
+                    <nciodm:CDISCDefinition>Derived: Indicates that a parameter is derived as a function of one or more other parameters.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Derived Flag</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>PARAMTYP</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Parameter Type</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Parameter Type Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C165644.POOLINT" Name="Pool for Integration" DataType="text" nciodm:ExtCodeID="C165644" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the name of the Pool, often defined in the integrated statistical analysis plan, which identifies the combination of subjects' clinical trial experience and will be the focus of the integrated analysis.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="OVERALL" nciodm:ExtCodeID="C165858">
+                    <nciodm:CDISCDefinition>The pool that includes data across all studies within which the subject has participated, used for the overall integrated analysis.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Overall Pooled Data</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>POOLINT</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Pool for Integration</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Pool for Integration Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C124296.SBJTSTAT" Name="Subject Trial Status" DataType="text" nciodm:ExtCodeID="C124296" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">Indicates the status of the subject in the trial.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="COMPLETED" nciodm:ExtCodeID="C25250">
+                    <nciodm:CDISCDefinition>To possess every necessary or normal part or component or step; having come or been brought to a conclusion. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Complete</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DISCONTINUED" nciodm:ExtCodeID="C25484">
+                    <nciodm:CDISCDefinition>To stop or end, permanently or temporarily.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Discontinue</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ONGOING" nciodm:ExtCodeID="C53279">
+                    <nciodm:CDISCSynonym>Continuous</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Remain in force or carry on without letup; keep or maintain in unaltered condition; exist in time or space without stop or interruption. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Continue</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>SBJTSTAT</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Subject Trial Status</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Subject Trial Status Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C81226.TIMEFL" Name="Time Imputation Flag" DataType="text" nciodm:ExtCodeID="C81226" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Time Imputation Flag: Indicates the level of imputation reflected in a time value.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="H" nciodm:ExtCodeID="C81213">
+                    <nciodm:CDISCDefinition>Hours Imputed: Entire time (hours, minutes and seconds) is imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hours Minutes Seconds Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="M" nciodm:ExtCodeID="C81214">
+                    <nciodm:CDISCDefinition>Minutes Imputed: Minutes and seconds are imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Minutes Seconds Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="S" nciodm:ExtCodeID="C81215">
+                    <nciodm:CDISCDefinition>Seconds Imputed: Seconds are imputed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Seconds Imputed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>TIMEFL</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Time Imputation Flag</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC ADaM Time Imputation Flag Terminology</nciodm:PreferredTerm>
+            </CodeList>
+        </MetaDataVersion>
+    </Study>
+</ODM>

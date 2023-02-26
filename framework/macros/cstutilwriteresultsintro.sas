@@ -52,6 +52,8 @@
       %then %do;
            %if %sysfunc(sysexist(SAS_EXECFILENAME)) %then %let _cstProgram = %sysget(SAS_EXECFILENAME);
       %end;
+            
+      %else %let _cstProgram = %sysfunc(scan(%nrbquote(%sysfunc(getoption(SYSIN))),-1,\));
 
     %* For CDI;
     %if %sysevalf(%superq(_cstProgram)=,boolean) %then %do;

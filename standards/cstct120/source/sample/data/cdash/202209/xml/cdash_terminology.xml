@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Produced from SAS data using the SAS Clinical Standards Toolkit-->
+<ODM xmlns:nciodm="http://ncicb.nci.nih.gov/xml/odm/EVS/CDISC" xmlns="http://www.cdisc.org/ns/odm/v1.3" FileOID="CDISC_CT.CDASH.2022-09-30" CreationDateTime="2022-10-13T09:45:32-04:00" AsOfDateTime="2022-09-30T00:00:00" FileType="Snapshot" Granularity="Metadata" ODMVersion="1.3.2" Originator="CDISC XML Technologies Team (Terminology2ODM converter)" SourceSystem="NCI Thesaurus" SourceSystemVersion="2022-09-30" nciodm:Context="Submission" nciodm:ControlledTerminologyVersion="1.2.0">
+    <Study OID="CDISC_CT.CDASH.2022-09-30">
+        <GlobalVariables>
+            <StudyName>CDISC CDASH Controlled Terminology</StudyName>
+            <StudyDescription>CDISC CDASH Controlled Terminology, 2022-09-30</StudyDescription>
+            <ProtocolName>CDISC CDASH Controlled Terminology</ProtocolName>
+        </GlobalVariables>
+        <MetaDataVersion OID="CDISC_CT_MetaDataVersion.CDASH.2022-09-30" Name="CDISC CDASH Controlled Terminology" Description="CDISC CDASH Controlled Terminology, 2022-09-30">
+            <CodeList OID="CL.C78418.CMDOSFRM" Name="Concomitant Medication Dose Form" DataType="text" nciodm:ExtCodeID="C78418" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Pharmaceutical Dosage Form codelist created for CDASH Concomitant Medication Dose Form codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="AEROSOL" nciodm:ExtCodeID="C42887">
+                    <nciodm:CDISCSynonym>aer</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A product that is packaged under pressure and contains therapeutically active ingredients that are released upon activation of an appropriate valve system; it is intended for topical application to the skin as well as local application into the nose (nasal aerosols), mouth (lingual aerosols), or lungs (inhalation aerosols).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Aerosol Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C25158">
+                    <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A solid pharmaceutical dosage form that contains medicinal agent within either a hard or soft soluble container or shell, usually used for the oral administration of medicine. The shells are made of a suitable form of gelatin or other substance. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Capsule Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CREAM" nciodm:ExtCodeID="C28944">
+                    <nciodm:CDISCDefinition>A semisolid emulsion of either the oil-in-water or the water-in-oil type, ordinarily intended for topical use. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cream Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GAS" nciodm:ExtCodeID="C42933">
+                    <nciodm:CDISCDefinition>Any elastic aeriform fluid in which the molecules are separated from one another and have free paths. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gas Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GEL" nciodm:ExtCodeID="C42934">
+                    <nciodm:CDISCDefinition>A semisolid (1) dosage form that contains a gelling agent to provide stiffness to a solution or a colloidal dispersion (2). A gel may contain suspended particles. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: A colloidal dispersion is a system in which particles of colloidal dimension (i.e., typically between 1 nm and 1 micrometer) are distributed uniformly throughout a liquid.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gel Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="OINTMENT" nciodm:ExtCodeID="C42966">
+                    <nciodm:CDISCSynonym>oint</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A suspension or emulsion, semisolid (1) dosage form, usually containing less than 20 percent water and volatiles (2) and greater than 50 percent hydrocarbons, waxes, or polyols as the vehicle. This dosage form is generally for external application to the skin or mucous membranes. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: Percent water and volatiles are measured by a loss on drying test in which the sample is heated at 105 degrees C until constant weight is achieved.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ointment Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PATCH" nciodm:ExtCodeID="C42968">
+                    <nciodm:CDISCDefinition>A drug delivery system that often contains an adhesive backing that is usually applied to an external site on the body. Its ingredients either passively diffuse from, or are actively transported from, some portion of the patch. Depending upon the patch, the ingredients are either delivered to the outer surface of the body or into the body. A patch is sometimes synonymous with the terms Extended Release Film and System.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Patch Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="POWDER" nciodm:ExtCodeID="C42972">
+                    <nciodm:CDISCDefinition>An intimate mixture of dry, finely divided drugs and/or chemicals that may be intended for internal or external use. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Powder Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SPRAY" nciodm:ExtCodeID="C42989">
+                    <nciodm:CDISCDefinition>A liquid minutely divided as by a jet of air or steam. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Spray Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SUPPOSITORY" nciodm:ExtCodeID="C42993">
+                    <nciodm:CDISCSynonym>supp</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A solid body of various weights and shapes, adapted for introduction into the rectal, vaginal, or urethral orifice of the human body; they usually melt, soften, or dissolve at body temperature.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Suppository Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SUSPENSION" nciodm:ExtCodeID="C42994">
+                    <nciodm:CDISCSynonym>Ready to Use Suspension</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>susp</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A liquid dosage form that contains solid particles dispersed in a liquid vehicle. Note: A liquid is pourable; it flows and conforms to its container at room temperature. It displays Newtonian or pseudoplastic flow behavior.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Suspension Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C42998">
+                    <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A solid dosage form containing medicinal substances with or without suitable diluents. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tablet Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>CMDOSFRM</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Concomitant Medication Dose Form</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Concomitant Medication Dose Form Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78417.CMDOSU" Name="Concomitant Medication Dose Units" DataType="text" nciodm:ExtCodeID="C78417" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Concomitant Medication Dose Units codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C48480">
+                    <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Capsule Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the capsule unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Capsule Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="g" nciodm:ExtCodeID="C48155">
+                    <nciodm:CDISCSynonym>Gram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one thousandth (1E-3) of a kilogram, the kilogram being the base unit of mass in the International System of Units (SI).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="IU" nciodm:ExtCodeID="C48579">
+                    <nciodm:CDISCSynonym>IE</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>International Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The unitage assigned by the WHO (World Health Organization) to International Biological Standards - substances, classed as biological according to the criteria provided by WHO Expert Committee on Biological Standardization, to enable the results of biological and immunological assay procedures to be expressed in the same way throughout the world. The definition of an international unit is generally arbitrary and technical, and has to be officially approved by the International Conference for Unification of Formulae.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>International Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="mg" nciodm:ExtCodeID="C28253">
+                    <nciodm:CDISCSynonym>Milligram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one thousandth (1E-3) of a gram.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Milligram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="mL" nciodm:ExtCodeID="C28254">
+                    <nciodm:CDISCSynonym>cm3</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Milliliter</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of volume equal to one thousandth (1E-3) of a liter.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Milliliter</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PUFF" nciodm:ExtCodeID="C65060">
+                    <nciodm:CDISCSynonym>Puff Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Puff Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C48542">
+                    <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Tablet Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the tablet unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tablet Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ug" nciodm:ExtCodeID="C48152">
+                    <nciodm:CDISCSynonym>mcg</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Microgram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one millionth (1E-6) of a gram.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Microgram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>CMDOSU</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Concomitant Medication Dose Units</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Concomitant Medication Dose Units Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78419.CMDOSFRQ" Name="Concomitant Medication Dosing Frequency per Interval" DataType="text" nciodm:ExtCodeID="C78419" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Frequency codelist created for CDASH Concomitant Medication Dosing Frequency per Interval codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="BID" nciodm:ExtCodeID="C64496">
+                    <nciodm:CDISCSynonym>BD</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Twice per day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Two times per day, at unspecified times. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Twice Daily</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PRN" nciodm:ExtCodeID="C64499">
+                    <nciodm:CDISCSynonym>As needed</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>As needed. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>As Needed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="QD" nciodm:ExtCodeID="C25473">
+                    <nciodm:CDISCSynonym>/day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Daily</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A rate of occurrences within a period of time equal to one day.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Daily</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="QID" nciodm:ExtCodeID="C64530">
+                    <nciodm:CDISCSynonym>4 times per day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Four times per day. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Four Times Daily</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="QM" nciodm:ExtCodeID="C64498">
+                    <nciodm:CDISCSynonym>Every Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Per Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Every month. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Monthly</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="QOD" nciodm:ExtCodeID="C64525">
+                    <nciodm:CDISCSynonym>Every other day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Every Second Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Every Two Days</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Q2D</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Every other day. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Every Other Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TID" nciodm:ExtCodeID="C64527">
+                    <nciodm:CDISCSynonym>3 times per day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Three times per day. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Three Times Daily</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="UNKNOWN" nciodm:ExtCodeID="C17998">
+                    <nciodm:CDISCSynonym>U</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>UNK</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Unknown</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Not known, not observed, not recorded, or refused. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Unknown</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>CMDOSFRQ</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Concomitant Medication Dosing Frequency per Interval</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Concomitant Medication Dosing Frequency per Interval Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78420.CMROUTE" Name="Concomitant Medication Route of Administration" DataType="text" nciodm:ExtCodeID="C78420" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Route codelist created for CDASH Concomitant Medication Route of Administration codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="INTRALESIONAL" nciodm:ExtCodeID="C38250">
+                    <nciodm:CDISCDefinition>Administration within or introduced directly into a localized lesion. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intralesional Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INTRAMUSCULAR" nciodm:ExtCodeID="C28161">
+                    <nciodm:CDISCDefinition>Administration within a muscle. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intramuscular Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INTRAOCULAR" nciodm:ExtCodeID="C38255">
+                    <nciodm:CDISCDefinition>Administration within the eye. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intraocular Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INTRAPERITONEAL" nciodm:ExtCodeID="C38258">
+                    <nciodm:CDISCDefinition>Administration within the peritoneal cavity. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intraperitoneal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NASAL" nciodm:ExtCodeID="C38284">
+                    <nciodm:CDISCSynonym>Intranasal Route of Administration</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Administration to the nose; administered by way of the nose. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Nasal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ORAL" nciodm:ExtCodeID="C38288">
+                    <nciodm:CDISCSynonym>Intraoral Route of Administration</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>PO</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Administration to or by way of the mouth. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Oral Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="RECTAL" nciodm:ExtCodeID="C38295">
+                    <nciodm:CDISCDefinition>Administration to the rectum. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Rectal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="RESPIRATORY (INHALATION)" nciodm:ExtCodeID="C38216">
+                    <nciodm:CDISCDefinition>Administration within the respiratory tract by inhaling orally or nasally for local or systemic effect. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Inhalation Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SUBCUTANEOUS" nciodm:ExtCodeID="C38299">
+                    <nciodm:CDISCSynonym>SC</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Subdermal Route of Administration</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Subcutaneous Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TOPICAL" nciodm:ExtCodeID="C38304">
+                    <nciodm:CDISCSynonym>TOP</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Administration to a particular spot on the outer surface of the body. The E2B term TRANSMAMMARY is a subset of the term TOPICAL. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Topical Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TRANSDERMAL" nciodm:ExtCodeID="C38305">
+                    <nciodm:CDISCDefinition>Administration through the dermal layer of the skin to the systemic circulation by diffusion. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Transdermal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="VAGINAL" nciodm:ExtCodeID="C38313">
+                    <nciodm:CDISCDefinition>Administration into the vagina. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vaginal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>CMROUTE</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Concomitant Medication Route of Administration</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Concomitant Medication Route of Administration Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78422.EGORRESU" Name="ECG Original Units" DataType="text" nciodm:ExtCodeID="C78422" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH ECG Original Units codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="beats/min" nciodm:ExtCodeID="C49673">
+                    <nciodm:CDISCSynonym>Beats per Minute</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>BPM</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>bpm</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The number of heartbeats measured per minute time. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Beats per Minute</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ms" nciodm:ExtCodeID="C41140">
+                    <nciodm:CDISCSynonym>Millisecond</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>ms</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>msec</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of time, which is equal to one thousandth of a second.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Millisecond</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="s" nciodm:ExtCodeID="C42535">
+                    <nciodm:CDISCSynonym>sec</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Second</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The base unit of time in the International System of Units (SI) equal to the duration of 9,192,631,770 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the cesium 133 atom in its ground state at 0 K.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Second</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>EGORRESU</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>ECG Original Units</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH ECG Original Units Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C128690.ETHNICC" Name="Ethnicity As Collected" DataType="text" nciodm:ExtCodeID="C128690" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology codelist relevant to the ethnicity of an individual as collected on the case report form.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="ACHANG" nciodm:ExtCodeID="C158197">
+                    <nciodm:CDISCSynonym>AC</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Achang ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Achang Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ASHKENAZI JEW" nciodm:ExtCodeID="C17950">
+                    <nciodm:CDISCDefinition>A person of Ashkenazi Jewish descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ashkenazi Jew</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BAI" nciodm:ExtCodeID="C158171">
+                    <nciodm:CDISCSynonym>BA</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Bai ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Bai Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BLANG" nciodm:ExtCodeID="C158193">
+                    <nciodm:CDISCSynonym>BL</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Blang ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Blang Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BONAN" nciodm:ExtCodeID="C158203">
+                    <nciodm:CDISCSynonym>BN</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Bonan ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Bonan Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BUYEI" nciodm:ExtCodeID="C158169">
+                    <nciodm:CDISCSynonym>BY</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Buyei ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Buyei Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CENTRAL AMERICAN" nciodm:ExtCodeID="C67118">
+                    <nciodm:CDISCDefinition>A person of Central American descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Central American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHOSEN" nciodm:ExtCodeID="C158172">
+                    <nciodm:CDISCSynonym>CS</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Chosen ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Chosen Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CUBAN AMERICAN" nciodm:ExtCodeID="C67115">
+                    <nciodm:CDISCDefinition>A person of Cuban and American descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cuban or Cuban American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CUBAN" nciodm:ExtCodeID="C107608">
+                    <nciodm:CDISCDefinition>A person of Cuban descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cuban</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DAI" nciodm:ExtCodeID="C158176">
+                    <nciodm:CDISCSynonym>DA</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Dai (including several different Tai-speaking groups historically referred to as Bai-yi) ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Dai Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DAUR" nciodm:ExtCodeID="C158191">
+                    <nciodm:CDISCSynonym>DU</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Daur ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Daur Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DEANG" nciodm:ExtCodeID="C158202">
+                    <nciodm:CDISCSynonym>DE</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Deang ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Deang Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DERUNG" nciodm:ExtCodeID="C158209">
+                    <nciodm:CDISCSynonym>DR</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Derung ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Derung Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DONG" nciodm:ExtCodeID="C158168">
+                    <nciodm:CDISCSynonym>DO</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Dong ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Dong Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DONGXIANG" nciodm:ExtCodeID="C158179">
+                    <nciodm:CDISCSynonym>DX</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Dongxiang ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Dongxiang Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="EWENKI" nciodm:ExtCodeID="C158199">
+                    <nciodm:CDISCSynonym>EW</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Ewenki ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ewenki Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GAOSHAN" nciodm:ExtCodeID="C158211">
+                    <nciodm:CDISCSynonym>GS</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Gaoshan ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gaoshan Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GELAO" nciodm:ExtCodeID="C158180">
+                    <nciodm:CDISCSynonym>GL</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Gelao ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gelao Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GIN" nciodm:ExtCodeID="C158200">
+                    <nciodm:CDISCSynonym>GI</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Gin ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gin Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="HAN" nciodm:ExtCodeID="C158158">
+                    <nciodm:CDISCSynonym>HA</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Han ethnic group (including Chuanqing).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Han Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="HANI" nciodm:ExtCodeID="C158173">
+                    <nciodm:CDISCSynonym>HN</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Hani (including Sangkong) ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hani Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="HEZHEN" nciodm:ExtCodeID="C158210">
+                    <nciodm:CDISCSynonym>HZ</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Hezhen ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hezhen Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="HISPANIC OR LATINO" nciodm:ExtCodeID="C17459">
+                    <nciodm:CDISCDefinition>A person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hispanic or Latino</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="HUI" nciodm:ExtCodeID="C158160">
+                    <nciodm:CDISCSynonym>HU</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Hui (including Utsuls of Hainan, descended from Cham refugees) ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hui Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="JINGPO" nciodm:ExtCodeID="C158190">
+                    <nciodm:CDISCSynonym>JP</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Jingpo ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Jingpo Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="JINO" nciodm:ExtCodeID="C158201">
+                    <nciodm:CDISCSynonym>JN</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Jino ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Jino Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="KAZAK" nciodm:ExtCodeID="C158175">
+                    <nciodm:CDISCSynonym>KZ</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Kazak ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Kazak Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="KIRGIZ" nciodm:ExtCodeID="C158189">
+                    <nciodm:CDISCSynonym>KG</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Kirgiz ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Kirgiz Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LAHU" nciodm:ExtCodeID="C158181">
+                    <nciodm:CDISCSynonym>LH</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Lahu ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Lahu Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LATIN AMERICAN" nciodm:ExtCodeID="C126531">
+                    <nciodm:CDISCDefinition>A person of Latin American descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Latin American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LHOBA" nciodm:ExtCodeID="C158212">
+                    <nciodm:CDISCSynonym>LB</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Lhoba ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Lhoba Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LI" nciodm:ExtCodeID="C158174">
+                    <nciodm:CDISCSynonym>LI</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Li ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Li Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LISU" nciodm:ExtCodeID="C158178">
+                    <nciodm:CDISCSynonym>LS</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Lisu ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Lisu Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MAN" nciodm:ExtCodeID="C158161">
+                    <nciodm:CDISCSynonym>MA</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Man ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Man Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MAONAN" nciodm:ExtCodeID="C158194">
+                    <nciodm:CDISCSynonym>MN</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Maonan (including the Then) ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Maonan Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MEXICAN AMERICAN" nciodm:ExtCodeID="C67114">
+                    <nciodm:CDISCDefinition>A person of Mexican and American descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mexican American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MEXICAN" nciodm:ExtCodeID="C67113">
+                    <nciodm:CDISCDefinition>A person of Mexican descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mexican</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MIAO" nciodm:ExtCodeID="C158163">
+                    <nciodm:CDISCSynonym>MH</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Miao (Including Hmong) ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Miao Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MONBA" nciodm:ExtCodeID="C158207">
+                    <nciodm:CDISCSynonym>MB</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Monba ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Monba Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MONGOL" nciodm:ExtCodeID="C158167">
+                    <nciodm:CDISCSynonym>MG</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Mongol ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mongol Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MULAO" nciodm:ExtCodeID="C158187">
+                    <nciodm:CDISCSynonym>ML</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Mulao (including the Qago) ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mulao Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NAXI" nciodm:ExtCodeID="C158184">
+                    <nciodm:CDISCSynonym>NX</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Naxi (including Mosuo) ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Naxi Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NOT HISPANIC OR LATINO" nciodm:ExtCodeID="C41222">
+                    <nciodm:CDISCDefinition>A person not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. An arbitrary ethnic classification. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Not Hispanic or Latino</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NOT REPORTED" nciodm:ExtCodeID="C43234">
+                    <nciodm:CDISCSynonym>Not reported</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Not provided or available.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Not Reported</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NU" nciodm:ExtCodeID="C158198">
+                    <nciodm:CDISCSynonym>NU</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Nu ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Nu Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="OROQEN" nciodm:ExtCodeID="C158208">
+                    <nciodm:CDISCSynonym>OR</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Oroqen ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Oroqen Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PUERTO RICAN" nciodm:ExtCodeID="C67112">
+                    <nciodm:CDISCDefinition>A person of Puerto Rican descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Puerto Rican</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PUMI" nciodm:ExtCodeID="C158196">
+                    <nciodm:CDISCSynonym>PM</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Pumi ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Pumi Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="QIANG" nciodm:ExtCodeID="C158185">
+                    <nciodm:CDISCSynonym>QI</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Qiang ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Qiang Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="RUSS" nciodm:ExtCodeID="C158204">
+                    <nciodm:CDISCSynonym>RS</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Russ ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Russ Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SALAR" nciodm:ExtCodeID="C158192">
+                    <nciodm:CDISCSynonym>SL</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Salar ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Salar Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SEPHARDIC JEW" nciodm:ExtCodeID="C103283">
+                    <nciodm:CDISCDefinition>A person of Sephardic Jewish descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Sephardic Jew</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SHE" nciodm:ExtCodeID="C158177">
+                    <nciodm:CDISCSynonym>SH</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the She ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>She Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SOUTH AMERICAN" nciodm:ExtCodeID="C126532">
+                    <nciodm:CDISCDefinition>A person of South American descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>South American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SPANISH" nciodm:ExtCodeID="C67120">
+                    <nciodm:CDISCDefinition>A person from Spain or of Spanish descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Spanish</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SUI" nciodm:ExtCodeID="C158183">
+                    <nciodm:CDISCSynonym>SU</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Sui ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Sui Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TAJIK" nciodm:ExtCodeID="C158195">
+                    <nciodm:CDISCSynonym>TA</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Tajik ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tajik Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TATAR" nciodm:ExtCodeID="C158213">
+                    <nciodm:CDISCSynonym>TT</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Tatar ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tatar Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TU" nciodm:ExtCodeID="C158186">
+                    <nciodm:CDISCSynonym>TU</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Tu ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tu Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TUJIA" nciodm:ExtCodeID="C158165">
+                    <nciodm:CDISCSynonym>TJ</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Tujia ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tujia Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="UNKNOWN" nciodm:ExtCodeID="C17998">
+                    <nciodm:CDISCSynonym>U</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>UNK</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Unknown</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Not known, not observed, not recorded, or refused. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Unknown</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="UYGUR" nciodm:ExtCodeID="C158162">
+                    <nciodm:CDISCSynonym>UG</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Uygur ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Uygur Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="UZBEK" nciodm:ExtCodeID="C158206">
+                    <nciodm:CDISCSynonym>UZ</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Uzbek ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Uzbek Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="VA" nciodm:ExtCodeID="C158182">
+                    <nciodm:CDISCSynonym>VA</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Va ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Va Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="XIBE" nciodm:ExtCodeID="C158188">
+                    <nciodm:CDISCSynonym>XB</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Xibe ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Xibe Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="YAO" nciodm:ExtCodeID="C158170">
+                    <nciodm:CDISCSynonym>YA</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Yao ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Yao Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="YI" nciodm:ExtCodeID="C158164">
+                    <nciodm:CDISCSynonym>YI</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Yi ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Yi Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="YUGUR" nciodm:ExtCodeID="C158205">
+                    <nciodm:CDISCSynonym>YG</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Yugur ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Yugur Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ZANG" nciodm:ExtCodeID="C158166">
+                    <nciodm:CDISCSynonym>ZA</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Zang (including Amdowa, Khampa and some Pumi speakers) ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Zang Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ZHUANG" nciodm:ExtCodeID="C158159">
+                    <nciodm:CDISCSynonym>ZH</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A Chinese person from the Zhuang ethnic group.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Zhuang Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>ETHNICC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Ethnicity As Collected</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC SDTM Collected Ethnicity Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78426.EXDOSFRM" Name="Exposure Dose Form" DataType="text" nciodm:ExtCodeID="C78426" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Pharmaceutical Dosage Form codelist created for CDASH Exposure Dose Form codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="AEROSOL" nciodm:ExtCodeID="C42887">
+                    <nciodm:CDISCSynonym>aer</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A product that is packaged under pressure and contains therapeutically active ingredients that are released upon activation of an appropriate valve system; it is intended for topical application to the skin as well as local application into the nose (nasal aerosols), mouth (lingual aerosols), or lungs (inhalation aerosols).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Aerosol Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C25158">
+                    <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A solid pharmaceutical dosage form that contains medicinal agent within either a hard or soft soluble container or shell, usually used for the oral administration of medicine. The shells are made of a suitable form of gelatin or other substance. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Capsule Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CREAM" nciodm:ExtCodeID="C28944">
+                    <nciodm:CDISCDefinition>A semisolid emulsion of either the oil-in-water or the water-in-oil type, ordinarily intended for topical use. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cream Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GAS" nciodm:ExtCodeID="C42933">
+                    <nciodm:CDISCDefinition>Any elastic aeriform fluid in which the molecules are separated from one another and have free paths. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gas Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GEL" nciodm:ExtCodeID="C42934">
+                    <nciodm:CDISCDefinition>A semisolid (1) dosage form that contains a gelling agent to provide stiffness to a solution or a colloidal dispersion (2). A gel may contain suspended particles. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: A colloidal dispersion is a system in which particles of colloidal dimension (i.e., typically between 1 nm and 1 micrometer) are distributed uniformly throughout a liquid.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gel Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="OINTMENT" nciodm:ExtCodeID="C42966">
+                    <nciodm:CDISCSynonym>oint</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A suspension or emulsion, semisolid (1) dosage form, usually containing less than 20 percent water and volatiles (2) and greater than 50 percent hydrocarbons, waxes, or polyols as the vehicle. This dosage form is generally for external application to the skin or mucous membranes. Note 1: A semisolid is not pourable; it does not flow or conform to its container at room temperature. It does not flow at low shear stress and generally exhibits plastic flow behavior. Note 2: Percent water and volatiles are measured by a loss on drying test in which the sample is heated at 105 degrees C until constant weight is achieved.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ointment Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PATCH" nciodm:ExtCodeID="C42968">
+                    <nciodm:CDISCDefinition>A drug delivery system that often contains an adhesive backing that is usually applied to an external site on the body. Its ingredients either passively diffuse from, or are actively transported from, some portion of the patch. Depending upon the patch, the ingredients are either delivered to the outer surface of the body or into the body. A patch is sometimes synonymous with the terms Extended Release Film and System.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Patch Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="POWDER" nciodm:ExtCodeID="C42972">
+                    <nciodm:CDISCDefinition>An intimate mixture of dry, finely divided drugs and/or chemicals that may be intended for internal or external use. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Powder Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SPRAY" nciodm:ExtCodeID="C42989">
+                    <nciodm:CDISCDefinition>A liquid minutely divided as by a jet of air or steam. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Spray Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SUPPOSITORY" nciodm:ExtCodeID="C42993">
+                    <nciodm:CDISCSynonym>supp</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A solid body of various weights and shapes, adapted for introduction into the rectal, vaginal, or urethral orifice of the human body; they usually melt, soften, or dissolve at body temperature.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Suppository Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SUSPENSION" nciodm:ExtCodeID="C42994">
+                    <nciodm:CDISCSynonym>Ready to Use Suspension</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>susp</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A liquid dosage form that contains solid particles dispersed in a liquid vehicle. Note: A liquid is pourable; it flows and conforms to its container at room temperature. It displays Newtonian or pseudoplastic flow behavior.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Suspension Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C42998">
+                    <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A solid dosage form containing medicinal substances with or without suitable diluents. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tablet Dosage Form</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>EXDOSFRM</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Exposure Dose Form</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Exposure Dose Form Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78745.EXDOSFRQ" Name="Exposure Dosing Frequency per Interval" DataType="text" nciodm:ExtCodeID="C78745" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Frequency codelist created for CDASH Exposure Dosing Frequency per Interval codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="BID" nciodm:ExtCodeID="C64496">
+                    <nciodm:CDISCSynonym>BD</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Twice per day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Two times per day, at unspecified times. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Twice Daily</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PRN" nciodm:ExtCodeID="C64499">
+                    <nciodm:CDISCSynonym>As needed</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>As needed. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>As Needed</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="QD" nciodm:ExtCodeID="C25473">
+                    <nciodm:CDISCSynonym>/day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Daily</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Per Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A rate of occurrences within a period of time equal to one day.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Daily</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="QID" nciodm:ExtCodeID="C64530">
+                    <nciodm:CDISCSynonym>4 times per day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Four times per day. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Four Times Daily</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="QM" nciodm:ExtCodeID="C64498">
+                    <nciodm:CDISCSynonym>Every Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Per Month</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Every month. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Monthly</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="QOD" nciodm:ExtCodeID="C64525">
+                    <nciodm:CDISCSynonym>Every other day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Every Second Day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Every Two Days</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Q2D</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Every other day. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Every Other Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TID" nciodm:ExtCodeID="C64527">
+                    <nciodm:CDISCSynonym>3 times per day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Three times per day. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Three Times Daily</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="UNKNOWN" nciodm:ExtCodeID="C17998">
+                    <nciodm:CDISCSynonym>U</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>UNK</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Unknown</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Not known, not observed, not recorded, or refused. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Unknown</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>EXDOSFRQ</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Exposure Dosing Frequency per Interval</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Exposure Dosing Frequency per Interval Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78425.EXROUTE" Name="Exposure Route of Administration" DataType="text" nciodm:ExtCodeID="C78425" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Route codelist created for CDASH Exposure Route of Administration codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="INTRALESIONAL" nciodm:ExtCodeID="C38250">
+                    <nciodm:CDISCDefinition>Administration within or introduced directly into a localized lesion. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intralesional Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INTRAMUSCULAR" nciodm:ExtCodeID="C28161">
+                    <nciodm:CDISCDefinition>Administration within a muscle. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intramuscular Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INTRAOCULAR" nciodm:ExtCodeID="C38255">
+                    <nciodm:CDISCDefinition>Administration within the eye. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intraocular Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INTRAPERITONEAL" nciodm:ExtCodeID="C38258">
+                    <nciodm:CDISCDefinition>Administration within the peritoneal cavity. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Intraperitoneal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NASAL" nciodm:ExtCodeID="C38284">
+                    <nciodm:CDISCSynonym>Intranasal Route of Administration</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Administration to the nose; administered by way of the nose. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Nasal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ORAL" nciodm:ExtCodeID="C38288">
+                    <nciodm:CDISCSynonym>Intraoral Route of Administration</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>PO</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Administration to or by way of the mouth. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Oral Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="RECTAL" nciodm:ExtCodeID="C38295">
+                    <nciodm:CDISCDefinition>Administration to the rectum. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Rectal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="RESPIRATORY (INHALATION)" nciodm:ExtCodeID="C38216">
+                    <nciodm:CDISCDefinition>Administration within the respiratory tract by inhaling orally or nasally for local or systemic effect. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Inhalation Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SUBCUTANEOUS" nciodm:ExtCodeID="C38299">
+                    <nciodm:CDISCSynonym>SC</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Subdermal Route of Administration</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Administration beneath the skin; hypodermic. Synonymous with the term SUBDERMAL. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Subcutaneous Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TOPICAL" nciodm:ExtCodeID="C38304">
+                    <nciodm:CDISCSynonym>TOP</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Administration to a particular spot on the outer surface of the body. The E2B term TRANSMAMMARY is a subset of the term TOPICAL. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Topical Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TRANSDERMAL" nciodm:ExtCodeID="C38305">
+                    <nciodm:CDISCDefinition>Administration through the dermal layer of the skin to the systemic circulation by diffusion. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Transdermal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="VAGINAL" nciodm:ExtCodeID="C38313">
+                    <nciodm:CDISCDefinition>Administration into the vagina. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vaginal Route of Administration</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>EXROUTE</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Exposure Route of Administration</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Exposure Route of Administration Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C181165.MODDLV" Name="Mode of Delivery" DataType="text" nciodm:ExtCodeID="C181165" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology codelist relevant to the mode of delivery of a fetus or neonate.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="BREECH EXTRACTION" nciodm:ExtCodeID="C114136">
+                    <nciodm:CDISCDefinition>The delivery of a breech-presenting fetus, which is manually pulled through the birth canal.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Breech Extraction</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CESAREAN SECTION" nciodm:ExtCodeID="C46088">
+                    <nciodm:CDISCDefinition>Surgical delivery of one or more intrauterine fetuses though an abdominal incision.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cesarean Section</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DELIVERY BY DESTRUCTIVE OPERATION" nciodm:ExtCodeID="C114143">
+                    <nciodm:CDISCDefinition>Extraction of a fetus through the cervix using destructive surgical techniques.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Delivery by Destructive Operation</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="VAGINAL ASSISTED DELIVERY" nciodm:ExtCodeID="C81301">
+                    <nciodm:CDISCSynonym>Operative Vaginal Delivery</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Birth of the fetus through the vagina with the application of vacuum or forceps or any other instrument.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vaginal Assisted Delivery</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="VAGINAL BIRTH AFTER CESAREAN DELIVERY" nciodm:ExtCodeID="C81302">
+                    <nciodm:CDISCDefinition>A vaginal birth in a woman with one or more previous cesarean births. (reVITALize)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vaginal Birth after Cesarean Delivery</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="VAGINAL DELIVERY" nciodm:ExtCodeID="C81303">
+                    <nciodm:CDISCDefinition>Birth of the fetus through the vagina.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vaginal Delivery</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>MODDLV</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Mode of Delivery</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC SDTM Mode of Delivery Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C128689.RACEC" Name="Race As Collected" DataType="text" nciodm:ExtCodeID="C128689" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology codelist relevant to the race of an individual as collected on the case report form.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="ABORIGINAL AUSTRALIAN" nciodm:ExtCodeID="C154875">
+                    <nciodm:CDISCDefinition>The native people of Australia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Aboriginal Australian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="AFRICAN AMERICAN" nciodm:ExtCodeID="C128937">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of sub-Saharan Africa and the United States.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>African American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="AFRICAN CARIBBEAN" nciodm:ExtCodeID="C41226">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of sub-Saharan Africa and the Caribbean.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>African Caribbean</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="AFRICAN" nciodm:ExtCodeID="C42331">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of sub-Saharan Africa.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>African</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ALASKA NATIVE" nciodm:ExtCodeID="C18237">
+                    <nciodm:CDISCDefinition>The native people of Alaska.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Alaska Native</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="AMERICAN INDIAN OR ALASKA NATIVE" nciodm:ExtCodeID="C41259">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of North and South America (including Central America), and who maintains tribal affiliation or community attachment. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>American Indian or Alaska Native</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="AMERICAN INDIAN" nciodm:ExtCodeID="C43877">
+                    <nciodm:CDISCDefinition>The native people of North America.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>American Indian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ARAB" nciodm:ExtCodeID="C43876">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the Arabian peninsula and surrounding territories in the Middle East and northern Africa.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Arab</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ASIAN AMERICAN" nciodm:ExtCodeID="C16310">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of Asia and the United States.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Asian American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ASIAN INDIAN" nciodm:ExtCodeID="C41262">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the Indian subcontinent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Asian Indian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ASIAN" nciodm:ExtCodeID="C41260">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Asian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BAHAMIAN" nciodm:ExtCodeID="C67271">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the Bahamas.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Bahamian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BANGLADESHI" nciodm:ExtCodeID="C43671">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Bangladesh.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Bangladeshi</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BARBADIAN" nciodm:ExtCodeID="C43823">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Barbados.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Barbadian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BHUTANESE" nciodm:ExtCodeID="C43673">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Bhutan.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Bhutanese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BLACK CENTRAL AMERICAN" nciodm:ExtCodeID="C128991">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of sub-Saharan Africa and Central America.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Black Central American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BLACK OR AFRICAN AMERICAN" nciodm:ExtCodeID="C16352">
+                    <nciodm:CDISCDefinition>A person having origins in any of the black racial groups of Africa. Terms such as "Haitian" or "Negro" can be used in addition to "Black or African American." (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Black or African American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BLACK SOUTH AMERICAN" nciodm:ExtCodeID="C128992">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of sub-Saharan Africa and South America.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Black South American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BLACK" nciodm:ExtCodeID="C128938">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of sub-Saharan Africa or the Caribbean.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Black</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BOTSWANAN" nciodm:ExtCodeID="C43830">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Botswana.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Botswanan</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BURMESE" nciodm:ExtCodeID="C43674">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Myanmar (formerly Burma).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Burmese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CAMBODIAN" nciodm:ExtCodeID="C43399">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Cambodia (formerly Kampuchea).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Cambodian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CARIBBEAN INDIAN" nciodm:ExtCodeID="C77810">
+                    <nciodm:CDISCDefinition>The native people of the Caribbean.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Caribbean Indian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CENTRAL AMERICAN INDIAN" nciodm:ExtCodeID="C44950">
+                    <nciodm:CDISCDefinition>The native people of Central America.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Central American Indian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CENTRAL ASIAN" nciodm:ExtCodeID="C126534">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Central Asia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Central Asian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHAMORRO" nciodm:ExtCodeID="C43403">
+                    <nciodm:CDISCDefinition>The native people of the Mariana Islands, including the United States territories of Guam and the Commonwealth of the Northern Mariana Islands in Micronesia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Chamorran</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CHINESE" nciodm:ExtCodeID="C43391">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of China.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Chinese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DOMINICA ISLANDER" nciodm:ExtCodeID="C43824">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Dominica.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Dominica Islander</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DOMINICAN" nciodm:ExtCodeID="C67117">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the Dominican Republic.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Dominican</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="EAST ASIAN" nciodm:ExtCodeID="C161419">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of East Asia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>East Asian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="EASTERN EUROPEAN" nciodm:ExtCodeID="C77819">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Eastern Europe.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Eastern European</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ENGLISH" nciodm:ExtCodeID="C43853">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of England.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>English</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ETHIOPIAN" nciodm:ExtCodeID="C43831">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Ethiopia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Ethiopian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="EUROPEAN" nciodm:ExtCodeID="C43851">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Europe.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>European</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="FILIPINO" nciodm:ExtCodeID="C43393">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the Philippines.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Filipino</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GREENLAND INUIT" nciodm:ExtCodeID="C44265">
+                    <nciodm:CDISCDefinition>The native people of Greenland.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Greenland Eskimo</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GUAMANIAN OR CHAMORRO" nciodm:ExtCodeID="C43837">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of the United States territories of Guam and the Commonwealth of the Northern Mariana Islands in Micronesia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Guamanian or Chamorro</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="GUAMANIAN" nciodm:ExtCodeID="C43404">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Guam.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Guamanian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="HAITIAN" nciodm:ExtCodeID="C43825">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Haiti.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Haitian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="HMONG" nciodm:ExtCodeID="C43398">
+                    <nciodm:CDISCDefinition>The native people originating in China around the Yellow River or Hoang Ho.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hmong</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INDONESIAN" nciodm:ExtCodeID="C43715">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Indonesia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Indonesian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="INUPIAT INUIT" nciodm:ExtCodeID="C44268">
+                    <nciodm:CDISCDefinition>The native people inhabiting the territory spanning the Norton Sound on the Bering Sea to the Canadian border.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Inupiat Eskimo</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="IRISH" nciodm:ExtCodeID="C43856">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Ireland.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Irish</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="IWO JIMAN" nciodm:ExtCodeID="C43718">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Iwo Jima.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Iwo Jiman</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="JAMAICAN" nciodm:ExtCodeID="C43826">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Jamaica.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Jamaican</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="JAPANESE" nciodm:ExtCodeID="C43392">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Japan.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Japanese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="KHOISAN" nciodm:ExtCodeID="C154874">
+                    <nciodm:CDISCDefinition>The native people of the Western Cape in southern Africa.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Khoisan</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="KOREAN" nciodm:ExtCodeID="C43395">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of North and South Korea.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Korean</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LAOTIAN" nciodm:ExtCodeID="C43397">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Laos.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Laotian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LATIN AMERICAN" nciodm:ExtCodeID="C126531">
+                    <nciodm:CDISCDefinition>A person of Latin American descent.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Latin American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="LIBERIAN" nciodm:ExtCodeID="C43832">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Liberia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Liberian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MALAGASY" nciodm:ExtCodeID="C43722">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Madagascar.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Malagasy</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MALAYSIAN" nciodm:ExtCodeID="C43716">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Malaysia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Malaysian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MALDIVIAN" nciodm:ExtCodeID="C43719">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the Maldives.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Maldivian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MAORI" nciodm:ExtCodeID="C158274">
+                    <nciodm:CDISCDefinition>The native people of New Zealand.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Maori</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MEDITERRANEAN" nciodm:ExtCodeID="C77811">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the countries surrounding the Mediterranean sea.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mediterranean</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MELANESIAN" nciodm:ExtCodeID="C43409">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Melanesia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Melanesian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MICRONESIAN" nciodm:ExtCodeID="C43402">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Micronesia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Micronesian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MIDDLE EASTERN" nciodm:ExtCodeID="C77820">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the Middle East.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Middle Eastern</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="MONGOLIAN" nciodm:ExtCodeID="C43864">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Mongolia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Mongolian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NAMIBIAN" nciodm:ExtCodeID="C43833">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Namibia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Namibian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER" nciodm:ExtCodeID="C41219">
+                    <nciodm:CDISCDefinition>Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuu. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Native Hawaiian or Other Pacific Islander</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NATIVE HAWAIIAN" nciodm:ExtCodeID="C43394">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Hawaii. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Native Hawaiian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NEPALESE" nciodm:ExtCodeID="C43720">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Nepal.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Nepalese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NIGERIAN" nciodm:ExtCodeID="C43834">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Nigeria.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Nigerian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NORTH AFRICAN" nciodm:ExtCodeID="C77813">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of North Africa.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>North Coast of Africa</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NORTHERN EUROPEAN" nciodm:ExtCodeID="C77814">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Northern Europe.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Northern European</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NOT REPORTED" nciodm:ExtCodeID="C43234">
+                    <nciodm:CDISCSynonym>Not reported</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Not provided or available.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Not Reported</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="OKINAWAN" nciodm:ExtCodeID="C43717">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Okinawa.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Okinawan</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="OTHER PACIFIC ISLANDER" nciodm:ExtCodeID="C107602">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of the Pacific Islands, but not Guam, Hawaii, the Mariana Islands or Samoa. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Other Pacific Islander</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="OTHER" nciodm:ExtCodeID="C17649">
+                    <nciodm:CDISCSynonym>Other</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Different than the one(s) previously specified or mentioned. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Other</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PAKISTANI" nciodm:ExtCodeID="C43427">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Pakistan.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Pakistani</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="POLYNESIAN" nciodm:ExtCodeID="C43405">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Polynesia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Polynesian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="RUSSIAN" nciodm:ExtCodeID="C43860">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Russia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Russian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SAMOAN" nciodm:ExtCodeID="C43407">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Samoa. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Samoan</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SIBERIAN ESKIMO" nciodm:ExtCodeID="C44269">
+                    <nciodm:CDISCDefinition>The native Yupik people inhabiting the coast of the Chukchi Peninsula in the far northeast of the Russian Federation and on St. Lawrence Island in Alaska.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Siberian Eskimo</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SINGAPOREAN" nciodm:ExtCodeID="C43721">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Singapore.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Singaporean</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SOUTH AMERICAN INDIAN" nciodm:ExtCodeID="C44953">
+                    <nciodm:CDISCDefinition>The native people of South America.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>South American Indian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SOUTH ASIAN" nciodm:ExtCodeID="C41263">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the South Asia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>South Asian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SOUTHEAST ASIAN" nciodm:ExtCodeID="C126533">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Southeast Asia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Southeast Asian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SOUTHERN AFRICAN COLOURED" nciodm:ExtCodeID="C156583">
+                    <nciodm:CDISCDefinition>A person of mixed race, whose ancestry is from one or more of the naturalized racial groups of Southern Africa (typically Western European, South Asian, or Southeastern Asian) and one or more of the indigenous Southern African peoples.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Southern African Coloured</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SRI LANKAN" nciodm:ExtCodeID="C43672">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Sri Lanka.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Sri Lankan</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TAIWANESE" nciodm:ExtCodeID="C43675">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Taiwan.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Taiwanese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="THAI" nciodm:ExtCodeID="C43400">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Thailand.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Thai</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TOBAGOAN" nciodm:ExtCodeID="C43827">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Tobago.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tobagoan</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TRINIDADIAN" nciodm:ExtCodeID="C43828">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Trinidad.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Trinidadian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="UNKNOWN" nciodm:ExtCodeID="C17998">
+                    <nciodm:CDISCSynonym>U</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>UNK</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Unknown</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Not known, not observed, not recorded, or refused. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Unknown</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="VIETNAMESE" nciodm:ExtCodeID="C43396">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Viet Nam.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vietnamese</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WEST ASIAN" nciodm:ExtCodeID="C153343">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Western Asia.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Western Asian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WEST INDIAN" nciodm:ExtCodeID="C43829">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of the West Indies.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>West Indian</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WESTERN EUROPEAN" nciodm:ExtCodeID="C77817">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Western Europe.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Western European</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WHITE CARIBBEAN" nciodm:ExtCodeID="C77816">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of Europe, the Middle East, or North Africa, and the Caribbean.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>White Caribbean</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WHITE CENTRAL AMERICAN" nciodm:ExtCodeID="C128993">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of Europe, the Middle East, or North Africa, and Central America.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>White Central American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WHITE SOUTH AMERICAN" nciodm:ExtCodeID="C128994">
+                    <nciodm:CDISCDefinition>A person having origins in the original peoples of Europe, the Middle East, or North Africa, and South America.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>White South American</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="WHITE" nciodm:ExtCodeID="C41261">
+                    <nciodm:CDISCDefinition>Denotes a person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White. (FDA)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>White</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="YUPIK ESKIMO" nciodm:ExtCodeID="C44270">
+                    <nciodm:CDISCDefinition>The native people inhabiting western, southwestern, and southcentral Alaska and the Russian Far East.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Yupik Eskimo</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ZAIREAN" nciodm:ExtCodeID="C43835">
+                    <nciodm:CDISCDefinition>A person having origins in any of the original peoples of Zaire.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Zairean</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>RACEC</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Race As Collected</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC SDTM Collected Race Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C177909.SAERCAT" Name="Serious Adverse Event Report Category" DataType="text" nciodm:ExtCodeID="C177909" nciodm:CodeListExtensible="No">
+                <Description>
+                    <TranslatedText xml:lang="en">Terminology relevant to the classification of a serious adverse event report.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="AMENDMENT" nciodm:ExtCodeID="C41200">
+                    <nciodm:CDISCSynonym>Amended</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Action(s) undertaken to modify by means of correction, addition, subtraction, or replacement.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Amendment</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NULLIFICATION" nciodm:ExtCodeID="C178052">
+                    <nciodm:CDISCSynonym>Nullified</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Action(s) undertaken to void, negate, or invalidate.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Nullification</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ORIGINAL" nciodm:ExtCodeID="C25604">
+                    <nciodm:CDISCDefinition>Preceding all others in time or being as first made or performed.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Original</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>SAERCAT</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Serious Adverse Event Report Category</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Serious Adverse Event Report Category Response Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C181164.SADCRR" Name="Study Agent Dechallenge Reaction Response" DataType="text" nciodm:ExtCodeID="C181164" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology codelist relevant to the resultant reaction due to withdrawing, interrupting, or otherwise altering administration of study treatment.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="NEGATIVE DECHALLENGE" nciodm:ExtCodeID="C181222">
+                    <nciodm:CDISCDefinition>Continued presence of an adverse event after decrease or change in dose, or withdrawal of the product/drug.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Negative Dechallenge Response</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NOT APPLICABLE DECHALLENGE" nciodm:ExtCodeID="C181224">
+                    <nciodm:CDISCDefinition>The outcome of decreasing the dose or discontinuation of the product/drug is not relevant in the current context.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Not Applicable Dechallenge Response</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="POSITIVE DECHALLENGE" nciodm:ExtCodeID="C181223">
+                    <nciodm:CDISCDefinition>Partial or complete abatement of an adverse event after decrease or change in dose, or withdrawal of the product/drug.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Positive Dechallenge Response</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="UNKNOWN DECHALLENGE" nciodm:ExtCodeID="C181225">
+                    <nciodm:CDISCDefinition>No information regarding the outcome of decreasing the dose or discontinuation of the product/drug.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Unknown Dechallenge Response</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>SADCRR</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Study Agent Dechallenge Reaction Response</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Study Agent Dechallenge Reaction Response Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C181163.SARCRR" Name="Study Agent Rechallenge Reaction Response" DataType="text" nciodm:ExtCodeID="C181163" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology codelist relevant to the resultant reaction due to restarting or otherwise returning administration of study treatment to previous level, after a dechallenge event.</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="NEGATIVE RECHALLENGE" nciodm:ExtCodeID="C181226">
+                    <nciodm:CDISCDefinition>Failure of the product/drug, when reintroduced, to produce signs or symptoms similar to those observed when the product/drug was previously used.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Negative Rechallenge Response</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NOT APPLICABLE RECHALLENGE" nciodm:ExtCodeID="C181228">
+                    <nciodm:CDISCDefinition>The outcome of reintroduction of product/drug is not relevant in the current context.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Not Applicable Rechallenge Response</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="POSITIVE RECHALLENGE" nciodm:ExtCodeID="C181227">
+                    <nciodm:CDISCDefinition>Recurrence of similar or new signs and symptoms upon reintroduction of the product/drug.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Positive Rechallenge Response</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="UKNOWN RECHALLENGE" nciodm:ExtCodeID="C181229">
+                    <nciodm:CDISCDefinition>No information regarding the outcome of reintroduction of product/drug.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Unknown Rechallenge Response</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>SARCRR</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Study Agent Rechallenge Reaction Response</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Study Agent Rechallenge Reaction Response Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C83004.SUNCF" Name="Substance Use Never/Current/Former Classification" DataType="text" nciodm:ExtCodeID="C83004" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Never/Current/Former Classification codelist created for CDASH Substance Use Never/Current/Former Classification codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="CURRENT" nciodm:ExtCodeID="C25471">
+                    <nciodm:CDISCDefinition>Occurring in or belonging to the present time. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Current</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="FORMER" nciodm:ExtCodeID="C25627">
+                    <nciodm:CDISCSynonym>Previous</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>Occurring prior to something else. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Previous</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="NEVER" nciodm:ExtCodeID="C70543">
+                    <nciodm:CDISCDefinition>Not ever; at no time in the past.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Never</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>SUNCF</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Substance Use Never/Current/Former Classification</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Substance Use Never/Current/Former Classification Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78428.EXVOLTU" Name="Total Volume Administration Unit" DataType="text" nciodm:ExtCodeID="C78428" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Total Volume Administration Unit codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="mg" nciodm:ExtCodeID="C28253">
+                    <nciodm:CDISCSynonym>Milligram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one thousandth (1E-3) of a gram.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Milligram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="mL" nciodm:ExtCodeID="C28254">
+                    <nciodm:CDISCSynonym>cm3</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Milliliter</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of volume equal to one thousandth (1E-3) of a liter.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Milliliter</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ug" nciodm:ExtCodeID="C48152">
+                    <nciodm:CDISCSynonym>mcg</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Microgram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one millionth (1E-6) of a gram.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Microgram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>EXVOLTU</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Total Volume Administration Unit</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Total Volume Administration Unit Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78427.EXINTPU" Name="Unit for the Duration of Treatment Interruption" DataType="text" nciodm:ExtCodeID="C78427" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Unit for Duration of Treatment Interruption codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="HOURS" nciodm:ExtCodeID="C25529">
+                    <nciodm:CDISCSynonym>h</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Hours</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>hr</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of measurement of time equal to 60 minutes.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Hour</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="min" nciodm:ExtCodeID="C48154">
+                    <nciodm:CDISCSynonym>Minute</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of measurement of time equal to 60 seconds.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Minute</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="s" nciodm:ExtCodeID="C42535">
+                    <nciodm:CDISCSynonym>sec</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Second</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The base unit of time in the International System of Units (SI) equal to the duration of 9,192,631,770 periods of the specified light radiation corresponding to the transition between the two hyperfine levels of the cesium 133 atom in its ground state at 0 K.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Second</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>EXINTPU</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Unit for the Duration of Treatment Interruption</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Unit for Duration of Treatment Interruption Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78421.DAORRESU" Name="Unit of Drug Dispensed or Returned" DataType="text" nciodm:ExtCodeID="C78421" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Unit of Drug Dispensed or Returned codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="BAG" nciodm:ExtCodeID="C48474">
+                    <nciodm:CDISCSynonym>Bag Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the bag unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Bag Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BOTTLE" nciodm:ExtCodeID="C48477">
+                    <nciodm:CDISCSynonym>Bottle Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the bottle unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Bottle Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="BOX" nciodm:ExtCodeID="C48478">
+                    <nciodm:CDISCSynonym>Box Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the box unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Box Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C48480">
+                    <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Capsule Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the capsule unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Capsule Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="CONTAINER" nciodm:ExtCodeID="C48484">
+                    <nciodm:CDISCSynonym>Container Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the container unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Container Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="DISK" nciodm:ExtCodeID="C48490">
+                    <nciodm:CDISCSynonym>Disk Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the disk unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Disk Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PACKAGE" nciodm:ExtCodeID="C48520">
+                    <nciodm:CDISCSynonym>Pack Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Package Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the package unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Package Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PACKET" nciodm:ExtCodeID="C48521">
+                    <nciodm:CDISCSynonym>Packet Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the packet unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Packet Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PATCH" nciodm:ExtCodeID="C48524">
+                    <nciodm:CDISCSynonym>Patch Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the patch unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Patch Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C48542">
+                    <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Tablet Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the tablet unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tablet Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TUBE" nciodm:ExtCodeID="C48549">
+                    <nciodm:CDISCSynonym>Tube Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the tube unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tube Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="VIAL" nciodm:ExtCodeID="C48551">
+                    <nciodm:CDISCSynonym>Vial Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the vial unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Vial Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>DAORRESU</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Unit of Drug Dispensed or Returned</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Unit of Drug Dispensed or Returned Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78429.EXFLRTU" Name="Unit of Measure for Flow Rate" DataType="text" nciodm:ExtCodeID="C78429" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Unit of Measure for Flow Rate codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="mL/min" nciodm:ExtCodeID="C64777">
+                    <nciodm:CDISCDefinition>A unit of flow rate equal to one milliliter per minute.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Milliliter per Minute</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="mmol/day" nciodm:ExtCodeID="C67420">
+                    <nciodm:CDISCSynonym>mmol/24h</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of substance flow rate equal to one millimole per day.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Millimole per 24 Hours</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ug/day" nciodm:ExtCodeID="C71205">
+                    <nciodm:CDISCSynonym>mcg/day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass flow rate equal to one microgram per day.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Microgram per Day</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ug/min" nciodm:ExtCodeID="C71211">
+                    <nciodm:CDISCSynonym>mcg/min</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass flow rate equal to one microgram per minute.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Microgram per Minute</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="umol/day" nciodm:ExtCodeID="C67406">
+                    <nciodm:CDISCSynonym>mcmol/day</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of substance flow rate equal to one micromole per day.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Micromole per 24 Hours</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>EXFLRTU</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Unit of Measure for Flow Rate</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Unit of Measure for Flow Rate Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78423.EXDOSU" Name="Units for Exposure" DataType="text" nciodm:ExtCodeID="C78423" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Units for Exposure codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C48480">
+                    <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Capsule Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the capsule unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Capsule Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="g" nciodm:ExtCodeID="C48155">
+                    <nciodm:CDISCSynonym>Gram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one thousandth (1E-3) of a kilogram, the kilogram being the base unit of mass in the International System of Units (SI).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="mg" nciodm:ExtCodeID="C28253">
+                    <nciodm:CDISCSynonym>Milligram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one thousandth (1E-3) of a gram.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Milligram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="mL" nciodm:ExtCodeID="C28254">
+                    <nciodm:CDISCSynonym>cm3</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Milliliter</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of volume equal to one thousandth (1E-3) of a liter.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Milliliter</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PUFF" nciodm:ExtCodeID="C65060">
+                    <nciodm:CDISCSynonym>Puff Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Puff Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C48542">
+                    <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Tablet Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the tablet unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tablet Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ug" nciodm:ExtCodeID="C48152">
+                    <nciodm:CDISCSynonym>mcg</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Microgram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one millionth (1E-6) of a gram.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Microgram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>EXDOSU</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Units for Exposure</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Units for Exposure Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78430.EXPDOSEU" Name="Units for Planned Exposure" DataType="text" nciodm:ExtCodeID="C78430" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Unit codelist created for CDASH Units for Planned Exposure codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="CAPSULE" nciodm:ExtCodeID="C48480">
+                    <nciodm:CDISCSynonym>cap</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Capsule Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the capsule unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Capsule Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="g" nciodm:ExtCodeID="C48155">
+                    <nciodm:CDISCSynonym>Gram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one thousandth (1E-3) of a kilogram, the kilogram being the base unit of mass in the International System of Units (SI).</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Gram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="mg" nciodm:ExtCodeID="C28253">
+                    <nciodm:CDISCSynonym>Milligram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one thousandth (1E-3) of a gram.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Milligram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="mL" nciodm:ExtCodeID="C28254">
+                    <nciodm:CDISCSynonym>cm3</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Milliliter</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of volume equal to one thousandth (1E-3) of a liter.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Milliliter</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="PUFF" nciodm:ExtCodeID="C65060">
+                    <nciodm:CDISCSynonym>Puff Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A means of delivering a defined dose of a therapeutic aerolized solution into either the upper or lower respiratory tract. Metered-dose inhalers or spray pumps are devices that provide a puff dose for delivery into either the oral or the nasal cavity.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Puff Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="TABLET" nciodm:ExtCodeID="C48542">
+                    <nciodm:CDISCSynonym>tab</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Tablet Dosing Unit</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A dosing measurement based on the tablet unit.(NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Tablet Dosing Unit</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="ug" nciodm:ExtCodeID="C48152">
+                    <nciodm:CDISCSynonym>mcg</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Microgram</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A unit of mass equal to one millionth (1E-6) of a gram.</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Microgram</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>EXPDOSEU</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Units for Planned Exposure</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Units for Planned Exposure Terminology</nciodm:PreferredTerm>
+            </CodeList>
+            <CodeList OID="CL.C78431.VSPOS" Name="Vital Signs Position of Subject" DataType="text" nciodm:ExtCodeID="C78431" nciodm:CodeListExtensible="Yes">
+                <Description>
+                    <TranslatedText xml:lang="en">A terminology subset of the CDISC SDTM Position codelist created for CDASH Vital Signs Position of Subject codelist. (NCI)</TranslatedText>
+                </Description>
+                <EnumeratedItem CodedValue="SITTING" nciodm:ExtCodeID="C62122">
+                    <nciodm:CDISCSynonym>Sitting</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The state or act of one who sits; the posture of one who occupies a seat. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Sitting</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="STANDING" nciodm:ExtCodeID="C62166">
+                    <nciodm:CDISCSynonym>Orthostatic</nciodm:CDISCSynonym>
+                    <nciodm:CDISCSynonym>Standing</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>The act of assuming or maintaining an erect upright position. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Standing</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <EnumeratedItem CodedValue="SUPINE" nciodm:ExtCodeID="C62167">
+                    <nciodm:CDISCSynonym>Supine</nciodm:CDISCSynonym>
+                    <nciodm:CDISCDefinition>A posterior recumbent body position whereby the person lies on its back and faces upward. (NCI)</nciodm:CDISCDefinition>
+                    <nciodm:PreferredTerm>Supine Position</nciodm:PreferredTerm>
+                </EnumeratedItem>
+                <nciodm:CDISCSubmissionValue>VSPOS</nciodm:CDISCSubmissionValue>
+                <nciodm:CDISCSynonym>Vital Signs Position of Subject</nciodm:CDISCSynonym>
+                <nciodm:PreferredTerm>CDISC CDASH Vital Signs Position of Subject Terminology</nciodm:PreferredTerm>
+            </CodeList>
+        </MetaDataVersion>
+    </Study>
+</ODM>

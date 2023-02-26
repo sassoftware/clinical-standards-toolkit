@@ -232,7 +232,7 @@
         <echo message="-CSTSAMPLELIB ${samples.deploy.path}${line.separator}" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
         <echo message="-insert sasautos &apos;!CSTHOME/${build.dir.macros}&apos;${line.separator}" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
         <echo message="-JREOPTIONS (-Dsas.app.class.dirs=!CSTHOME/${build.dir.java})${line.separator}" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
-        <echo message="-SET CLASSPATH !CSTHOME/jar  (note: this can alternatively be defined as an environment variable on the server)" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
+        <echo message="-SET CLASSPATH !CSTHOME/jar  /* note: this can alternatively be defined as an environment variable on the server */" file="${framework.deploy.path}/sasconfiguration.txt" append="true"/>
     </target>
 
     <target name="createFrameworkLibraryFolders" unless="flag.cstFrameworkExists">

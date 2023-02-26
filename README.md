@@ -32,6 +32,23 @@ The following migration steps are recommended:
 4.  Sync any changes\additions that you made.
 
 ## Installation
+There are two options for installing openCST:
+1.  Build from source
+2.  Release package
+
+If you intend to contribute back to the open source repository or want more control over installing standards, follow the build from source instructions.  If you only want to deploy the final product and start working with it, follow the release package instructions.
+
+### Installing a Release Package ###
+
+Each release of openCST contains compressed files for the distribution source or deployed instances.  The deployed instance compressed file contains the end result of building openCST using the default locations.
+1.  In GitHub, select the latest release for clinical-standards-toolkit.
+1a. For a windows deployment, download cst-xxx-deployed.zip.
+1b. For Linux, choose cst-xxx-deployed.tar.gz.
+2.  Expand the zip to the desired location.  The zip file contains the three deployed folders (cstGlobalLibrary, cstSampleLibrary, and cstFramework).
+3. Add properties to the SAS installation configuration.  You will find a text file in the cstFrameworkLibrary that contains the information that needs to be added based on a default deployment.  You will likely need to change the paths for each property to reflect the location of the expanded files.
+
+### Building from Source ###
+
 The default locations for openCST are as follows:
 ```
 C:/cstFrameworkLibrary
@@ -63,7 +80,7 @@ After installation, you will have three managed folders on your system.
 
 The previous Clinical Standards toolkit documents (see additional resources) are still valid references.  We typically recommend starting with the Operational Qualification Guide.
 
-## Deploying Updates
+## Deploying Updates (only if you built openCST from source)
 As new changes are contributed, you can periodically pull updated GIT files to your local repository and apply them to your installation.
 ### For changes to the cstFrameworkLibrary (macros or jar):
 1. Open a command prompt and change to the clinicalstandardstoolkit folder in your local GIT repository.

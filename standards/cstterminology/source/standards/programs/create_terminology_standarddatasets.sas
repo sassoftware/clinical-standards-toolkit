@@ -121,21 +121,25 @@ proc sql;
   insert into work.standardsubtypes
     values('CDISC-TERMINOLOGY','CDISC-ADAM', 'NCI_THESAURUS','201101', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-adam/201101/formats',  'cterms', 'N','1.7',
            'CDISC ADaM Controlled Terminology, released by NCI on 2011-01-07')
-    values('CDISC-TERMINOLOGY','CDISC-ADAM', 'NCI_THESAURUS','201107', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-adam/201107/formats',  'cterms', 'Y','1.7',
+    values('CDISC-TERMINOLOGY','CDISC-ADAM', 'NCI_THESAURUS','201107', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-adam/201107/formats',  'cterms', 'N','1.7',
            'CDISC ADaM Controlled Terminology, released by NCI on 2011-07-22')
-    values('CDISC-TERMINOLOGY','CDISC-ADAM', 'NCI_THESAURUS','201512', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-adam/201512/formats',  'cterms', 'Y','1.7',
+    values('CDISC-TERMINOLOGY','CDISC-ADAM', 'NCI_THESAURUS','201512', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-adam/201512/formats',  'cterms', 'N','1.7',
            'CDISC ADaM Controlled Terminology, released by NCI on 2015-12-18')
+    values('CDISC-TERMINOLOGY','CDISC-ADAM', 'NCI_THESAURUS','202206', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-adam/202206/formats',  'cterms', 'Y','1.7',
+           'CDISC ADaM Controlled Terminology, released by NCI on 2022-06-24')
     values('CDISC-TERMINOLOGY','CDISC-ADAM', 'NCI_THESAURUS','current','&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-adam/current/formats', 'cterms', 'N','1.7',
-           'Current CDISC ADaM Controlled Terminology, Copy of 2015-12-18')
+           'Current CDISC ADaM Controlled Terminology, Copy of 2022-06-24')
 
     values('CDISC-TERMINOLOGY','CDISC-CDASH','NCI_THESAURUS','201212', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-cdash/201212/formats', 'cterms', 'N','1.7',
            'CDISC CDASH Controlled Terminology, released by NCI on 2012-12-20')
     values('CDISC-TERMINOLOGY','CDISC-CDASH','NCI_THESAURUS','201312', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-cdash/201312/formats', 'cterms', 'N','1.7',
            'CDISC CDASH Controlled Terminology, released by NCI on 2013-12-20')
-    values('CDISC-TERMINOLOGY','CDISC-CDASH','NCI_THESAURUS','201403', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-cdash/201403/formats', 'cterms', 'Y','1.7',
+    values('CDISC-TERMINOLOGY','CDISC-CDASH','NCI_THESAURUS','201403', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-cdash/201403/formats', 'cterms', 'N','1.7',
            'CDISC CDASH Controlled Terminology, released by NCI on 2014-03-28')
+    values('CDISC-TERMINOLOGY','CDISC-CDASH','NCI_THESAURUS','202209', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-cdash/202209/formats', 'cterms', 'Y','1.7',
+           'CDISC CDASH Controlled Terminology, released by NCI on 2022-09-30')
     values('CDISC-TERMINOLOGY','CDISC-CDASH','NCI_THESAURUS','current','&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-cdash/current/formats', 'cterms','N','1.7',
-           'Current CDISC CDASH Controlled Terminology, Copy of 2014-03-28')
+           'Current CDISC CDASH Controlled Terminology, Copy of 2022-09-30')
 
     values('CDISC-TERMINOLOGY','CDISC-QS','NCI_THESAURUS','201312',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-qs/201312/formats',  'cterms', 'N','1.7',
            'CDISC QS Controlled Terminology, released by NCI on 2013-12-20')
@@ -144,23 +148,32 @@ proc sql;
     values('CDISC-TERMINOLOGY','CDISC-QS','NCI_THESAURUS','current', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-qs/current/formats', 'cterms', 'N','1.7',
            'Current QS Controlled Terminology, Copy of 2014-06-27')
 
+    values('CDISC-TERMINOLOGY','CDISC-DEFINE','NCI_THESAURUS','202209',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-define/202209/formats',  'cterms', 'Y','1.7',
+           'CDISC Define XML Controlled Terminology, released by NCI on 2022-09-30')
+    values('CDISC-TERMINOLOGY','CDISC-DEFINE','NCI_THESAURUS','current', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-define/current/formats', 'cterms', 'N','1.7',
+           'Current Define XML Controlled Terminology, Copy of 2022-09-30')
+
     values('CDISC-TERMINOLOGY','CDISC-SDTM','NCI_THESAURUS','201212',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-sdtm/201212/formats',  'cterms', 'N','1.7',
            'CDISC SDTM Controlled Terminology, released by NCI on 2012-12-20')
     values('CDISC-TERMINOLOGY','CDISC-SDTM','NCI_THESAURUS','201312',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-sdtm/201312/formats',  'cterms', 'N','1.7',
            'CDISC SDTM Controlled Terminology, released by NCI on 2013-12-20')
-    values('CDISC-TERMINOLOGY','CDISC-SDTM','NCI_THESAURUS','201406',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-sdtm/201406/formats',  'cterms', 'Y','1.7',
+    values('CDISC-TERMINOLOGY','CDISC-SDTM','NCI_THESAURUS','201406',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-sdtm/201406/formats',  'cterms', 'N','1.7',
            'CDISC SDTM Controlled Terminology, released by NCI on 2014-06-26')
+    values('CDISC-TERMINOLOGY','CDISC-SDTM','NCI_THESAURUS','202209',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-sdtm/202209/formats',  'cterms', 'Y','1.7',
+           'CDISC SDTM Controlled Terminology, released by NCI on 2022-09-30')
     values('CDISC-TERMINOLOGY','CDISC-SDTM','NCI_THESAURUS','current', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-sdtm/current/formats', 'cterms', 'N','1.7',
-           'Current SDTM Controlled Terminology, Copy of 2014-06-26')
+           'Current SDTM Controlled Terminology, Copy of 2022-09-30')
 
     values('CDISC-TERMINOLOGY','CDISC-SEND','NCI_THESAURUS','201212',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-send/201212/formats',  'cterms', 'N','1.7',
            'CDISC SEND Controlled Terminology, released by NCI on 2012-12-20')
     values('CDISC-TERMINOLOGY','CDISC-SEND','NCI_THESAURUS','201312',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-send/201312/formats',  'cterms', 'N','1.7',
            'CDISC SEND Controlled Terminology, released by NCI on 2013-12-20')
-    values('CDISC-TERMINOLOGY','CDISC-SEND','NCI_THESAURUS','201406',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-send/201406/formats',  'cterms', 'Y','1.7',
+    values('CDISC-TERMINOLOGY','CDISC-SEND','NCI_THESAURUS','201406',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-send/201406/formats',  'cterms', 'N','1.7',
            'CDISC SEND Controlled Terminology, released by NCI on 2014-06-26')
+    values('CDISC-TERMINOLOGY','CDISC-SEND','NCI_THESAURUS','202209',  '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-send/202209/formats',  'cterms', 'Y','1.7',
+           'CDISC SEND Controlled Terminology, released by NCI on 2022-09-30')
     values('CDISC-TERMINOLOGY','CDISC-SEND','NCI_THESAURUS','current', '&_cstGRoot./standards/cdisc-terminology-1.7/cdisc-send/current/formats', 'cterms', 'N','1.7',
-           'Current SEND Controlled Terminology, Copy of 2014-06-26')
+           'Current SEND Controlled Terminology, Copy of 2022-09-30')
 
   ;
 quit;

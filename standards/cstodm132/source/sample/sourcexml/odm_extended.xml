@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:nsdemo="http://www.samplevendor.com/ns/demo" Description="Sample vendor extension" FileType="Transactional" FileOID="ODM.FileOID.extended" CreationDateTime="2011-01-27T11:25:45+00:00" PriorFileOID="ODM.PriorFileOID.extended" ODMVersion="1.3" Originator="SAS Institute" SourceSystem="Clinical Standards Toolkit" SourceSystemVersion="1.4" nsdemo:productrevision="1.3" nsdemo:frameworkversion="1.2">
+  <ClinicalData StudyOID="Study.OID.extended" MetaDataVersionOID="MetaDataVersion.OID.1" nsdemo:ExtensionID="001">
+    <SubjectData SubjectKey="S002P029" TransactionType="Upsert" nsdemo:TTID="q3p984jgk.svnliu">
+      <SiteRef LocationOID="Location.OID.S003" />
+      <StudyEventData StudyEventOID="StudyEventDefs.OID.1.Screening">
+        <FormData FormOID="FormDefs.OID.prescreening">
+          <ItemGroupData ItemGroupOID="ItemGroupDefs.OID.prescreening">
+            <ItemData ItemOID="ItemDef.OID.prescreening.initials" Value="S-S">
+              <AuditRecord>
+                <UserRef UserOID="User.OID.I017" />
+                <LocationRef LocationOID="Location.OID.S003" />
+                <DateTimeStamp>2011-01-20T12:00:00+00:00</DateTimeStamp>
+                <ReasonForChange>Record pre-screening</ReasonForChange>
+              </AuditRecord>
+            </ItemData>
+          </ItemGroupData>
+        </FormData>
+      </StudyEventData>
+      <nsdemo:Subject ScreeningNumber="SCR002045" EnrollmentNumber="S002P029" SubjectInitials="S-S" ScreeningDate="2008-04-20T09:15:00+00:00">
+        <AuditRecord>
+          <UserRef UserOID="User.OID.I017" />
+          <LocationRef LocationOID="Location.OID.S003" />
+          <DateTimeStamp>2011-01-20T12:00:00+00:00</DateTimeStamp>
+          <ReasonForChange>Record pre-screening</ReasonForChange>
+        </AuditRecord>
+        <SubjectEligibility>
+          <PassCriteria Results="Yes" />
+        </SubjectEligibility>
+      </nsdemo:Subject>
+      <nsdemo:SubjectStatus Event="Screened" Status="Yes">
+        <AuditRecord>
+          <UserRef UserOID="User.OID.I017" />
+          <LocationRef LocationOID="Location.OID.S003" />
+          <DateTimeStamp>2011-01-20T12:00:00+00:00</DateTimeStamp>
+          <ReasonForChange>Record pre-screening</ReasonForChange>
+        </AuditRecord>
+      </nsdemo:SubjectStatus>
+    </SubjectData>
+  </ClinicalData>
+</ODM>
