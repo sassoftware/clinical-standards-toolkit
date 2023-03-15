@@ -592,9 +592,9 @@
       prefs.callvoidmethod('setOutputEncoding',"&_cstOutputEncoding");
     end;
 
-    if ("&_cstHeaderComment" ne '') then do;
+    %if %sysevalf(%superq(_cstHeaderComment)=, boolean)=0 %then %do;
       prefs.callvoidmethod('setHeaderCommentText',tranwrd("&_cstHeaderComment",'\','/'));
-    end;
+    %end;
 
 
     if (&_cstCreateDisplayStyleSheet=1) then do;

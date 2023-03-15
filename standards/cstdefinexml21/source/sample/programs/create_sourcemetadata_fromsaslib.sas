@@ -94,18 +94,18 @@ run;
   _cstType=studymetadata,_cstSubType=study,_cstOutputDS=work.studymetadata
   );
 proc sql;
-  insert into work.studymetadata(fileoid, studyoid, context,
+  insert into work.studymetadata(fileoid, studyoid, originator, context,
                                  studyname, studydescription, protocolname, comment,
                                  metadataversionname, metadataversiondescription,
                                  studyversion, standard, standardversion)
 %if "&_cstTrgStandard" eq "CDISC-SDTM" %then %do;
-    values("www.cdisc.org/StudyCDISC01_1/1/Define-XML_2.1.0", "STDY.www.cdisc.org.CDISC01_1", "Submission",
+    values("www.cdisc.org/StudyCDISC01_1/1/Define-XML_2.1.0", "STDY.www.cdisc.org.CDISC01_1", "", "Submission",
            "CDISC01", "CDISC Test Study", "CDISC01", "",
            "Study CDISC01_1, Data Definitions V-1", "Data Definitions for CDISC01-01 SDTM datasets",
            "MDV.CDISC01.SDTMIG.3.2.SDTM.1.4", "&_cstTrgStandard", "&_cstTrgStandardVersion")
 %end;
 %if "&_cstTrgStandard" eq "CDISC-ADAM" %then %do;
-    values("www.cdisc.org/StudyCDISC01_1/1/Define-XML_2.1.0", "STDY.www.cdisc.org.CDISC01_1", "Submission",
+    values("www.cdisc.org/StudyCDISC01_1/1/Define-XML_2.1.0", "STDY.www.cdisc.org.CDISC01_1", "", "Submission",
            "CDISC01", "CDISC Test Study", "CDISC01", "",
            "Study CDISC01_1, Data Definitions V-1", "Data Definitions for CDISC01-01 ADaM datasets",
            "MDV.CDISC01.ADaMIG.1.2", "&_cstTrgStandard", "&_cstTrgStandardVersion")

@@ -49,7 +49,7 @@
   %let _cstTrgStandardVersion=1.2;
   %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstStandardSubFolder=%lowcase(&_cstTrgStandard)-&_cstTrgStandardVersion;
-  %let _cstDefineFile=define_send_dart_2.0_define21.xml;
+  %let _cstDefineFile=define_send_dart_1.2_define21.xml;
   %let _cstUseARM=0;
 %end;
 

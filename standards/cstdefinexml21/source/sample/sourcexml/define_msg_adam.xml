@@ -34,6 +34,7 @@
          </def:Standards>
          <def:SupplementalDoc>
             <def:DocumentRef leafID="LF.Suppdoc"/>
+			<def:DocumentRef leafID="LF.Suppdoc2"/>
          </def:SupplementalDoc>
          <def:ValueListDef OID="VL.ADADAS.AVAL">
             <ItemRef ItemOID="IT.ADADAS.AVAL.ADADAS.PARAMCD.EQ.ACITM01" OrderNumber="1"
@@ -12394,6 +12395,9 @@ Set to "Normal to High" if base=0 and aval=1.</TranslatedText>
          </def:CommentDef>
          <def:leaf ID="LF.Suppdoc" xlink:href="adrg.pdf">
             <def:title>Analysis Data Reviewer's Guide</def:title>
+		 </def:leaf>
+		 <def:leaf ID="LF.Suppdoc2"	xlink:href="complex-algorithms-example.pdf">
+			<def:title>Complex Alogrithm Example</def:title>
          </def:leaf>
          <arm:AnalysisResultDisplays>
             <arm:ResultDisplay OID="RD.Table14.3.01" Name="Table14.3.01">

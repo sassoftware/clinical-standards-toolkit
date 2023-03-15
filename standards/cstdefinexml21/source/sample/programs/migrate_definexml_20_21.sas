@@ -26,11 +26,11 @@
 
 
 
-%if ("&_cstSrcStandard"="CDISC-SDTM") %then %do;
+%if ("&_cstTrgStandard"="CDISC-SDTM") %then %do;
   %let _cstTrgStandardVersion=3.1.2;   * <----- User sets to standard version of the source study  *;
 %end;
 
-%if ("&_cstSrcStandard"="CDISC-ADAM") %then %do;
+%if ("&_cstTrgStandard"="CDISC-ADAM") %then %do;
   %let _cstTrgStandardVersion=2.1;     * <----- User sets to standard version of the source study  *;
 %end;
 
@@ -89,7 +89,7 @@ quit;
 *  based on property settings.  It can be reset at any     *;
 *  point in the process.                                   *;
 ************************************************************;
-%let _cstDebug=1;
+%let _cstDebug=0;
 data _null_;
   _cstDebug = input(symget('_cstDebug'),8.);
   if _cstDebug then

@@ -705,6 +705,7 @@
 
       upcase("&_cstDefineDataLib") as sasref,
       odm.FileOID,
+      odm.Originator length=%cstutilgetattribute(_cstDataSetName=&_cstTrgStudyDS, _cstVarName=Originator, _cstAttribute=VARLEN),
       odm.Context,
       std.OID as StudyOID,
       std.StudyName length=%cstutilgetattribute(_cstDataSetName=&_cstTrgStudyDS, _cstVarName=StudyName, _cstAttribute=VARLEN),

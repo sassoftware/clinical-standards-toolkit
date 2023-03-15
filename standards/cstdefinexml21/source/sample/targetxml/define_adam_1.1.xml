@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="define2-1.xsl"?>
-<!-- Produced from SAS data using the SAS Clinical Standards Toolkit 1.7 -->
-<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:def="http://www.cdisc.org/ns/def/v2.1" xmlns="http://www.cdisc.org/ns/odm/v1.3" FileOID="TDF_ADaM.ADaMIG.1.1" CreationDateTime="2023-03-14T09:20:53-04:00" FileType="Snapshot" ODMVersion="1.3.2" def:Context="Submission">
+<!-- Produced with SAS 9.4 -->
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:def="http://www.cdisc.org/ns/def/v2.1" xmlns="http://www.cdisc.org/ns/odm/v1.3" FileOID="TDF_ADaM.ADaMIG.1.1" CreationDateTime="2023-03-15T13:40:34-04:00" FileType="Snapshot" ODMVersion="1.3.2" SourceSystem="SAS Clinical Standards Toolkit (openCST)" SourceSystemVersion="1.7" def:Context="Submission">
   <Study OID="TDF_ADaM.ADaMIG.1.1">
     <GlobalVariables>
       <StudyName>TDF_ADaM</StudyName>
@@ -17,6 +17,7 @@
       </def:Standards>
       <def:SupplementalDoc>
         <def:DocumentRef leafID="LF.supportdoc.001"/>
+        <def:DocumentRef leafID="LF.supportdoc.002"/>
       </def:SupplementalDoc>
       <def:ValueListDef OID="VL.ADADAS.AVAL">
         <ItemRef ItemOID="IT.ADADAS.AVAL.WC.ADADAS.AVAL.00001" OrderNumber="1" Mandatory="No">
@@ -11161,6 +11162,9 @@ Otherwise if param='ALT' or 'AST' then aval=0</TranslatedText>
       </def:CommentDef>
       <def:leaf ID="LF.supportdoc.001" xlink:href="adrg.pdf">
         <def:title>Analysis Data Reviewer's Guide</def:title>
+      </def:leaf>
+      <def:leaf ID="LF.supportdoc.002" xlink:href="complex-algorithms-example.pdf">
+        <def:title>Complex Alogrithm Example</def:title>
       </def:leaf>
       <arm:AnalysisResultDisplays xmlns:arm="http://www.cdisc.org/ns/arm/v1.0">
         <arm:ResultDisplay OID="RD.Table14.3.01" Name="Table14.3.01">

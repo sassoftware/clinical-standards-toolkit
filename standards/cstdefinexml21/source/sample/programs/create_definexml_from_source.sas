@@ -168,7 +168,7 @@ run;
 
 %define_write(
   _cstCreateDisplayStyleSheet=1,
-  _cstHeaderComment=%str( Produced from SAS data using the SAS Clinical Standards Toolkit &_cstVersion )
+  _cstHeaderComment=%str( Produced with SAS &sysver )
   );
 
 ***************************************************************************;

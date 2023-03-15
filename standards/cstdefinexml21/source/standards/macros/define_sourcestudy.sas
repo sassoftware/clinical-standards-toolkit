@@ -66,6 +66,7 @@
      _styStudyName
      _styStudyVersion
      _styFileOID
+     _styOriginator
      _styContext
      _cstGroupName
      _cstRecs
@@ -232,6 +233,10 @@
         length FileOID $128;
         call missing(FileOID);
       %end;  
+      %if %cstutilcheckvarsexist(_cstDataSetName=&_cstSourceStudy, _cstVarList=Originator)=0 %then %do;
+        length Originator $128;
+        call missing(Originator);
+      %end;  
       %if %cstutilcheckvarsexist(_cstDataSetName=&_cstSourceStudy, _cstVarList=StudyOID)=0 %then %do;
         length StudyOID $128;
         call missing(StudyOID);
@@ -259,14 +264,15 @@
       if missing(MetaDataVersionName) then MetaDataVersionName="Data Definitions for %nrbquote(&_styStudyName)";
       if missing(Context) then Context="Submission";
       call symputx('_styFileOID', kstrip(FileOID));
+      call symputx('_styOriginator', kstrip(Originator));
       call symputx('_styContext', kstrip(Context));
     run;
 
     proc sql;
       %* DefineDocument;
       create table def_&_cstRandom like &_cstOutputLibrary..definedocument;
-      insert into def_&_cstRandom (FileOID, AsOfDateTime, FileType, ODMVersion, Context)
-        values("&_styFileOID", "", "Snapshot", "1.3.2", "&_styContext")
+      insert into def_&_cstRandom (FileOID, AsOfDateTime, FileType, ODMVersion, Originator, SourceSystem, SourceSystemVersion, Context)
+        values("&_styFileOID", "", "Snapshot", "1.3.2", "&_styOriginator", "SAS Clinical Standards Toolkit (openCST)", "&_cstVersion", "&_styContext")
         ;
       %* Study;
       create table sty_&_cstRandom
