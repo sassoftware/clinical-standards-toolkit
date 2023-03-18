@@ -18,24 +18,30 @@
 **********************************************************************************;
 
 %let _cstStandard=CDISC-DEFINE-XML;
-%let _cstStandardVersion=2.1;
+%let _cstStandardVersion=2.1;   * <----- User sets the Define-XML version *;
 
-%let _cstSrcStandard=CDISC-SDTM;   * <----- User sets to standard of the source study          *;
-%*let _cstSrcStandard=CDISC-ADAM;   * <----- User sets to standard of the source study          *;
+%let _cstSrcStandard=CDISC-SDTM;   * <----- User sets to standard of the source study *;
+%*let _cstSrcStandard=CDISC-ADAM;   * <----- User sets to standard of the source study *;
+%if %SYMEXIST(sysparm) and %sysevalf(%superq(sysparm)=, boolean)=0 %then %do;
+  * <----- Standard to use can be set from the command line *;
+  %let _cstSrcStandard=&sysparm;
+%end;
 
 
 
-%if ("&_cstSrcStandard"="CDISC-SDTM") %then %do;
+%if ("%upcase(&_cstSrcStandard)"="CDISC-SDTM") %then %do;
   %let _cstSrcStandardVersion=3.3;   * <----- User sets to standard version of the source study  *;
   %* Standard Subfolder with the SAS Version 5 transport files or the derived SAS Define-XML data sets; 
   %let _cstStandardSubFolder=%lowcase(&_cstSrcStandard)-&_cstSrcStandardVersion;
 %end;
 
-%if ("&_cstSrcStandard"="CDISC-ADAM") %then %do;
+%if ("%upcase(&_cstSrcStandard)"="CDISC-ADAM") %then %do;
   %let _cstSrcStandardVersion=1.1;   * <----- User sets to standard version of the source study  *;
   %* Standard Subfolder with the SAS Version 5 transport files or the derived SAS Define-XML data sets; 
   %let _cstStandardSubFolder=%lowcase(&_cstSrcStandard)-&_cstSrcStandardVersion;
 %end;
+
+
 
 *****************************************************************************************************;
 * The following data step sets (at a minimum) the studyrootpath and studyoutputpath.  These are     *;
@@ -102,15 +108,6 @@ run;
 
 %cstutil_processsetup();
 
-*****************************************************************************************;
-* Setup the libraries.                                                                  *;
-*****************************************************************************************;
-/*
-filename srcdata "&studyRootPath/transport/&_cstStandardSubFolder";
-libname srcmeta "&studyRootPath/data/&_cstStandardSubFolder";
-libname results "&studyOutputPath/results";
-*/
-
 *******************************************************************************;
 * Run the Framework macro.                                                    *;
 *******************************************************************************;
@@ -120,3 +117,20 @@ libname results "&studyOutputPath/results";
   _cstSourceMetadataLibrary=srcmeta,
   _cstRptDS=results.compare_metadata_results
   );
+
+**********************************************************************************;
+* Clean-up the CST process files, macro variables and macros.                    *;
+**********************************************************************************;
+* Delete sasreferences if created above  *;
+proc datasets lib=work nolist;
+  delete sasreferences / memtype=data;
+quit;
+
+%*cstutil_cleanupcstsession(
+     _cstClearCompiledMacros=0
+    ,_cstClearLibRefs=1
+    ,_cstResetSASAutos=1
+    ,_cstResetFmtSearch=0
+    ,_cstResetSASOptions=0
+    ,_cstDeleteFiles=1
+    ,_cstDeleteGlobalMacroVars=0);

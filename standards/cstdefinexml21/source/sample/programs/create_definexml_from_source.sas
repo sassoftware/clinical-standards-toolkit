@@ -20,37 +20,43 @@
 **********************************************************************************;
 
 %let _cstStandard=CDISC-DEFINE-XML;
-%let _cstStandardVersion=2.1;        * <----- User sets the Define-XML version *;
+%let _cstStandardVersion=2.1;   * <----- User sets the Define-XML version *;
 
-%let _cstTrgStandard=CDISC-SDTM;     * <----- User sets to standard of the source study *;
-%*let _cstTrgStandard=CDISC-SEND-DART;      * <----- User sets to standard of the source study *;
-%*let _cstTrgStandard=CDISC-ADAM;     * <----- User sets to standard of the source study *;
+%let _cstTrgStandard=CDISC-SDTM;   * <----- User sets to standard of the source study *;
+%*let _cstTrgStandard=CDISC-SEND-DART;   * <----- User sets to standard of the source study *;
+%*let _cstTrgStandard=CDISC-ADAM;   * <----- User sets to standard of the source study *;
+%if %SYMEXIST(sysparm) and %sysevalf(%superq(sysparm)=, boolean)=0 %then %do;
+  * <----- Standard to use can be set from the command line *;
+  %let _cstTrgStandard=&sysparm;
+%end;
 
 
 
 %if ("&_cstTrgStandard"="CDISC-SDTM") %then %do;
-  %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstTrgStandardVersion=3.3;
+  %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstStandardSubFolder=%lowcase(&_cstTrgStandard)-&_cstTrgStandardVersion;  
   %let _cstDefineFile=define_sdtm_3.3;
   %let _cstUseARM=0;
 %end;
 
 %if ("&_cstTrgStandard"="CDISC-SEND-DART") %then %do;
-  %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstTrgStandardVersion=1.2;
+  %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstStandardSubFolder=%lowcase(&_cstTrgStandard)-&_cstTrgStandardVersion;  
   %let _cstDefineFile=define_send_dart_1.2.xml;
   %let _cstUseARM=0;
 %end;
 
 %if ("&_cstTrgStandard"="CDISC-ADAM") %then %do;
-  %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstTrgStandardVersion=1.1;
+  %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstStandardSubFolder=%lowcase(&_cstTrgStandard)-&_cstTrgStandardVersion;  
   %let _cstDefineFile=define_adam_1.1;
   %let _cstUseARM=1;
 %end;
+
+
 
 *****************************************************************************************************;
 * The following code sets (at a minimum) the studyrootpath and studyoutputpath.  These are          *;
@@ -125,6 +131,30 @@ data _null_;
   else
     call execute(("%sysfunc(tranwrd(options %cmpres(&_cstDebugOptions), %str( ), %str( no)));"));
 run;
+
+*****************************************************************************************;
+* Clinical Standards Toolkit utilizes autocall macro libraries to contain and           *;
+*  reference standard-specific code libraries.  Once the autocall path is set and one   *;
+*  or more macros have been used within any given autocall library, deallocation or     *;
+*  reallocation of the autocall fileref cannot occur unless the autocall path is first  *;
+*  reset to exclude the specific fileref.                                               *;
+*                                                                                       *;
+* This becomes a problem only with repeated calls to %cstutil_processsetup() or         *;
+*  %cstutil_allocatesasreferences within the same sas session.  Doing so, without       *;
+*  submitting code similar to the code below may produce SAS errors such as:            *;
+*     ERROR - At least one file associated with fileref AUTO1 is still in use.          *;
+*     ERROR - Error in the FILENAME statement.                                          *;
+*                                                                                       *;
+* If you call %cstutil_processsetup() or %cstutil_allocatesasreferences more than once  *;
+*  within the same sas session, typically using %let _cstReallocateSASRefs=1 to tell    *;
+*  CST to attempt reallocation, use of the following code is recommended between each   *;
+*  code submission.                                                                     *;
+*                                                                                       *;
+* Use of the following code is NOT needed to run this driver module initially.          *;
+*****************************************************************************************;
+
+%*let _cstReallocateSASRefs=1;
+%*include "&_cstGRoot/standards/cst-framework-&_cstVersion/programs/resetautocallpath.sas";
 
 *****************************************************************************************;
 * The following macro (cstutil_processsetup) utilizes the following parameters:         *;

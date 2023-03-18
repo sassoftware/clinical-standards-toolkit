@@ -29,10 +29,14 @@
 **********************************************************************************;
 
 %let _cstStandard=CDISC-DEFINE-XML;
-%let _cstStandardVersion=2.1;          * <----- User sets the Define-XML version *;
+%let _cstStandardVersion=2.1;   * <----- User sets the Define-XML version *;
 
-%let _cstTrgStandard=CDISC-SDTM;       * <----- User sets to standard of the source study *;
-%*let _cstTrgStandard=CDISC-ADAM;       * <----- User sets to standard of the source study *;
+%let _cstTrgStandard=CDISC-SDTM;   * <----- User sets to standard of the source study *;
+%*let _cstTrgStandard=CDISC-ADAM;   * <----- User sets to standard of the source study *;
+%if %SYMEXIST(sysparm) and %sysevalf(%superq(sysparm)=, boolean)=0 %then %do;
+  * <----- Standard to use can be set from the command line *;
+  %let _cstTrgStandard=&sysparm;
+%end;
 
 
 
@@ -52,24 +56,7 @@
   %let _cstUseARM=1;
 %end;
 
-%cst_setStandardProperties(_cstStandard=CST-FRAMEWORK,_cstSubType=initialize);
 
-*********************************************************************;
-* Set CDISC NCI Controlled Terminology version for this process.    *;
-*********************************************************************;
-%cst_getstandardsubtypes(_cstStandard=CDISC-TERMINOLOGY,_cstOutputDS=work._cstStdSubTypes);
-data _null_;
-  set work._cstStdSubTypes (where=(standardversion="&_cstTrgStandard" and isstandarddefault='Y'));
-  %* User can override CT version of interest by specifying a different where clause:            *;
-  %* Example: (where=(standardversion="&_cstTrgStandard" and standardsubtypeversion='201406'))   *;
-  call symputx('_cstCTPath',path);
-  call symputx('_cstCTMemname',memname);
-run;
-
-proc datasets lib=work nolist;
-  delete _cstStdSubTypes;
-quit;
-run;
 
 *****************************************************************************************************;
 * The following code sets (at a minimum) the studyrootpath and studyoutputpath.  These are          *;
@@ -79,6 +66,7 @@ run;
 * to allow write operations by this driver module.                                                  *;
 *****************************************************************************************************;
 
+%cst_setStandardProperties(_cstStandard=CST-FRAMEWORK,_cstSubType=initialize);
 %cstutil_setcstsroot;
 data _null_;
   call symput('studyRootPath',cats("&_cstSRoot","/&_cstStandardSubFolder.-&_cstVersion"));
@@ -98,13 +86,13 @@ proc sql;
                                  studyname, studydescription, protocolname, comment,
                                  metadataversionname, metadataversiondescription,
                                  studyversion, standard, standardversion)
-%if "&_cstTrgStandard" eq "CDISC-SDTM" %then %do;
+%if "&_cstTrgStandard"="CDISC-SDTM" %then %do;
     values("www.cdisc.org/StudyCDISC01_1/1/Define-XML_2.1.0", "STDY.www.cdisc.org.CDISC01_1", "", "Submission",
            "CDISC01", "CDISC Test Study", "CDISC01", "",
            "Study CDISC01_1, Data Definitions V-1", "Data Definitions for CDISC01-01 SDTM datasets",
            "MDV.CDISC01.SDTMIG.3.2.SDTM.1.4", "&_cstTrgStandard", "&_cstTrgStandardVersion")
 %end;
-%if "&_cstTrgStandard" eq "CDISC-ADAM" %then %do;
+%if "&_cstTrgStandard"="CDISC-ADAM" %then %do;
     values("www.cdisc.org/StudyCDISC01_1/1/Define-XML_2.1.0", "STDY.www.cdisc.org.CDISC01_1", "", "Submission",
            "CDISC01", "CDISC Test Study", "CDISC01", "",
            "Study CDISC01_1, Data Definitions V-1", "Data Definitions for CDISC01-01 ADaM datasets",
@@ -126,12 +114,12 @@ run;
 
 proc sql;
   insert into work.standardsmetadata(cdiscstandard, cdiscstandardversion, type, publishingset, order, status, comment)
-%if "&_cstTrgStandard" eq "CDISC-SDTM" %then %do;
+%if "&_cstTrgStandard"="CDISC-SDTM" %then %do;
     values("SDTMIG", "&_cstTrgStandardVersion", "IG", "", 1, "Final", "")
     values("CDISC/NCI", "2014-06-27", "CT", "SDTM", 2, "Final", "")
     values("CDISC/NCI", "2020-12-18", "CT", "DEFINE-XML", 3, "Final", "")
 %end;
-%if "&_cstTrgStandard" eq "CDISC-ADAM" %then %do;
+%if "&_cstTrgStandard"="CDISC-ADAM" %then %do;
     values("ADaMIG", "&_cstTrgStandardVersion", "IG", "", 1, "Final", "")
     values("CDISC/NCI", "2014-09-26", "CT", "ADaM", 2, "Final", "")
     values("CDISC/NCI", "2014-06-27", "CT", "SDTM", 3, "Final", "")
@@ -139,6 +127,23 @@ proc sql;
 %end;
   ;
   quit;
+run;
+
+*********************************************************************;
+* Set CDISC NCI Controlled Terminology version for this process.    *;
+*********************************************************************;
+%cst_getstandardsubtypes(_cstStandard=CDISC-TERMINOLOGY,_cstOutputDS=work._cstStdSubTypes);
+data _null_;
+  set work._cstStdSubTypes (where=(standardversion="&_cstTrgStandard" and isstandarddefault='Y'));
+  %* User can override CT version of interest by specifying a different where clause:            *;
+  %* Example: (where=(standardversion="&_cstTrgStandard" and standardsubtypeversion='201406'))   *;
+  call symputx('_cstCTPath',path);
+  call symputx('_cstCTMemname',memname);
+run;
+
+proc datasets lib=work nolist;
+  delete _cstStdSubTypes;
+quit;
 run;
 
 *****************************************************************************************;
@@ -263,8 +268,18 @@ run;
 );
 
 /*
-libname srcdata "&_cstSRoot/&_cstStandardSubFolder-1.7/sascstdemodata/data";
+%* Study formats in CST 1.7;
+libname studyfmt "&studyRootPath/sascstdemodata/terminology/formats";
+
+%* CDISC-NCI Terminology to be used in CST 1.7;
+libname ncifmt "&_cstCTPath";
+
+%* Formats to be used for SDTM;
+options fmtsearch = (studyfmt.formats ncisdtm.&_cstCTMemname);
+
+libname srcdata "&_cstSRoot/&_cstStandardSubFolder-&_cstVersion/sascstdemodata/data";
 libname trgmeta "&studyOutputPath/derivedstudymetadata_saslib/&_cstStandardSubFolder";
+libname refmeta "&_cstGRoot/standards/&_cstStandardSubFolder.-&_cstVersion/metadata";
 
 %define_createsrcmetafromsaslib(
   _cstSASDataLib=srcdata,
@@ -274,6 +289,7 @@ libname trgmeta "&studyOutputPath/derivedstudymetadata_saslib/&_cstStandardSubFo
   _cstTrgStandardVersion=&_cstTrgStandardVersion,
   _cstTrgStudyDS=trgmeta.source_study,
   _cstTrgStandardDS=trgmeta.source_standards,
+  _cstTrgTableDS=trgmeta.source_tables,
   _cstTrgColumnDS=trgmeta.source_columns,
   _cstTrgCodeListDS=trgmeta.source_codelists,
   _cstTrgValueDS=trgmeta.source_values,
@@ -287,7 +303,7 @@ libname trgmeta "&studyOutputPath/derivedstudymetadata_saslib/&_cstStandardSubFo
   _cstRefColumnDS=refmeta.reference_columns,
   _cstClassTableDS=refmeta.class_tables,
   _cstClassColumnDS=refmeta.class_columns,
-  _cstKeepAllCodeLists=Y,
+  _cstKeepAllCodeLists=N,
   _cstFormatCatalogs=cstfmt.formats ncifmt.cterms,
   _cstNCICTerms=ncifmt.cterms,
   _cstReturn=_cst_rc,
@@ -312,7 +328,6 @@ quit;
     ,_cstResetSASOptions=0
     ,_cstDeleteFiles=1
     ,_cstDeleteGlobalMacroVars=0);
-
 
 %* Clean-up;
 proc datasets lib=work nolist;

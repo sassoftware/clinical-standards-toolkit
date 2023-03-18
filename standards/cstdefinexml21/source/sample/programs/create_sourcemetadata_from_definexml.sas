@@ -29,11 +29,15 @@
 **********************************************************************************;
 
 %let _cstStandard=CDISC-DEFINE-XML;
-%let _cstStandardVersion=2.1;
+%let _cstStandardVersion=2.1;   * <----- User sets the Define-XML version *;
 
-%let _cstTrgStandard=CDISC-SDTM;   * <----- User sets to standard of the source study          *;
-%*let _cstTrgStandard=CDISC-SEND-DART;   * <----- User sets to standard of the source study          *;
-%*let _cstTrgStandard=CDISC-ADAM;   * <----- User sets to standard of the source study          *;
+%let _cstTrgStandard=CDISC-SDTM;   * <----- User sets to standard of the source study *;
+%*let _cstTrgStandard=CDISC-SEND-DART;   * <----- User sets to standard of the source study *;
+%*let _cstTrgStandard=CDISC-ADAM;   * <----- User sets to standard of the source study *;
+%if %SYMEXIST(sysparm) and %sysevalf(%superq(sysparm)=, boolean)=0 %then %do;
+  * <----- Standard to use can be set from the command line *;
+  %let _cstTrgStandard=&sysparm;
+%end;
 
 
 
@@ -60,6 +64,7 @@
   %let _cstDefineFile=define_msg_adam.xml;
   %let _cstUseARM=1;
 %end;
+
 
 
 *****************************************************************************************************;
@@ -132,11 +137,6 @@ quit;
 *  point in the process.                                   *;
 ************************************************************;
 %let _cstDebug=0;
-
-**********************************************
-*  Check debug option and set cleanup macro  *
-*  cleanup macro for SASReferences run.      *
-**********************************************;
 data _null_;
   _cstDebug = input(symget('_cstDebug'),8.);
   if _cstDebug then

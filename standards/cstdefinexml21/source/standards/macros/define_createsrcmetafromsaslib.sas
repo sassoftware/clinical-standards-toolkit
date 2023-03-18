@@ -909,12 +909,12 @@
     by type order notsorted;
     if first.type then do;
       if type="IG" then do;
-        call symputx('_cstCDISCIGStandard', kstrip(standard));
-        call symputx('_cstCDISCIGStandardVersion', kstrip(standardversion));
+        call symputx('_cstCDISCIGStandard', kstrip(cdiscstandard));
+        call symputx('_cstCDISCIGStandardVersion', kstrip(cdiscstandardversion));
       end;  
       if type="CT" then do;
-        call symputx('_cstCDISCCTStandard', kstrip(standard));
-        call symputx('_cstCDISCCTStandardVersion', kstrip(standardversion));
+        call symputx('_cstCDISCCTStandard', kstrip(cdiscstandard));
+        call symputx('_cstCDISCCTStandardVersion', kstrip(cdiscstandardversion));
         call symputx('_cstCDISCCTPublishingSet', kstrip(publishingset));
       end;  
     end;  

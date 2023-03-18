@@ -19,10 +19,14 @@
 **********************************************************************************;
 
 %let _cstStandard=CDISC-DEFINE-XML;
-%let _cstStandardVersion=2.1;
+%let _cstStandardVersion=2.1;   * <----- User sets the Define-XML version *;
 
-%let _cstTrgStandard=CDISC-SDTM;     * <----- User sets to standard of the source study          *;
-%*let _cstTrgStandard=CDISC-ADAM;     * <----- User sets to standard of the source study          *;
+%let _cstTrgStandard=CDISC-SDTM;    * <----- User sets to standard of the source study *;
+%*let _cstTrgStandard=CDISC-ADAM;    * <----- User sets to standard of the source study *;
+%if %SYMEXIST(sysparm) and %sysevalf(%superq(sysparm)=, boolean)=0 %then %do;
+  * <----- Standard to use can be set from the command line *;
+  %let _cstTrgStandard=&sysparm;
+%end;
 
 
 
@@ -33,6 +37,7 @@
 %if ("&_cstTrgStandard"="CDISC-ADAM") %then %do;
   %let _cstTrgStandardVersion=2.1;     * <----- User sets to standard version of the source study  *;
 %end;
+
 
 
 *****************************************************************************************************;
@@ -244,6 +249,23 @@ quit;
     _cstTrgDS=defv21.source_analysisresults, _cstStudyVersion=&studyversion, 
     _cstTrgStandard=&_cstTrgStandard, _cstTrgStandardVersion=&_cstTrgStandardVersion);
 %end;
+
+**********************************************************************************;
+* Clean-up the CST process files, macro variables and macros.                    *;
+**********************************************************************************;
+* Delete sasreferences if created above  *;
+proc datasets lib=work nolist;
+  delete sasreferences / memtype=data;
+quit;
+
+%*cstutil_cleanupcstsession(
+     _cstClearCompiledMacros=0
+    ,_cstClearLibRefs=1
+    ,_cstResetSASAutos=1
+    ,_cstResetFmtSearch=0
+    ,_cstResetSASOptions=0
+    ,_cstDeleteFiles=1
+    ,_cstDeleteGlobalMacroVars=0);
 
 %* Clean-up;
 proc catalog cat=work.formats et=formatc;
