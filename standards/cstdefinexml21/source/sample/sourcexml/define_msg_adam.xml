@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="define2-1-0.xsl"?>
+<?xml-stylesheet type="text/xsl" href="define2-1.xsl"?>
 <ODM
      xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.cdisc.org/ns/odm/v1.3"
@@ -19,7 +19,7 @@
          <ProtocolName>TDF_Datasets</ProtocolName>
       </GlobalVariables>
       <MetaDataVersion OID="MDV.TDF_ADaM.ADaMIG.1.1" Name="Study TDF_ADaM Data Definitions"
-                       def:DefineVersion="2.1.0">
+                       def:DefineVersion="2.1.0" def:CommentOID="COM.MDV">
          <def:Standards>
          <def:Standard OID="STD.ADaMIG 1.1" Name="ADaMIG" Type="IG" Version="1.1" Status="FINAL"/>
             <def:Standard OID="STD.ADaM 2020-12-18" Name="CDISC/NCI" Type="CT" Version="2020-12-18"
@@ -34,7 +34,8 @@
          </def:Standards>
          <def:SupplementalDoc>
             <def:DocumentRef leafID="LF.Suppdoc"/>
-			<def:DocumentRef leafID="LF.Suppdoc2"/>
+      			<def:DocumentRef leafID="LF.Suppdoc2"/>
+      			<def:DocumentRef leafID="LF.Suppdoc3"/>
          </def:SupplementalDoc>
          <def:ValueListDef OID="VL.ADADAS.AVAL">
             <ItemRef ItemOID="IT.ADADAS.AVAL.ADADAS.PARAMCD.EQ.ACITM01" OrderNumber="1"
@@ -12230,6 +12231,11 @@ Set to "Normal to Normal" if base=0 and aval=0.
 Set to "Normal to High" if base=0 and aval=1.</TranslatedText>
             </Description>
          </MethodDef>
+         <def:CommentDef OID="COM.MDV">
+           <Description>
+             <TranslatedText xml:lang="en">This example Define-XML file is based on the Define-XML document that came with the ADaM Metadata Submission Guidelines v1.0.</TranslatedText>
+           </Description>
+         </def:CommentDef>    
          <def:CommentDef OID="COM.ADADAS">
             <Description>
                <TranslatedText>See ADRG Section 5.2.2 ADADAS - ADAS-Cog Analysis for more details.</TranslatedText>
@@ -12395,15 +12401,24 @@ Set to "Normal to High" if base=0 and aval=1.</TranslatedText>
          </def:CommentDef>
          <def:leaf ID="LF.Suppdoc" xlink:href="adrg.pdf">
             <def:title>Analysis Data Reviewer's Guide</def:title>
-		 </def:leaf>
-		 <def:leaf ID="LF.Suppdoc2"	xlink:href="complex-algorithms-example.pdf">
-			<def:title>Complex Alogrithm Example</def:title>
          </def:leaf>
+    		 <def:leaf ID="LF.Suppdoc2"	xlink:href="complex-algorithms-example.pdf">
+		      	<def:title>Complex Algorithms Example</def:title>
+         </def:leaf>
+         <def:leaf ID="LF.Suppdoc3" xlink:href="dummy-csr.pdf">
+           <def:title>Clinical Study Report</def:title>
+         </def:leaf>
+         <def:leaf ID="LF.Suppdoc4" xlink:href="at14-5-02-sas.txt">
+           <def:title>at14-5-02.sas</def:title>
+         </def:leaf>        
          <arm:AnalysisResultDisplays>
-            <arm:ResultDisplay OID="RD.Table14.3.01" Name="Table14.3.01">
+            <arm:ResultDisplay OID="RD.Table14.3.01" Name="Table 14.3.01">
                <Description>
                   <TranslatedText>Primary Endpoint Analysis: ADAS Cog (11) - Change from Baseline to Week 24 - LOCF</TranslatedText>
                </Description>
+               <def:DocumentRef leafID="LF.Suppdoc3">
+                 <def:PDFPageRef PageRefs="2" Type="PhysicalRef" Title="Table 14.3.01"/>
+               </def:DocumentRef>
                <arm:AnalysisResult OID="AR.Table14.3.01.AR.0000" ParameterOID="IT.ADADAS.PARAMCD"
                                    AnalysisReason="SPECIFIED IN PROTOCOL"
                                    AnalysisPurpose="PRIMARY OUTCOME MEASURE">
@@ -12426,17 +12441,20 @@ Pairwise comparisons among the treatment groups are also presented.</TranslatedT
                   </arm:Documentation>
                   <arm:ProgrammingCode Context="SAS Version 9.4">
                      <arm:Code>proc glm data= adadas;
-where EFFFL01 = 'Y' and ANL01FL = "Y" and AVISIT = "Week 24" and PARAMCD ='ACTOT';
-class SITEGR1;
-model chg = TRTPN SITEGR1;
+  where EFFFL01 = 'Y' and ANL01FL = "Y" and AVISIT = "Week 24" and PARAMCD ='ACTOT';
+  class SITEGR1;
+  model chg = TRTPN SITEGR1;
 run;</arm:Code>
                   </arm:ProgrammingCode>
                </arm:AnalysisResult>
             </arm:ResultDisplay>
-            <arm:ResultDisplay OID="RD.Table14.5.02" Name="Table14.5.02">
+            <arm:ResultDisplay OID="RD.Table14.5.02" Name="Table 14.5.02">
                <Description>
                   <TranslatedText>Incidence of Treatment Emergent Serious Adverse Events by Treatment Group</TranslatedText>
                </Description>
+               <def:DocumentRef leafID="LF.Suppdoc3">
+                 <def:PDFPageRef PageRefs="3" Type="PhysicalRef" Title="Table 14.5.02"/>
+               </def:DocumentRef>
                <arm:AnalysisResult OID="AR.Table14.5.02.AR.0000" AnalysisReason="SPECIFIED IN PROTOCOL"
                                    AnalysisPurpose="SECONDARY OUTCOME MEASURE">
                   <Description>
@@ -12457,34 +12475,40 @@ run;</arm:Code>
                      <arm:Code>** INFERENTIAL STATISTICS **;
 ** PT LEVEL **;
 proc sql;
-create table BACKBONE as select * from
-(select distinct USUBJID, TRT01AN as TRTAN from ADSL(where=(SAFFL='Y'))) ,
-(select distinct AEDECOD from ADAE(where=(TRTEMFL='Y' and AESER='Y')));
-create table HADEVENT as select distinct STUDYID, USUBJID, TRTAN, AEDECOD
-from ADAE(where=(TRTEMFL='Y' and AESER='Y'));
-
-create table FISHER as select a.USUBJID, a.TRTAN, a.AEDECOD,
-case when STUDYID='CDISCPILOT01' then 1
-else 0
-end as EVENT
-from BACKBONE a left join HADEVENT b
-on a.USUBJID=b.USUBJID and a.TRTAN=b.TRTAN and a.AEDECOD=b.AEDECOD
-order by a.AEDECOD, a.TRTAN;
+  create table BACKBONE as select * from
+    (select distinct USUBJID, TRT01AN as TRTAN 
+       from ADSL(where=(SAFFL='Y'))),
+    (select distinct AEDECOD 
+       from ADAE(where=(TRTEMFL='Y' and AESER='Y')));
+  create table HADEVENT as select distinct STUDYID, USUBJID, TRTAN, AEDECOD
+    from ADAE(where=(TRTEMFL='Y' and AESER='Y'));
+  create table FISHER as select a.USUBJID, a.TRTAN, a.AEDECOD,
+    case 
+      when STUDYID='CDISCPILOT01' then 1
+      else 0
+    end 
+  as EVENT
+    from BACKBONE a left join HADEVENT b
+      on a.USUBJID=b.USUBJID and a.TRTAN=b.TRTAN and a.AEDECOD=b.AEDECOD
+    order by a.AEDECOD, a.TRTAN;
 quit;
+
 ** HIGH DOSE VERSUS PLACEBO **;
-proc freq data=FISHER; 
-by AEDECOD; 
-where TRTAN in (0,2);
-table TRTAN*EVENT/exact; 
-ods output FishersExact=F1PT(where=(Name1='XP2_FISH'));
+proc freq data=FISHER;
+  by AEDECOD;
+  where TRTAN in (0,2);
+  table TRTAN*EVENT/exact;
+    ods output FishersExact=F1PT(where=(Name1='XP2_FISH'));
 run;
+
 ** LOW DOSE VERSUS PLACEBO **;
-proc freq data=FISHER; 
-by AEDECOD; 
-where TRTAN in (0,1);
-table TRTAN*EVENT/exact; 
-ods output FishersExact=F2PT(where=(Name1='XP2_FISH'));
+proc freq data=FISHER;
+  by AEDECOD;
+  where TRTAN in (0,1);
+  table TRTAN*EVENT/exact;
+    ods output FishersExact=F2PT(where=(Name1='XP2_FISH'));
 run;</arm:Code>
+    <def:DocumentRef leafID="LF.Suppdoc4"/>
                   </arm:ProgrammingCode>
                </arm:AnalysisResult>
             </arm:ResultDisplay>

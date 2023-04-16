@@ -1,11 +1,13 @@
 **********************************************************************************;
 * Copyright (c) 2022, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.   *;
 * SPDX-License-Identifier: Apache-2.0                                            *;
+* Copyright (c) 2023, Lex Jansen.  All Rights Reserved.                          *;
+* SPDX-License-Identifier: Apache-2.0                                            *;
 *                                                                                *;
 * migrate_definexml_20_21_sdtm.sas                                               *;
 *                                                                                *;
-* Sample driver program to migrate Define-XML v2.0 SDTM metadata source data     *;
-* sets to Define-XML v2.1 metadata source data sets.                             *;
+* Sample driver program to migrate Define-XML v2.0 SDTM or ADaM metadata source  *;
+* datasets to Define-XML v2.1 metadata source data sets.                         *;
 *                                                                                *;
 * Caveat: As with many automated conversion tools, this should be used with      *;
 * caution. The source metadata files resulting from this conversion provide a    *;
@@ -52,7 +54,7 @@
 %cstutil_setcstsroot;
 data _null_;
   call symput('studyRootPath',cats("&_cstSRoot","/cdisc-definexml-2.0.0-&_cstVersion"));
-  call symput('studyOutputPath',cats("&_cstSRoot","/cdisc-definexml-2.1-&_cstVersion"));
+  call symput('studyOutputPath',cats("&_cstSRoot","/cdisc-definexml-&_cstStandardVersion.-&_cstVersion"));
 run;
 %let workPath=%sysfunc(pathname(work));
 %let define20_metadata=&studyRootPath/sascstdemodata/%lowcase(&_cstTrgStandard)-&_cstTrgStandardVersion/metadata;
@@ -168,7 +170,7 @@ run;
 %*  only specify one record per type (IG or CT)         *;
 %********************************************************;
 %cst_createdsfromtemplate(
-  _cstStandard=CDISC-DEFINE-XML,_cstStandardVersion=2.1,
+  _cstStandard=CDISC-DEFINE-XML,_cstStandardVersion=&_cstStandardVersion,
   _cstType=studymetadata,_cstSubType=standard,_cstOutputDS=work.source_standards
   );
   
@@ -177,11 +179,6 @@ proc sql;
 %if "&_cstTrgStandard" eq "CDISC-SDTM" %then %do;
     values("SDTMIG", "&_cstTrgStandardVersion", "IG", "", 1, "Final", "")
     values("CDISC/NCI", "2014-06-27", "CT", "SDTM", 2, "Final", "")
-    values("CDISC/NCI", "2020-12-18", "CT", "DEFINE-XML", 3, "Final", "")
-%end;
-%if "&_cstTrgStandard" eq "CDISC-SEND" %then %do;
-    values("SENDIG", "&_cstTrgStandardVersion", "IG", "", 1, "Final", "")
-    values("CDISC/NCI", "2014-06-27", "CT", "SEND", 2, "Final", "")
     values("CDISC/NCI", "2020-12-18", "CT", "DEFINE-XML", 3, "Final", "")
 %end;
 %if "&_cstTrgStandard" eq "CDISC-ADAM" %then %do;

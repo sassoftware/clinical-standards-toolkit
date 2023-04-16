@@ -1,6 +1,8 @@
 **********************************************************************************;
 * Copyright (c) 2022, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.   *;
 * SPDX-License-Identifier: Apache-2.0                                            *;
+* Copyright (c) 2023, Lex Jansen.  All Rights Reserved.                          *;
+* SPDX-License-Identifier: Apache-2.0                                            *;
 *                                                                                *;
 * compare_metadata_sasdefine_xpt.sas                                             *;
 *                                                                                *;
@@ -54,8 +56,8 @@
 %cst_setStandardProperties(_cstStandard=CST-FRAMEWORK,_cstSubType=initialize);
 %cstutil_setcstsroot;
 
-%let studyRootPath=&_cstSRoot/cdisc-definexml-2.1-&_cstVersion;
-%let studyOutputPath=&_cstSRoot/cdisc-definexml-2.1-&_cstVersion;
+%let studyRootPath=&_cstSRoot/cdisc-definexml-&_cstStandardVersion.-&_cstVersion;
+%let studyOutputPath=&_cstSRoot/cdisc-definexml-&_cstStandardVersion.-&_cstVersion;
 %let workPath=%sysfunc(pathname(work));
 
 %let _cstSetupSrc=SASREFERENCES;

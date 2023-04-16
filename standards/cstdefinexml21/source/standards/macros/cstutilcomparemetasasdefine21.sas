@@ -1,7 +1,9 @@
 %* Copyright (c) 2022, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.   *;
 %* SPDX-License-Identifier: Apache-2.0                                            *;
+%* Copyright (c) 2023, Lex Jansen.  All Rights Reserved.                          *;
+%* SPDX-License-Identifier: Apache-2.0                                            *;
 %*                                                                                *;
-%* cstutilcomparemetasasdefine21                                               *;
+%* cstutilcomparemetasasdefine21                                                  *;
 %*                                                                                *;
 %* Compares XPT/SAS data set metadata with the SAS representation of Define-XML.  *;
 %*                                                                                *;
@@ -77,6 +79,8 @@
 %* @param _cstReturnMsg - required - The macro variable that contains the return  *;
 %*            message as set by this macro.                                       *;
 %*            Default: _cst_rcmsg                                                 *;
+%*                                                                                *;
+%* @history 2022-08-31 Added support for Define-XML v2.1                          *;
 %*                                                                                *;
 %* @since 1.7                                                                     *;
 %* @exposure external                                                             *;

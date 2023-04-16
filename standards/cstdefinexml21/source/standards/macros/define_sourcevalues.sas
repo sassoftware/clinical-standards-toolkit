@@ -1,5 +1,7 @@
 %* Copyright (c) 2022, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.   *;
 %* SPDX-License-Identifier: Apache-2.0                                            *;
+%* Copyright (c) 2023, Lex Jansen.  All Rights Reserved.                          *;
+%* SPDX-License-Identifier: Apache-2.0                                            *;
 %*                                                                                *;
 %* define_sourcevalues                                                            *;
 %*                                                                                *;
@@ -55,9 +57,9 @@
 %*            Default: _cst_rcmsg                                                 *;
 %*                                                                                *;
 %* @history 2017-03-10 Added support for AlgorithmType and FormalExpressions.     *;
-%* @history 2022-08-31 Added support for Define-XML v2.1                          *;
-%* @history 2022-08-31 Added support for AlgorithmName                            *;
-%* @history 2023-03-12 Added Mandatory, HasNoData, OriginType, OriginSource and   *;
+%*          2022-08-31 Added support for Define-XML v2.1                          *;
+%*                     Added support for AlgorithmName                            *;
+%*          2023-03-12 Added Mandatory, HasNoData, OriginType, OriginSource and   *;
 %*                     Name attributes                                            *;
 %*                                                                                *;
 %* @since 1.6                                                                     *;

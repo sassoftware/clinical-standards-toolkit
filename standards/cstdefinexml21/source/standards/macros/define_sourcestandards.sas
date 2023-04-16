@@ -1,5 +1,7 @@
 %* Copyright (c) 2022, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.   *;
 %* SPDX-License-Identifier: Apache-2.0                                            *;
+%* Copyright (c) 2023, Lex Jansen.  All Rights Reserved.                          *;
+%* SPDX-License-Identifier: Apache-2.0                                            *;
 %*                                                                                *;
 %* define_sourcestandards                                                         *;
 %*                                                                                *;
@@ -37,7 +39,7 @@
 %*            message as set by this macro.                                       *;
 %*            Default: _cst_rcmsg                                                 *;
 %*                                                                                *;
-%* @since 1.6                                                                     *;
+%* @since 1.7                                                                     *;
 %* @exposure external                                                             *;
 
 %macro define_sourcestandards(

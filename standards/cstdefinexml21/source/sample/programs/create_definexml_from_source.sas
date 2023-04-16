@@ -1,6 +1,8 @@
 **********************************************************************************;
 * Copyright (c) 2022, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.   *;
 * SPDX-License-Identifier: Apache-2.0                                            *;
+* Copyright (c) 2023, Lex Jansen.  All Rights Reserved.                          *;
+* SPDX-License-Identifier: Apache-2.0                                            *;
 *                                                                                *;
 * create_definexml_from_source.sas                                               *;
 *                                                                                *;
@@ -23,7 +25,6 @@
 %let _cstStandardVersion=2.1;   * <----- User sets the Define-XML version *;
 
 %let _cstTrgStandard=CDISC-SDTM;   * <----- User sets to standard of the source study *;
-%*let _cstTrgStandard=CDISC-SEND-DART;   * <----- User sets to standard of the source study *;
 %*let _cstTrgStandard=CDISC-ADAM;   * <----- User sets to standard of the source study *;
 %if %SYMEXIST(sysparm) and %sysevalf(%superq(sysparm)=, boolean)=0 %then %do;
   * <----- Standard to use can be set from the command line *;
@@ -37,14 +38,6 @@
   %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstStandardSubFolder=%lowcase(&_cstTrgStandard)-&_cstTrgStandardVersion;  
   %let _cstDefineFile=define_sdtm_3.3;
-  %let _cstUseARM=0;
-%end;
-
-%if ("&_cstTrgStandard"="CDISC-SEND-DART") %then %do;
-  %let _cstTrgStandardVersion=1.2;
-  %* Subfolder with the SAS Source Metadata data sets; 
-  %let _cstStandardSubFolder=%lowcase(&_cstTrgStandard)-&_cstTrgStandardVersion;  
-  %let _cstDefineFile=define_send_dart_1.2.xml;
   %let _cstUseARM=0;
 %end;
 
@@ -69,8 +62,8 @@
 %cst_setStandardProperties(_cstStandard=CST-FRAMEWORK,_cstSubType=initialize);
 %cstutil_setcstsroot;
 data _null_;
-  call symput('studyRootPath',cats("&_cstSRoot","/cdisc-definexml-2.1-&_cstVersion"));
-  call symput('studyOutputPath',cats("&_cstSRoot","/cdisc-definexml-2.1-&_cstVersion"));
+  call symput('studyRootPath',cats("&_cstSRoot","/cdisc-definexml-&_cstStandardVersion.-&_cstVersion"));
+  call symput('studyOutputPath',cats("&_cstSRoot","/cdisc-definexml-&_cstStandardVersion.-&_cstVersion"));
 run;
 %let workPath=%sysfunc(pathname(work));
 

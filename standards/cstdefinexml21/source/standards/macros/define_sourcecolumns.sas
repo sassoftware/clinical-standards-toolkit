@@ -1,5 +1,7 @@
 %* Copyright (c) 2022, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.   *;
 %* SPDX-License-Identifier: Apache-2.0                                            *;
+%* Copyright (c) 2023, Lex Jansen.  All Rights Reserved.                          *;
+%* SPDX-License-Identifier: Apache-2.0                                            *;
 %*                                                                                *;
 %* define_sourcecolumns                                                           *;
 %*                                                                                *;
@@ -51,7 +53,7 @@
 %* @history 2022-08-31 Added support for Define-XML v2.1                          *;
 %* @history            Added support for AlgorithmName                            *;
 %* @history 2023-03-12 Added Mandatory, IsNonStandard, HasNoData, StandardOID,    *;
-%*                     OriginType and OriginSource attributes                     *;
+%* @history            OriginType and OriginSource attributes                     *;
 %*                                                                                *;
 %* @since 1.6                                                                     *;
 %* @exposure external                                                             *;

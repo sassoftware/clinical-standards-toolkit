@@ -1,6 +1,8 @@
 **********************************************************************************;
 * Copyright (c) 2022, SAS Institute Inc., Cary, NC, USA.  All Rights Reserved.   *;
 * SPDX-License-Identifier: Apache-2.0                                            *;
+* Copyright (c) 2023, Lex Jansen.  All Rights Reserved.                          *;
+* SPDX-License-Identifier: Apache-2.0                                            *;
 *                                                                                *;
 * create_sourcemetadata_fromsaslib.sas                                           *;
 *                                                                                *;
@@ -70,7 +72,7 @@
 %cstutil_setcstsroot;
 data _null_;
   call symput('studyRootPath',cats("&_cstSRoot","/&_cstStandardSubFolder.-&_cstVersion"));
-  call symput('studyOutputPath',cats("&_cstSRoot","/cdisc-definexml-2.1-&_cstVersion"));
+  call symput('studyOutputPath',cats("&_cstSRoot","/cdisc-definexml-&_cstStandardVersion.-&_cstVersion"));
 run;
 %let workPath=%sysfunc(pathname(work));
 
@@ -78,7 +80,7 @@ run;
 *  Define Study Metadata - only 1 record     *;
 **********************************************;
 %cst_createdsfromtemplate(
-  _cstStandard=CDISC-DEFINE-XML,_cstStandardVersion=2.1,
+  _cstStandard=CDISC-DEFINE-XML,_cstStandardVersion=&_cstStandardVersion,
   _cstType=studymetadata,_cstSubType=study,_cstOutputDS=work.studymetadata
   );
 proc sql;
@@ -108,7 +110,7 @@ run;
 *  only specify one record per type (IG or CT)         *;
 ********************************************************;
 %cst_createdsfromtemplate(
-  _cstStandard=CDISC-DEFINE-XML,_cstStandardVersion=2.1,
+  _cstStandard=CDISC-DEFINE-XML,_cstStandardVersion=&_cstStandardVersion,
   _cstType=studymetadata,_cstSubType=standard,_cstOutputDS=work.standardsmetadata
   );
 
