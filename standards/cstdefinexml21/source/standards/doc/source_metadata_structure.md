@@ -35,8 +35,8 @@
 |source_tables |Source Table Metadata |6 |isreferencedata |Can Itemgroup occur only within a ReferenceData element? |char|3 |[Yes, No] |
 |source_tables |Source Table Metadata |7 |domain |Domain |char|32 |  |
 |source_tables |Source Table Metadata |8 |domaindescription |Domain description |char|256 |  |
-|source_tables |Source Table Metadata |9 |class |Observation Class within Standard |char|40 |NCIt: C103329 |
-|source_tables |Source Table Metadata |10 |subclass |Observation SubClass within Standard |char|40 |NCIt: C165635, C177903, C176227, |
+|source_tables |Source Table Metadata |9 |class |Observation Class within Standard |char|40 |NCIt: C103329 - [ADAM OTHER, C103375 BASIC DATA STRUCTURE, DEVICE LEVEL ANALYSIS DATASET, EVENTS, FINDINGS, FINDINGS ABOUT, INTERVENTIONS, MEDICAL DEVICE BASIC DATA STRUCTURE, MEDICAL DEVICE OCCURRENCE DATA STRUCTURE, OCCURRENCE DATA STRUCTURE, RELATIONSHIP, SPECIAL PURPOSE, STUDY REFERENCE, SUBJECT LEVEL ANALYSIS DATASET, TRIAL DESIGN] |
+|source_tables |Source Table Metadata |10 |subclass |Observation SubClass within Standard |char|40 |NCIt: C165635, C177903, C176227 - [ADVERSE EVENT, MEDICAL DEVICE TIME-TO-EVENT, NON-COMPARTMENTAL ANALYSIS, POPULATION PHARMACOKINETIC ANALYSIS, TIME-TO-EVENT] |
 |source_tables |Source Table Metadata |11 |xmlpath |(Relative) path to XPT file |char|200 |  |
 |source_tables |Source Table Metadata |12 |xmltitle |Title for XPT file |char|200 |  |
 |source_tables |Source Table Metadata |13 |structure |Table Structure |char|200 |  |
@@ -45,7 +45,7 @@
 |source_tables |Source Table Metadata |16 |state |Data Set State |char|20 |[Final, Draft] |
 |source_tables |Source Table Metadata |17 |date |Release Date |char|20 |  |
 |source_tables |Source Table Metadata |18 |comment |Comment |char|1000 |  |
-|source_tables |Source Table Metadata |19 |cdiscstandard |Name of Standard |char|40 |NCIt: C170452 - [ADaMIG, BIMO, CDISC/NCI, SDTMIG, SDTMIG-AP, SDTMIG-MD, SENDIG, SENDIG-AR, SENDIG-DART |
+|source_tables |Source Table Metadata |19 |cdiscstandard |Name of Standard |char|40 |NCIt: C170452 - [ADaMIG, BIMO, CDISC/NCI, SDTMIG, SDTMIG-AP, SDTMIG-MD, SENDIG, SENDIG-AR, SENDIG-DART] |
 |source_tables |Source Table Metadata |20 |cdiscstandardversion |Version of Standard |char|20 |  |
 |source_tables |Source Table Metadata |21 |isnonstandard |ItemGroup is non-standard? |char|3 |[Yes] |
 |source_tables |Source Table Metadata |22 |hasnodata |ItemGroup has no data? |char|3 |[Yes] |
@@ -65,7 +65,7 @@
 |source_columns |Source Column Metadata |11 |xmlcodelist |SAS Format/XML Codelist |char|128 |  |
 |source_columns |Source Column Metadata |12 |core |Column Required, Optional, or Expected |char|10 |[Req, Exp, Perm, Cond] |
 |source_columns |Source Column Metadata |13 |mandatory |Column Mandatory |char|3 |[Yes, No] |
-|source_columns |Source Column Metadata |14 |origintype |Column Origin Type |char|40 |NCIt: C170449 - [Assigned, Collect, Derived, Not Available, Other, Predecessor, Protocol] |
+|source_columns |Source Column Metadata |14 |origintype |Column Origin Type |char|40 |NCIt: C170449 - [Assigned, Collected, Derived, Not Available, Other, Predecessor, Protocol] |
 |source_columns |Source Column Metadata |15 |originsource |Column Origin Source |char|40 |NCIt: C170450 - [Investigator, Sponsor, Subject, Vendor] |
 |source_columns |Source Column Metadata |16 |origindescription |Column Origin Description |char|1000 |  |
 |source_columns |Source Column Metadata |17 |role |Column Role |char|200 |  |
@@ -97,7 +97,7 @@
 |source_values |Source Value Metadata |15 |xmlcodelist |SAS Format/XML Codelist |char|128 |  |
 |source_values |Source Value Metadata |16 |core |Column Required, Optional or Expected |char|10 |[Req, Exp, Perm, Cond] |
 |source_values |Source Value Metadata |17 |mandatory |Column Mandatory |char|3 |[Yes, No] |
-|source_values |Source Value Metadata |18 |origintype |Column Origin Type |char|40 |NCIt: C170449 - [Assigned, Collect, Derived, Not Available, Other, Predecessor, Protocol] |
+|source_values |Source Value Metadata |18 |origintype |Column Origin Type |char|40 |NCIt: C170449 - [Assigned, Collected, Derived, Not Available, Other, Predecessor, Protocol] |
 |source_values |Source Value Metadata |19 |originsource |Column Origin Source |char|40 |NCIt: C170450 - [Investigator, Sponsor, Subject, Vendor] |
 |source_values |Source Value Metadata |20 |origindescription |Column Origin Description |char|1000 |  |
 |source_values |Source Value Metadata |21 |role |Column Role |char|200 |  |
@@ -128,7 +128,7 @@
 |source_codelists |Source Codelist Metadata |15 |rank |CodedValue order relative to other item values |num |8 |  |
 |source_codelists |Source Codelist Metadata |16 |ordernumber |Display order of the item within the CodeList. |num |8 |  |
 |source_codelists |Source Codelist Metadata |17 |extendedvalue |Coded value that has been used to extend external controlled terminology |char|3 |[Yes] |
-|source_codelists |Source Codelist Metadata |18 |dictionary |Name of the external codelist |char|200 |NCTt: C66788 |
+|source_codelists |Source Codelist Metadata |18 |dictionary |Name of the external codelist |char|200 |NCTt: C66788 - [CDISC CT, COSTART, CTCAE, D-U-N-S NUMBER, ICD, ICD-O, LOINC, MED-RT, MedDRA, SNOMED, UNII, WHO ATC CLASSIFICATION SYSTEM, WHOART, WHODD] |
 |source_codelists |Source Codelist Metadata |19 |version |Version designator of the external codelist |char|200 |  |
 |source_codelists |Source Codelist Metadata |20 |ref |Reference to a local instance of the dictionary |char|512 |  |
 |source_codelists |Source Codelist Metadata |21 |href |URL of an external instance of the dictionary |char|512 |  |
