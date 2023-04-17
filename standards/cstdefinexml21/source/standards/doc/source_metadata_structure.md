@@ -142,7 +142,7 @@
 |source_codelists |Source Codelist Metadata |29 |standardversion |Version of Standard |char|20 |  |
 |source_documents |Source Document Metadata |1 |sasref |SASreferences sourcedata libref |char|8 |  |
 |source_documents |Source Document Metadata |2 |doctype |Document Type (SUPPDOC, CRF, COMMENT, METHOD, DISPLAY, RESULTDOC, RESULTCODE) |char|32 |[SUPPDOC, CRF, COMMENT, METHOD, DISPLAY, RESULTDOC, RESULTCODE] |
-|source_documents |Source Document Metadata |3 |docsubtype |Document Sub Type for doctytpe=COMMENT (MDV, TABLE, COLUMN, VCOLUMN, WHERECLAUSE, CODELIST) |char|32 |[MDV, TABLE, COLUMN, VCOLUMN, WHERECLAUSE, CODELIST] |
+|source_documents |Source Document Metadata |3 |docsubtype |Document Sub Type for doctytpe=COMMENT (MDV, TABLE, COLUMN, VCOLUMN, WHERECLAUSE, CODELIST) |char|32 |[MDV, STANDARD, TABLE, COLUMN, VCOLUMN, WHERECLAUSE, CODELIST] |
 |source_documents |Source Document Metadata |4 |href |The pathname and filename of the target document relative to the define.xml |char|512 |  |
 |source_documents |Source Document Metadata |5 |title |Meaningful description, label, or location of the document leaf |char|2000 |  |
 |source_documents |Source Document Metadata |6 |pdfpagereftype |Type of Page Reference (PhysicalRef/NamedDestination) |char|32 |[PhysicalRef, NamedDestination] |

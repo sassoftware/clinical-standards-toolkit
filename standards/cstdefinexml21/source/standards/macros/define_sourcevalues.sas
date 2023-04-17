@@ -61,6 +61,7 @@
 %*                     Added support for AlgorithmName                            *;
 %*          2023-03-12 Added Mandatory, HasNoData, OriginType, OriginSource and   *;
 %*                     Name attributes                                            *;
+%*          2023-04-17 added support for ValueListDef Descripts.                  *;
 %*                                                                                *;
 %* @since 1.6                                                                     *;
 %* @exposure external                                                             *;
@@ -98,8 +99,8 @@
     %* The data sets to be created and the work data sets;
     %let _cstTables=ItemDefs MethodDefs CommentDefs ValueLists ValueListItemRefs ItemValueListRefs
                     ItemRefWhereClauseRefs WhereClauseDefs WhereClauseRangeChecks WhereClauseRangeCheckValues
-                    TranslatedText TranslatedText TranslatedText TranslatedText FormalExpressions ItemOrigin;
-    %let _cstTabs=itd itd_met itd_cm vl vlir ivlr irwcr wcd wcrc wcrcv itd_des_tt itd_cm_tt itd_mt_tt itd_itor_tt itd_mt_fe itor
+                    TranslatedText TranslatedText TranslatedText TranslatedText TranslatedText FormalExpressions ItemOrigin;
+    %let _cstTabs=itd itd_met itd_cm vl vlir ivlr irwcr wcd wcrc wcrcv itd_des_tt itd_cm_tt itd_mt_tt itd_itor_tt vl_des_tt itd_mt_fe itor
          _wc_tmp _wcrc_tmp _cstWhereClause _cstSourceValues _cstSourceValues1 _cstTabCol itd_cm1 itd_cm2 itd_cm_tt1 itd_cm_tt2;
     %* Source tables expected;
     %let _cstExpSrcTables=_cstSourceValues _cstSourceTables _cstSourceColumns;
@@ -490,6 +491,16 @@
         col.StudyVersion as FK_MetaDataVersion
       from _wc_tmp_&_cstRandom col
       order by OID
+      ;
+      %* TranslatedText (Description);
+      create table vl_des_tt_&_cstRandom
+      as select unique
+        col.valuelistdescription as TranslatedText,
+        "&_cstLang" as lang,
+        "ValueLists" as parent,
+        "VL."||kstrip(col.Table)||"."||kstrip(col.Column) as parentKey
+      from _wc_tmp_&_cstRandom col
+      where not missing(col.valuelistdescription)
       ;
       %* ItemValueListRefs;
       create table ivlr_&_cstRandom

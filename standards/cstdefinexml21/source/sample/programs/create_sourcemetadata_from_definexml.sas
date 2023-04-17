@@ -46,7 +46,7 @@
   %let _cstTrgStandardVersion=3.3;
   %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstStandardSubFolder=%lowcase(&_cstTrgStandard)-&_cstTrgStandardVersion;
-  %let _cstDefineFile=define_msg_sdtm.xml;
+  %let _cstDefineFile=define_msg_sdtm;
   %let _cstUseARM=0;
 %end;
 
@@ -54,7 +54,7 @@
   %let _cstTrgStandardVersion=1.1;
   %* Subfolder with the SAS Source Metadata data sets; 
   %let _cstStandardSubFolder=%lowcase(&_cstTrgStandard)-&_cstTrgStandardVersion;
-  %let _cstDefineFile=define_msg_adam.xml;
+  %let _cstDefineFile=define_msg_adam;
   %let _cstUseARM=1;
 %end;
 
@@ -99,8 +99,8 @@ proc sql;
   values ("&_cstStandard"    "&_cstStandardVersion"     "autocall"          ""           "defauto"  "fileref" "input"  "folder"   "N"  "" ""                                   1 ""                           "")
   values ("&_cstStandard"    "&_cstStandardVersion"     "properties"        "initialize" "inprop"   "fileref" "input"  "file"     "N"  "" ""                                   1 ""                           "")
 
-  values ("&_cstStandard"    "&_cstStandardVersion"     "results"           "results"    "results"  "libref"  "output" "dataset"  "Y"  "" "&studyOutputPath/results"           . "srcmeta_define_results.sas7bdat"   "")
-  values ("&_cstStandard"    "&_cstStandardVersion"     "externalxml"       "xml"        "crtxml"   "fileref" "input"  "file"     "N"  "" "&studyRootPath/sourcexml"           . "&_cstDefineFile"            "")
+  values ("&_cstStandard"    "&_cstStandardVersion"     "results"           "results"    "results"  "libref"  "output" "dataset"  "Y"  "" "&studyOutputPath/results"           . "srcmeta_define_results.sas7bdat"  "")
+  values ("&_cstStandard"    "&_cstStandardVersion"     "externalxml"       "xml"        "crtxml"   "fileref" "input"  "file"     "N"  "" "&studyRootPath/sourcexml"           . "&_cstDefineFile...xml"            "")
   values ("&_cstStandard"    "&_cstStandardVersion"     "referencexml"      "map"        "crtmap"   "fileref" "input"  "file"     "N"  "" "&studyRootPath/referencexml"        . "define.map"                 "")
   values ("&_cstStandard"    "&_cstStandardVersion"     "sourcedata"        ""           "srcdata"  "libref"  "output" "folder"   "N"  "" "&studyOutputPath/deriveddata/&_cstStandardSubFolder"  . ""         "")
 
