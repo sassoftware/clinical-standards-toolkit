@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="define2-1.xsl"?>
 <!--Produced with SAS 9.4 - SAS Open Clinical Standards Toolkit 1.7.6-->
-<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:def="http://www.cdisc.org/ns/def/v2.1" xmlns="http://www.cdisc.org/ns/odm/v1.3" FileOID="www.cdisc.org/StudyMSGv2/1/Define-XML_2.1.5_full_example" CreationDateTime="2023-04-17T22:26:29-04:00" FileType="Snapshot" ODMVersion="1.3.2" Originator="CDISC MSG Team / Lex Jansen" SourceSystem="SAS Clinical Standards Toolkit (openCST)" SourceSystemVersion="1.7" def:Context="Submission">
+<ODM xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:def="http://www.cdisc.org/ns/def/v2.1" xmlns="http://www.cdisc.org/ns/odm/v1.3" FileOID="www.cdisc.org/StudyMSGv2/1/Define-XML_2.1.5_full_example" CreationDateTime="2023-04-18T16:41:35-04:00" FileType="Snapshot" ODMVersion="1.3.2" Originator="CDISC MSG Team / Lex Jansen" SourceSystem="SAS Clinical Standards Toolkit (openCST)" SourceSystemVersion="1.7" def:Context="Submission">
   <Study OID="cdisc.com/CDISCPILOT01">
     <GlobalVariables>
       <StudyName>CDISCPILOT01</StudyName>
@@ -19,7 +19,8 @@
         <def:DocumentRef leafID="LF.acrf.001"/>
       </def:AnnotatedCRF>
       <def:SupplementalDoc>
-        <def:DocumentRef leafID="LF.supportdoc.006"/>
+        <def:DocumentRef leafID="LF.supportdoc.001"/>
+        <def:DocumentRef leafID="LF.supportdoc.002"/>
       </def:SupplementalDoc>
       <def:ValueListDef OID="VL.AE.AETERM">
         <Description>
@@ -87,26 +88,26 @@
         </ItemRef>
       </def:ValueListDef>
       <def:ValueListDef OID="VL.LB.LBORRES">
-        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00023" OrderNumber="1" Mandatory="No">
+        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00024" OrderNumber="1" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00024"/>
+        </ItemRef>
+        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00021" OrderNumber="2" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00021"/>
+        </ItemRef>
+        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00023" OrderNumber="3" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00023"/>
-        </ItemRef>
-        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00022" OrderNumber="2" Mandatory="No">
-          <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00022"/>
-        </ItemRef>
-        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00020" OrderNumber="3" Mandatory="No">
-          <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00020"/>
         </ItemRef>
         <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00019" OrderNumber="4" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00019"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00024" OrderNumber="5" Mandatory="No">
-          <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00024"/>
+        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00022" OrderNumber="5" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00022"/>
         </ItemRef>
         <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00025" OrderNumber="6" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00025"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00021" OrderNumber="7" Mandatory="No">
-          <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00021"/>
+        <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00020" OrderNumber="7" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00020"/>
         </ItemRef>
         <ItemRef ItemOID="IT.LB.LBORRES.WC.LB.LBORRES.00017" OrderNumber="8" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.LB.LBORRES.00017"/>
@@ -637,54 +638,77 @@
         </ItemRef>
       </def:ValueListDef>
       <def:ValueListDef OID="VL.VS.VSORRES">
-        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00195" OrderNumber="1" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00195" OrderNumber="2" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRES.00195"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00191" OrderNumber="2" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00191" OrderNumber="3" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRES.00191"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00192" OrderNumber="3" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00192" OrderNumber="4" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRES.00192"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00193" OrderNumber="4" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00193" OrderNumber="5" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRES.00193"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00194" OrderNumber="5" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRES.WC.VS.VSORRES.00194" OrderNumber="6" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRES.00194"/>
         </ItemRef>
       </def:ValueListDef>
       <def:ValueListDef OID="VL.VS.VSORRESU">
-        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00200" OrderNumber="1" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00200" OrderNumber="2" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRESU.00200"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00196" OrderNumber="2" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00196" OrderNumber="3" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRESU.00196"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00197" OrderNumber="3" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00197" OrderNumber="4" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRESU.00197"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00198" OrderNumber="4" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00198" OrderNumber="5" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRESU.00198"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00199" OrderNumber="5" Mandatory="No">
+        <ItemRef ItemOID="IT.VS.VSORRESU.WC.VS.VSORRESU.00199" OrderNumber="6" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.VS.VSORRESU.00199"/>
         </ItemRef>
       </def:ValueListDef>
+      <def:ValueListDef OID="VL.VS.VSSTRESN">
+        <ItemRef ItemOID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00201" OrderNumber="1" Mandatory="No" MethodOID="MT.VS.VSSTRESN.WC.VS.VSSTRESN.00201">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESN.00201"/>
+        </ItemRef>
+        <ItemRef ItemOID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00206" OrderNumber="2" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESN.00206"/>
+        </ItemRef>
+        <ItemRef ItemOID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00202" OrderNumber="3" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESN.00202"/>
+        </ItemRef>
+        <ItemRef ItemOID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00203" OrderNumber="4" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESN.00203"/>
+        </ItemRef>
+        <ItemRef ItemOID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00204" OrderNumber="5" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESN.00204"/>
+        </ItemRef>
+        <ItemRef ItemOID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00205" OrderNumber="6" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESN.00205"/>
+        </ItemRef>
+      </def:ValueListDef>
       <def:ValueListDef OID="VL.VS.VSSTRESU">
-        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00205" OrderNumber="1" Mandatory="No">
-          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00205"/>
+        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00207" OrderNumber="1" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00207"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00201" OrderNumber="2" Mandatory="No">
-          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00201"/>
+        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00212" OrderNumber="2" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00212"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00202" OrderNumber="3" Mandatory="No">
-          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00202"/>
+        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00208" OrderNumber="3" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00208"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00203" OrderNumber="4" Mandatory="No">
-          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00203"/>
+        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00209" OrderNumber="4" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00209"/>
         </ItemRef>
-        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00204" OrderNumber="5" Mandatory="No">
-          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00204"/>
+        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00210" OrderNumber="5" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00210"/>
+        </ItemRef>
+        <ItemRef ItemOID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00211" OrderNumber="6" Mandatory="No">
+          <def:WhereClauseRef WhereClauseOID="WC.VS.VSSTRESU.00211"/>
         </ItemRef>
       </def:ValueListDef>
       <def:WhereClauseDef OID="WC.AE.AETERM.00001">
@@ -692,7 +716,7 @@
           <CheckValue>INJECTION SITE REACTION</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.AE.AETERM.00002" def:CommentOID="COM.AE.AETERM.WC.WC.AE.AETERM.00002">
+      <def:WhereClauseDef OID="WC.AE.AETERM.00002">
         <RangeCheck Comparator="NE" SoftHard="Soft" def:ItemOID="IT.AE.AETERM">
           <CheckValue>INJECTION SITE REACTION</CheckValue>
         </RangeCheck>
@@ -814,17 +838,6 @@
       </def:WhereClauseDef>
       <def:WhereClauseDef OID="WC.LB.LBORRES.00020">
         <RangeCheck Comparator="IN" SoftHard="Soft" def:ItemOID="IT.LB.LBTESTCD">
-          <CheckValue>BASO</CheckValue>
-          <CheckValue>EOS</CheckValue>
-          <CheckValue>LYM</CheckValue>
-          <CheckValue>MONO</CheckValue>
-          <CheckValue>RBC</CheckValue>
-          <CheckValue>TSH</CheckValue>
-          <CheckValue>WBC</CheckValue>
-        </RangeCheck>
-      </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.LB.LBORRES.00021">
-        <RangeCheck Comparator="IN" SoftHard="Soft" def:ItemOID="IT.LB.LBTESTCD">
           <CheckValue>ALP</CheckValue>
           <CheckValue>CHOL</CheckValue>
           <CheckValue>CK</CheckValue>
@@ -834,13 +847,34 @@
           <CheckValue>VITB12</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.LB.LBORRES.00022">
+      <def:WhereClauseDef OID="WC.LB.LBORRES.00021">
         <RangeCheck Comparator="IN" SoftHard="Soft" def:ItemOID="IT.LB.LBTESTCD">
           <CheckValue>HCT</CheckValue>
           <CheckValue>HGB</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
+      <def:WhereClauseDef OID="WC.LB.LBORRES.00022">
+        <RangeCheck Comparator="IN" SoftHard="Soft" def:ItemOID="IT.LB.LBTESTCD">
+          <CheckValue>ANISO</CheckValue>
+          <CheckValue>KETONES</CheckValue>
+          <CheckValue>MACROCY</CheckValue>
+          <CheckValue>PH</CheckValue>
+          <CheckValue>POIKILO</CheckValue>
+          <CheckValue>UROBIL</CheckValue>
+        </RangeCheck>
+      </def:WhereClauseDef>
       <def:WhereClauseDef OID="WC.LB.LBORRES.00023">
+        <RangeCheck Comparator="IN" SoftHard="Soft" def:ItemOID="IT.LB.LBTESTCD">
+          <CheckValue>BASO</CheckValue>
+          <CheckValue>EOS</CheckValue>
+          <CheckValue>LYM</CheckValue>
+          <CheckValue>MONO</CheckValue>
+          <CheckValue>RBC</CheckValue>
+          <CheckValue>TSH</CheckValue>
+          <CheckValue>WBC</CheckValue>
+        </RangeCheck>
+      </def:WhereClauseDef>
+      <def:WhereClauseDef OID="WC.LB.LBORRES.00024">
         <RangeCheck Comparator="IN" SoftHard="Soft" def:ItemOID="IT.LB.LBTESTCD">
           <CheckValue>ALB</CheckValue>
           <CheckValue>BILI</CheckValue>
@@ -850,16 +884,6 @@
           <CheckValue>PHOS</CheckValue>
           <CheckValue>PROT</CheckValue>
           <CheckValue>URATE</CheckValue>
-        </RangeCheck>
-      </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.LB.LBORRES.00024">
-        <RangeCheck Comparator="IN" SoftHard="Soft" def:ItemOID="IT.LB.LBTESTCD">
-          <CheckValue>ANISO</CheckValue>
-          <CheckValue>KETONES</CheckValue>
-          <CheckValue>MACROCY</CheckValue>
-          <CheckValue>PH</CheckValue>
-          <CheckValue>POIKILO</CheckValue>
-          <CheckValue>UROBIL</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
       <def:WhereClauseDef OID="WC.LB.LBORRES.00025">
@@ -1572,7 +1596,7 @@
           <CheckValue>ECREASOC</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.SUPPNV.QVAL.00158">
+      <def:WhereClauseDef OID="WC.SUPPNV.QVAL.00158" def:CommentOID="COM.SUPPNV.QVAL.WC.WC.SUPPNV.QVAL.00158">
         <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.SUPPNV.QNAM">
           <CheckValue>NVCLSIG</CheckValue>
         </RangeCheck>
@@ -1800,27 +1824,63 @@
           <CheckValue>SYSBP</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00201">
+      <def:WhereClauseDef OID="WC.VS.VSSTRESN.00201">
+        <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
+          <CheckValue>BMI</CheckValue>
+        </RangeCheck>
+      </def:WhereClauseDef>
+      <def:WhereClauseDef OID="WC.VS.VSSTRESN.00202">
         <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
           <CheckValue>HEIGHT</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00202">
+      <def:WhereClauseDef OID="WC.VS.VSSTRESN.00203">
         <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
           <CheckValue>PULSE</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00203">
+      <def:WhereClauseDef OID="WC.VS.VSSTRESN.00204">
         <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
           <CheckValue>TEMP</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00204">
+      <def:WhereClauseDef OID="WC.VS.VSSTRESN.00205">
         <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
           <CheckValue>WEIGHT</CheckValue>
         </RangeCheck>
       </def:WhereClauseDef>
-      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00205">
+      <def:WhereClauseDef OID="WC.VS.VSSTRESN.00206">
+        <RangeCheck Comparator="IN" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
+          <CheckValue>DIABP</CheckValue>
+          <CheckValue>SYSBP</CheckValue>
+        </RangeCheck>
+      </def:WhereClauseDef>
+      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00207">
+        <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
+          <CheckValue>BMI</CheckValue>
+        </RangeCheck>
+      </def:WhereClauseDef>
+      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00208">
+        <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
+          <CheckValue>HEIGHT</CheckValue>
+        </RangeCheck>
+      </def:WhereClauseDef>
+      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00209">
+        <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
+          <CheckValue>PULSE</CheckValue>
+        </RangeCheck>
+      </def:WhereClauseDef>
+      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00210">
+        <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
+          <CheckValue>TEMP</CheckValue>
+        </RangeCheck>
+      </def:WhereClauseDef>
+      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00211">
+        <RangeCheck Comparator="EQ" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
+          <CheckValue>WEIGHT</CheckValue>
+        </RangeCheck>
+      </def:WhereClauseDef>
+      <def:WhereClauseDef OID="WC.VS.VSSTRESU.00212">
         <RangeCheck Comparator="IN" SoftHard="Soft" def:ItemOID="IT.VS.VSTESTCD">
           <CheckValue>DIABP</CheckValue>
           <CheckValue>SYSBP</CheckValue>
@@ -5751,6 +5811,7 @@
           <TranslatedText xml:lang="en">Numeric Result/Finding in Standard Units</TranslatedText>
         </Description>
         <def:Origin Type="Derived" Source="Sponsor"/>
+        <def:ValueListRef ValueListOID="VL.VS.VSSTRESN"/>
       </ItemDef>
       <ItemDef OID="IT.VS.VSSTRESU" Name="VSSTRESU" DataType="text" Length="9" SASFieldName="VSSTRESU">
         <Description>
@@ -5938,29 +5999,29 @@
           <TranslatedText xml:lang="en">Lab Result or Finding in Original Units - Specific Gravity</TranslatedText>
         </Description>
       </ItemDef>
-      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00020" Name="LBORRES" DataType="float" Length="5" SignificantDigits="2" SASFieldName="LBORRES">
-        <Description>
-          <TranslatedText xml:lang="en">Lab Result or Finding in Original Units - Set 3</TranslatedText>
-        </Description>
-      </ItemDef>
-      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00021" Name="LBORRES" DataType="integer" Length="4" SASFieldName="LBORRES">
+      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00020" Name="LBORRES" DataType="integer" Length="4" SASFieldName="LBORRES">
         <Description>
           <TranslatedText xml:lang="en">Lab Result or Finding in Original Units - Set 6</TranslatedText>
         </Description>
       </ItemDef>
-      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00022" Name="LBORRES" DataType="float" Length="4" SignificantDigits="1" SASFieldName="LBORRES">
+      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00021" Name="LBORRES" DataType="float" Length="4" SignificantDigits="1" SASFieldName="LBORRES">
         <Description>
           <TranslatedText xml:lang="en">Lab Result or Finding in Original Units - Set 2</TranslatedText>
         </Description>
       </ItemDef>
-      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00023" Name="LBORRES" DataType="float" Length="3" SignificantDigits="1" SASFieldName="LBORRES">
-        <Description>
-          <TranslatedText xml:lang="en">Lab Result or Finding in Original Units - Set 1</TranslatedText>
-        </Description>
-      </ItemDef>
-      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00024" Name="LBORRES" DataType="integer" Length="1" SASFieldName="LBORRES">
+      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00022" Name="LBORRES" DataType="integer" Length="1" SASFieldName="LBORRES">
         <Description>
           <TranslatedText xml:lang="en">Lab Result or Finding in Original Units - Set 4</TranslatedText>
+        </Description>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00023" Name="LBORRES" DataType="float" Length="5" SignificantDigits="2" SASFieldName="LBORRES">
+        <Description>
+          <TranslatedText xml:lang="en">Lab Result or Finding in Original Units - Set 3</TranslatedText>
+        </Description>
+      </ItemDef>
+      <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00024" Name="LBORRES" DataType="float" Length="3" SignificantDigits="1" SASFieldName="LBORRES">
+        <Description>
+          <TranslatedText xml:lang="en">Lab Result or Finding in Original Units - Set 1</TranslatedText>
         </Description>
       </ItemDef>
       <ItemDef OID="IT.LB.LBORRES.WC.LB.LBORRES.00025" Name="LBORRES" DataType="integer" Length="3" SASFieldName="LBORRES">
@@ -7306,37 +7367,81 @@
           </def:DocumentRef>
         </def:Origin>
       </ItemDef>
-      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00201" Name="VSSTRESU" DataType="text" Length="2" SASFieldName="VSSTRESU">
+      <ItemDef OID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00201" Name="VSSTRESN" DataType="float" Length="6" SignificantDigits="2" SASFieldName="VSSTRESN" def:DisplayFormat="6.2">
+        <Description>
+          <TranslatedText xml:lang="en">Body Mass Index Std</TranslatedText>
+        </Description>
+        <def:Origin Type="Derived" Source="Sponsor">
+          <Description>
+            <TranslatedText xml:lang="en">EDC System</TranslatedText>
+          </Description>
+          <def:DocumentRef leafID="LF.acrf.001">
+            <def:PDFPageRef PageRefs="8 9 10 11 12 13 14" Type="PhysicalRef"/>
+          </def:DocumentRef>
+        </def:Origin>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00202" Name="VSSTRESN" DataType="float" Length="5" SignificantDigits="1" SASFieldName="VSSTRESN" def:DisplayFormat="5.1">
+        <Description>
+          <TranslatedText xml:lang="en">Height Std</TranslatedText>
+        </Description>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00203" Name="VSSTRESN" DataType="text" Length="2" SASFieldName="VSSTRESN">
+        <Description>
+          <TranslatedText xml:lang="en">Pulse Rate Std</TranslatedText>
+        </Description>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00204" Name="VSSTRESN" DataType="text" Length="8" SASFieldName="VSSTRESN">
+        <Description>
+          <TranslatedText xml:lang="en">Temperature Std</TranslatedText>
+        </Description>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00205" Name="VSSTRESN" DataType="float" Length="5" SignificantDigits="1" SASFieldName="VSSTRESN" def:DisplayFormat="5.1">
+        <Description>
+          <TranslatedText xml:lang="en">Weight Units Std</TranslatedText>
+        </Description>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESN.WC.VS.VSSTRESN.00206" Name="VSSTRESN" DataType="text" Length="2" SASFieldName="VSSTRESN">
+        <Description>
+          <TranslatedText xml:lang="en">Blood Pressure Std</TranslatedText>
+        </Description>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00207" Name="VSSTRESU" DataType="text" Length="5" SASFieldName="VSSTRESU">
+        <Description>
+          <TranslatedText xml:lang="en">Body Mass Index Units Std</TranslatedText>
+        </Description>
+        <CodeListRef CodeListOID="CL.VS_UNIT_BMI_STD"/>
+      </ItemDef>
+      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00208" Name="VSSTRESU" DataType="text" Length="2" SASFieldName="VSSTRESU">
         <Description>
           <TranslatedText xml:lang="en">Height Units Std</TranslatedText>
         </Description>
         <CodeListRef CodeListOID="CL.VS_UNIT_HEIGHT_STD"/>
       </ItemDef>
-      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00202" Name="VSSTRESU" DataType="text" Length="9" SASFieldName="VSSTRESU">
+      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00209" Name="VSSTRESU" DataType="text" Length="9" SASFieldName="VSSTRESU">
         <Description>
           <TranslatedText xml:lang="en">Pulse Rate Units Std</TranslatedText>
         </Description>
         <CodeListRef CodeListOID="CL.VS_UNIT_PULSE_STD"/>
       </ItemDef>
-      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00203" Name="VSSTRESU" DataType="text" Length="1" SASFieldName="VSSTRESU">
+      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00210" Name="VSSTRESU" DataType="text" Length="1" SASFieldName="VSSTRESU">
         <Description>
           <TranslatedText xml:lang="en">Temperature Units Std</TranslatedText>
         </Description>
         <CodeListRef CodeListOID="CL.VS_UNIT_TEMP_STD"/>
       </ItemDef>
-      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00204" Name="VSSTRESU" DataType="text" Length="2" SASFieldName="VSSTRESU">
+      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00211" Name="VSSTRESU" DataType="text" Length="2" SASFieldName="VSSTRESU">
         <Description>
           <TranslatedText xml:lang="en">Weight Units Std</TranslatedText>
         </Description>
         <CodeListRef CodeListOID="CL.VS_UNIT_WT_STD"/>
       </ItemDef>
-      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00205" Name="VSSTRESU" DataType="text" Length="4" SASFieldName="VSSTRESU">
+      <ItemDef OID="IT.VS.VSSTRESU.WC.VS.VSSTRESU.00212" Name="VSSTRESU" DataType="text" Length="4" SASFieldName="VSSTRESU">
         <Description>
           <TranslatedText xml:lang="en">Blood Pressure Units Std</TranslatedText>
         </Description>
         <CodeListRef CodeListOID="CL.VS_UNIT_BP_STD"/>
       </ItemDef>
-      <CodeList OID="CL.ACN" Name="Action Taken with Study Treatment" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT1" def:CommentOID="COM.CL.ACN">
+      <CodeList OID="CL.ACN" Name="Action Taken with Study Treatment" DataType="text" def:StandardOID="STD.3" def:CommentOID="COM.CL.ACN">
         <Description>
           <TranslatedText xml:lang="en">Example of a CodeList Description (ACN)</TranslatedText>
         </Description>
@@ -7390,7 +7495,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66767"/>
       </CodeList>
-      <CodeList OID="CL.AEREL" Name="Relationship" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT2" def:CommentOID="COM.CL.AEREL">
+      <CodeList OID="CL.AEREL" Name="Relationship" DataType="text" def:IsNonStandard="Yes" def:CommentOID="COM.CL.AEREL">
         <CodeListItem CodedValue="RELATED" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Related</TranslatedText>
@@ -7412,7 +7517,7 @@
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.AESEV" Name="Severity/Intensity Scale for Adverse Events" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT3">
+      <CodeList OID="CL.AESEV" Name="Severity/Intensity Scale for Adverse Events" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="MILD" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Mild</TranslatedText>
@@ -7433,7 +7538,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66769"/>
       </CodeList>
-      <CodeList OID="CL.AGEU_YEARS" Name="Age Unit in Years" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT4">
+      <CodeList OID="CL.AGEU_YEARS" Name="Age Unit in Years" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="YEARS" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Years</TranslatedText>
@@ -7447,7 +7552,7 @@
         <EnumeratedItem CodedValue="Zanomaline Low Dose (54 mg)" OrderNumber="2"/>
         <EnumeratedItem CodedValue="Zanomaline High Dose (81 mg)" OrderNumber="3"/>
       </CodeList>
-      <CodeList OID="CL.ARMCD" Name="Arm Code" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT6">
+      <CodeList OID="CL.ARMCD" Name="Arm Code" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="PLACEBO" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Placebo</TranslatedText>
@@ -7464,7 +7569,7 @@
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.ARMNRS" Name="Arm Null Reason" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT7">
+      <CodeList OID="CL.ARMNRS" Name="Arm Null Reason" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="SCREEN FAILURE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Trial Screen Failure</TranslatedText>
@@ -7473,7 +7578,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C142179"/>
       </CodeList>
-      <CodeList OID="CL.AVL02TC" Name="Rey Auditory Verbal Learning Test Functional Test Code" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT8">
+      <CodeList OID="CL.AVL02TC" Name="Rey Auditory Verbal Learning Test Functional Test Code" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="AVL0201" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">AVLT-REY - List A Word 1</TranslatedText>
@@ -7680,7 +7785,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C123655"/>
       </CodeList>
-      <CodeList OID="CL.AVL02TR" Name="Rey Auditory Verbal Learning Test Functional Test Response" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT9">
+      <CodeList OID="CL.AVL02TR" Name="Rey Auditory Verbal Learning Test Functional Test Response" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="RECALLED" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Recalled</TranslatedText>
@@ -7809,7 +7914,7 @@
         </EnumeratedItem>
         <Alias Context="nci:ExtCodeID" Name="C116107"/>
       </CodeList>
-      <CodeList OID="CL.DDTESTCD" Name="Death Details Test Codes" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT12">
+      <CodeList OID="CL.DDTESTCD" Name="Death Details Test Codes" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="PRCDTH" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Primary Cause of Death</TranslatedText>
@@ -7827,7 +7932,7 @@
         </EnumeratedItem>
         <Alias Context="nci:ExtCodeID" Name="C106480"/>
       </CodeList>
-      <CodeList OID="CL.DIPARMCD" Name="Device Identifier Element Short Name" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT14">
+      <CodeList OID="CL.DIPARMCD" Name="Device Identifier Element Short Name" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="DEVTYPE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Device Type</TranslatedText>
@@ -7842,7 +7947,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C106481"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_AE" Name="SDTM Domain Abbreviation, subset used for Adverse Events" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT15">
+      <CodeList OID="CL.DOMAIN_AE" Name="SDTM Domain Abbreviation, subset used for Adverse Events" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="AE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Adverse Events</TranslatedText>
@@ -7851,7 +7956,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_CM" Name="SDTM Domain Abbreviation, subset used for Concomitant Meds" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT16">
+      <CodeList OID="CL.DOMAIN_CM" Name="SDTM Domain Abbreviation, subset used for Concomitant Meds" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="CM" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Concomitant/Prior Medications</TranslatedText>
@@ -7860,7 +7965,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_DD" Name="SDTM Domain Abbreviation, subset used for Death Diagnosis" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT17">
+      <CodeList OID="CL.DOMAIN_DD" Name="SDTM Domain Abbreviation, subset used for Death Diagnosis" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="DD" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Death Details</TranslatedText>
@@ -7869,7 +7974,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_DI" Name="SDTM Domain Abbreviation, subset used for Device Identifiers" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT18">
+      <CodeList OID="CL.DOMAIN_DI" Name="SDTM Domain Abbreviation, subset used for Device Identifiers" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="DI" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Device Identifiers</TranslatedText>
@@ -7878,7 +7983,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_DM" Name="SDTM Domain Abbreviation, subset used for Demographics" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT19">
+      <CodeList OID="CL.DOMAIN_DM" Name="SDTM Domain Abbreviation, subset used for Demographics" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="DM" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Demographics</TranslatedText>
@@ -7887,7 +7992,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_DS" Name="SDTM Domain Abbreviation, subset used for Disposition" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT20">
+      <CodeList OID="CL.DOMAIN_DS" Name="SDTM Domain Abbreviation, subset used for Disposition" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="DS" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Disposition</TranslatedText>
@@ -7896,7 +8001,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_EC" Name="SDTM Domain Abbreviation, subset used for Exposure as Collected" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT21">
+      <CodeList OID="CL.DOMAIN_EC" Name="SDTM Domain Abbreviation, subset used for Exposure as Collected" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="EC" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Exposure as Collected</TranslatedText>
@@ -7905,7 +8010,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_EX" Name="SDTM Domain Abbreviation, subset used for Exposure" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT22">
+      <CodeList OID="CL.DOMAIN_EX" Name="SDTM Domain Abbreviation, subset used for Exposure" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="EX" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Exposure</TranslatedText>
@@ -7914,7 +8019,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_FA" Name="SDTM Domain Abbreviation, subset used for Findings About Events or Interventions" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT23">
+      <CodeList OID="CL.DOMAIN_FA" Name="SDTM Domain Abbreviation, subset used for Findings About Events or Interventions" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="FA" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Findings About Events or Interventions</TranslatedText>
@@ -7923,7 +8028,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_FT" Name="SDTM Domain Abbreviation, subset used for Functional Tests" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT24">
+      <CodeList OID="CL.DOMAIN_FT" Name="SDTM Domain Abbreviation, subset used for Functional Tests" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="FT" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Functional Tests</TranslatedText>
@@ -7932,7 +8037,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_IE" Name="SDTM Domain Abbreviation, subset used for Inclusion/Exclusion" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT25">
+      <CodeList OID="CL.DOMAIN_IE" Name="SDTM Domain Abbreviation, subset used for Inclusion/Exclusion" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="IE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Inclusion/Exclusion Criteria Not Met</TranslatedText>
@@ -7941,7 +8046,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_LB" Name="SDTM Domain Abbreviation, subset used for Laboratory Data" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT26">
+      <CodeList OID="CL.DOMAIN_LB" Name="SDTM Domain Abbreviation, subset used for Laboratory Data" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="LB" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Laboratory Test Results</TranslatedText>
@@ -7950,7 +8055,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_MH" Name="SDTM Domain Abbreviation, subset used for Medical History" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT27">
+      <CodeList OID="CL.DOMAIN_MH" Name="SDTM Domain Abbreviation, subset used for Medical History" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="MH" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Medical History</TranslatedText>
@@ -7959,7 +8064,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_NV" Name="SDTM Domain Abbreviation, subset used for Nervous System Findings" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT28">
+      <CodeList OID="CL.DOMAIN_NV" Name="SDTM Domain Abbreviation, subset used for Nervous System Findings" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="NV" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Nervous Sysytem Findings</TranslatedText>
@@ -7968,7 +8073,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_OE" Name="SDTM Domain Abbreviation, subset used for Ophthalmic Examinations" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT29">
+      <CodeList OID="CL.DOMAIN_OE" Name="SDTM Domain Abbreviation, subset used for Ophthalmic Examinations" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="OE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Ophthalmic Examinations</TranslatedText>
@@ -7977,7 +8082,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_QS" Name="SDTM Domain Abbreviation, subset used for Questionnaires" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT30">
+      <CodeList OID="CL.DOMAIN_QS" Name="SDTM Domain Abbreviation, subset used for Questionnaires" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="QS" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Questionnaires</TranslatedText>
@@ -7986,7 +8091,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_RS" Name="SDTM Domain Abbreviation, subset used for Disease Response and Clin Classification" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT31">
+      <CodeList OID="CL.DOMAIN_RS" Name="SDTM Domain Abbreviation, subset used for Disease Response and Clin Classification" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="RS" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Disease Response and Clin Classification</TranslatedText>
@@ -7995,7 +8100,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_SE" Name="SDTM Domain Abbreviation, subset used for Subject Element" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT32">
+      <CodeList OID="CL.DOMAIN_SE" Name="SDTM Domain Abbreviation, subset used for Subject Element" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="SE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Subject Elements</TranslatedText>
@@ -8004,7 +8109,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_SV" Name="SDTM Domain Abbreviation, subset used for Subject Visits" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT33">
+      <CodeList OID="CL.DOMAIN_SV" Name="SDTM Domain Abbreviation, subset used for Subject Visits" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="SV" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Subject Visits</TranslatedText>
@@ -8013,7 +8118,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_TA" Name="SDTM Domain Abbreviation, subset used for Trial Arms" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT34">
+      <CodeList OID="CL.DOMAIN_TA" Name="SDTM Domain Abbreviation, subset used for Trial Arms" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="TA" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Trial Arms</TranslatedText>
@@ -8022,7 +8127,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_TE" Name="SDTM Domain Abbreviation, subset used for Trial Elements" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT35">
+      <CodeList OID="CL.DOMAIN_TE" Name="SDTM Domain Abbreviation, subset used for Trial Elements" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="TE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Trial Elements</TranslatedText>
@@ -8031,7 +8136,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_TI" Name="SDTM Domain Abbreviation, subset used for Trial Inclusion/Exclusion Criteria" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT36">
+      <CodeList OID="CL.DOMAIN_TI" Name="SDTM Domain Abbreviation, subset used for Trial Inclusion/Exclusion Criteria" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="TI" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Trial Inclusion</TranslatedText>
@@ -8040,7 +8145,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_TS" Name="SDTM Domain Abbreviation, subset used for Trial Summary" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT37">
+      <CodeList OID="CL.DOMAIN_TS" Name="SDTM Domain Abbreviation, subset used for Trial Summary" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="TS" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Trial Summary</TranslatedText>
@@ -8049,7 +8154,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_TV" Name="SDTM Domain Abbreviation, subset used for Trial Visits" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT38">
+      <CodeList OID="CL.DOMAIN_TV" Name="SDTM Domain Abbreviation, subset used for Trial Visits" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="TV" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Trial Visits</TranslatedText>
@@ -8058,7 +8163,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DOMAIN_VS" Name="SDTM Domain Abbreviation, subset used for Vital Signs" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT39">
+      <CodeList OID="CL.DOMAIN_VS" Name="SDTM Domain Abbreviation, subset used for Vital Signs" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="VS" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Vital Signs</TranslatedText>
@@ -8067,7 +8172,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.DSCAT" Name="Category for Disposition Event" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT40">
+      <CodeList OID="CL.DSCAT" Name="Category for Disposition Event" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="DISPOSITION EVENT" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Disposition Event</TranslatedText>
@@ -8082,7 +8187,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C74558"/>
       </CodeList>
-      <CodeList OID="CL.DSSCAT" Name="Subcategory for Disposition Event" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT41">
+      <CodeList OID="CL.DSSCAT" Name="Subcategory for Disposition Event" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="STUDY TREATMENT" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Study Treatment</TranslatedText>
@@ -8101,7 +8206,7 @@
         <EnumeratedItem CodedValue="Zanomaline 54 mg Titration" OrderNumber="4"/>
         <EnumeratedItem CodedValue="Zanomaline 81 mg" OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.ENRTPT_CM_AE" Name="Relation to Reference Period, subset used for AE and CM." DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT43">
+      <CodeList OID="CL.ENRTPT_CM_AE" Name="Relation to Reference Period, subset used for AE and CM." DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="ONGOING" OrderNumber="2">
           <Decode>
             <TranslatedText xml:lang="en">Ongoing</TranslatedText>
@@ -8110,7 +8215,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66728"/>
       </CodeList>
-      <CodeList OID="CL.EPOCH" Name="Epoch" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT44">
+      <CodeList OID="CL.EPOCH" Name="Epoch" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="SCREENING" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Screening</TranslatedText>
@@ -8125,7 +8230,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C99079"/>
       </CodeList>
-      <CodeList OID="CL.ETCD" Name="Element Code" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT45">
+      <CodeList OID="CL.ETCD" Name="Element Code" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="HIGH" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Zanomaline 81 mg</TranslatedText>
@@ -8152,7 +8257,7 @@
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.ETHNIC" Name="Ethnic Group Hispanic" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT46">
+      <CodeList OID="CL.ETHNIC" Name="Ethnic Group Hispanic" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="HISPANIC OR LATINO" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Hispanic or Latino</TranslatedText>
@@ -8167,7 +8272,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66790"/>
       </CodeList>
-      <CodeList OID="CL.EXTRT" Name="Study Treatment" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT47">
+      <CodeList OID="CL.EXTRT" Name="Study Treatment" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="PLACEBO" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Placebo</TranslatedText>
@@ -8179,14 +8284,14 @@
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.FACAT" Name="FA Category" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT48">
+      <CodeList OID="CL.FACAT" Name="FA Category" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="INJECTION SITE REACTION" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Injection Site Reaction</TranslatedText>
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.FAOBJ" Name="FA Object" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT49">
+      <CodeList OID="CL.FAOBJ" Name="FA Object" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="ERYTHEMA" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Erythema</TranslatedText>
@@ -8213,7 +8318,7 @@
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.FAOCCUR" Name="Occurrence" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT50">
+      <CodeList OID="CL.FAOCCUR" Name="Occurrence" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="N" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">No</TranslatedText>
@@ -8228,7 +8333,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66742"/>
       </CodeList>
-      <CodeList OID="CL.FASEV" Name="Severity" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT51">
+      <CodeList OID="CL.FASEV" Name="Severity" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="MILD" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Mild</TranslatedText>
@@ -8253,7 +8358,7 @@
         <EnumeratedItem CodedValue="Occurrence Indicator" OrderNumber="1"/>
         <EnumeratedItem CodedValue="Severity/Intensity" OrderNumber="2"/>
       </CodeList>
-      <CodeList OID="CL.FATESTCD" Name="Findings About Adverse Events Test Code" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT53">
+      <CodeList OID="CL.FATESTCD" Name="Findings About Adverse Events Test Code" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="OCCUR" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Occurrence Indicator</TranslatedText>
@@ -8265,7 +8370,7 @@
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.FREQ_CM" Name="Frequency, subset used for CM" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT54">
+      <CodeList OID="CL.FREQ_CM" Name="Frequency, subset used for CM" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="QD" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Daily</TranslatedText>
@@ -8304,7 +8409,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71113"/>
       </CodeList>
-      <CodeList OID="CL.FREQ_ECEX" Name="Frequency, subset used for EC and EX" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT55">
+      <CodeList OID="CL.FREQ_ECEX" Name="Frequency, subset used for EC and EX" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="QD" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Daily</TranslatedText>
@@ -8313,7 +8418,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71113"/>
       </CodeList>
-      <CodeList OID="CL.FRM_ECEX" Name="Dose Form, subset used for EC and EX" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT56">
+      <CodeList OID="CL.FRM_ECEX" Name="Dose Form, subset used for EC and EX" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="INJECTION" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Injectable Dosage Form</TranslatedText>
@@ -8322,7 +8427,7 @@
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66726"/>
       </CodeList>
-      <CodeList OID="CL.FTCAT" Name="Category of Functional Test, subset used for FTCAT" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT57">
+      <CodeList OID="CL.FTCAT" Name="Category of Functional Test, subset used for FTCAT" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="AVLT-REY" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Rey Auditory Verbal Learning Functional Test</TranslatedText>
@@ -8338,7 +8443,7 @@
         <EnumeratedItem CodedValue="Communicates feeling states non-verbally, i.e. through facial expression, posture, voice and tendency to weep." OrderNumber="4"/>
         <EnumeratedItem CodedValue="Patient reports virtually only these feeling states in his/her spontaneous verbal and non-verbal communication." OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.HAMD101S" Name="Hamilton Depression Rating Scale - 17 Item - Question 1 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT59">
+      <CodeList OID="CL.HAMD101S" Name="Hamilton Depression Rating Scale - 17 Item - Question 1 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Absent.</TranslatedText>
@@ -8372,7 +8477,7 @@
         <EnumeratedItem CodedValue="Present illness is a punishment. Delusions of guilt." OrderNumber="4"/>
         <EnumeratedItem CodedValue="Hears accusatory or denunciatory voices and/or experiences threatening visual hallucinations." OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.HAMD102S" Name="Hamilton Depression Rating Scale - 17 Item - Question 2 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT61">
+      <CodeList OID="CL.HAMD102S" Name="Hamilton Depression Rating Scale - 17 Item - Question 2 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Absent.</TranslatedText>
@@ -8406,7 +8511,7 @@
         <EnumeratedItem CodedValue="Ideas or gestures of suicide." OrderNumber="4"/>
         <EnumeratedItem CodedValue="Attempts at suicide (any serious attempt rate 4)." OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.HAMD103S" Name="Hamilton Depression Rating Scale - 17 Item - Question 3 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT63">
+      <CodeList OID="CL.HAMD103S" Name="Hamilton Depression Rating Scale - 17 Item - Question 3 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Absent.</TranslatedText>
@@ -8438,7 +8543,7 @@
         <EnumeratedItem CodedValue="Complains of occasional difficulty falling asleep, i.e. more than 1/2 hour" OrderNumber="2"/>
         <EnumeratedItem CodedValue="Complains of nightly difficulty falling asleep." OrderNumber="3"/>
       </CodeList>
-      <CodeList OID="CL.HAMD104S" Name="Hamilton Depression Rating Scale - 17 Item - Question 4 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT65">
+      <CodeList OID="CL.HAMD104S" Name="Hamilton Depression Rating Scale - 17 Item - Question 4 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">No difficulty falling asleep.</TranslatedText>
@@ -8460,7 +8565,7 @@
         <EnumeratedItem CodedValue="Patient complains of being restless and disturbed during the night." OrderNumber="2"/>
         <EnumeratedItem CodedValue="Waking during the night - any getting out of bed rates 2 (except for purposes of voiding)." OrderNumber="3"/>
       </CodeList>
-      <CodeList OID="CL.HAMD105S" Name="Hamilton Depression Rating Scale - 17 Item - Question 5 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT67">
+      <CodeList OID="CL.HAMD105S" Name="Hamilton Depression Rating Scale - 17 Item - Question 5 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">No difficulty.</TranslatedText>
@@ -8482,7 +8587,7 @@
         <EnumeratedItem CodedValue="Waking in early hours of the morning but goes back to sleep." OrderNumber="2"/>
         <EnumeratedItem CodedValue="Unable to fall asleep again if he/she gets out of bed." OrderNumber="3"/>
       </CodeList>
-      <CodeList OID="CL.HAMD106S" Name="Hamilton Depression Rating Scale - 17 Item - Question 6 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT69">
+      <CodeList OID="CL.HAMD106S" Name="Hamilton Depression Rating Scale - 17 Item - Question 6 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">No difficulty.</TranslatedText>
@@ -8506,7 +8611,7 @@
         <EnumeratedItem CodedValue="Decrease in actual time spent in activities or decrease in productivity. Rate 3 if the patient does not spend at least three hours a day in activities (job or hobbies) excluding routine chores." OrderNumber="4"/>
         <EnumeratedItem CodedValue="Stopped working because of present illness. Rate 4 if patient engages in no activities except routine chores, or if patient fails to perform routine chores unassisted." OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.HAMD107S" Name="Hamilton Depression Rating Scale - 17 Item - Question 7 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT71">
+      <CodeList OID="CL.HAMD107S" Name="Hamilton Depression Rating Scale - 17 Item - Question 7 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">No difficulty.</TranslatedText>
@@ -8540,7 +8645,7 @@
         <EnumeratedItem CodedValue="Interview difficult." OrderNumber="4"/>
         <EnumeratedItem CodedValue="Complete stupor." OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.HAMD108S" Name="Hamilton Depression Rating Scale - 17 Item - Question 8 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT73">
+      <CodeList OID="CL.HAMD108S" Name="Hamilton Depression Rating Scale - 17 Item - Question 8 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Normal speech and thought.</TranslatedText>
@@ -8574,7 +8679,7 @@
         <EnumeratedItem CodedValue="Moving about, cannot sit still." OrderNumber="4"/>
         <EnumeratedItem CodedValue="Hand wringing, nail biting, hair-pulling, biting of lips." OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.HAMD109S" Name="Hamilton Depression Rating Scale - 17 Item - Question 9 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT75">
+      <CodeList OID="CL.HAMD109S" Name="Hamilton Depression Rating Scale - 17 Item - Question 9 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">None.</TranslatedText>
@@ -8608,7 +8713,7 @@
         <EnumeratedItem CodedValue="Apprehensive attitude apparent in face or speech." OrderNumber="4"/>
         <EnumeratedItem CodedValue="Fears expressed without questioning." OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.HAMD110S" Name="Hamilton Depression Rating Scale - 17 Item - Question 10 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT77">
+      <CodeList OID="CL.HAMD110S" Name="Hamilton Depression Rating Scale - 17 Item - Question 10 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">No difficulty.</TranslatedText>
@@ -8642,7 +8747,7 @@
         <EnumeratedItem CodedValue="Severe." OrderNumber="4"/>
         <EnumeratedItem CodedValue="Incapacitating." OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.HAMD111S" Name="Hamilton Depression Rating Scale - 17 Item - Question 11 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT79">
+      <CodeList OID="CL.HAMD111S" Name="Hamilton Depression Rating Scale - 17 Item - Question 11 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Absent.</TranslatedText>
@@ -8674,7 +8779,7 @@
         <EnumeratedItem CodedValue="Loss of appetite but eating without staff encouragement. Heavy feelings in abdomen." OrderNumber="2"/>
         <EnumeratedItem CodedValue="Difficulty eating without staff urging. Requests or requires laxatives or medication for bowels or medication for gastro-intestinal symptoms." OrderNumber="3"/>
       </CodeList>
-      <CodeList OID="CL.HAMD112S" Name="Hamilton Depression Rating Scale - 17 Item - Question 12 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT81">
+      <CodeList OID="CL.HAMD112S" Name="Hamilton Depression Rating Scale - 17 Item - Question 12 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">None.</TranslatedText>
@@ -8696,7 +8801,7 @@
         <EnumeratedItem CodedValue="Heaviness in limbs, back or head. Backaches, headaches, muscle aches. Loss of energy and fatigability." OrderNumber="2"/>
         <EnumeratedItem CodedValue="Any clear-cut symptom rates 2." OrderNumber="3"/>
       </CodeList>
-      <CodeList OID="CL.HAMD113S" Name="Hamilton Depression Rating Scale - 17 Item - Question 13 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT83">
+      <CodeList OID="CL.HAMD113S" Name="Hamilton Depression Rating Scale - 17 Item - Question 13 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">None.</TranslatedText>
@@ -8718,7 +8823,7 @@
         <EnumeratedItem CodedValue="Mild." OrderNumber="2"/>
         <EnumeratedItem CodedValue="Severe." OrderNumber="3"/>
       </CodeList>
-      <CodeList OID="CL.HAMD114S" Name="Hamilton Depression Rating Scale - 17 Item - Question 14 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT85">
+      <CodeList OID="CL.HAMD114S" Name="Hamilton Depression Rating Scale - 17 Item - Question 14 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Absent.</TranslatedText>
@@ -8742,7 +8847,7 @@
         <EnumeratedItem CodedValue="Frequent complaints, requests for help, etc." OrderNumber="4"/>
         <EnumeratedItem CodedValue="Hypochondriacal delusions." OrderNumber="5"/>
       </CodeList>
-      <CodeList OID="CL.HAMD115S" Name="Hamilton Depression Rating Scale - 17 Item - Question 15 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT87">
+      <CodeList OID="CL.HAMD115S" Name="Hamilton Depression Rating Scale - 17 Item - Question 15 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Not present.</TranslatedText>
@@ -8775,7 +8880,7 @@
         <EnumeratedItem CodedValue="Definite (according to patient) weight loss." OrderNumber="3"/>
         <EnumeratedItem CodedValue="Not assessed." OrderNumber="4"/>
       </CodeList>
-      <CodeList OID="CL.HAMD116AS" Name="Hamilton Depression Rating Scale - 17 Item - Question 16A Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT89">
+      <CodeList OID="CL.HAMD116AS" Name="Hamilton Depression Rating Scale - 17 Item - Question 16A Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">No weight loss.</TranslatedText>
@@ -8803,7 +8908,7 @@
         <EnumeratedItem CodedValue="Greater than 2 lb weight loss in week." OrderNumber="3"/>
         <EnumeratedItem CodedValue="Not assessed." OrderNumber="4"/>
       </CodeList>
-      <CodeList OID="CL.HAMD116BS" Name="Hamilton Depression Rating Scale - 17 Item - Question 16B Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT91">
+      <CodeList OID="CL.HAMD116BS" Name="Hamilton Depression Rating Scale - 17 Item - Question 16B Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Less than 1 lb weight loss in week.</TranslatedText>
@@ -8830,7 +8935,7 @@
         <EnumeratedItem CodedValue="Acknowledges illness but attributes cause to bad food, climate, overwork, virus, need for rest, etc." OrderNumber="2"/>
         <EnumeratedItem CodedValue="Denies being ill at all." OrderNumber="3"/>
       </CodeList>
-      <CodeList OID="CL.HAMD117S" Name="Hamilton Depression Rating Scale - 17 Item - Question 17 Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT93">
+      <CodeList OID="CL.HAMD117S" Name="Hamilton Depression Rating Scale - 17 Item - Question 17 Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Acknowledges being depressed and ill.</TranslatedText>
@@ -8847,7 +8952,7 @@
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.HAMD17C" Name="Hamilton Depression Rating Scale - 17 Item Clinical Classification Test Code" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT94">
+      <CodeList OID="CL.HAMD17C" Name="Hamilton Depression Rating Scale - 17 Item Clinical Classification Test Code" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="HAMD101" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">HAMD1-Depressed Mood</TranslatedText>
@@ -9024,7 +9129,7 @@
         </EnumeratedItem>
         <Alias Context="nci:ExtCodeID" Name="C100137"/>
       </CodeList>
-      <CodeList OID="CL.IECAT" Name="Category for Inclusion/Exclusion" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT96">
+      <CodeList OID="CL.IECAT" Name="Category for Inclusion/Exclusion" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="EXCLUSION" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Exclusion</TranslatedText>
@@ -9074,7 +9179,7 @@
         <EnumeratedItem CodedValue="Treatment with medications within 1 month prior to enrollment (See Protocol)" OrderNumber="32"/>
         <EnumeratedItem CodedValue="Treatment with medications within 1 month prior to enrollment a) Anticonvulsants b) Alpha receptor blockers c) Calcium channel blockers that are CNS active (See Amendment 1)" OrderNumber="33"/>
       </CodeList>
-      <CodeList OID="CL.IETESTCD" Name="Incl/Excl Criterion Short Name" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT98">
+      <CodeList OID="CL.IETESTCD" Name="Incl/Excl Criterion Short Name" DataType="text" def:IsNonStandard="Yes" def:CommentOID="COM.CL.IETESTCD">
         <CodeListItem CodedValue="INCL01" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Males and postmenopausal females at least 50 years of age.</TranslatedText>
@@ -9243,7 +9348,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.INTMODEL" Name="Intervention Model Response" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT99">
+      <CodeList OID="CL.INTMODEL" Name="Intervention Model Response" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="PARALLEL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Parallel</TranslatedText>
@@ -9252,7 +9357,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C99076"/>
       </CodeList>
-      <CodeList OID="CL.INTTYPE" Name="Intervention Type Response" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT100">
+      <CodeList OID="CL.INTTYPE" Name="Intervention Type Response" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="DRUG" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Drug</TranslatedText>
@@ -9261,7 +9366,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C99078"/>
       </CodeList>
-      <CodeList OID="CL.LAT_OE" Name="Laterality, subset to be used in OE" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT103">
+      <CodeList OID="CL.LAT_OE" Name="Laterality, subset to be used in OE" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="LEFT" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Left</TranslatedText>
@@ -9276,7 +9381,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C99073"/>
       </CodeList>
-      <CodeList OID="CL.LBCAT" Name="Laboratory Test Category" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT104">
+      <CodeList OID="CL.LBCAT" Name="Laboratory Test Category" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="CHEMISTRY" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Chemistry</TranslatedText>
@@ -9421,7 +9526,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </EnumeratedItem>
         <Alias Context="nci:ExtCodeID" Name="C67154"/>
       </CodeList>
-      <CodeList OID="CL.LBTESTCD" Name="Laboratory Test Code" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT106">
+      <CodeList OID="CL.LBTESTCD" Name="Laboratory Test Code" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="ALB" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Albumin Measurement</TranslatedText>
@@ -9670,7 +9775,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </EnumeratedItem>
         <Alias Context="nci:ExtCodeID" Name="C74456"/>
       </CodeList>
-      <CodeList OID="CL.LOC_OE" Name="Anatomical Location, subset used for OELOC" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT108">
+      <CodeList OID="CL.LOC_OE" Name="Anatomical Location, subset used for OELOC" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="CONJUNCTIVA" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Conjunctiva</TranslatedText>
@@ -9703,7 +9808,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C74456"/>
       </CodeList>
-      <CodeList OID="CL.LOC_VS" Name="Anatomical Location" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT109">
+      <CodeList OID="CL.LOC_VS" Name="Anatomical Location" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="EAR" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Ear</TranslatedText>
@@ -9718,7 +9823,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C74456"/>
       </CodeList>
-      <CodeList OID="CL.MHEVDTP" Name="Medical History Event Date Type, subset used for MHEVDTP" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT112">
+      <CodeList OID="CL.MHEVDTP" Name="Medical History Event Date Type, subset used for MHEVDTP" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="SYMPTOM ONSET" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Symptom Onset</TranslatedText>
@@ -9727,14 +9832,14 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C124301"/>
       </CodeList>
-      <CodeList OID="CL.MHTERM" Name="Medical History Term" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT113">
+      <CodeList OID="CL.MHTERM" Name="Medical History Term" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="ALZHEIMER'S DISEASE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Alzheimer's Disease</TranslatedText>
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.NCOMPLT" Name="Completion/Reason for Non-Completion" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT114">
+      <CodeList OID="CL.NCOMPLT" Name="Completion/Reason for Non-Completion" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="ADVERSE EVENT" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Adverse Event</TranslatedText>
@@ -9815,7 +9920,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66727"/>
       </CodeList>
-      <CodeList OID="CL.ND" Name="Not Done" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT115">
+      <CodeList OID="CL.ND" Name="Not Done" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="NOT DONE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Not Done</TranslatedText>
@@ -9824,7 +9929,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66789"/>
       </CodeList>
-      <CodeList OID="CL.NORMABNM" Name="Normal Abnormal Response, subset used in OE and NV." DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT116">
+      <CodeList OID="CL.NORMABNM" Name="Normal Abnormal Response, subset used in OE and NV." DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="ABNORMAL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Abnormal</TranslatedText>
@@ -9839,7 +9944,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C101834"/>
       </CodeList>
-      <CodeList OID="CL.NRIND" Name="Normal Range Indicator" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT117">
+      <CodeList OID="CL.NRIND" Name="Normal Range Indicator" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="ABNORMAL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Abnormal</TranslatedText>
@@ -9870,7 +9975,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         <EnumeratedItem CodedValue="Interpretation" OrderNumber="1" def:ExtendedValue="Yes"/>
         <Alias Context="nci:ExtCodeID" Name="C116103"/>
       </CodeList>
-      <CodeList OID="CL.NVTESTCD" Name="Nervous System Test Code" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT119">
+      <CodeList OID="CL.NVTESTCD" Name="Nervous System Test Code" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="INTP" OrderNumber="1" def:ExtendedValue="Yes">
           <Decode>
             <TranslatedText xml:lang="en">Interpretation</TranslatedText>
@@ -9878,7 +9983,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C116104"/>
       </CodeList>
-      <CodeList OID="CL.NY_NY" Name="No Yes Response, subset for variables with only &quot;Y&quot; or &quot;N&quot; val" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT120">
+      <CodeList OID="CL.NY_NY" Name="No Yes Response, subset for variables with only &quot;Y&quot; or &quot;N&quot; val" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="N" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">No</TranslatedText>
@@ -9893,7 +9998,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66742"/>
       </CodeList>
-      <CodeList OID="CL.NY_YONLY" Name="No Yes Response, subset for variables with only &quot;Y&quot; or null values" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT121">
+      <CodeList OID="CL.NY_YONLY" Name="No Yes Response, subset for variables with only &quot;Y&quot; or null values" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="Y" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Yes</TranslatedText>
@@ -9902,7 +10007,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66742"/>
       </CodeList>
-      <CodeList OID="CL.OEFOCUS" Name="Ophthalmic Focus of Study Specific Interest" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT122">
+      <CodeList OID="CL.OEFOCUS" Name="Ophthalmic Focus of Study Specific Interest" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="OD" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Right Eye</TranslatedText>
@@ -9917,7 +10022,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C119013"/>
       </CodeList>
-      <CodeList OID="CL.OEMETHOD" Name="Method, subset used for OEMETHOD" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT123">
+      <CodeList OID="CL.OEMETHOD" Name="Method, subset used for OEMETHOD" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="SLIT LAMP" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Slit-lamp Examination</TranslatedText>
@@ -9933,7 +10038,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </EnumeratedItem>
         <Alias Context="nci:ExtCodeID" Name="C117742"/>
       </CodeList>
-      <CodeList OID="CL.OETESTCD" Name="Ophthalmic Exam Test Code" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT125">
+      <CodeList OID="CL.OETESTCD" Name="Ophthalmic Exam Test Code" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="ABDETAIL" OrderNumber="1" def:ExtendedValue="Yes">
           <Decode>
             <TranslatedText xml:lang="en">Abnormality Detail</TranslatedText>
@@ -9947,7 +10052,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C117743"/>
       </CodeList>
-      <CodeList OID="CL.OUT" Name="Outcome of Event" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT126">
+      <CodeList OID="CL.OUT" Name="Outcome of Event" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="FATAL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Fatal</TranslatedText>
@@ -9986,7 +10091,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66768"/>
       </CodeList>
-      <CodeList OID="CL.PHQ01C" Name="Patient Health Questionnaire - 9 Item Questionnaire Test Code" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT127">
+      <CodeList OID="CL.PHQ01C" Name="Patient Health Questionnaire - 9 Item Questionnaire Test Code" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="PHQ0101" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">PHQ01-Little Interest/Pleasure in Things</TranslatedText>
@@ -10067,7 +10172,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         <EnumeratedItem CodedValue="Very difficult" OrderNumber="3"/>
         <EnumeratedItem CodedValue="Extremely Difficult" OrderNumber="4"/>
       </CodeList>
-      <CodeList OID="CL.PHQ01RS" Name="Patient Health Questionnaire Responses Standardized" DataType="integer" def:IsNonStandard="Yes" SASFormatName="$FMT130">
+      <CodeList OID="CL.PHQ01RS" Name="Patient Health Questionnaire Responses Standardized" DataType="integer" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="0" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Not at all</TranslatedText>
@@ -10125,7 +10230,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </EnumeratedItem>
         <Alias Context="nci:ExtCodeID" Name="C103480"/>
       </CodeList>
-      <CodeList OID="CL.POSITION_VS" Name="Position, subset to be used for VSPOS" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT132">
+      <CodeList OID="CL.POSITION_VS" Name="Position, subset to be used for VSPOS" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="STANDING" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Standing</TranslatedText>
@@ -10140,7 +10245,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71148"/>
       </CodeList>
-      <CodeList OID="CL.PROTMLST" Name="Protocol Milestone" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT133">
+      <CodeList OID="CL.PROTMLST" Name="Protocol Milestone" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="INFORMED CONSENT OBTAINED" OrderNumber="13">
           <Decode>
             <TranslatedText xml:lang="en">Informed Consent</TranslatedText>
@@ -10149,7 +10254,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C114118"/>
       </CodeList>
-      <CodeList OID="CL.QSCAT_PH" Name="Category of Questionnaire for PHQ-9" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT134">
+      <CodeList OID="CL.QSCAT_PH" Name="Category of Questionnaire for PHQ-9" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="PHQ-9" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Patient Health Questionnaire - 9 Item</TranslatedText>
@@ -10158,7 +10263,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C100129"/>
       </CodeList>
-      <CodeList OID="CL.QSCAT_SL" Name="Category of Questionnaire for SWLS" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT135">
+      <CodeList OID="CL.QSCAT_SL" Name="Category of Questionnaire for SWLS" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="SWLS" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Satisfaction With Life Scale Questionnaire</TranslatedText>
@@ -10167,7 +10272,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C100129"/>
       </CodeList>
-      <CodeList OID="CL.RACE" Name="Race" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT136">
+      <CodeList OID="CL.RACE" Name="Race" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="AMERICAN INDIAN OR ALASKA NATIVE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">American Indian Or Alaska Native</TranslatedText>
@@ -10200,14 +10305,14 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C74457"/>
       </CodeList>
-      <CodeList OID="CL.RACEMULT" Name="Race Multiple Selections" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT137">
+      <CodeList OID="CL.RACEMULT" Name="Race Multiple Selections" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="MULTIPLE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Multiple</TranslatedText>
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.RDOMAIN_RELREC" Name="SDTM Domain Abbreviation, subset used for RELREC" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT138">
+      <CodeList OID="CL.RDOMAIN_RELREC" Name="SDTM Domain Abbreviation, subset used for RELREC" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="AE" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Adverse Events</TranslatedText>
@@ -10234,7 +10339,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66734"/>
       </CodeList>
-      <CodeList OID="CL.RELTYPE" Name="Relationship Type" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT139">
+      <CodeList OID="CL.RELTYPE" Name="Relationship Type" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="MANY" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Many</TranslatedText>
@@ -10249,7 +10354,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C78737"/>
       </CodeList>
-      <CodeList OID="CL.ROUTE_CM" Name="Route of Administration, subset to be used for CM" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT140">
+      <CodeList OID="CL.ROUTE_CM" Name="Route of Administration, subset to be used for CM" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="ORAL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Oral</TranslatedText>
@@ -10288,7 +10393,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66729"/>
       </CodeList>
-      <CodeList OID="CL.ROUTE_ECEX" Name="Route of Administration, subset to be used for EC and EX" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT141">
+      <CodeList OID="CL.ROUTE_ECEX" Name="Route of Administration, subset to be used for EC and EX" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="SUBCUTANEOUS" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Subcutaneous Route of Administration</TranslatedText>
@@ -10297,7 +10402,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66729"/>
       </CodeList>
-      <CodeList OID="CL.RSCAT" Name="Category of Clinical Classification, subset to be used for RSCAT" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT142">
+      <CodeList OID="CL.RSCAT" Name="Category of Clinical Classification, subset to be used for RSCAT" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="HAMD 17" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Hamilton Depression Rating Scale 17 Item Clinical Classification</TranslatedText>
@@ -10306,7 +10411,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C118971"/>
       </CodeList>
-      <CodeList OID="CL.SEX" Name="Sex Male Female" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT146">
+      <CodeList OID="CL.SEX" Name="Sex Male Female" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="F" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Female</TranslatedText>
@@ -10329,7 +10434,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         <EnumeratedItem CodedValue="711" OrderNumber="5"/>
         <EnumeratedItem CodedValue="718" OrderNumber="6"/>
       </CodeList>
-      <CodeList OID="CL.STYPE" Name="Study Type Response" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT150">
+      <CodeList OID="CL.STYPE" Name="Study Type Response" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="INTERVENTIONAL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Interventional</TranslatedText>
@@ -10338,7 +10443,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C99077"/>
       </CodeList>
-      <CodeList OID="CL.SWLS01TC" Name="Satisfaction With Life Scale Questionnaire Test Code" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT151">
+      <CodeList OID="CL.SWLS01TC" Name="Satisfaction With Life Scale Questionnaire Test Code" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="SWLS0101" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">SWLS01-Have Gotten Important Things</TranslatedText>
@@ -10398,7 +10503,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         <EnumeratedItem CodedValue="Agree" OrderNumber="6"/>
         <EnumeratedItem CodedValue="Strongly agree" OrderNumber="7"/>
       </CodeList>
-      <CodeList OID="CL.SWLSR_S" Name="SWLS-Responses Standardized" DataType="text" def:IsNonStandard="Yes" SASFormatName="$FMT154">
+      <CodeList OID="CL.SWLSR_S" Name="SWLS-Responses Standardized" DataType="text" def:IsNonStandard="Yes">
         <CodeListItem CodedValue="1" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Strongly disagree</TranslatedText>
@@ -10435,7 +10540,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
           </Decode>
         </CodeListItem>
       </CodeList>
-      <CodeList OID="CL.TBLIND" Name="Trial Blinding Schema Response" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT155">
+      <CodeList OID="CL.TBLIND" Name="Trial Blinding Schema Response" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="DOUBLE BLIND" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Double Blind</TranslatedText>
@@ -10444,7 +10549,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66735"/>
       </CodeList>
-      <CodeList OID="CL.TCNTRL" Name="Control Type Response" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT156">
+      <CodeList OID="CL.TCNTRL" Name="Control Type Response" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="PLACEBO" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Placebo</TranslatedText>
@@ -10453,7 +10558,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66785"/>
       </CodeList>
-      <CodeList OID="CL.TINDTP" Name="Trial Intent Type Response" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT157">
+      <CodeList OID="CL.TINDTP" Name="Trial Intent Type Response" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="TREATMENT" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Treatment</TranslatedText>
@@ -10462,7 +10567,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66736"/>
       </CodeList>
-      <CodeList OID="CL.TPHASE" Name="Trial Phase Response" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT158">
+      <CodeList OID="CL.TPHASE" Name="Trial Phase Response" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="PHASE II TRIAL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Phase II Trial</TranslatedText>
@@ -10606,7 +10711,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </EnumeratedItem>
         <Alias Context="nci:ExtCodeID" Name="C67152"/>
       </CodeList>
-      <CodeList OID="CL.TSPARMCD" Name="Trial Summary Parameter Test Code" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT160">
+      <CodeList OID="CL.TSPARMCD" Name="Trial Summary Parameter Test Code" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="ACTSUB" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Actual Subject Number</TranslatedText>
@@ -10873,7 +10978,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66738"/>
       </CodeList>
-      <CodeList OID="CL.TTYPE" Name="Trial Type Response" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT161">
+      <CodeList OID="CL.TTYPE" Name="Trial Type Response" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="EFFICACY" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Efficacy</TranslatedText>
@@ -10894,7 +10999,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66739"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_CM" Name="Unit, subset to be used for CMDOSU" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT162">
+      <CodeList OID="CL.UNIT_CM" Name="Unit, subset to be used for CMDOSU" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mg" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Milligram</TranslatedText>
@@ -10915,7 +11020,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_ECDOSU" Name="Unit, subset to be used for ECDOSU" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT163">
+      <CodeList OID="CL.UNIT_ECDOSU" Name="Unit, subset to be used for ECDOSU" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Milliliter</TranslatedText>
@@ -10924,7 +11029,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_ECPSTRGU" Name="Unit, subset to be used for ECPSTRGU" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT164">
+      <CodeList OID="CL.UNIT_ECPSTRGU" Name="Unit, subset to be used for ECPSTRGU" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="g/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Gram per Liter</TranslatedText>
@@ -10933,7 +11038,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_EX" Name="Unit, subset to be used for EXDOSU" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT165">
+      <CodeList OID="CL.UNIT_EX" Name="Unit, subset to be used for EXDOSU" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mg" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Milligram</TranslatedText>
@@ -10942,7 +11047,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_10^12/L" Name="Unit, subset to be used in VLM for tests with 10^12/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT166">
+      <CodeList OID="CL.UNIT_LB_10^12/L" Name="Unit, subset to be used in VLM for tests with 10^12/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="10^12/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Million per Microliter</TranslatedText>
@@ -10951,7 +11056,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_10^9/L" Name="Unit, subset to be used in VLM for tests with 10^9/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT167">
+      <CodeList OID="CL.UNIT_LB_10^9/L" Name="Unit, subset to be used in VLM for tests with 10^9/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="10^9/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Billion per Liter</TranslatedText>
@@ -10960,7 +11065,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_PCT" Name="Unit, subset to be used in VLM for tests with % as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT168">
+      <CodeList OID="CL.UNIT_LB_PCT" Name="Unit, subset to be used in VLM for tests with % as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="%" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Percentage</TranslatedText>
@@ -10969,7 +11074,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_U/L" Name="Unit, subset to be used in VLM for tests with U/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT169">
+      <CodeList OID="CL.UNIT_LB_U/L" Name="Unit, subset to be used in VLM for tests with U/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="U/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Unit per Liter</TranslatedText>
@@ -10978,7 +11083,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_fL" Name="Unit, subset to be used in VLM for tests with fL as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT170">
+      <CodeList OID="CL.UNIT_LB_fL" Name="Unit, subset to be used in VLM for tests with fL as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="fL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Femtoliter</TranslatedText>
@@ -10987,7 +11092,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_fmol" Name="Unit, subset to be used in VLM for tests with fmol as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT171">
+      <CodeList OID="CL.UNIT_LB_fmol" Name="Unit, subset to be used in VLM for tests with fmol as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="fmol" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Femtomole</TranslatedText>
@@ -10996,7 +11101,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_g/L" Name="Unit, subset to be used in VLM for tests with g/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT172">
+      <CodeList OID="CL.UNIT_LB_g/L" Name="Unit, subset to be used in VLM for tests with g/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="g/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Femtomole</TranslatedText>
@@ -11005,7 +11110,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_g/dL" Name="Unit, subset to be used in VLM for tests with g/dL as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT173">
+      <CodeList OID="CL.UNIT_LB_g/dL" Name="Unit, subset to be used in VLM for tests with g/dL as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="g/dL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Gram per Deciliter</TranslatedText>
@@ -11014,7 +11119,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_mEq/L" Name="Unit, subset to be used in VLM for tests with mEq/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT174">
+      <CodeList OID="CL.UNIT_LB_mEq/L" Name="Unit, subset to be used in VLM for tests with mEq/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mEq/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Milliequivalent Per Liter</TranslatedText>
@@ -11023,7 +11128,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_mIU/L" Name="Unit, subset to be used in VLM for tests with mIU/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT175">
+      <CodeList OID="CL.UNIT_LB_mIU/L" Name="Unit, subset to be used in VLM for tests with mIU/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mIU/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Microinternational Unit per Milliliter</TranslatedText>
@@ -11032,7 +11137,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_mU/L" Name="Unit, subset to be used in VLM for tests with mU/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT176">
+      <CodeList OID="CL.UNIT_LB_mU/L" Name="Unit, subset to be used in VLM for tests with mU/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mU/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Microunit per Milliliter</TranslatedText>
@@ -11041,7 +11146,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_mg/dL" Name="Unit, subset to be used in VLM for tests with mg/dL as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT177">
+      <CodeList OID="CL.UNIT_LB_mg/dL" Name="Unit, subset to be used in VLM for tests with mg/dL as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mg/dL" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Milligram per Deciliter</TranslatedText>
@@ -11050,7 +11155,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_mmol/L" Name="Unit, subset to be used in VLM for tests with mmol/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT178">
+      <CodeList OID="CL.UNIT_LB_mmol/L" Name="Unit, subset to be used in VLM for tests with mmol/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mmol/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Millimole per Liter</TranslatedText>
@@ -11059,7 +11164,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_ng/L" Name="Unit, subset to be used in VLM for tests with ng/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT179">
+      <CodeList OID="CL.UNIT_LB_ng/L" Name="Unit, subset to be used in VLM for tests with ng/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="ng/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Nanogram per Liter</TranslatedText>
@@ -11068,7 +11173,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_pg" Name="Unit, subset to be used in VLM for tests with pg as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT180">
+      <CodeList OID="CL.UNIT_LB_pg" Name="Unit, subset to be used in VLM for tests with pg as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="pg" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Picogram</TranslatedText>
@@ -11077,7 +11182,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_pmol/L" Name="Unit, subset to be used in VLM for tests with pmol/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT181">
+      <CodeList OID="CL.UNIT_LB_pmol/L" Name="Unit, subset to be used in VLM for tests with pmol/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="pmol/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Picomole per Liter</TranslatedText>
@@ -11086,7 +11191,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
-      <CodeList OID="CL.UNIT_LB_umol/L" Name="Unit, subset to be used in VLM for tests with umol/L as the unit" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT182">
+      <CodeList OID="CL.UNIT_LB_umol/L" Name="Unit, subset to be used in VLM for tests with umol/L as the unit" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="umol/L" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Micromole per Liter</TranslatedText>
@@ -11096,58 +11201,67 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         <Alias Context="nci:ExtCodeID" Name="C71620"/>
       </CodeList>
       <CodeList OID="CL.VSTEST" Name="Vital Signs Test Name" DataType="text" def:StandardOID="STD.3">
-        <EnumeratedItem CodedValue="Diastolic Blood Pressure" OrderNumber="1">
+        <EnumeratedItem CodedValue="Body Mass Index" OrderNumber="1">
+          <Alias Context="nci:ExtCodeID" Name="C16358"/>
+        </EnumeratedItem>
+        <EnumeratedItem CodedValue="Diastolic Blood Pressure" OrderNumber="2">
           <Alias Context="nci:ExtCodeID" Name="C25299"/>
         </EnumeratedItem>
-        <EnumeratedItem CodedValue="Pulse Rate" OrderNumber="2">
+        <EnumeratedItem CodedValue="Pulse Rate" OrderNumber="3">
           <Alias Context="nci:ExtCodeID" Name="C49676"/>
         </EnumeratedItem>
-        <EnumeratedItem CodedValue="Height" OrderNumber="3">
+        <EnumeratedItem CodedValue="Height" OrderNumber="4">
           <Alias Context="nci:ExtCodeID" Name="C25347"/>
         </EnumeratedItem>
-        <EnumeratedItem CodedValue="Systolic Blood Pressure" OrderNumber="4">
+        <EnumeratedItem CodedValue="Systolic Blood Pressure" OrderNumber="5">
           <Alias Context="nci:ExtCodeID" Name="C25298"/>
         </EnumeratedItem>
-        <EnumeratedItem CodedValue="Temperature" OrderNumber="5">
+        <EnumeratedItem CodedValue="Temperature" OrderNumber="6">
           <Alias Context="nci:ExtCodeID" Name="C25206"/>
         </EnumeratedItem>
-        <EnumeratedItem CodedValue="Weight" OrderNumber="6">
+        <EnumeratedItem CodedValue="Weight" OrderNumber="7">
           <Alias Context="nci:ExtCodeID" Name="C25208"/>
         </EnumeratedItem>
         <Alias Context="nci:ExtCodeID" Name="C67153"/>
       </CodeList>
-      <CodeList OID="CL.VSTESTCD" Name="Vital Signs Test Code" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT185">
-        <CodeListItem CodedValue="DIABP" OrderNumber="1">
+      <CodeList OID="CL.VSTESTCD" Name="Vital Signs Test Code" DataType="text" def:StandardOID="STD.3">
+        <CodeListItem CodedValue="BMI" OrderNumber="1">
+          <Decode>
+            <TranslatedText>Body Mass Index</TranslatedText>
+          </Decode>
+          <Alias Context="nci:ExtCodeID" Name="C16358"/>
+        </CodeListItem>
+        <CodeListItem CodedValue="DIABP" OrderNumber="2">
           <Decode>
             <TranslatedText xml:lang="en">Diastolic Blood Pressure</TranslatedText>
           </Decode>
           <Alias Context="nci:ExtCodeID" Name="C25299"/>
         </CodeListItem>
-        <CodeListItem CodedValue="PULSE" OrderNumber="2">
+        <CodeListItem CodedValue="PULSE" OrderNumber="3">
           <Decode>
             <TranslatedText xml:lang="en">Pulse Rate</TranslatedText>
           </Decode>
           <Alias Context="nci:ExtCodeID" Name="C49676"/>
         </CodeListItem>
-        <CodeListItem CodedValue="HEIGHT" OrderNumber="3">
+        <CodeListItem CodedValue="HEIGHT" OrderNumber="4">
           <Decode>
             <TranslatedText xml:lang="en">Height</TranslatedText>
           </Decode>
           <Alias Context="nci:ExtCodeID" Name="C25347"/>
         </CodeListItem>
-        <CodeListItem CodedValue="SYSBP" OrderNumber="4">
+        <CodeListItem CodedValue="SYSBP" OrderNumber="5">
           <Decode>
             <TranslatedText xml:lang="en">Systolic Blood Pressure</TranslatedText>
           </Decode>
           <Alias Context="nci:ExtCodeID" Name="C25298"/>
         </CodeListItem>
-        <CodeListItem CodedValue="TEMP" OrderNumber="5">
+        <CodeListItem CodedValue="TEMP" OrderNumber="6">
           <Decode>
             <TranslatedText xml:lang="en">Temperature</TranslatedText>
           </Decode>
           <Alias Context="nci:ExtCodeID" Name="C25206"/>
         </CodeListItem>
-        <CodeListItem CodedValue="WEIGHT" OrderNumber="6">
+        <CodeListItem CodedValue="WEIGHT" OrderNumber="7">
           <Decode>
             <TranslatedText xml:lang="en">Weight</TranslatedText>
           </Decode>
@@ -11155,7 +11269,16 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66741"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_BP" Name="Units for Vital Signs Results, subset for Blood Pressure" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT186">
+      <CodeList OID="CL.VS_UNIT_BMI_STD" Name="Units for Vital Signs Results, subset for Body Mass Index Std" DataType="text" def:StandardOID="STD.3">
+        <CodeListItem CodedValue="kg/m2" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">Kilogram per Square Meter</TranslatedText>
+          </Decode>
+          <Alias Context="nci:ExtCodeID" Name="C49671"/>
+        </CodeListItem>
+        <Alias Context="nci:ExtCodeID" Name="C66770"/>
+      </CodeList>
+      <CodeList OID="CL.VS_UNIT_BP" Name="Units for Vital Signs Results, subset for Blood Pressure" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mmHg" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Millimeter of Mercury</TranslatedText>
@@ -11164,7 +11287,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66770"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_BP_STD" Name="Units for Vital Signs Results, subset for Blood Pressure Std" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT187">
+      <CodeList OID="CL.VS_UNIT_BP_STD" Name="Units for Vital Signs Results, subset for Blood Pressure Std" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="mmHg" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Millimeter of Mercury</TranslatedText>
@@ -11173,16 +11296,28 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66770"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_HEIGHT" Name="Units for Vital Signs Results, subset for Height" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT188">
-        <CodeListItem CodedValue="in" OrderNumber="1">
+      <CodeList OID="CL.VS_UNIT_HEIGHT" Name="Units for Vital Signs Results, subset for Height" DataType="text" def:StandardOID="STD.3">
+        <CodeListItem CodedValue="cm" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">Centimeter</TranslatedText>
+          </Decode>
+          <Alias Context="nci:ExtCodeID" Name="C49668"/>
+        </CodeListItem>
+        <CodeListItem CodedValue="in" OrderNumber="2">
           <Decode>
             <TranslatedText xml:lang="en">Inch</TranslatedText>
           </Decode>
           <Alias Context="nci:ExtCodeID" Name="C48500"/>
         </CodeListItem>
+        <CodeListItem CodedValue="m" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">Meter</TranslatedText>
+          </Decode>
+          <Alias Context="nci:ExtCodeID" Name="C41139"/>
+        </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66770"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_HEIGHT_STD" Name="Units for Vital Signs Results, subset for Height Std" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT189">
+      <CodeList OID="CL.VS_UNIT_HEIGHT_STD" Name="Units for Vital Signs Results, subset for Height Std" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="cm" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Centimeter</TranslatedText>
@@ -11191,7 +11326,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66770"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_PULSE" Name="Units for Vital Signs Results, subset for Pulse" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT190">
+      <CodeList OID="CL.VS_UNIT_PULSE" Name="Units for Vital Signs Results, subset for Pulse" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="beats/min" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Beats per Minute</TranslatedText>
@@ -11200,7 +11335,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66770"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_PULSE_STD" Name="Units for Vital Signs Results, subset for Pulse Std" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT191">
+      <CodeList OID="CL.VS_UNIT_PULSE_STD" Name="Units for Vital Signs Results, subset for Pulse Std" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="beats/min" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Beats per Minute</TranslatedText>
@@ -11209,8 +11344,14 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66770"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_TEMP" Name="Units for Vital Signs Results, subset for Temperature" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT192">
-        <CodeListItem CodedValue="F" OrderNumber="1">
+      <CodeList OID="CL.VS_UNIT_TEMP" Name="Units for Vital Signs Results, subset for Temperature" DataType="text" def:StandardOID="STD.3">
+        <CodeListItem CodedValue="C" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">Degree Celsius</TranslatedText>
+          </Decode>
+          <Alias Context="nci:ExtCodeID" Name="C42559"/>
+        </CodeListItem>
+        <CodeListItem CodedValue="F" OrderNumber="2">
           <Decode>
             <TranslatedText xml:lang="en">Degree Fahrenheit</TranslatedText>
           </Decode>
@@ -11218,7 +11359,7 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66770"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_TEMP_STD" Name="Units for Vital Signs Results, subset for Temperature Std" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT193">
+      <CodeList OID="CL.VS_UNIT_TEMP_STD" Name="Units for Vital Signs Results, subset for Temperature Std" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="C" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Degree Celsius</TranslatedText>
@@ -11227,16 +11368,28 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66770"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_WT" Name="Units for Vital Signs Results, subset for Weight" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT194">
+      <CodeList OID="CL.VS_UNIT_WT" Name="Units for Vital Signs Results, subset for Weight" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="LB" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Pound</TranslatedText>
           </Decode>
           <Alias Context="nci:ExtCodeID" Name="C48531"/>
         </CodeListItem>
+        <CodeListItem CodedValue="g" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">Gram</TranslatedText>
+          </Decode>
+          <Alias Context="nci:ExtCodeID" Name="C48155"/>
+        </CodeListItem>
+        <CodeListItem CodedValue="kg" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">Kilogram</TranslatedText>
+          </Decode>
+          <Alias Context="nci:ExtCodeID" Name="C28252"/>
+        </CodeListItem>
         <Alias Context="nci:ExtCodeID" Name="C66770"/>
       </CodeList>
-      <CodeList OID="CL.VS_UNIT_WT_STD" Name="Units for Vital Signs Results, subset for Weight Std" DataType="text" def:StandardOID="STD.3" SASFormatName="$FMT195">
+      <CodeList OID="CL.VS_UNIT_WT_STD" Name="Units for Vital Signs Results, subset for Weight Std" DataType="text" def:StandardOID="STD.3">
         <CodeListItem CodedValue="kg" OrderNumber="1">
           <Decode>
             <TranslatedText xml:lang="en">Kilogram</TranslatedText>
@@ -11266,9 +11419,6 @@ a) Uncontrolled Insulin Dependent Diabetes Mellitus (IDDM) (See Protocol for oth
         <Description>
           <TranslatedText xml:lang="en">If AEENRTPT is populated, AEENTPT is DM.RFPENDTC for the subject.</TranslatedText>
         </Description>
-        <def:DocumentRef leafID="LF.supportdoc.002">
-          <def:PDFPageRef PageRefs="3" Type="PhysicalRef" Title="AEENTPT algorithm"/>
-        </def:DocumentRef>
       </MethodDef>
       <MethodDef OID="MT.AE.AESEQ" Name="Algorithm to derive SEQ" Type="Computation">
         <Description>
@@ -11650,6 +11800,9 @@ If QSORRES="Strongly agree" then 7</TranslatedText>
         <Description>
           <TranslatedText xml:lang="en">SESTDTC if set to the --DTC for that subject which exists in the data for the defined start of the Element, such as DSSTDTC when DSDECOD=INFORMED CONSENT OBTAINED for Screening Elements or min(EXSTDTC) for Dosing Elements.</TranslatedText>
         </Description>
+        <def:DocumentRef leafID="LF.supportdoc.002">
+          <def:PDFPageRef PageRefs="3" Type="PhysicalRef" Title="Review the SESTDTC algorithm"/>
+        </def:DocumentRef>
       </MethodDef>
       <MethodDef OID="MT.SE.SESTDY" Name="Algorithm to derive DAYCALC" Type="Computation">
         <Description>
@@ -11729,6 +11882,12 @@ If QSORRES="More than half the days" then 2
 If QSORRES="Nearly every day" then 3</TranslatedText>
         </Description>
       </MethodDef>
+      <MethodDef OID="MT.VS.VSSTRESN.WC.VS.VSSTRESN.00201" Name="Algorithm to derive BMISN" Type="Computation">
+        <Description>
+          <TranslatedText xml:lang="en">Divide weight in kilograms by height in meters squared. If height has been measured in centimeters, divide by 100 to convert this to meters.</TranslatedText>
+        </Description>
+        <FormalExpression Context="SAS 9.0 or later">round((VSSTRESN for weight/ (VSSTRESN for height / 100)^2), .01).</FormalExpression>
+      </MethodDef>
       <def:CommentDef OID="COM.MDV.MSGv2.0.SDTMIG.3.3.SDTM.1.7">
         <Description>
           <TranslatedText xml:lang="en">This example was created by adding content to the Define-XML v2.1 document that was published with the Metadata Submission Guidelines v2.0 The added content fully demonstrates the capabilities of the Define-XML v2.1 module of SAS OpenCST 1.7.6</TranslatedText>
@@ -11767,7 +11926,7 @@ If QSORRES="Nearly every day" then 3</TranslatedText>
           <TranslatedText xml:lang="en">Per protocol, electroencephalograms are only performed after such an event were to occur. No subjects within the trial had an occurrence of an electroencephalogram event. Therefore, no data exists for the NV dataset and as such was not submitted.</TranslatedText>
         </Description>
         <def:DocumentRef leafID="LF.supportdoc.001">
-          <def:PDFPageRef PageRefs="20" Type="PhysicalRef" Title="NV Dataset Comment Document Reference"/>
+          <def:PDFPageRef PageRefs="9" Type="PhysicalRef" Title="See section 3.4.5 in the Clinical Study Data Reviewer's Guide"/>
         </def:DocumentRef>
       </def:CommentDef>
       <def:CommentDef OID="COM.QSPH">
@@ -11805,7 +11964,7 @@ If QSORRES="Nearly every day" then 3</TranslatedText>
           <TranslatedText xml:lang="en">Coding variables are not populated due to the proprietary coding dictionary, but the variables are included as they are Expected or Required. Note CDISC Conformance Rule CG0014 would fire for this variable due to the decision not to populate coding variables.</TranslatedText>
         </Description>
         <def:DocumentRef leafID="LF.supportdoc.001">
-          <def:PDFPageRef PageRefs="20" Type="PhysicalRef" Title="AEDECOD Variable Comment Document Reference"/>
+          <def:PDFPageRef PageRefs="8" Type="PhysicalRef" Title="See section 3.4.1 in the Clinical Study Data Reviewer's Guide"/>
         </def:DocumentRef>
       </def:CommentDef>
       <def:CommentDef OID="COM.AE.AEHLGT">
@@ -11923,29 +12082,29 @@ If QSORRES="Nearly every day" then 3</TranslatedText>
           <TranslatedText xml:lang="en">This is an example of a CodeList comment with a document attached (AEREL).</TranslatedText>
         </Description>
         <def:DocumentRef leafID="LF.supportdoc.001">
-          <def:PDFPageRef PageRefs="20" Type="PhysicalRef" Title="AEREL comment in aCRF"/>
+          <def:PDFPageRef PageRefs="8" Type="PhysicalRef" Title="See section 3.4.1 in the Clinical Study Data Reviewer's Guide"/>
+        </def:DocumentRef>
+      </def:CommentDef>
+      <def:CommentDef OID="COM.CL.IETESTCD">
+        <Description>
+          <TranslatedText xml:lang="en">This is an example of a CodeList comment.</TranslatedText>
+        </Description>
+        <def:DocumentRef leafID="LF.supportdoc.001">
+          <def:PDFPageRef PageRefs="11" Type="PhysicalRef" Title="Clinical Study Data Reviewer's Guide, Appendix I: Inclusion/Exclusion Criteria"/>
         </def:DocumentRef>
       </def:CommentDef>
       <def:CommentDef OID="COM.CL.ISO3166">
         <Description>
           <TranslatedText xml:lang="en">This is an example of an External CodeList comment with a link attached.</TranslatedText>
         </Description>
-        <def:DocumentRef leafID="LF.supportdoc.007"/>
+        <def:DocumentRef leafID="LF.supportdoc.006"/>
       </def:CommentDef>
       <def:CommentDef OID="COM.AE.AETERM.WC.AE.AETERM.00001">
         <Description>
           <TranslatedText xml:lang="en">Even though the variable is 'Assigned' an annotation has been added to page 23 to clarify the assignment.</TranslatedText>
         </Description>
         <def:DocumentRef leafID="LF.supportdoc.001">
-          <def:PDFPageRef PageRefs="20" Type="PhysicalRef" Title="AE VLM Variable Comment Document Reference"/>
-        </def:DocumentRef>
-      </def:CommentDef>
-      <def:CommentDef OID="COM.AE.AETERM.WC.WC.AE.AETERM.00002">
-        <Description>
-          <TranslatedText xml:lang="en">This is an example of a WhereClause comment.</TranslatedText>
-        </Description>
-        <def:DocumentRef leafID="LF.supportdoc.001">
-          <def:PDFPageRef PageRefs="20" Type="PhysicalRef" Title="Document attached to a WhereClause"/>
+          <def:PDFPageRef PageRefs="8" Type="PhysicalRef" Title="See section 3.4.1 in the Clinical Study Data Reviewer's Guide"/>
         </def:DocumentRef>
       </def:CommentDef>
       <def:CommentDef OID="COM.SUPPDM.QVAL.WC.SUPPDM.QVAL.00155">
@@ -11958,14 +12117,22 @@ If QSORRES="Nearly every day" then 3</TranslatedText>
           <TranslatedText xml:lang="en">Since no subjects had more than 3 Races, RACE5 was not used.</TranslatedText>
         </Description>
       </def:CommentDef>
+      <def:CommentDef OID="COM.SUPPNV.QVAL.WC.WC.SUPPNV.QVAL.00158">
+        <Description>
+          <TranslatedText xml:lang="en">This is an example of a WhereClause comment.</TranslatedText>
+        </Description>
+        <def:DocumentRef leafID="LF.supportdoc.001">
+          <def:PDFPageRef PageRefs="9" Type="PhysicalRef" Title="See section 3.4.5 in the Clinical Study Data Reviewer's Guide"/>
+        </def:DocumentRef>
+      </def:CommentDef>
       <def:leaf ID="LF.acrf.001" xlink:href="acrf.pdf">
         <def:title>Annotated CRF</def:title>
       </def:leaf>
-      <def:leaf ID="LF.supportdoc.001" xlink:href="acrf.pdf">
-        <def:title>Annotated CRF</def:title>
+      <def:leaf ID="LF.supportdoc.001" xlink:href="csdrg.pdf">
+        <def:title>Clinical Study Data Reviewer's Guide</def:title>
       </def:leaf>
-      <def:leaf ID="LF.supportdoc.002" xlink:href="complex-algorithms-example.pdf">
-        <def:title>Complex Algorithms Example</def:title>
+      <def:leaf ID="LF.supportdoc.002" xlink:href="complex-algorithms-sdtm.pdf">
+        <def:title>Complex Algorithms</def:title>
       </def:leaf>
       <def:leaf ID="LF.supportdoc.003" xlink:href="https://www.cdisc.org/system/files/members/standard/foundational/Define-XML-v215.zip">
         <def:title>Define-XML v2.1.5 Updated Release Package</def:title>
@@ -11976,10 +12143,7 @@ If QSORRES="Nearly every day" then 3</TranslatedText>
       <def:leaf ID="LF.supportdoc.005" xlink:href="https://github.com/sassoftware/clinical-standards-toolkit">
         <def:title>Open SAS Clinical Standards Toolkit - GitHub Repository</def:title>
       </def:leaf>
-      <def:leaf ID="LF.supportdoc.006" xlink:href="csdrg.pdf">
-        <def:title>Reviewers Guide</def:title>
-      </def:leaf>
-      <def:leaf ID="LF.supportdoc.007" xlink:href="https://www.iso.org/iso-3166-country-codes.html">
+      <def:leaf ID="LF.supportdoc.006" xlink:href="https://www.iso.org/iso-3166-country-codes.html">
         <def:title>The ISO 3166 Country Codes</def:title>
       </def:leaf>
     </MetaDataVersion>
