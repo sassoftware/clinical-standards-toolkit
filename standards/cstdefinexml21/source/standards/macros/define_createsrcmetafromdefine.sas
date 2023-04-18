@@ -1732,7 +1732,7 @@
     outer union corresponding
     (select
     case
-      when (not missing(itd.commentoid)) then "VCOLUMN"
+      when (not missing(itdv.commentoid)) then "VCOLUMN"
       when (not missing(wc.commentoid)) then "WHERECLAUSE"
       else ""
     end as docsubtype1,
@@ -1742,7 +1742,7 @@
     wc.whereclause,
     wc.commentoid as commentoid_wc,
     vlir.methodoid,
-    itd.commentoid
+    itdv.commentoid
 
      from &_cstDefineDataLib..definedocument odm
        inner join &_cstDefineDataLib..study std
@@ -1759,6 +1759,8 @@
      on (ivlr.valuelistoid=vld.oid)
        inner join &_cstDefineDataLib..itemdefs itd
      on (itd.oid = ivlr.fk_itemdefs and itd.fk_metadataversion = mdv.oid)
+       inner join &_cstDefineDataLib..itemdefs itdv
+     on (itdv.oid = vlir.itemoid and itdv.fk_metadataversion = mdv.oid)
        inner join &_cstDefineDataLib..itemgroupitemrefs igdir
      on igdir.itemoid = itd.oid
        inner join &_cstDefineDataLib..itemgroupdefs igd
