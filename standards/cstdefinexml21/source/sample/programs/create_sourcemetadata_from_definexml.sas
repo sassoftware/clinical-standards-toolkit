@@ -100,7 +100,7 @@ proc sql;
   values ("&_cstStandard"    "&_cstStandardVersion"     "properties"        "initialize" "inprop"   "fileref" "input"  "file"     "N"  "" ""                                   1 ""                           "")
 
   values ("&_cstStandard"    "&_cstStandardVersion"     "results"           "results"    "results"  "libref"  "output" "dataset"  "Y"  "" "&studyOutputPath/results"           . "srcmeta_define_results.sas7bdat"  "")
-  values ("&_cstStandard"    "&_cstStandardVersion"     "externalxml"       "xml"        "crtxml"   "fileref" "input"  "file"     "N"  "" "&studyRootPath/sourcexml"           . "&_cstDefineFile...xml"            "")
+  values ("&_cstStandard"    "&_cstStandardVersion"     "externalxml"       "xml"        "crtxml"   "fileref" "input"  "file"     "N"  "" "&studyRootPath/sourcexml"           . "&_cstDefineFile..xml"             "")
   values ("&_cstStandard"    "&_cstStandardVersion"     "referencexml"      "map"        "crtmap"   "fileref" "input"  "file"     "N"  "" "&studyRootPath/referencexml"        . "define.map"                 "")
   values ("&_cstStandard"    "&_cstStandardVersion"     "sourcedata"        ""           "srcdata"  "libref"  "output" "folder"   "N"  "" "&studyOutputPath/deriveddata/&_cstStandardSubFolder"  . ""         "")
 
