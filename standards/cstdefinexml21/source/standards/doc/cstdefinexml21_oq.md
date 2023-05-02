@@ -54,4 +54,5 @@ If this program runs successfully and produces the expected results, openCST per
    4. There is a record where **Source data** is **DEFINE_READ** that reports that the XML file was read successfully.
    5. There is a record where **Source data** is **XML TRANSFORMER** that reports **The document validated successfully**.
    6. There is a record where **Source data** is **DEFINE_WRITE** that reports that the XML file was created.
-7. Close the SAS session.
+7. Check that **define_sdtm_full_example.xml**, **define_sdtm_full_example.html** and **define2-1.xsl** have been created in the **CST_DEFINEXML/targetxml** directory.
+8. Close the SAS session.
